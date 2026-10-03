@@ -50,11 +50,17 @@ def run(cmd: list[str]) -> tuple[int, str]:
 
 
 files = sorted(TW.glob("*.items.json"))
+# Optional stem filter. Without it every page is processed, which DOUBLE-APPLIES
+# any page already converted — always pass stems when re-running on a partly
+# converted chapter.
+only = set(sys.argv[1:])
 ok_all = True
 for items_path in files:
     stem = items_path.name[: -len(".items.json")]
-    if stem == "05-eigenvalues-and-expectation":
-        continue  # already applied and gated; re-checked below
+    if only and stem not in only:
+        continue
+    if not only and stem == "05-eigenvalues-and-expectation":
+        continue  # applied separately: it also carries the errata notes
     zh_path = TW / f"{stem}.zh.json"
     page = f"ch03/{stem}.md"
 
