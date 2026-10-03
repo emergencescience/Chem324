@@ -805,7 +805,10 @@ def cmd_apply(a) -> int:
             if it["t"] == "lit" and (it["s"] == "\n" or BULLET_ONLY_RE.match(it["s"])):
                 continue
             if run:
-                inserts.append((run_end, block("\n".join(zh[i] for i in run))))
+                # Re-emit the list markers: without them the joined translations
+                # form a single run-on paragraph, because consecutive Markdown
+                # lines with no blank line between them are one paragraph.
+                inserts.append((run_end, block("\n".join("- " + zh[i] for i in run))))
                 run = []
             if (it["t"] == "tr" and it.get("kind") == "para"
                     and len(it["s"]) >= min_chars):
@@ -828,11 +831,19 @@ def cmd_apply(a) -> int:
                 print(f"WARN: annotation for line {anchor} skipped (inside a "
                       f"code/math block)", file=sys.stderr)
                 continue
-            inserts.append((best, "\n" + ann[anchor].rstrip("\n") + "\n"))
+            # Blank line on both sides: a directive glued to the end of a list
+            # item becomes a lazy continuation of that paragraph and renders as
+            # literal colons instead of a callout.
+            inserts.append((best, "\n\n" + ann[anchor].rstrip("\n") + "\n\n"))
             inserted += 1
 
     for off, text in sorted(inserts, key=lambda t: -t[0]):
         page = page[:off] + text + page[off:]
+
+    # Record exactly what was added, so `verify --strip-interleaved` can remove
+    # it by identity rather than by a regex that has to guess the layout.
+    Path(str(a.out) + ".inserted.json").write_text(
+        json.dumps([t for _, t in inserts], ensure_ascii=False), encoding="utf-8")
 
     Path(a.out).write_text(page, encoding="utf-8")
     print(f"applied {len(ids)} segments, {inserted} note(s), "
@@ -845,19 +856,21 @@ def cmd_verify(a) -> int:
     out_text = Path(a.out).read_text(encoding="utf-8")
 
     if getattr(a, "strip_interleaved", False):
-        # Interleave mode only ADDS blocks, so the gate inverts: remove every
-        # inserted region and the remaining file must equal the source
-        # byte-for-byte. That proves the English was never rewritten.
-        # Replaced with "" (not "\n") because the block starts with its own
-        # newline: keeping it would leave an extra blank line behind.
-        out_text = re.sub(
-            r"\n::::::\{admonition\}[^\n]*\n:class: dropdown\n\n.*?\n::::::\n",
-            "", out_text, flags=re.S)
-        # The errata notes are also inserted, and also carry CJK, so strip them
-        # as well or the segment counts cannot match.
-        out_text = re.sub(
-            r"\n:::\{note\}\n\*\*原文勘误.*?\n:::\n",
-            "", out_text, flags=re.S)
+        # Interleave mode only ADDS regions, so the gate inverts: remove exactly
+        # what apply recorded adding, and the remainder must equal the source
+        # byte-for-byte. Removing by identity (not by regex) keeps the check
+        # exact: if any inserted region were missing from the sidecar, or had
+        # perturbed a neighbouring byte, the comparison fails.
+        sidecar = Path(str(a.out) + ".inserted.json")
+        if not sidecar.exists():
+            print(f"FAIL: {sidecar} missing (run apply before verify)", file=sys.stderr)
+            return 1
+        for ins in json.loads(sidecar.read_text(encoding="utf-8")):
+            if ins not in out_text:
+                print(f"FAIL: recorded insertion not found verbatim in output: {ins[:60]!r}",
+                      file=sys.stderr)
+                return 1
+            out_text = out_text.replace(ins, "", 1)
 
     s_items = Slicer(*load_source_str(src_text)).run()
     o_items = Slicer(*load_source_str(out_text)).run()

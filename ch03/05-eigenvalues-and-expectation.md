@@ -14,13 +14,13 @@
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-掌握这套抽象的数学形式体系，能为量子力学中的各种关系带来**简洁性、统一性与清晰性**。
-**基组 (basis set)、正交性与线性叠加**等关键概念构成了量子力学的逻辑基础。
-**狄拉克符号 (Dirac notation)**把你从显式坐标表示的局限中解放出来，因为后者往往掩盖了背后的物理图像。
-**特征值 (eigenvalue)**对应的是实验中所能测量的唯一可观测量。
-量子态可以表示为某个算符 $\hat{A}$ 的本征函数的线性叠加，它会给出 $\hat{A}$ 的不同特征值，而相应的概率由叠加中**系数的平方**决定。
-期望值 (expectation value) $\langle \psi |\hat{A}|\psi \rangle$ 若用本征函数的线性叠加来表达，可以化简为**特征值的概率加权和**。
-**薛定谔的猫**和**双缝实验**这类现象，都可以借助涉及正交态的量子叠加概念来解释。
+- 掌握这套抽象的数学形式体系，能为量子力学中的各种关系带来**简洁性、统一性与清晰性**。
+- **基组 (basis set)、正交性与线性叠加**等关键概念构成了量子力学的逻辑基础。
+- **狄拉克符号 (Dirac notation)**把你从显式坐标表示的局限中解放出来，因为后者往往掩盖了背后的物理图像。
+- **特征值 (eigenvalue)**对应的是实验中所能测量的唯一可观测量。
+- 量子态可以表示为某个算符 $\hat{A}$ 的本征函数的线性叠加，它会给出 $\hat{A}$ 的不同特征值，而相应的概率由叠加中**系数的平方**决定。
+- 期望值 (expectation value) $\langle \psi |\hat{A}|\psi \rangle$ 若用本征函数的线性叠加来表达，可以化简为**特征值的概率加权和**。
+- **薛定谔的猫**和**双缝实验**这类现象，都可以借助涉及正交态的量子叠加概念来解释。
 ::::::
 
 :::
@@ -31,15 +31,17 @@
 $${\hat{A}\psi_n = A_n\psi_n}$$
 
 - This is an eigenvalue problem whose solution yields $n = 1,2,3,...$ eigenfunctions $\psi_n$ and the eigenvalues $E_i$. Depending on the boundary conditions there can be a finite or infinite number of solutions. 
+
 :::{note}
 **原文勘误 EN-01** ｜ 本行把算符 $\hat{A}$ 的本征值问题与 $E_i$ 混用。$\hat{A}$ 的特征值应记作 $A_n$；$E_n$ 是哈密顿算符 $\hat{H}$ 的特征值，此处应为 $A_i$。
 :::
 
 
+
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-这是一个特征值问题，其解给出 $n = 1,2,3,...$ 的本征函数 $\psi_n$ 以及特征值 $E_i$。根据边界条件的不同，解的个数可以是有限的，也可以是无限的。
+- 这是一个特征值问题，其解给出 $n = 1,2,3,...$ 的本征函数 $\psi_n$ 以及特征值 $E_i$。根据边界条件的不同，解的个数可以是有限的，也可以是无限的。
 ::::::
 
 :::{note} **Example: find eigenvalues and eigenfunctions of momentum operator**
@@ -65,7 +67,7 @@ $$f = e^{ipx/\hbar}$$
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-周期平面波正是动量的本征函数！
+- 周期平面波正是动量的本征函数！
 ::::::
 
 :::
@@ -78,8 +80,8 @@ $$f = e^{ipx/\hbar}$$
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-在实际数值工作中，算符会被转换成矩阵，然后求解求本征向量 $v$ 与特征值 $\lambda$ 的本征值—本征向量问题。
-对于一个 $N$ 维矩阵，特征值最多只能有 $N$ 个！
+- 在实际数值工作中，算符会被转换成矩阵，然后求解求本征向量 $v$ 与特征值 $\lambda$ 的本征值—本征向量问题。
+- 对于一个 $N$ 维矩阵，特征值最多只能有 $N$ 个！
 ::::::
 
 $$Av = \lambda v$$
@@ -146,7 +148,7 @@ The three crucial consequences of the Hermitian property of operators:
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-**特征值是实的**：
+- **特征值是实的**：
 ::::::
 
 $$\hat{H} \mid \psi_n \rangle=E_n \mid \psi_n \rangle$$
@@ -158,7 +160,7 @@ $$E_n=E^*_n$$
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-**本征函数彼此正交**
+- **本征函数彼此正交**
 ::::::
 
 $$\langle \psi_n \mid  \psi_m\rangle=\delta_{nm}$$
@@ -168,7 +170,7 @@ $$\langle \psi_n \mid  \psi_m\rangle=\delta_{nm}$$
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-**本征函数构成完备基组！**
+- **本征函数构成完备基组！**
 ::::::
 
 $$\mid f\rangle = \sum_i c_i \mid \psi_i \rangle$$
@@ -179,8 +181,8 @@ $$\mid f\rangle = \sum_i c_i \mid \psi_i \rangle$$
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-后两条性质意味着：厄米算符的本征函数对函数所起的作用，正如单位向量对向量的作用。
-因此，波函数可以用某个能够作用于该函数的算符的本征函数来展开。
+- 后两条性质意味着：厄米算符的本征函数对函数所起的作用，正如单位向量对向量的作用。
+- 因此，波函数可以用某个能够作用于该函数的算符的本征函数来展开。
 ::::::
 
 ### Wave function as a linear superposition of eigenfunctions
@@ -190,7 +192,7 @@ $$\mid f\rangle = \sum_i c_i \mid \psi_i \rangle$$
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-我们可以把描述量子对象状态的波函数 $\mid \psi \rangle$ 表示为**任意厄米算符的本征函数**的叠加，无论该算符是能量、动量、位置还是别的算符。
+- 我们可以把描述量子对象状态的波函数 $\mid \psi \rangle$ 表示为**任意厄米算符的本征函数**的叠加，无论该算符是能量、动量、位置还是别的算符。
 ::::::
 
 $$\hat{A}\mid \phi_n \rangle = A_n \mid \phi_n \rangle$$
@@ -202,16 +204,18 @@ $$\mid \psi \rangle = \sum_n c_n \mid \phi_n \rangle $$
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-下面举例说明如何用能量本征函数来表达盒中粒子的波函数。
+- 下面举例说明如何用能量本征函数来表达盒中粒子的波函数。
 ::::::
 
 ::::{grid}
 :gutter: 2
 
 :::{grid-item-card} Integral Notation
+
 :::{note}
 **原文勘误 EN-02（重要）** ｜ 下方两个卡片标题被写反了。标为 *Integral Notation* 的卡片内含 $\psi=\sum_n c_n \mid n\rangle$ 与 $c_n = \braket{n \mid \psi}$，这是狄拉克记号；标为 *Dirac Notation* 的卡片内含位置空间的正弦展开。以下译文已按正确对应关系排列，但**未改动任何公式**，卡片标题的原始错误保持原样。
 :::
+
 
 
 $$\psi=\sum_n c_n \mid n\rangle$$
@@ -219,9 +223,11 @@ $$\psi=\sum_n c_n \mid n\rangle$$
 $$c_n = \braket{n \mid \psi}$$
 
 
+
 :::{note}
 **原文勘误 EN-02 续** ｜ 本卡片标题原作 *Integral Notation*，但内容为狄拉克记号。
 :::
+
 :::
 
 :::{grid-item-card} Dirac Notation
@@ -230,9 +236,11 @@ $$\psi(x) = \sum_n c_n \Big(\frac{2}{L}\Big )^{1/2} sin \Big (\frac{n\pi x}{L} \
 
 $$c_k = \Big(\frac{2}{L}\Big )^{1/2} \int sin \Big (\frac{k\pi x}{L} \Big )\psi(x) dx$$
 
+
 :::{note}
 **原文勘误 EN-02 续** ｜ 本卡片标题原作 *Dirac Notation*，但内容为位置空间展开式。
 :::
+
 :::
 
 ::::
@@ -245,7 +253,7 @@ $$c_k = \Big(\frac{2}{L}\Big )^{1/2} \int sin \Big (\frac{k\pi x}{L} \Big )\psi(
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-波函数可以写成任意量子力学算符 $\hat{A}$ 的本征函数的线性叠加。
+- 波函数可以写成任意量子力学算符 $\hat{A}$ 的本征函数的线性叠加。
 ::::::
 
 $$|\psi\rangle  = \sum_n c_n |\phi_n\rangle $$
@@ -255,7 +263,7 @@ $$|\psi\rangle  = \sum_n c_n |\phi_n\rangle $$
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-系数 $\mid c_n \mid^2$ 的模平方，等于在算符 $\hat{A}$ 下找到系统处于状态 $n$（该状态由特征值 $A_n$ 和本征函数 $\mid \phi_n \rangle$ 描述）的概率 $p_n$。
+- 系数 $\mid c_n \mid^2$ 的模平方，等于在算符 $\hat{A}$ 下找到系统处于状态 $n$（该状态由特征值 $A_n$ 和本征函数 $\mid \phi_n \rangle$ 描述）的概率 $p_n$。
 ::::::
 
 $$p_n=\mid c_n \mid^2$$
@@ -272,16 +280,18 @@ $$\sum_n \mid c_n \mid^2 =\sum_n p_n=1$$
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-量子对象可以存在于状态的任意叠加之中。例如，一个原子可以处于基态与第一激发态的叠加，两者的概率各为 50%。
-从对波函数施加的归一化条件可以看出，线性叠加中各系数的真正含义。
+- 量子对象可以存在于状态的任意叠加之中。例如，一个原子可以处于基态与第一激发态的叠加，两者的概率各为 50%。
+- 从对波函数施加的归一化条件可以看出，线性叠加中各系数的真正含义。
 ::::::
 
 $$\mid \psi \rangle=c_1 \mid 1 \rangle+c_2 \mid 2\rangle$$ 
 
 
+
 :::{note}
 **原文勘误 EN-03** ｜ 由归一化条件应得 $|c_1|^2 + |c_2|^2 = 1$，原文写作 $c_1^2 + c_2^2 = 1$，漏掉了模长竖线。概率必须非负，故此处应为模平方。
 :::
+
 $$\langle \psi \mid \psi \rangle = \Big[c^*_1\langle 1\mid +c^*_2 \langle 2\mid \Big]\Big[c_1\mid 1\rangle + c_2 \mid 2\rangle\Big] =\\ = \mid c_1 \mid^2 \langle 1 \mid 1 \rangle+(c^*_1 c_2\langle 1 \mid 2 \rangle+c_1 c^*_2\langle 2 \mid 1 \rangle)+\mid c_2\mid^2   = c_1^2+c^2_2=p_1+p_2=1$$
 
 - The meaning of the expectation value becomes more transparent as an average over all eigenvalues obtained in the experiment. 
@@ -289,13 +299,15 @@ $$\langle \psi \mid \psi \rangle = \Big[c^*_1\langle 1\mid +c^*_2 \langle 2\mid 
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-把期望值理解为对实验中所有可能测得特征值的平均，其含义就更加清楚了。
+- 把期望值理解为对实验中所有可能测得特征值的平均，其含义就更加清楚了。
 ::::::
+
 
 
 :::{note}
 **原文勘误 EN-03 续** ｜ 同上，本行的期望值推导中 $c_1^2 E_1 + c_2^2 E_2$ 应为 $|c_1|^2 E_1 + |c_2|^2 E_2$。
 :::
+
  $$\langle E\rangle= \langle \psi \mid \hat{H}\mid \psi \rangle = \Big[c^*_1\langle 1\mid +c^*_2 \langle 2\mid \Big]\Big[c_1\hat{H}\mid 1\rangle + c_2 \hat{H}\mid 2\rangle\Big] =\Big[c^*_1\langle 1\mid +c^*_2 \langle 2\mid \Big]\Big[c_1E_1\mid 1\rangle + c_2 E_2\mid 2\rangle\Big] = \\ = c_1^2E_1+c^2_2 E_2=p_1E_1+p_2 E_2$$
 
 
@@ -308,8 +320,8 @@ A particle in a box is described as a superposition of the 1st and 5th states.
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-用哈密顿算符的本征函数写出该波函数。
-计算平均能量
+- 用哈密顿算符的本征函数写出该波函数。
+- 计算平均能量
 ::::::
 :::
 
@@ -319,15 +331,17 @@ A particle in a box is described as a superposition of the 1st and 5th states.
 $$\psi(x)=\frac{1}{\sqrt{2}}\cdot \Big(\frac{2}{L} \Big )^{1/2}sin\frac{\pi x}{L}+\frac{1}{\sqrt{2}}\cdot \Big(\frac{2}{L} \Big )^{1/2}sin\frac{5\pi x}{L}$$ 
 
 - This means that when we measure the energy we will obtain only two values, $E_1$ and $E_5$, with equal probabilities $p_1=p_2=(1/\sqrt{2})^2$. The average energy is given by
+
 :::{note}
 **原文勘误 EN-04（重要）** ｜ 本题说波函数是第 1 态与第 5 态的叠加，但随后的公式误写为 $p_1=p_2$ 与 $\langle E\rangle = p_1E_1+p_2E_2$，下标应为 5：即 $p_5=p_1$，$\langle E\rangle = p_1E_1+p_5E_5$。后续算式中 $5^2h^2/8mL^2$ 的数值是对的，只有下标标签写错。以下译文按原文照译，不改动公式。
 :::
 
 
+
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-这意味着当我们测量能量时，只会得到两个取值：$E_1$ 和 $E_5$，且二者概率相同，$p_1=p_2=(1/\sqrt{2})^2$。平均能量为
+- 这意味着当我们测量能量时，只会得到两个取值：$E_1$ 和 $E_5$，且二者概率相同，$p_1=p_2=(1/\sqrt{2})^2$。平均能量为
 ::::::
 
 $$\langle E \rangle =p_1 E_1+p_2 E_2 = \frac{1}{2}\frac{1^2 h^2}{8mL^2}+\frac{1}{2}\frac{5^2 h^2}{8mL^2}$$
@@ -353,8 +367,8 @@ $$\psi = c_1\phi_1 + c_2\phi_2$$
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-若尝试测量这样一个状态的能量，结果会是什么？
-平均能量和能量的标准差分别是多少？
+- 若尝试测量这样一个状态的能量，结果会是什么？
+- 平均能量和能量的标准差分别是多少？
 ::::::
 :::
 
@@ -450,8 +464,8 @@ $$\mid \psi \rangle = \sum_n c_n \mid \phi_n \rangle $$
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-在一次实验中，人们总是得到某一个特征值（见公设），并对应于 $\phi_n$。
-换句话说，当实验进行时，由**叠加波函数所描述的系统会“坍缩”到某一个本征函数**上。
+- 在一次实验中，人们总是得到某一个特征值（见公设），并对应于 $\phi_n$。
+- 换句话说，当实验进行时，由**叠加波函数所描述的系统会“坍缩”到某一个本征函数**上。
 ::::::
 
   $$\mid \psi \rangle \rightarrow \mid \phi_n \rangle$$
@@ -465,9 +479,9 @@ $$\mid \psi \rangle = \sum_n c_n \mid \phi_n \rangle $$
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-实验中只能观测到不同的特征值，其概率由系数 $\mid c_n \mid^2$ 给出。
-量子系统会随机坍缩到彼此互斥的不同状态这一想法，让许多身处量子力学发展前沿的物理学家深感不安。
-**本征函数的正交性**意味着**互斥**的状态。例如，系统只能处于状态 1 或状态 2 之一，而不能同时处于两者。
+- 实验中只能观测到不同的特征值，其概率由系数 $\mid c_n \mid^2$ 给出。
+- 量子系统会随机坍缩到彼此互斥的不同状态这一想法，让许多身处量子力学发展前沿的物理学家深感不安。
+- **本征函数的正交性**意味着**互斥**的状态。例如，系统只能处于状态 1 或状态 2 之一，而不能同时处于两者。
 ::::::
 
   $$\langle \phi_1 \mid \phi_2 \rangle=0$$
@@ -476,9 +490,11 @@ $$\mid \psi \rangle = \sum_n c_n \mid \phi_n \rangle $$
 ### Copenhagen Interpretation
 
 - The [Copenhagen interpretation](https://en.wikipedia.org/wiki/Copenhagen_interpretation#cite_note-Siddiqui2017-1) is an expression of the meaning of [quantum mechanics](https://en.wikipedia.org/wiki/Quantum_mechanics) that was largely devised from 1925 to 1927 by [Niels Bohr](https://en.wikipedia.org/wiki/Niels_Bohr) and [Werner Heisenberg](https://en.wikipedia.org/wiki/Werner_Heisenberg). It is one of the oldest of numerous proposed [interpretations of quantum mechanics](https://en.wikipedia.org/wiki/Interpretations_of_quantum_mechanics), and remains one of the most commonly taught.
+
 :::{note}
 **原文勘误 EN-05** ｜ 哥本哈根诠释由玻尔与海森堡于 1925—1927 年间发展成型，但玻尔的贡献主要来自 1927 年的哥本哈根会议（同年他也因哥本哈根诠释获诺贝尔物理学奖）；**马克斯·玻恩**在 1926 年即引入“坍缩”一词，其贡献常被略去。本条仅为补充说明，译文未改动原句结构。
 :::
+
 
 
 - According to the Copenhagen interpretation, physical systems generally do not have definite properties prior to being measured, and quantum mechanics can only predict the probability distribution of a given measurement's possible results. 
@@ -487,9 +503,9 @@ $$\mid \psi \rangle = \sum_n c_n \mid \phi_n \rangle $$
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-[哥本哈根诠释](https://en.wikipedia.org/wiki/Copenhagen_interpretation#cite_note-Siddiqui2017-1)是对[量子力学](https://en.wikipedia.org/wiki/Quantum_mechanics)含义的一种表述，主要由[尼尔斯·玻尔](https://en.wikipedia.org/wiki/Niels_Bohr)和[维尔纳·海森堡](https://en.wikipedia.org/wiki/Werner_Heisenberg)在 1925 至 1927 年间逐步提出。它是众多[量子力学诠释](https://en.wikipedia.org/wiki/Interpretations_of_quantum_mechanics)中最早的一种，也是目前最常被讲授的诠释之一。
-按照哥本哈根诠释，物理系统在测量之前一般并不具有确定的性质，量子力学只能预测某次测量可能结果的概率分布。
-测量行为本身会影响系统，使得测量后这一组概率立刻坍缩到所有可能取值中的唯一一个。这一特征被称为[波函数坍缩](https://en.wikipedia.org/wiki/Wave_function_collapse)。
+- [哥本哈根诠释](https://en.wikipedia.org/wiki/Copenhagen_interpretation#cite_note-Siddiqui2017-1)是对[量子力学](https://en.wikipedia.org/wiki/Quantum_mechanics)含义的一种表述，主要由[尼尔斯·玻尔](https://en.wikipedia.org/wiki/Niels_Bohr)和[维尔纳·海森堡](https://en.wikipedia.org/wiki/Werner_Heisenberg)在 1925 至 1927 年间逐步提出。它是众多[量子力学诠释](https://en.wikipedia.org/wiki/Interpretations_of_quantum_mechanics)中最早的一种，也是目前最常被讲授的诠释之一。
+- 按照哥本哈根诠释，物理系统在测量之前一般并不具有确定的性质，量子力学只能预测某次测量可能结果的概率分布。
+- 测量行为本身会影响系统，使得测量后这一组概率立刻坍缩到所有可能取值中的唯一一个。这一特征被称为[波函数坍缩](https://en.wikipedia.org/wiki/Wave_function_collapse)。
 ::::::
 
 
@@ -512,8 +528,8 @@ $$\mid \psi \rangle = \sum_n c_n \mid \phi_n \rangle $$
 ::::::{admonition} 中文翻译
 :class: dropdown
 
-薛定谔设计了一个思想实验，用以说明量子叠加的奇特本质：像原子或光子这样的量子系统，可以处于多个状态的组合之中，而每个状态对应一种可能的测量结果。
-这个思想实验把一只猫放进盒子里，盒中有一个放射性原子，它是否衰变决定了毒药装置是否被触发：若衰变，装置释放毒气，猫被毒死；若不衰变，猫则存活。薛定谔据此认为，在实验完成、人们发现猫处于两种状态之一以前，这只猫必须被视为同时既死又活。
+- 薛定谔设计了一个思想实验，用以说明量子叠加的奇特本质：像原子或光子这样的量子系统，可以处于多个状态的组合之中，而每个状态对应一种可能的测量结果。
+- 这个思想实验把一只猫放进盒子里，盒中有一个放射性原子，它是否衰变决定了毒药装置是否被触发：若衰变，装置释放毒气，猫被毒死；若不衰变，猫则存活。薛定谔据此认为，在实验完成、人们发现猫处于两种状态之一以前，这只猫必须被视为同时既死又活。
 ::::::
 
 <html>
