@@ -15,7 +15,7 @@ kernelspec:
 - Understanding the **boundary conditions** and the **behavior of the wavefunctions** in each region is key to solving this problem.
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 - **隧穿**是量子力学的标志性效应：粒子在被发现于 $E < V$ 的区域时具有非零概率，而任何经典粒子都永远无法到达这些区域。
@@ -23,19 +23,19 @@ kernelspec:
 - 势能在中心区域为零，在外部为有限值。不含时的薛定谔方程在三个区域中分别求解，每个区域的波函数形式各不相同。由于粒子被束缚，束缚态得以存在，但能级需要通过匹配边界处的波函数及其导数来确定，从而导出超越方程。
 - 与无限深势阱不同，束缚态的数目是有限的，且波函数会略微延伸到阱外，体现了量子隧穿效应。
 - 理解每个区域中的**边界条件**和**波函数的行为**是求解此问题的关键。
-::::::
+``````
 :::
 
 **Acknowledgement**
 > These Jupyter notebooks are based on the excellent paper in [J. Chem. Educ. 2019, 96, 8, 1663-1670](https://doi.org/10.1021/acs.jchemed.9b00195).
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 **致谢**
 > 这些 Jupyter 笔记本基于 [J. Chem. Educ. 2019, 96, 8, 1663-1670](https://doi.org/10.1021/acs.jchemed.9b00195) 中这篇优秀的论文。
-::::::
+``````
 
 ## Quantum objects can go where no classical particles are allowed!
 
@@ -50,13 +50,13 @@ kernelspec:
 3. Esaki tunnel diode: electrons and holes tunnel across a heavily doped p-n junction only about 10 nm wide.
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 - 诺德海姆方势垒：电子从束缚态隧穿进入连续区。
 - 氨分子中氮原子通过隧穿势垒实现反转（由乔治·乌伦贝克于 1932 年提出）。
 - 江崎隧道二极管：电子和空穴隧穿一个仅约 10 纳米宽的重掺杂 p-n 结。
-::::::
+``````
 :::
 
 <div style="text-align: center;">
@@ -167,11 +167,11 @@ $$
 - Solutions to this equation have an oscillatory form:
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 - 该方程的解具有振荡形式：
-::::::
+``````
 
 $$
 \psi(x)=A_1e^{ikx}+B_1e^{-ikx}\\
@@ -183,11 +183,11 @@ $$
 In the regions where $x < -L/2$ and $x > L/2$, the potential is $V(x) = V_0$. The time-independent Schrödinger equation for these regions can be written as:
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 在 $x < -L/2$ 和 $x > L/2$ 的区域，势能为 $V(x) = V_0$。这些区域的不含时薛定谔方程可以写为：
-::::::
+``````
 
 $$
 -\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2} + V_0\psi(x) = E\psi(x),
@@ -205,23 +205,23 @@ $$
 - The physically acceptable solution outside is the **decaying exponential** (an evanescent wave). The wavefunction therefore dies off exponentially as the particle penetrates into the classically forbidden regions, but it is not zero there: that is tunneling.
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 - 当粒子的能量小于阱外的势能 $(E < V_0)$ 时，系数 $\beta^2$ 为**正**，因此 $\beta$ 为实数。对比这两个区域：阱内 $\psi'' = -k^2\psi$（曲率朝向轴线，呈振荡），而阱外 $\psi'' = +\beta^2\psi$（曲率背离轴线，呈指数形式 $e^{\pm\beta x}$）。
 - 阱外在物理上可接受的解是**衰减的指数函数**（隐失波）。因此，当粒子渗入经典禁区时，波函数按指数方式衰减，但在那里并不为零：这就是隧穿。
-::::::
+``````
 
 ### Profile of the full wavefunction
 
 Our potential well consists of three regions, and the particle has an energy less than the potential, i.e. $E<V_0$. So that the wavefunction can be normalized, we make the following choices to ensure that $\psi(x)\rightarrow 0$ as $x\rightarrow\pm\infty$. We also choose the trigonometric form of the wavefunction inside the well; recall that this is to make the math easier.
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 我们的势阱由三个区域组成，粒子的能量小于势能，即 $E<V_0$。为了使波函数能够归一化，我们做出以下选择以确保当 $x\rightarrow\pm\infty$ 时 $\psi(x)\rightarrow 0$。我们还在阱内选择波函数的三角形式；回想一下，这是为了便于数学计算。
-::::::
+``````
 
 $$
 \text{Region I:  }  V(x) = V_0 ~~~~~~~~~~~~~~~~ x \leq-\frac{L}{2} ~~~~~ \psi_{I} = A e^{\beta  x} \\
@@ -236,23 +236,23 @@ $$
 - $\large{\frac{d^2}{dx^2}}$ is a component of the kinetic energy operator. If the wavefunction does not have a well-defined second derivative, then the kinetic energy would be undefined, which is not possible.
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 - $\psi^{'}$ 需要连续，以保证 $\psi^{''}$ 的存在，而 $\psi^{''}$ 的存在由第一条基本假设所要求。
 - $\large{\frac{d^2}{dx^2}}$ 是动能算符的一个组成部分。如果波函数没有明确定义的二阶导数，那么动能将是未定义的，这是不可能的。
-::::::
+``````
 
 ### Boundary conditions
 
 The wavefunction is the combination of all three components, so we make sure that the wavefunction and its first derivative are continuous at each boundary. We apply the following boundary conditions to achieve this:
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 波函数是三个分量的组合，因此我们确保波函数及其一阶导数在每个边界处连续。为实现这一点，我们应用以下边界条件：
-::::::
+``````
 
 $$
 \psi_{I}\left(-\frac{L}{2}\right) = \psi_{II}\left(-\frac{L}{2}\right)  \text{  and  } 
@@ -271,11 +271,11 @@ Note that there are two conditions at each boundary, so we end up with two sets 
 Finally, our potential is symmetric about $x=0$, so the wavefunction is either a maximum or zero at $x=0$ so that the probability distribution is symmetric about $x=0$. We call these even when $\psi(x)=\psi(-x)$ and odd when $\psi(x)=-\psi(-x)$.
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 最后，我们的势能关于 $x=0$ 对称，因此波函数在 $x=0$ 处要么是极大值要么为零，从而使概率分布关于 $x=0$ 对称。当 $\psi(x)=\psi(-x)$ 时我们称之为偶函数，当 $\psi(x)=-\psi(-x)$ 时称之为奇函数。
-::::::
+``````
 
 **Even solutions:**
 
@@ -293,12 +293,12 @@ $$
 - After imposing the boundary conditions we reach the following relation:
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 - 这些之所以被称为**偶解**，是因为函数 $\cos(kx)$ 是偶函数，即它关于 $x=0$ 对称。然而，它们对应的是 $n$ 的奇数值。
 - 施加边界条件后，我们得到如下关系式：
-::::::
+``````
 
 $$
 \beta = k\tan\left(k\frac{L}{2}\right)\Rightarrow \sqrt{V_o-E} = \sqrt{E}\tan\left(\frac{L\sqrt{2mE}}{2\hbar}\right)
@@ -317,22 +317,22 @@ $$
 - After imposing the boundary conditions we reach the following relation:
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 - 这些之所以被称为**奇解**，是因为函数 $\sin(kx)$ 是奇函数，即它关于 $x=0$ 反对称。然而，它们对应的是 $n$ 的偶数值。我知道这有点令人困惑，但 $n$ 的标注是任意的；正弦和余弦解本身是由物理决定的。
 - 施加边界条件后，我们得到如下关系式：
-::::::
+``````
 
 $$
 \beta = -\frac{k}{\tan\left(k\frac{L}{2}\right)} \Rightarrow  \sqrt{V_o-E} = -\frac{\sqrt{E}}{\tan\left(\frac{L\sqrt{2mE}}{2\hbar}\right)}
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 \beta = -\frac{k}{\tan\left(k\frac{L}{2}\right)} \Rightarrow  \sqrt{V_o-E} = -\frac{\sqrt{E}}{\tan\left(\frac{L\sqrt{2mE}}{2\hbar}\right)}
-::::::
+``````
 $$(fsw_odd_states_equ)
 
 - Unfortunately, we cannot find the allowed energies analytically. Instead, we have to choose either a graphical or a numerical method.
@@ -340,13 +340,13 @@ $$(fsw_odd_states_equ)
 - Below you can adjust the well depth $V_0$ and the width $L$ and watch both the graphical solution and the resulting energy levels respond live.
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 - 遗憾的是，我们无法解析地求出允许的能量。相反，我们必须选择图解法或数值法。
 - 这意味着什么？我们可以将每个方程的左端和右端分别作为能量 $E$ 的函数绘图，并寻找交点，这些交点对应允许的能量值（能量特征值）。
 - 你可以在下方调整阱深 $V_0$ 和宽度 $L$，并实时观察图解结果以及相应的能级变化。
-::::::
+``````
 
 ## Finding the energy eigenvalues graphically 
 
@@ -498,7 +498,7 @@ Here are some questions to think about:
 * **Q5:** Do the energy levels follow the same pattern as the infinite square well, i.e. $E_n=E_1n^2$?
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 - **问题 1：**改变宽度会如何影响态的数目和能量？
@@ -506,18 +506,18 @@ Here are some questions to think about:
 - **问题 3：**基态是由偶波函数还是奇波函数描述的？
 - **问题 4：**态的最少数目是多少？
 - **问题 5：**能级是否遵循与无限深方势阱相同的规律，即 $E_n=E_1n^2$？
-::::::
+``````
 
 ### Plots of the wavefunctions and probability densities
 
 - Now that we know the energy eigenvalues, we can use them to find expressions for the wavefunctions and probability densities. This may help you understand some of the choices we made up to this point. Take a look at the figure and consider again the choice of wavefunction in regions I and III, and why we split the wavefunction into odd and even functions inside the well.
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 - 既然我们已知能量特征值，就可以利用它们求出波函数和概率密度的表达式。这可能有助于你理解我们此前所做的一些选择。请看图，并再次思考区域 I 和 III 中波函数的选择，以及为什么我们要将阱内的波函数拆分为奇函数和偶函数。
-::::::
+``````
 
 ```{code-cell} python
 :tags: [hide-input]
@@ -650,24 +650,24 @@ plt.show()
 - As with the potential step, the quantum description of the particle allows it to tunnel into a region where the potential is larger than the energy of the particle. This is indicated by the shaded green area in the probability density plot. Note that this area gets larger as $V_0-E$ approaches zero.
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 - 从这些图中，我们可以解释当 $L$ 和 $V_0$ 改变时能级的一些行为。
 - 从上图中首先要注意的是，波函数延伸到了势阱之外；它们进入了有时被称为经典禁区的区域。
 - 与势垒台阶的情况一样，对粒子的量子描述允许它隧穿进入势能大于粒子能量的区域。这在概率密度图中用绿色阴影区域表示。注意，随着 $V_0-E$ 趋近于零，该区域会变得更大。
-::::::
+``````
 
 ### Tunneling of particle in the box
 
 - **The tunneling probability** corresponds to the area outside the box that has non-zero probability density. In the graphical representation, those areas are shaded green. Integrating over those areas gives the probability that the particle tunnels outside the classically allowed region.
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 - **隧穿概率**对应于阱外概率密度非零的区域。在图形表示中，这些区域用绿色阴影表示。对这些区域积分即可得到粒子隧穿到经典允许区域之外的概率。
-::::::
+``````
 
 $$ 
 P\left(-\frac{L}{2}>x>\frac{L}{2}\right)= \frac{\text{The area of the probability density that is shaded green}}{\text{The total area of the probability density}}\\
@@ -677,11 +677,11 @@ $$
 - We can calculate $P(-L/2>x>L/2)$, i.e. the size of the shaded green area as a percentage of the total area:
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 - 我们可以计算 $P(-L/2>x>L/2)$，即绿色阴影区域面积占总面积的百分比：
-::::::
+``````
 
 ```{code-cell} python
 :tags: [hide-input]
@@ -709,11 +709,11 @@ for n in range(1,nstates+1):
 These values confirm what we have already deduced: the closer the state is to the top of the potential, the more easily it spreads outside the well. How does this affect the energy levels? Lower in the potential, the wavelength of the wavefunction is more closely tied to the width of the well than it is higher up. Compare the infinite and finite square wells of the same width below.
 
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 这些数值证实了我们已有的推断：态越接近势阱顶部，就越容易扩散到阱外。这如何影响能级？在势阱较低处，波函数的波长与阱宽的关系比在较高处更紧密。请比较下面宽度相同的无限深方势阱和有限深方势阱。
-::::::
+``````
 
 ```{marimo} python
 :hide-code: true
@@ -757,9 +757,9 @@ plt.gcf()
 
 - Notice that at energies closer to zero, the infinite and finite energies are closer together. As the energy of the state approaches the top of the finite potential, it is smaller in the finite well than in the infinite well. Why? The higher-energy states allow the wavefunction in the finite square well to spread out, so the wavelength is longer in the finite well than in the infinite well. A longer wavelength corresponds to a smaller wavenumber $k$, and hence a lower energy.
 
-::::::{admonition} 中文翻译
+``````{admonition} 中文翻译
 :class: dropdown
 
 注意，在能量更接近零的地方，无限深势阱和有限深势阱的能量更接近。当态的能量接近有限势阱顶部时，它在有限深势阱中的能量小于在无限深势阱中的能量。为什么？较高能量的态使有限深方势阱中的波函数得以扩散开来，因此有限深势阱中的波长比无限深势阱中的更长。较长的波长对应较小的波数 $k$，从而对应较低的能量。
-::::::
+``````
 

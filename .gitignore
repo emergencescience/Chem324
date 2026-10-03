@@ -23,3 +23,5 @@ jupyter-server.log
 # subagent scratch helpers (build/verify one-off translators)
 translation_work/build_zh*.py
 translation_work/verify_zh*.py
+_build/
+node_modules/

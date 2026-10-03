@@ -32,6 +32,7 @@ pages = sorted(
     for p in ROOT.rglob("*.md")
     if ".git" not in p.parts
     and "slides" not in p.parts
+    and "_build" not in p.parts
     # translation_work holds slicer scratch templates (*.template.md), not pages
     and "translation_work" not in p.parts
 )

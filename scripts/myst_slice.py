@@ -578,6 +578,11 @@ def load_glossary(path: str | None) -> dict[str, dict]:
     return out
 
 
+# The fence used for inserted bilingual blocks. Six backticks, because backtick
+# fences nest reliably in mystmd where colon fences do not (see block() below).
+FENCE = "`" * 6
+
+
 def load_source(path: str) -> tuple[list[str], bool]:
     """Split a source file into lines the way an editor does, plus whether it
     ended with a newline (both must round-trip byte-for-byte)."""
@@ -778,19 +783,21 @@ def cmd_apply(a) -> int:
     inserts: list[tuple[int, str]] = []
 
     def block(text: str, label: str = "中文翻译") -> str:
-        # Six colons, not three: an inserted directive must nest safely inside
-        # anything the source already uses, and this book nests up to four
-        # (`::::{grid}` > `:::{grid-item-card}`). A 3-colon block inside a
-        # `:::{note}` would close that note early and corrupt the page.
-        # `dropdown` gives collapsibility with no custom JS.
+        # BACKTICKS, not colons. Measured against mystmd 1.11 with a build:
+        # colon fences do NOT nest reliably -- a 4-colon block inside a 3-colon
+        # note leaks as literal text, and a 6-colon block inside a grid-item-card
+        # leaks *and* closes the enclosing note early, silently dropping the next
+        # heading. Backticks nest correctly in every context tested: top level,
+        # inside `:::{note}`, inside `:::{grid-item-card}` inside `::::{grid}`,
+        # and inside the source's own 4-backtick directive. Five or six work;
+        # six leaves room for one more level.
+        # Two newlines below: at EOF a paragraph has no trailing-newline literal
+        # after it, so a single "\n" would leave the directive glued to the text.
         return (
-            # Two newlines: at EOF a paragraph has no trailing-newline literal
-            # after it, so a single "\n" would leave the directive glued to the
-            # text line (a blank line also costs nothing where one already exists).
-            "\n\n" + "::::::" + "{admonition} " + label + "\n"
+            "\n\n" + FENCE + "{admonition} " + label + "\n"
             ":class: dropdown\n\n"
             + text + "\n"
-            "::::::\n"
+            + FENCE + "\n"
         )
 
     BULLET_ONLY_RE = re.compile(r"^\s*(?:[-*+]|\d+[.)])\s+$")
@@ -819,6 +826,22 @@ def cmd_apply(a) -> int:
         if run:
             inserts.append((run_end, block("\n".join(zh[i] for i in run))))
 
+    def to_backtick(note: str) -> str:
+        # Errata notes are authored with `:::{note}` fences, but a 3-colon fence
+        # does not nest inside a 3-colon grid-item-card: verified against a real
+        # mystmd build, where such a note leaks as literal text and drags the
+        # whole grid into a code block with it. Rewrite the fences to the same
+        # nesting-safe backtick form used for the translation blocks.
+        out = []
+        for ln in note.split("\n"):
+            if re.match(r"^:{3,}\{", ln):
+                out.append(FENCE + ln[ln.index("{"):])
+            elif re.match(r"^:{3,}\s*$", ln):
+                out.append(FENCE)
+            else:
+                out.append(ln)
+        return "\n".join(out)
+
     inserted = 0
     if a.annotations:
         ann = json.loads(Path(a.annotations).read_text(encoding="utf-8"))
@@ -837,7 +860,7 @@ def cmd_apply(a) -> int:
             # Blank line on both sides: a directive glued to the end of a list
             # item becomes a lazy continuation of that paragraph and renders as
             # literal colons instead of a callout.
-            inserts.append((best, "\n\n" + ann[anchor].rstrip("\n") + "\n\n"))
+            inserts.append((best, "\n\n" + to_backtick(ann[anchor].rstrip("\n")) + "\n\n"))
             inserted += 1
 
     for off, text in sorted(inserts, key=lambda t: -t[0]):

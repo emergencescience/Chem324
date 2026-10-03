@@ -121,10 +121,16 @@ for items_path in files:
     print("  blocks:", tail)
     # Parse the counts: the report is column-padded, so substring matching lies.
     glued = re.search(r"not preceded by a blank line\s*:\s*(\d+)", out)
+    unclosed = re.search(r"inserted blocks left unclosed\s*:\s*(\d+)", out)
+    depth = re.search(r"colon-fence depth at EOF \(0 = balanced\)\s*:\s*(-?\d+)", out)
+    ticks = re.search(r"backtick fence count odd \(1 = unbalanced\)\s*:\s*(\d+)", out)
     prec = re.search(r"premature closers\s*:\s*(\d+)", out)
-    depth = re.search(r"net directive depth at EOF \(0 = balanced\)\s*:\s*(-?\d+)", out)
-    if not glued or int(glued.group(1)) != 0 or not depth or int(depth.group(1)) != 0:
-        print("  FAIL: block structure problem"); ok_all = False
+    got = {k: (int(m.group(1)) if m else None)
+           for k, m in (("glued", glued), ("unclosed", unclosed), ("depth", depth),
+                        ("premature", prec), ("tick_odd", ticks))}
+    if any(v is None for v in got.values()) or any(
+            v for k, v in got.items() if k != "premature"):
+        print(f"  FAIL: block structure problem {got}"); ok_all = False
     # A directive closed with no opener is common in this source (grid closers),
     # so only flag it if the ENGLISH had fewer than the translated page.
     if prec:
