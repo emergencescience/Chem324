@@ -1,0 +1,1372 @@
+{
+ "trailing_newline": true,
+ "items": [
+  {
+   "t": "lit",
+   "s": "# ",
+   "line": 1
+  },
+  {
+   "t": "tr",
+   "id": "S0001",
+   "kind": "heading",
+   "s": "Time Dependence",
+   "line": 1,
+   "lines": [
+    1
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 2
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 3
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 3
+  },
+  {
+   "t": "tr",
+   "id": "S0002",
+   "kind": "directive_title",
+   "s": "**What you need to know**",
+   "line": 3,
+   "lines": [
+    3
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 3
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 4
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 5
+  },
+  {
+   "t": "tr",
+   "id": "S0003",
+   "kind": "para",
+   "s": "The **time-dependent Schrödinger equation** governs the evolution of the quantum wavefunction over time, $\\psi(x,t)$. ",
+   "line": 5,
+   "lines": [
+    5
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 5
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 6
+  },
+  {
+   "t": "tr",
+   "id": "S0004",
+   "kind": "para",
+   "s": "**Stationary states** are eigenfunctions of the Hamiltonian $\\hat{H}$ containing a spatial part and a time-dependent phase factor:  $\\psi(x,t) = \\psi(x) e^{-i E t / \\hbar}$  ",
+   "line": 6,
+   "lines": [
+    6
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 6
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 7
+  },
+  {
+   "t": "tr",
+   "id": "S0005",
+   "kind": "para",
+   "s": "The stationary states have definite energy and their probability distributions are **time-independent**.",
+   "line": 7,
+   "lines": [
+    7
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 7
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 8
+  },
+  {
+   "t": "tr",
+   "id": "S0006",
+   "kind": "para",
+   "s": "In more general situations, the wavefunction can be expressed as a **linear superposition of energy eigenstates**, with time evolution given by the phase factors of the eigenstates:  $\\psi(x,t) = \\sum_n c_n \\psi_n(x) e^{-i E_n t / \\hbar}$ ",
+   "line": 8,
+   "lines": [
+    8
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 8
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 9
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 10
+  },
+  {
+   "t": "tr",
+   "id": "S0007",
+   "kind": "para",
+   "s": "This superposition leads to **time-dependent probabilities** as different eigenstates interfere.",
+   "line": 10,
+   "lines": [
+    10
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 10
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 11
+  },
+  {
+   "t": "tr",
+   "id": "S0008",
+   "kind": "para",
+   "s": "The time-dependence of quantum states is key to understanding **quantum dynamics**, such as oscillations between states in **two-level systems** or time evolution of **quantum superpositions**.",
+   "line": 11,
+   "lines": [
+    11
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 11
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 12
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 13
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 14
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 15
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 16
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 17
+  },
+  {
+   "t": "tr",
+   "id": "S0009",
+   "kind": "heading",
+   "s": "Time Dependence of a Pure Eigenfunction",
+   "line": 17,
+   "lines": [
+    17
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 17
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 18
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 19
+  },
+  {
+   "t": "tr",
+   "id": "S0010",
+   "kind": "para",
+   "s": "Until now, we have largely ignored the time dependence of quantum systems. This is because we have primarily focused on pure eigenfunction states, $\\psi_n(x,t)$, which exhibit no time-dependent behavior for observable quantities. The reason for this is straightforward.",
+   "line": 19,
+   "lines": [
+    19
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 19
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 20
+  },
+  {
+   "t": "lit",
+   "s": "$$\\psi_n(x,t) = \\psi_n(x) e^{-\\frac{i}{\\hbar}E_n t}$$\n",
+   "line": 21
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 22
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 23
+  },
+  {
+   "t": "tr",
+   "id": "S0011",
+   "kind": "para",
+   "s": "In any probabilistic calculation, the time dependence vanishes because the expressions involve the square of the wavefunction. The absolute value of the complex time-dependent phase factor equals unity:",
+   "line": 23,
+   "lines": [
+    23
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 23
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 24
+  },
+  {
+   "t": "lit",
+   "s": "$$\\mid \\psi_n(x,t) \\mid^2 = \\psi_n^*(x)\\psi_n(x) e^{-\\frac{i}{\\hbar}E_n t} e^{+\\frac{i}{\\hbar}E_n t} = \\mid \\psi_n(x) \\mid^2$$\n",
+   "line": 25
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 26
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 27
+  },
+  {
+   "t": "tr",
+   "id": "S0012",
+   "kind": "para",
+   "s": "Similarly, for the expectation value of an operator $\\hat{A}$, the time-dependent phases cancel out, leaving only the spatial part:",
+   "line": 27,
+   "lines": [
+    27
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 27
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 28
+  },
+  {
+   "t": "lit",
+   "s": "$$\\langle A \\rangle = \\int \\psi_n^*(x) e^{+\\frac{i}{\\hbar}E_n t} \\hat{A} \\psi_n(x) e^{-\\frac{i}{\\hbar}E_n t} dx = \\int \\psi_n^*(x) \\hat{A} \\psi_n(x) dx$$\n",
+   "line": 29
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 30
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 31
+  },
+  {
+   "t": "tr",
+   "id": "S0013",
+   "kind": "para",
+   "s": "Will we always have this fortunate cancellation of time dependence? The answer is no. When the system is described as a **linear superposition** of eigenstates, time dependence reappears in a significant way.",
+   "line": 31,
+   "lines": [
+    31
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 31
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 32
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 33
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 34
+  },
+  {
+   "t": "tr",
+   "id": "S0014",
+   "kind": "heading",
+   "s": "Time Dependence of a Superposition of Eigenfunctions",
+   "line": 34,
+   "lines": [
+    34
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 34
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 35
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 36
+  },
+  {
+   "t": "tr",
+   "id": "S0015",
+   "kind": "para",
+   "s": "Let us start with a superposition state of two energy eigenfunctions at time $t=0$:",
+   "line": 36,
+   "lines": [
+    36
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 36
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 37
+  },
+  {
+   "t": "lit",
+   "s": "$$\\mid \\psi(0) \\rangle =c_1\\mid 1 \\rangle + c_2 \\mid 2 \\rangle$$\n",
+   "line": 38
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 39
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 40
+  },
+  {
+   "t": "tr",
+   "id": "S0016",
+   "kind": "para",
+   "s": "What would the state be after some time $t$? By virtue of separation of variables, we add the time dependence as a multiplicative factor for each eigenfunction:",
+   "line": 40,
+   "lines": [
+    40
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 40
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 41
+  },
+  {
+   "t": "lit",
+   "s": "$$\\mid \\psi(t) \\rangle =c_1 e^{-\\frac{i}{\\hbar}E_1 t}\\mid 1 \\rangle + c_2 e^{-\\frac{i}{\\hbar}E_2 t}\\mid 2 \\rangle= c_1(t)\\mid 1\\rangle+c_2(t) \\mid 2 \\rangle$$\n",
+   "line": 42
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 43
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 44
+  },
+  {
+   "t": "tr",
+   "id": "S0017",
+   "kind": "para",
+   "s": "Thus we see that the coefficients change over time. This means our state vector moves in the functional space spanned by the fixed orthogonal eigenfunctions! We can verify that this expression satisfies the time-dependent Schrödinger equation by plugging it in.",
+   "line": 44,
+   "lines": [
+    44
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 44
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 45
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 46
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 46
+  },
+  {
+   "t": "tr",
+   "id": "S0018",
+   "kind": "directive_title",
+   "s": "**Proof that the superposition obeys the time-dependent Schrödinger equation**",
+   "line": 46,
+   "lines": [
+    46
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 46
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown\n",
+   "line": 47
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 48
+  },
+  {
+   "t": "lit",
+   "s": "$$  i\\hbar\\frac{\\partial}{\\partial t}\\mid \\psi \\rangle =\\hat{H}\\psi(t)\\rangle $$\n",
+   "line": 49
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 50
+  },
+  {
+   "t": "tr",
+   "id": "S0019",
+   "kind": "para",
+   "s": "*Left hand side :*",
+   "line": 51,
+   "lines": [
+    51,
+    51
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 51
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 52
+  },
+  {
+   "t": "lit",
+   "s": "$$i\\hbar \\Big( -\\frac{i}{\\hbar}E_1 c_1 e^{-\\frac{i}{\\hbar}E_1 t}\\mid 1\\rangle-\\frac{i}{\\hbar}E_2 c_2 e^{-\\frac{i}{\\hbar}E_2 t}\\mid 2\\rangle \\Big) = E_1 c_1(t)\\mid 1 \\rangle +E_2 c_2(t)\\mid 2 \\rangle$$\n",
+   "line": 53
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 54
+  },
+  {
+   "t": "tr",
+   "id": "S0020",
+   "kind": "para",
+   "s": "*Right hand side:*",
+   "line": 55,
+   "lines": [
+    55,
+    55
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 55
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 56
+  },
+  {
+   "t": "lit",
+   "s": "$$c_1 e^{-\\frac{i}{\\hbar}E_1 t}\\hat{H}\\mid 1 \\rangle + c_2 e^{-\\frac{i}{\\hbar}E_2 t}\\hat{H} \\mid 2 \\rangle = E_1 c_1(t)\\mid 1 \\rangle +E_2 c_2(t)\\mid 2 \\rangle $$\n",
+   "line": 57
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 58
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 59
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 60
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 61
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 62
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo-config}\n---\npyproject: |\n  requires-python = \">=3.10\"\n  dependencies = [\n      \"numpy\",\n      \"matplotlib\",\n  ]\n---\n```\n",
+   "line": 63
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 73
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nimport marimo as mo\nimport numpy as np\nimport matplotlib.pyplot as plt\nplt.rcParams[\"figure.dpi\"] = 150\n```\n",
+   "line": 74
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 82
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\ndef psi_n(x, n):\n    \"\"\"Time-independent wavefunction for a particle in a box.\"\"\"\n    L = 1 # set box length\n\n    return np.sqrt(2/L) * np.sin(n * np.pi * x / L)\n\ndef T_n(t, n):\n    \"\"\"Time dependence factor for the wavefunction.\"\"\"\n    L = 1 # set box length\n    m, hbar = 1, 1 # set atomic units\n    En = n**2 * np.pi**2 * hbar**2 / (2 * m * L**2)\n\n    return np.exp(-1j * En * t / hbar)\n\ndef psi_combined(x, t, c1=1, c2=1, n1=1, n2=2):\n    \"\"\"Time-dependent wavefunction for a normalized superposition of two PIB states.\"\"\"\n\n    norm = np.sqrt(c1**2 + c2**2)\n\n    return (c1 * psi_n(x, n1) * T_n(t, n1) + c2 * psi_n(x, n2) * T_n(t, n2)) / norm\n```\n",
+   "line": 83
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 105
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\ndef plot_wavefunction(t=0, c1=1, c2=1, n1=1, n2=2):\n\n    L = 1.0\n    x = np.linspace(0, L, 1000)\n\n    psi_squared_x = np.abs(psi_combined(x, t, c1=c1, c2=c2, n1=n1, n2=n2))**2\n\n    plt.plot(x, psi_squared_x, color=\"#3d81f6\", lw=2)\n    plt.fill_between(x, psi_squared_x, alpha=0.2, color=\"#3d81f6\")\n\n    plt.title(f\"$|\\\\Psi(x,t)|^2$ for states n={n1} and n={n2} at t={t:.2f}\")\n    plt.xlabel('x')\n    plt.ylabel(r'$|\\Psi(x, t)|^2$')\n    plt.grid(True, alpha=0.4)\n    plt.ylim([0, 4.5])\n    plt.gcf()\n```\n",
+   "line": 106
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 124
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nt_qw = mo.ui.slider(0, 10.0, step=0.1, value=0.0, show_value=True, label=\"time t\")\nn2_qw = mo.ui.slider(2, 6, step=1, value=2, show_value=True, label=\"second state n2\")\nmo.hstack([t_qw, n2_qw], justify=\"start\", gap=2)\n```\n",
+   "line": 125
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 132
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nplot_wavefunction(t=t_qw.value, c1=1, c2=1, n1=1, n2=n2_qw.value)\nplt.gcf()\n```\n",
+   "line": 133
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 139
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 140
+  },
+  {
+   "t": "tr",
+   "id": "S0021",
+   "kind": "para",
+   "s": "Drag the **time slider** and watch the probability sloshing between the two walls: the interference term beats at the frequency $(E_{n_2} - E_1)/\\hbar$. Raising $n_2$ makes the pattern richer and the beat faster. A single eigenstate would sit perfectly still; motion in quantum mechanics lives in superpositions.",
+   "line": 140,
+   "lines": [
+    140
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 140
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 141
+  },
+  {
+   "t": "tr",
+   "id": "S0022",
+   "kind": "heading",
+   "s": "Normalization is time independent!",
+   "line": 141,
+   "lines": [
+    141
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 141
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 142
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 143
+  },
+  {
+   "t": "tr",
+   "id": "S0023",
+   "kind": "para",
+   "s": "Certain quantities remain invariant under time evolution. For instance, it is natural to expect that normalization does not change over time: the particle must always be located somewhere within the box at any given moment.",
+   "line": 143,
+   "lines": [
+    143
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 143
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 144
+  },
+  {
+   "t": "lit",
+   "s": "$$\\mid \\psi(t)\\rangle = \\sum_n c_n e^{-\\frac{i}{\\hbar}E_n t} \\mid n\\rangle$$\n",
+   "line": 145
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 146
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 147
+  },
+  {
+   "t": "tr",
+   "id": "S0024",
+   "kind": "para",
+   "s": "The normalization condition is expressed as:",
+   "line": 147,
+   "lines": [
+    147
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 147
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 148
+  },
+  {
+   "t": "lit",
+   "s": "$$\\langle \\psi(t) \\mid \\psi(t)\\rangle = \\sum_n \\sum_k \\langle n \\mid c^*_n e^{\\frac{i}{\\hbar}E_n t} \\cdot c_k e^{-\\frac{i}{\\hbar}E_k t} \\mid k\\rangle = \\sum_n \\sum_k c^*_n c_k e^{-\\frac{i}{\\hbar}(E_k - E_n)t} \\delta_{kn} = \\sum_n \\mid c_n \\mid^2 = 1$$\n",
+   "line": 149
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 150
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 151
+  },
+  {
+   "t": "tr",
+   "id": "S0025",
+   "kind": "para",
+   "s": "In the final step, we use the fact that the eigenfunctions are orthogonal, meaning $\\langle n \\mid k \\rangle = 0$ for $n \\neq k$, so the cross terms vanish and only the diagonal terms, where $n = k$, survive.",
+   "line": 151,
+   "lines": [
+    151
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 151
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 152
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 153
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 154
+  },
+  {
+   "t": "tr",
+   "id": "S0026",
+   "kind": "heading",
+   "s": "Constants of Motion",
+   "line": 154,
+   "lines": [
+    154
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 154
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 155
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 156
+  },
+  {
+   "t": "tr",
+   "id": "S0027",
+   "kind": "para",
+   "s": "Quantities that remain conserved over time are called **constants of motion**. In quantum mechanics, we typically deal with expectations or averages rather than sharply defined values.",
+   "line": 156,
+   "lines": [
+    156
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 156
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 157
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 158
+  },
+  {
+   "t": "tr",
+   "id": "S0028",
+   "kind": "para",
+   "s": "However, the principle of energy conservation dictates that the **average total energy** must be a conserved quantity. To determine whether a particular quantity depends on time, we take the time derivative of the expectation value:",
+   "line": 158,
+   "lines": [
+    158
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 158
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 159
+  },
+  {
+   "t": "lit",
+   "s": "  $$\\langle A \\rangle = \\langle \\psi \\mid \\hat{A} \\mid \\psi \\rangle$$\n",
+   "line": 160
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 161
+  },
+  {
+   "t": "tr",
+   "id": "S0029",
+   "kind": "para",
+   "s": "  The time derivative of this expectation value is:",
+   "line": 162,
+   "lines": [
+    162,
+    162
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 162
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 163
+  },
+  {
+   "t": "lit",
+   "s": "  $$\n  \\frac{\\partial}{\\partial t}\\langle A \\rangle = \\langle \\frac{\\partial \\psi}{\\partial t} \\mid \\hat{A} \\mid \\psi \\rangle + \\langle \\psi \\mid \\hat{A} \\mid \\frac{\\partial \\psi}{\\partial t} \\rangle + \\langle \\psi \\mid \\frac{\\partial \\hat{A}}{\\partial t} \\mid \\psi \\rangle\n  $$\n",
+   "line": 164
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 167
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 168
+  },
+  {
+   "t": "tr",
+   "id": "S0030",
+   "kind": "para",
+   "s": "Now, using the time-dependent Schrödinger equation,  ",
+   "line": 168,
+   "lines": [
+    168
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 168
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 169
+  },
+  {
+   "t": "lit",
+   "s": "  $$\n  i\\hbar \\frac{\\partial}{\\partial t} \\mid \\psi \\rangle = \\hat{H} \\mid \\psi \\rangle\n  $$  \n",
+   "line": 170
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 173
+  },
+  {
+   "t": "tr",
+   "id": "S0031",
+   "kind": "para",
+   "s": "  we can express the time derivatives of the bras and kets as:",
+   "line": 174,
+   "lines": [
+    174,
+    174
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 174
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 175
+  },
+  {
+   "t": "lit",
+   "s": "  $$\\langle \\frac{\\partial \\psi}{\\partial t} \\mid = -\\frac{1}{i\\hbar} \\langle \\psi \\mid \\hat{H},$$\n",
+   "line": 176
+  },
+  {
+   "t": "lit",
+   "s": "  $$\\mid \\frac{\\partial \\psi}{\\partial t} \\rangle = \\frac{1}{i\\hbar} \\hat{H} \\mid \\psi \\rangle.$$\n",
+   "line": 177
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 178
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 179
+  },
+  {
+   "t": "tr",
+   "id": "S0032",
+   "kind": "para",
+   "s": "Substituting these into the time derivative of the expectation value, we obtain:",
+   "line": 179,
+   "lines": [
+    179
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 179
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 180
+  },
+  {
+   "t": "lit",
+   "s": "  $$\\frac{\\partial}{\\partial t}\\langle A \\rangle = \\frac{1}{i\\hbar} \\langle \\psi \\mid \\hat{A}\\hat{H} \\mid \\psi \\rangle - \\frac{1}{i\\hbar} \\langle \\psi \\mid \\hat{H}\\hat{A} \\mid \\psi \\rangle + \\langle \\psi \\mid \\frac{\\partial \\hat{A}}{\\partial t} \\mid \\psi \\rangle$$\n",
+   "line": 181
+  },
+  {
+   "t": "lit",
+   "s": "  \n",
+   "line": 182
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 183
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 183
+  },
+  {
+   "t": "tr",
+   "id": "S0033",
+   "kind": "directive_title",
+   "s": "**Time dependence of expectation**",
+   "line": 183,
+   "lines": [
+    183
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 183
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 184
+  },
+  {
+   "t": "lit",
+   "s": "  $$\n  \\frac{\\partial}{\\partial t}\\langle A \\rangle = \\frac{1}{i\\hbar} \\langle \\psi \\mid [\\hat{A}, \\hat{H}] \\mid \\psi \\rangle + \\langle \\psi \\mid \\frac{\\partial \\hat{A}}{\\partial t} \\mid \\psi \\rangle.\n  $$\n",
+   "line": 185
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 188
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 189
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 190
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 191
+  },
+  {
+   "t": "tr",
+   "id": "S0034",
+   "kind": "para",
+   "s": "This important relationship shows that if the operator $\\hat{A}$ does not explicitly depend on time, i.e., $\\frac{\\partial \\hat{A}}{\\partial t} = 0$, then quantities that **commute with the Hamiltonian** $[\\hat{A}, \\hat{H}] = 0$ will be constants of motion. Those that do not commute, $[\\hat{A}, \\hat{H}] \\neq 0$, will evolve over time.",
+   "line": 191,
+   "lines": [
+    191
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 191
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 192
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 193
+  },
+  {
+   "t": "tr",
+   "id": "S0035",
+   "kind": "para",
+   "s": "Since the Hamiltonian commutes with itself and does not depend on time, the **energy** is conserved.",
+   "line": 193,
+   "lines": [
+    193
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 193
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 194
+  },
+  {
+   "t": "lit",
+   "s": "  $$\n  \\frac{\\partial}{\\partial t}\\langle E \\rangle = 0\n  $$  \n",
+   "line": 195
+  },
+  {
+   "t": "lit",
+   "s": " \n",
+   "line": 198
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 199
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 200
+  },
+  {
+   "t": "tr",
+   "id": "S0036",
+   "kind": "heading",
+   "s": "Quantum Dynamics",
+   "line": 200,
+   "lines": [
+    200
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 200
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 201
+  },
+  {
+   "t": "lit",
+   "s": ":::{figure}",
+   "line": 202
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 202
+  },
+  {
+   "t": "tr",
+   "id": "S0037",
+   "kind": "directive_title",
+   "s": "./images/gaussian_potential.gif",
+   "line": 202,
+   "lines": [
+    202
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 202
+  },
+  {
+   "t": "lit",
+   "s": ":label: fig-time-dependence-1\n",
+   "line": 203
+  },
+  {
+   "t": "lit",
+   "s": ":alt: pib1\n",
+   "line": 204
+  },
+  {
+   "t": "lit",
+   "s": ":width: 300px\n",
+   "line": 205
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 206
+  },
+  {
+   "t": "tr",
+   "id": "S0038",
+   "kind": "para",
+   "s": "Wavefunction dynamics in a Gaussian potential, showing the probability density along with the real and imaginary parts.",
+   "line": 207,
+   "lines": [
+    207,
+    207
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 207
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 208
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 209
+  },
+  {
+   "t": "lit",
+   "s": ":::{figure}",
+   "line": 210
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 210
+  },
+  {
+   "t": "tr",
+   "id": "S0039",
+   "kind": "directive_title",
+   "s": "./images/barrier_potential.gif",
+   "line": 210,
+   "lines": [
+    210
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 210
+  },
+  {
+   "t": "lit",
+   "s": ":label: fig-time-dependence-2\n",
+   "line": 211
+  },
+  {
+   "t": "lit",
+   "s": ":alt: pib1\n",
+   "line": 212
+  },
+  {
+   "t": "lit",
+   "s": ":width: 300px\n",
+   "line": 213
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 214
+  },
+  {
+   "t": "tr",
+   "id": "S0040",
+   "kind": "para",
+   "s": "Wavefunction dynamics in a barrier potential, showing the probability density along with the real and imaginary parts.",
+   "line": 215,
+   "lines": [
+    215,
+    215
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 215
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 216
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 217
+  },
+  {
+   "t": "lit",
+   "s": ":::{seealso}",
+   "line": 218
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 218
+  },
+  {
+   "t": "tr",
+   "id": "S0041",
+   "kind": "directive_title",
+   "s": "Chapter demos",
+   "line": 218,
+   "lines": [
+    218
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 218
+  },
+  {
+   "t": "tr",
+   "id": "S0042",
+   "kind": "para",
+   "s": "Computational lab for this chapter: [Numerical Schrödinger solver](../demos/07-demo-numerical-schrodinger.md)",
+   "line": 219,
+   "lines": [
+    219,
+    219
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 219
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 220
+  }
+ ]
+}

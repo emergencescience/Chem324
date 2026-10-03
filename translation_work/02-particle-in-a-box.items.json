@@ -1,0 +1,7594 @@
+{
+ "trailing_newline": true,
+ "items": [
+  {
+   "t": "lit",
+   "s": "---\nkernelspec:\n  name: python3\n  display_name: Python 3\n---\n",
+   "line": 1
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 6
+  },
+  {
+   "t": "lit",
+   "s": "# ",
+   "line": 7
+  },
+  {
+   "t": "tr",
+   "id": "S0001",
+   "kind": "heading",
+   "s": "Particle in a Box",
+   "line": 7,
+   "lines": [
+    7
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 7
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 8
+  },
+  {
+   "t": "lit",
+   "s": " :::{note}",
+   "line": 9
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 9
+  },
+  {
+   "t": "tr",
+   "id": "S0002",
+   "kind": "directive_title",
+   "s": "**What you need to know**",
+   "line": 9,
+   "lines": [
+    9
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 9
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 10
+  },
+  {
+   "t": "tr",
+   "id": "S0003",
+   "kind": "para",
+   "s": " **Particle in a Box (PIB) as a Model System**  \n   The Particle in a Box (PIB) is a simple model that helps illustrate the behavior of electrons confined within atoms and molecules. It serves as a useful tool to introduce key quantum concepts:",
+   "line": 11,
+   "lines": [
+    11,
+    11,
+    12
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 12
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 13
+  },
+  {
+   "t": "lit",
+   "s": "   - ",
+   "line": 14
+  },
+  {
+   "t": "tr",
+   "id": "S0004",
+   "kind": "para",
+   "s": "**Energetic Quantization**: Energy levels in quantum systems are discrete, not continuous, as seen in the PIB model.",
+   "line": 14,
+   "lines": [
+    14
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 14
+  },
+  {
+   "t": "lit",
+   "s": "   \n",
+   "line": 15
+  },
+  {
+   "t": "lit",
+   "s": "   - ",
+   "line": 16
+  },
+  {
+   "t": "tr",
+   "id": "S0005",
+   "kind": "para",
+   "s": "**Probabilistic Nature of Quantum Particles**: The probability distribution for the particle's position is non-uniform, with nodal points where the probability is zero, emphasizing the inherent uncertainty in the particle's exact location.",
+   "line": 16,
+   "lines": [
+    16
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 16
+  },
+  {
+   "t": "lit",
+   "s": "   \n",
+   "line": 17
+  },
+  {
+   "t": "lit",
+   "s": "   - ",
+   "line": 18
+  },
+  {
+   "t": "tr",
+   "id": "S0006",
+   "kind": "para",
+   "s": "**Uncertainty Principle**: There is an inverse relationship between the uncertainty in position and momentum, demonstrating the fundamental limit on how precisely both quantities can be known simultaneously.",
+   "line": 18,
+   "lines": [
+    18
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 18
+  },
+  {
+   "t": "lit",
+   "s": "   \n",
+   "line": 19
+  },
+  {
+   "t": "lit",
+   "s": "   - ",
+   "line": 20
+  },
+  {
+   "t": "tr",
+   "id": "S0007",
+   "kind": "para",
+   "s": "**Zero-Point Energy**: Quantum particles always possess a minimum kinetic energy, even at absolute zero. This zero-point energy highlights the impossibility of freezing all motion in quantum systems.",
+   "line": 20,
+   "lines": [
+    20
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 20
+  },
+  {
+   "t": "lit",
+   "s": "   \n",
+   "line": 21
+  },
+  {
+   "t": "lit",
+   "s": "   - ",
+   "line": 22
+  },
+  {
+   "t": "tr",
+   "id": "S0008",
+   "kind": "para",
+   "s": "**Quantum-Classical Correspondence**: As the system scales up, quantum behavior smoothly transitions to classical behavior, illustrating the correspondence principle.",
+   "line": 22,
+   "lines": [
+    22
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 22
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 23
+  },
+  {
+   "t": "lit",
+   "s": "   - ",
+   "line": 24
+  },
+  {
+   "t": "tr",
+   "id": "S0009",
+   "kind": "para",
+   "s": "**Degeneracy of Energy Levels**: In systems with symmetries, multiple wave functions can correspond to the same energy level, a phenomenon known as degeneracy.",
+   "line": 24,
+   "lines": [
+    24
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 24
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 25
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 26
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 27
+  },
+  {
+   "t": "tr",
+   "id": "S0010",
+   "kind": "heading",
+   "s": "Classical vs Quantum particle in a box",
+   "line": 27,
+   "lines": [
+    27
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 27
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 28
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 29
+  },
+  {
+   "t": "tr",
+   "id": "S0011",
+   "kind": "para",
+   "s": "The particle in a box is a toy model of an electron (or atom, molecule, or small quantum object) trapped in some region of space $[0,L]$.",
+   "line": 29,
+   "lines": [
+    29
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 29
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 30
+  },
+  {
+   "t": "tr",
+   "id": "S0012",
+   "kind": "para",
+   "s": "The positional information of a quantum \"particle\" is described by a quantum wave function $\\psi(x)$, which is obtained by solving the Schrödinger equation with boundary conditions.",
+   "line": 30,
+   "lines": [
+    30
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 30
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 31
+  },
+  {
+   "t": "tr",
+   "id": "S0013",
+   "kind": "para",
+   "s": "Wave functions are standing waves, just as in the vibrating guitar string problem, with one major difference: a quantum wave function has a probabilistic meaning and hence is completely different from the classical notion of a \"wave\".",
+   "line": 31,
+   "lines": [
+    31
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 31
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 32
+  },
+  {
+   "t": "tr",
+   "id": "S0014",
+   "kind": "para",
+   "s": "**According to classical mechanics**, in the absence of any attractive interactions the particle bounces back and forth between the walls with constant speed. We therefore expect to find it with equal probability at all locations $x$.",
+   "line": 32,
+   "lines": [
+    32
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 32
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 33
+  },
+  {
+   "t": "tr",
+   "id": "S0015",
+   "kind": "para",
+   "s": "**According to quantum mechanics**, the quantum particle in the box is found in some regions with high probability and in others with little or zero probability.",
+   "line": 33,
+   "lines": [
+    33
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 33
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 34
+  },
+  {
+   "t": "lit",
+   "s": "```{code-cell} python\n:tags: [hide-input]\n# synced: box_bounce\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.animation import FuncAnimation\nfrom IPython.display import HTML\n\nTEAL, CARDINAL, GRAY, PURPLE, ORANGE = \"#107895\", \"#C8102E\", \"#6c757d\", \"#6a3d9a\", \"#e07b00\"\nplt.rcParams.update({\"axes.spines.top\": False, \"axes.spines.right\": False})\nrng = np.random.default_rng(5)\nxc = rng.random(4000)                                       # classical: snapshots at random times\ncand = rng.random(16000)\nxq = cand[rng.random(16000) < np.sin(3 * np.pi * cand) ** 2][:4000]   # quantum: samples of |psi_3|^2\nyj = rng.random(4000)\ncounts = np.unique(np.round(np.geomspace(1, 4000, 44)).astype(int))\ncounts = np.concatenate([counts, np.full(8, counts[-1])])\nedges = np.linspace(0, 1, 31); mid = 0.5 * (edges[1:] + edges[:-1]); dx = edges[1] - edges[0]\nxs = np.linspace(0, 1, 300)\nfig, axes = plt.subplots(2, 2, figsize=(8, 3.9), sharex=True,\n                         gridspec_kw={\"height_ratios\": [1, 2.2], \"hspace\": 0.12, \"wspace\": 0.1})\n(ta, tb), (ha, hb) = axes\nfor ax in (ta, tb):\n    ax.axvline(0, color=\"k\", lw=3); ax.axvline(1, color=\"k\", lw=3)\n    ax.set_ylim(0, 1); ax.set_yticks([]); ax.spines[\"left\"].set_visible(False); ax.tick_params(bottom=False)\nta.set_title(\"classical: a ball bouncing at constant speed\", loc=\"left\", fontsize=10.5)\ntb.set_title(r\"quantum, $n = 3$: each dot is one detection\", loc=\"left\", fontsize=10.5)\n(trail,) = ta.plot([], [], \"o\", color=ORANGE, ms=9, alpha=0.25)\n(ball,) = ta.plot([], [], \"o\", color=ORANGE, ms=12)\nscat = tb.scatter([], [], s=5, color=TEAL, alpha=0.6, lw=0)\nbars_c = ha.bar(mid, 0 * mid, width=0.92 * dx, color=ORANGE, alpha=0.5)\nbars_q = hb.bar(mid, 0 * mid, width=0.92 * dx, color=TEAL, alpha=0.5)\n(pc,) = ha.plot([], [], color=GRAY, lw=2.4, ls=\"--\", label=r\"flat: $1/L$\")\n(pq,) = hb.plot([], [], color=CARDINAL, lw=2.4, label=r\"$|\\psi_3(x)|^2$\")\nfor ax in (ha, hb):\n    ax.set_xlim(-0.02, 1.02); ax.set_yticks([])\n    ax.set_xticks([0, 0.5, 1]); ax.set_xticklabels([\"0\", \"L/2\", \"L\"]); ax.set_xlabel(\"position x\")\n    ax.legend(loc=\"upper right\", frameon=False, fontsize=9.5)\nha.set_ylabel(\"times caught here\")\nfig.subplots_adjust(left=0.05, right=0.99, top=0.84, bottom=0.13)\nsup = fig.suptitle(\"\", fontsize=11.5)\ntri = lambda s: 0.04 + 0.92 * (1 - np.abs(2 * (s % 1) - 1))  # bounce between the walls\n\ndef update(i):\n    N = counts[i]\n    pos = tri(np.arange(i - 3, i + 1) / 11.0)\n    trail.set_data(pos[:-1], np.full(3, 0.5)); ball.set_data(pos[-1:], [0.5])\n    scat.set_offsets(np.column_stack([xq[:N], yj[:N]]))\n    hc = np.histogram(xc[:N], bins=edges)[0]; hq = np.histogram(xq[:N], bins=edges)[0]\n    for b, c in zip(bars_c, hc):\n        b.set_height(c)\n    for b, c in zip(bars_q, hq):\n        b.set_height(c)\n    pc.set_data(xs, np.full_like(xs, N * dx)); pq.set_data(xs, N * dx * 2 * np.sin(3 * np.pi * xs) ** 2)\n    top = 1.3 * max(1.0, hc.max(), hq.max(), 2 * N * dx)\n    ha.set_ylim(0, top); hb.set_ylim(0, top)\n    sup.set_text(f\"N = {N} position measurement\" + (\"\" if N == 1 else \"s\"))\n\nani = FuncAnimation(fig, update, frames=len(counts), interval=150, blit=False)\nplt.close(fig)\nHTML(ani.to_jshtml())\n```\n",
+   "line": 35
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 97
+  },
+  {
+   "t": "tr",
+   "id": "S0016",
+   "kind": "para",
+   "s": "Fig. Catching the particle many times. Left: a classical ball bounces between the walls at constant speed, so its position measurements pile up evenly. Right: in the quantum state $n = 3$ the measurements pile up into three lobes, and the particle is never found at $x = L/3$ or $x = 2L/3$. Each dot is one measurement, as in the Born-rule figure of the [previous lecture](01-schrodinger-equation.md).",
+   "line": 98,
+   "lines": [
+    98,
+    98
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 98
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 99
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 100
+  },
+  {
+   "t": "tr",
+   "id": "S0017",
+   "kind": "heading",
+   "s": "Solving the Schrödinger Equation for the Particle in a Box (PIB)",
+   "line": 100,
+   "lines": [
+    100
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 100
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 101
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 102
+  },
+  {
+   "t": "lit",
+   "s": ":::{figure}",
+   "line": 103
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 103
+  },
+  {
+   "t": "tr",
+   "id": "S0018",
+   "kind": "directive_title",
+   "s": "images/ext_infinite_well.svg",
+   "line": 103,
+   "lines": [
+    103
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 103
+  },
+  {
+   "t": "lit",
+   "s": ":label: fig-particle-in-a-box-2\n",
+   "line": 104
+  },
+  {
+   "t": "lit",
+   "s": ":alt: Particle in a box\n",
+   "line": 105
+  },
+  {
+   "t": "lit",
+   "s": ":width: 300px\n",
+   "line": 106
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 107
+  },
+  {
+   "t": "tr",
+   "id": "S0019",
+   "kind": "para",
+   "s": "Particle in a box subject to infinitely high potential walls.",
+   "line": 108,
+   "lines": [
+    108,
+    108
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 108
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 109
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 110
+  },
+  {
+   "t": "tr",
+   "id": "S0020",
+   "kind": "para",
+   "s": "The Schrödinger equation for a particle in a box (PIB) is defined by a Hamiltonian operator that incorporates a potential energy which is infinitely large at the boundaries of the box and zero inside. This potential confines the particle within the box, where it can only possess kinetic energy.",
+   "line": 111,
+   "lines": [
+    111,
+    111
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 111
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 112
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 113
+  },
+  {
+   "t": "tr",
+   "id": "S0021",
+   "kind": "para",
+   "s": "**The potential energy for PIB is defined:**",
+   "line": 113,
+   "lines": [
+    113
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 113
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 114
+  },
+  {
+   "t": "lit",
+   "s": "$$\nV(x) =\n\\begin{cases} \n\\infty & x \\le 0 \\text{ or } x \\ge L \\\\ \n0 & 0 < x < L\n\\end{cases}\n$$\n",
+   "line": 115
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 122
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 123
+  },
+  {
+   "t": "tr",
+   "id": "S0022",
+   "kind": "para",
+   "s": "**The boundary conditions are:**",
+   "line": 123,
+   "lines": [
+    123
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 123
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 124
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\psi(0) = \\psi(L) = 0\n$$\n",
+   "line": 125
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 128
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 129
+  },
+  {
+   "t": "tr",
+   "id": "S0023",
+   "kind": "para",
+   "s": "**The Hamiltonian operator** in this case accounts only for kinetic energy:",
+   "line": 129,
+   "lines": [
+    129
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 129
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 130
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{H} = \\hat{K} = -\\frac{\\hbar^2}{2m} \\frac{d^2}{dx^2}\n$$\n",
+   "line": 131
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 134
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 135
+  },
+  {
+   "t": "tr",
+   "id": "S0024",
+   "kind": "para",
+   "s": "Now, we have all the necessary ingredients to solve the time-independent Schrödinger equation for the 1D PIB:",
+   "line": 135,
+   "lines": [
+    135
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 135
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 136
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{H} \\psi(x) = E \\psi(x)\n$$\n",
+   "line": 137
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 140
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 141
+  },
+  {
+   "t": "tr",
+   "id": "S0025",
+   "kind": "para",
+   "s": "Substituting the Hamiltonian, we get:",
+   "line": 141,
+   "lines": [
+    141
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 141
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 142
+  },
+  {
+   "t": "lit",
+   "s": "$$\n-\\frac{\\hbar^2}{2m} \\frac{d^2}{dx^2} \\psi(x) = E \\psi(x)\n$$\n",
+   "line": 143
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 146
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\psi''(x) = -k^2 \\psi(x)\n$$\n",
+   "line": 147
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 150
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 151
+  },
+  {
+   "t": "tr",
+   "id": "S0026",
+   "kind": "para",
+   "s": "where $k^2$ is a positive real number that relates the particle's energy $E$ to its wavefunction.",
+   "line": 151,
+   "lines": [
+    151
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 151
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 152
+  },
+  {
+   "t": "lit",
+   "s": "$$\nk^2 = \\frac{2mE}{\\hbar^2}\n$$\n",
+   "line": 153
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 156
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 157
+  },
+  {
+   "t": "tr",
+   "id": "S0027",
+   "kind": "heading",
+   "s": "Solution and Boundary Conditions",
+   "line": 157,
+   "lines": [
+    157
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 157
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 158
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 159
+  },
+  {
+   "t": "tr",
+   "id": "S0028",
+   "kind": "para",
+   "s": "Mathematically, the form of the 1D PIB problem is similar to the ordinary differential equation (ODE) used in the 1D vibrating guitar string problem. The key differences lie in the constant coefficients and the interpretation of the wavefunction.",
+   "line": 159,
+   "lines": [
+    159
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 159
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 160
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\psi''(x) = -k^2 \\psi(x)\n$$\n",
+   "line": 161
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 164
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 165
+  },
+  {
+   "t": "tr",
+   "id": "S0029",
+   "kind": "para",
+   "s": "The general solution to this differential equation is:",
+   "line": 165,
+   "lines": [
+    165
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 165
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 166
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\psi(x) = c_1 e^{ikx} + c_2 e^{-ikx} = A \\cos(kx) + B \\sin(kx)\n$$\n",
+   "line": 167
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 170
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 171
+  },
+  {
+   "t": "tr",
+   "id": "S0030",
+   "kind": "para",
+   "s": "Applying the boundary condition $\\psi(0) = 0$, we find that $A = 0$, leaving us with:",
+   "line": 171,
+   "lines": [
+    171
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 171
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 172
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\psi(x) = B \\sin(kx)\n$$\n",
+   "line": 173
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 176
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 177
+  },
+  {
+   "t": "tr",
+   "id": "S0031",
+   "kind": "para",
+   "s": "Applying the boundary condition $\\psi(L) = 0$, we get:",
+   "line": 177,
+   "lines": [
+    177
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 177
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 178
+  },
+  {
+   "t": "lit",
+   "s": "$$\nB \\sin(kL) = 0\n$$\n",
+   "line": 179
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 182
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 183
+  },
+  {
+   "t": "tr",
+   "id": "S0032",
+   "kind": "para",
+   "s": "This condition is satisfied when:",
+   "line": 183,
+   "lines": [
+    183
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 183
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 184
+  },
+  {
+   "t": "lit",
+   "s": "$$\nkL = n\\pi \\quad \\text{or} \\quad k = \\frac{n\\pi}{L}\n$$\n",
+   "line": 185
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 188
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 189
+  },
+  {
+   "t": "tr",
+   "id": "S0033",
+   "kind": "para",
+   "s": "Thus, the wavefunction becomes:",
+   "line": 189,
+   "lines": [
+    189
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 189
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 190
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\psi(x) = B \\sin\\left(\\frac{n\\pi}{L}x\\right)\n$$\n",
+   "line": 191
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 194
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 195
+  },
+  {
+   "t": "tr",
+   "id": "S0034",
+   "kind": "para",
+   "s": "Using the relationship $k^2 = \\frac{n^2\\pi^2}{L^2} = \\frac{2mE}{\\hbar^2}$, we can express the energy levels as:",
+   "line": 195,
+   "lines": [
+    195
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 195
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 196
+  },
+  {
+   "t": "lit",
+   "s": "$$\nE_n = \\frac{n^2 h^2}{8mL^2}\n$$\n",
+   "line": 197
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 200
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 201
+  },
+  {
+   "t": "tr",
+   "id": "S0035",
+   "kind": "para",
+   "s": "The quantization of energy results from confining the wavefunction within a finite space. This is the reason bound states exhibit quantized energy levels. Atoms, molecules, and solids all possess discrete energy levels due to similar constraints.",
+   "line": 201,
+   "lines": [
+    201
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 201
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 202
+  },
+  {
+   "t": "tr",
+   "id": "S0036",
+   "kind": "para",
+   "s": "This is the trial-energy experiment of the [previous lecture](01-schrodinger-equation.md) in its simplest form. There the decaying tails admitted only special energies; here the walls do: $\\sin kx$ reaches zero at $x = L$ only when a whole number of half-waves fits, $L = n\\lambda/2$.",
+   "line": 202,
+   "lines": [
+    202
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 202
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 203
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 204
+  },
+  {
+   "t": "tr",
+   "id": "S0037",
+   "kind": "heading",
+   "s": "Wavefunctions Must Be Normalized",
+   "line": 204,
+   "lines": [
+    204
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 204
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 205
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 206
+  },
+  {
+   "t": "tr",
+   "id": "S0038",
+   "kind": "para",
+   "s": "Next, we determine the constant coefficient $B_n$ by enforcing the normalization condition:",
+   "line": 206,
+   "lines": [
+    206
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 206
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 207
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_0^L \\psi_n(x)^2 \\, dx = 1\n$$\n",
+   "line": 208
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 211
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 212
+  },
+  {
+   "t": "tr",
+   "id": "S0039",
+   "kind": "para",
+   "s": "To evaluate the integral, we use the trigonometric identity $\\sin^2 x = \\frac{1}{2}(1 - \\cos 2x)$",
+   "line": 212,
+   "lines": [
+    212
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 212
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 213
+  },
+  {
+   "t": "lit",
+   "s": "$$\nB_n^2 \\int_0^L \\sin^2\\left(\\frac{n\\pi x}{L}\\right) dx = \\frac{B_n^2}{2} \\int_0^L \\left[ 1 - \\cos\\left(\\frac{2n\\pi x}{L}\\right) \\right] dx =1\n$$\n",
+   "line": 214
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 217
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 218
+  },
+  {
+   "t": "tr",
+   "id": "S0040",
+   "kind": "para",
+   "s": "Since the integral of $\\cos\\left(\\frac{2n\\pi x}{L}\\right)$ over a full period from $0$ to $L$ is zero, we are left with:",
+   "line": 218,
+   "lines": [
+    218
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 218
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 219
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\frac{B_n^2}{2} \\cdot L = 1\n$$\n",
+   "line": 220
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 223
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 224
+  },
+  {
+   "t": "tr",
+   "id": "S0041",
+   "kind": "para",
+   "s": "Solving for $B_n$, we determine the **normalization constant**, which ensures that the square of the wavefunction integrates to 1.",
+   "line": 224,
+   "lines": [
+    224
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 224
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 225
+  },
+  {
+   "t": "lit",
+   "s": "$$\nB_n = \\sqrt{\\frac{2}{L}}\n$$\n",
+   "line": 226
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 229
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 230
+  },
+  {
+   "t": "tr",
+   "id": "S0042",
+   "kind": "heading",
+   "s": "PIB Eigenfunctions and Eigenvalues",
+   "line": 230,
+   "lines": [
+    230
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 230
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 231
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 232
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 232
+  },
+  {
+   "t": "tr",
+   "id": "S0043",
+   "kind": "directive_title",
+   "s": "**Eigenfunctions and eigenvalues of 1D particle in a box**",
+   "line": 232,
+   "lines": [
+    232
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 232
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 233
+  },
+  {
+   "t": "lit",
+   "s": "$${\\psi_n(x) = \\Big (\\frac{2}{L}\\Big)^{\\frac{1}{2}} \\sin\\frac{n\\pi x}{L}}$$\n",
+   "line": 234
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 235
+  },
+  {
+   "t": "lit",
+   "s": "$${E_n=\\frac{n^2 h^2}{8mL^2}}$$\n",
+   "line": 236
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 237
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 238
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 239
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 240
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 240
+  },
+  {
+   "t": "tr",
+   "id": "S0044",
+   "kind": "directive_title",
+   "s": "**Full time dependent solution**",
+   "line": 240,
+   "lines": [
+    240
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 240
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 241
+  },
+  {
+   "t": "lit",
+   "s": "$${\\psi_n(x, t) = \\Big (\\frac{2}{L}\\Big)^{\\frac{1}{2}} \\sin\\frac{n\\pi x}{L}}\\cdot e^{-i\\frac{E_n t}{\\hbar}}$$\n",
+   "line": 242
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 243
+  },
+  {
+   "t": "lit",
+   "s": "$$\\Psi(x,t) = \\sum_n c_n \\psi_n(x, t)$$\n",
+   "line": 244
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 245
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 246
+  },
+  {
+   "t": "tr",
+   "id": "S0045",
+   "kind": "para",
+   "s": "where the coefficients $c_n$ depend on the initial condition. For example, all could be zero except one (a pure state), or a few could be non-zero (a mixed state).",
+   "line": 246,
+   "lines": [
+    246
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 246
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 247
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 248
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 249
+  },
+  {
+   "t": "lit",
+   "s": "```{code-cell} python\n:tags: [hide-input]\n# synced: pib_ladder\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.animation import FuncAnimation\nfrom IPython.display import HTML\n\nTEAL, CARDINAL, GRAY, PURPLE, ORANGE = \"#107895\", \"#C8102E\", \"#6c757d\", \"#6a3d9a\", \"#e07b00\"\nplt.rcParams.update({\"axes.spines.top\": False, \"axes.spines.right\": False})\nx = np.linspace(0, 1, 400)\nfig, (ax1, ax2) = plt.subplots(1, 2, figsize=(8, 4.4), sharey=True, gridspec_kw={\"wspace\": 0.08})\nfor ax in (ax1, ax2):\n    ax.plot([0, 0, 1, 1], [18.3, 0, 0, 18.3], color=\"k\", lw=2.6)\n    ax.set_xlim(-0.04, 1.04); ax.set_ylim(-0.4, 18.3)\n    ax.set_xticks([0, 0.5, 1]); ax.set_xticklabels([\"0\", \"L/2\", \"L\"]); ax.set_xlabel(\"x\")\n    ax.spines[\"left\"].set_visible(False)\nfor n in range(1, 5):\n    E, s = n * n, np.sin(n * np.pi * x)\n    for ax in (ax1, ax2):\n        ax.hlines(E, 0, 1, color=GRAY, lw=0.8, ls=\"--\")\n    ax1.plot(x, E + 1.25 * s, color=TEAL, lw=2.4)\n    ax2.fill_between(x, E, E + 1.6 * s**2, color=CARDINAL, alpha=0.18, lw=0)\n    ax2.plot(x, E + 1.6 * s**2, color=CARDINAL, lw=2.2)\n    ax2.plot(np.arange(1, n) / n, np.full(n - 1, E), \"o\", color=\"k\", ms=5, zorder=5)\n    ax2.text(1.06, E, rf\"$n = {n}$,  \" + (r\"$E_1$\" if n == 1 else rf\"${E}E_1$\"), va=\"center\", fontsize=11.5)\nax1.set_yticks([]); ax1.set_ylabel(\"energy\")\nax1.set_title(r\"$\\psi_n(x)$, drawn on its level $E_n$\", loc=\"left\", fontsize=11)\nax2.set_title(r\"$|\\psi_n(x)|^2$: dots mark the $n-1$ nodes\", loc=\"left\", fontsize=11)\nfig.subplots_adjust(left=0.05, right=0.83, top=0.92, bottom=0.12)\nplt.show()\n```\n",
+   "line": 250
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 282
+  },
+  {
+   "t": "tr",
+   "id": "S0046",
+   "kind": "para",
+   "s": "Fig. The four lowest states of the particle in a box, each drawn on its energy level $E_n = n^2E_1$. Left: the wavefunctions $\\psi_n(x)$. Right: the probability densities $|\\psi_n(x)|^2$; the dots mark the $n-1$ nodes, where the particle is never found.",
+   "line": 283,
+   "lines": [
+    283,
+    283
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 283
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 284
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 285
+  },
+  {
+   "t": "tr",
+   "id": "S0047",
+   "kind": "heading",
+   "s": "Discrete energy levels and zero point energy",
+   "line": 285,
+   "lines": [
+    285
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 285
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 286
+  },
+  {
+   "t": "tr",
+   "id": "S0048",
+   "kind": "para",
+   "s": "**Quantum particles are never at rest**",
+   "line": 287,
+   "lines": [
+    287,
+    287
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 287
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 288
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 289
+  },
+  {
+   "t": "tr",
+   "id": "S0049",
+   "kind": "para",
+   "s": "The lowest energy an electron in a box can have is at $n=1$, and it is not zero!",
+   "line": 289,
+   "lines": [
+    289
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 289
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 290
+  },
+  {
+   "t": "lit",
+   "s": "$$E_1 = h^2/8mL^2$$\n",
+   "line": 291
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 292
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 293
+  },
+  {
+   "t": "tr",
+   "id": "S0050",
+   "kind": "para",
+   "s": "Keeping in mind that the energy is purely kinetic, this means a quantum particle never ceases its motion.",
+   "line": 293,
+   "lines": [
+    293
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 293
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 294
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 295
+  },
+  {
+   "t": "tr",
+   "id": "S0051",
+   "kind": "para",
+   "s": "This is the **uncertainty principle** at work. Confining the particle to a length $L$ leaves a position spread $\\sigma_x \\approx 0.18L$ in the ground state (Problem 2), and the momentum cannot be pinned down either: $\\langle p \\rangle = 0$ but $\\langle p^2 \\rangle = (h/2L)^2$, so $\\sigma_p = h/2L$. The product $\\sigma_x\\sigma_p \\approx 0.57\\hbar$ sits just above the Heisenberg limit $\\hbar/2$. A smaller box means a larger $\\sigma_p$ and a larger kinetic energy.",
+   "line": 295,
+   "lines": [
+    295
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 295
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 296
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 297
+  },
+  {
+   "t": "tr",
+   "id": "S0052",
+   "kind": "para",
+   "s": "The spacing of energy levels is finite and depends on the size of the box:",
+   "line": 297,
+   "lines": [
+    297
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 297
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 298
+  },
+  {
+   "t": "lit",
+   "s": "$$E_{n+1} - E_n = (2n+1)\\frac{h^2}{8mL^2}$$\n",
+   "line": 299
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 300
+  },
+  {
+   "t": "tr",
+   "id": "S0053",
+   "kind": "para",
+   "s": "**Increasing Box size leads to more classical behavior**",
+   "line": 301,
+   "lines": [
+    301,
+    301
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 301
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 302
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 303
+  },
+  {
+   "t": "tr",
+   "id": "S0054",
+   "kind": "para",
+   "s": "As the box size is increased, the energy spacing gets smaller.",
+   "line": 303,
+   "lines": [
+    303
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 303
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 304
+  },
+  {
+   "t": "tr",
+   "id": "S0055",
+   "kind": "para",
+   "s": "Thus quantum effects are more pronounced when an electron is bound in smaller regions of space.",
+   "line": 304,
+   "lines": [
+    304
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 304
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 305
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo-config}\n---\npyproject: |\n  requires-python = \">=3.10\"\n  dependencies = [\n      \"numpy\",\n      \"matplotlib\",\n      \"plotly\",\n  ]\n---\n```\n",
+   "line": 306
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 317
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nimport marimo as mo\nimport numpy as np\nimport matplotlib.pyplot as plt\nplt.rcParams[\"figure.dpi\"] = 150\nplt.rcParams.update({\"axes.spines.top\": False, \"axes.spines.right\": False})\nimport plotly.graph_objects as go\nTEAL, CARDINAL, GRAY, PURPLE, ORANGE = \"#107895\", \"#C8102E\", \"#6c757d\", \"#6a3d9a\", \"#e07b00\"\n```\n",
+   "line": 318
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 329
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nbox_L = mo.ui.slider(0.5, 1.0, step=0.05, value=1.0, show_value=True, label=\"box length L (units of L₀)\")\nbox_L\n```\n",
+   "line": 330
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 336
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\n_L = box_L.value\n_x = np.linspace(0, _L, 300)\n_fig, (_ax, _axl) = plt.subplots(1, 2, figsize=(7.5, 3.4), gridspec_kw={\"width_ratios\": [1.4, 1]})\n_ax.plot([0, 0, _L, _L], [38, 0, 0, 38], color=\"k\", lw=2.6)\nfor _n, _c in zip((1, 2, 3), (TEAL, ORANGE, PURPLE)):\n    _E = _n**2 / _L**2\n    _ax.hlines(_E, 0, _L, color=_c, lw=0.9, ls=\"--\")\n    _ax.plot(_x, _E + 1.2 * np.sin(_n * np.pi * _x / _L), color=_c, lw=2.4)\n    _ax.text(_L + 0.05, _E, rf\"$E_{_n} = {_E:.1f}$\", color=_c, va=\"center\", fontsize=11)\n_ax.text(0, -1.5, \"0\", ha=\"center\", va=\"top\", fontsize=11)\n_ax.text(_L, -1.5, \"L\", ha=\"center\", va=\"top\", fontsize=11)\n_ax.set_xlim(-0.05, 1.42); _ax.set_ylim(-4.5, 38); _ax.set_xticks([]); _ax.set_yticks([])\n_ax.spines[\"left\"].set_visible(False); _ax.spines[\"bottom\"].set_visible(False)\n_ax.set_title(rf\"$L = {_L:.2f}\\,L_0$\", loc=\"left\", fontsize=11)\n_Lg = np.linspace(0.45, 3, 300)\n_axl.plot(_Lg, 1 / _Lg**2, color=TEAL, lw=2.2)\n_axl.plot([_L], [1 / _L**2], \"o\", color=TEAL, ms=9)\n_axl.set_xlim(0.4, 3); _axl.set_ylim(0, 5)\n_axl.set_xlabel(r\"$L / L_0$\"); _axl.set_ylabel(r\"$E_1$\")\n_axl.set_title(r\"$E_1 \\propto 1/L^2$: never zero\", loc=\"left\", fontsize=11)\n_fig.subplots_adjust(left=0.02, right=0.98, top=0.88, bottom=0.17, wspace=0.22)\n_fig\n```\n",
+   "line": 337
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 363
+  },
+  {
+   "t": "tr",
+   "id": "S0056",
+   "kind": "para",
+   "s": "Fig. Left: the three lowest levels of a particle in a box of length $L$, each wavefunction drawn on its level. Right: the ground-state energy against box length. Shrinking the box raises every level as $1/L^2$; enlarging it lowers $E_1$ toward zero without ever reaching it. Energies in units of $h^2/8mL_0^2$.",
+   "line": 364,
+   "lines": [
+    364,
+    364
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 364
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 365
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 366
+  },
+  {
+   "t": "tr",
+   "id": "S0057",
+   "kind": "heading",
+   "s": "Non-uniform probabilities and nodes",
+   "line": 366,
+   "lines": [
+    366
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 366
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 367
+  },
+  {
+   "t": "lit",
+   "s": "1. ",
+   "line": 368
+  },
+  {
+   "t": "tr",
+   "id": "S0058",
+   "kind": "para",
+   "s": "**Nodes imply zero probability to find an electron in the box**. ",
+   "line": 368,
+   "lines": [
+    368
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 368
+  },
+  {
+   "t": "lit",
+   "s": "    - ",
+   "line": 369
+  },
+  {
+   "t": "tr",
+   "id": "S0059",
+   "kind": "para",
+   "s": "$|\\psi_n|^2=0$ at nodal points, which means zero probability.",
+   "line": 369,
+   "lines": [
+    369
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 369
+  },
+  {
+   "t": "lit",
+   "s": "    - ",
+   "line": 370
+  },
+  {
+   "t": "tr",
+   "id": "S0060",
+   "kind": "para",
+   "s": "This sharply contradicts classical mechanics, which bases its prediction on purely particle-like motion of the electron.",
+   "line": 370,
+   "lines": [
+    370
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 370
+  },
+  {
+   "t": "lit",
+   "s": "    - ",
+   "line": 371
+  },
+  {
+   "t": "tr",
+   "id": "S0061",
+   "kind": "para",
+   "s": "The existence of nodes implies a wave-like character of the electron.",
+   "line": 371,
+   "lines": [
+    371
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 371
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 372
+  },
+  {
+   "t": "lit",
+   "s": "2. ",
+   "line": 373
+  },
+  {
+   "t": "tr",
+   "id": "S0062",
+   "kind": "para",
+   "s": "**There are $n-1$ nodes for quantum state $n$**",
+   "line": 373,
+   "lines": [
+    373
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 373
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 374
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 375
+  },
+  {
+   "t": "tr",
+   "id": "S0063",
+   "kind": "para",
+   "s": "Recall that the sine function hits zero at integer multiples of $\\pi$: $\\sin(n\\pi)=0$ when $n=1,2,3,4,...$",
+   "line": 375,
+   "lines": [
+    375
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 375
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 376
+  },
+  {
+   "t": "tr",
+   "id": "S0064",
+   "kind": "para",
+   "s": "The wavefunction $\\psi_n(x) = \\sin \\frac{n\\pi x}{L}$ then has $n-1$ nodes at the points $x=L/n$, $2L/n$, $3L/n$, ..., $(n-1)L/n$.",
+   "line": 376,
+   "lines": [
+    376
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 376
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 377
+  },
+  {
+   "t": "tr",
+   "id": "S0065",
+   "kind": "para",
+   "s": "Note that we do not count the $x=0$ and $x=L$ points as nodes, because they are part of the boundary conditions that apply to all wavefunctions.",
+   "line": 377,
+   "lines": [
+    377
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 377
+  },
+  {
+   "t": "lit",
+   "s": "    - ",
+   "line": 378
+  },
+  {
+   "t": "tr",
+   "id": "S0066",
+   "kind": "para",
+   "s": "For instance, the $n=3$ nodes are at $x=L/3$ and $x=2L/3$.",
+   "line": 378,
+   "lines": [
+    378
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 378
+  },
+  {
+   "t": "lit",
+   "s": "    - ",
+   "line": 379
+  },
+  {
+   "t": "tr",
+   "id": "S0067",
+   "kind": "para",
+   "s": "For instance, the $n=4$ nodes are at $L/4$, $2L/4$, and $3L/4$.",
+   "line": 379,
+   "lines": [
+    379
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 379
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 380
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 381
+  },
+  {
+   "t": "tr",
+   "id": "S0068",
+   "kind": "para",
+   "s": "The dots in the right panel of the figure of the four lowest states mark these nodes.",
+   "line": 381,
+   "lines": [
+    381
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 381
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 382
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 383
+  },
+  {
+   "t": "tr",
+   "id": "S0069",
+   "kind": "heading",
+   "s": "Large quantum numbers: the classical box returns",
+   "line": 383,
+   "lines": [
+    383
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 383
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 384
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 385
+  },
+  {
+   "t": "tr",
+   "id": "S0070",
+   "kind": "para",
+   "s": "As $n$ grows, the lobes of $|\\psi_n|^2$ crowd together. A real detector has a finite resolution and averages over many lobes, and $\\sin^2$ averages to $\\frac{1}{2}$ over whole half-waves, so the measured density approaches the flat classical value $1/L$.",
+   "line": 385,
+   "lines": [
+    385
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 385
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 386
+  },
+  {
+   "t": "tr",
+   "id": "S0071",
+   "kind": "para",
+   "s": "Problem 1 gives the probability of catching the particle in the middle third of the box:",
+   "line": 386,
+   "lines": [
+    386
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 386
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 387
+  },
+  {
+   "t": "lit",
+   "s": "$$\nP_n = \\frac{1}{3} + \\frac{\\sin(2n\\pi/3) - \\sin(4n\\pi/3)}{2n\\pi}\n$$\n",
+   "line": 388
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 391
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 392
+  },
+  {
+   "t": "tr",
+   "id": "S0072",
+   "kind": "para",
+   "s": "The correction to the classical $\\frac{1}{3}$ dies off as $1/n$. This is the **correspondence principle**: quantum predictions go over to classical ones at large quantum numbers. A 1 g marble crawling at 1 cm/s across a 30 cm box has $n \\approx 10^{28}$, far beyond any lobe we could resolve.",
+   "line": 392,
+   "lines": [
+    392
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 392
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 393
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nn_c = mo.ui.slider(1, 40, step=1, value=1, show_value=True, label=\"quantum number n\")\nn_c\n```\n",
+   "line": 394
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 400
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\n_n = n_c.value\n_x = np.linspace(0, 1, 3000)\n_p = 2 * np.sin(_n * np.pi * _x) ** 2\n_P = 1 / 3 + (np.sin(2 * _n * np.pi / 3) - np.sin(4 * _n * np.pi / 3)) / (2 * _n * np.pi)\n_fig, _ax = plt.subplots(figsize=(7, 3.0))\n_ax.axvspan(1 / 3, 2 / 3, color=PURPLE, alpha=0.09, lw=0)\n_ax.fill_between(_x, _p, color=CARDINAL, alpha=0.2, lw=0)\n_ax.plot(_x, _p, color=CARDINAL, lw=1.4 if _n < 12 else 0.8, label=r\"$|\\psi_n|^2$\")\n_ax.axhline(1, color=\"k\", lw=2, ls=\"--\", label=r\"classical: $1/L$\")\n_ax.plot([0, 0, 1, 1], [2.6, 0, 0, 2.6], color=\"k\", lw=2.6)\n_ax.set_xlim(-0.02, 1.02); _ax.set_ylim(0, 2.6)\n_ax.set_yticks([0, 1, 2]); _ax.set_yticklabels([\"0\", \"1/L\", \"2/L\"])\n_ax.set_xticks([0, 1 / 3, 2 / 3, 1]); _ax.set_xticklabels([\"0\", \"L/3\", \"2L/3\", \"L\"])\n_ax.legend(loc=\"upper right\", frameon=False, fontsize=10, ncol=2, bbox_to_anchor=(1.0, 1.18))\n_ax.set_title(f\"n = {_n}:  P(middle third) = {_P:.3f}\", loc=\"left\", fontsize=11, color=PURPLE)\n_fig.tight_layout()\n_fig\n```\n",
+   "line": 401
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 422
+  },
+  {
+   "t": "tr",
+   "id": "S0073",
+   "kind": "para",
+   "s": "Fig. The probability density of state $n$ against the flat classical density $1/L$. The shaded band is the middle third of the box; its probability tends to the classical $\\frac{1}{3}$ as $n$ grows.",
+   "line": 423,
+   "lines": [
+    423,
+    423
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 423
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 424
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 425
+  },
+  {
+   "t": "tr",
+   "id": "S0074",
+   "kind": "heading",
+   "s": "Superposition: the particle sloshes",
+   "line": 425,
+   "lines": [
+    425
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 425
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 426
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 427
+  },
+  {
+   "t": "tr",
+   "id": "S0075",
+   "kind": "para",
+   "s": "A single state $\\psi_n(x)\\,e^{-iE_nt/\\hbar}$ is stationary. Its phase turns, but the time factor has absolute value one, so $|\\psi_n(x,t)|^2 = |\\psi_n(x)|^2$ never changes (see the phase clocks in the [previous lecture](01-schrodinger-equation.md)).",
+   "line": 427,
+   "lines": [
+    427
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 427
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 428
+  },
+  {
+   "t": "tr",
+   "id": "S0076",
+   "kind": "para",
+   "s": "A superposition of two states does move. Take equal amounts of the two lowest states:",
+   "line": 428,
+   "lines": [
+    428
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 428
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 429
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\Psi(x,t) = \\frac{1}{\\sqrt{2}}\\left[\\psi_1(x)\\,e^{-iE_1t/\\hbar} + \\psi_2(x)\\,e^{-iE_2t/\\hbar}\\right]\n$$\n",
+   "line": 430
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 433
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 434
+  },
+  {
+   "t": "tr",
+   "id": "S0077",
+   "kind": "para",
+   "s": "Multiplying by the complex conjugate (Problem 2 of the previous lecture) leaves a fixed part and a **cross term** that oscillates at the difference of the two phase rates, $\\omega = (E_2 - E_1)/\\hbar$:",
+   "line": 434,
+   "lines": [
+    434
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 434
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 435
+  },
+  {
+   "t": "lit",
+   "s": "$$\n|\\Psi(x,t)|^2 = \\frac{1}{2}\\left[\\psi_1^2(x) + \\psi_2^2(x)\\right] + \\psi_1(x)\\,\\psi_2(x)\\cos\\omega t\n$$\n",
+   "line": 436
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 439
+  },
+  {
+   "t": "lit",
+   "s": "```{code-cell} python\n:tags: [hide-input]\n# synced: box_slosh\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.animation import FuncAnimation\nfrom IPython.display import HTML\n\nTEAL, CARDINAL, GRAY, PURPLE, ORANGE = \"#107895\", \"#C8102E\", \"#6c757d\", \"#6a3d9a\", \"#e07b00\"\nplt.rcParams.update({\"axes.spines.top\": False, \"axes.spines.right\": False})\nx = np.linspace(0, 1, 400)\np1, p2 = np.sqrt(2) * np.sin(np.pi * x), np.sqrt(2) * np.sin(2 * np.pi * x)\nfixed, cross = 0.5 * (p1**2 + p2**2), p1 * p2               # |Psi|^2 = fixed + cross cos(wt): even + odd about L/2\nnf = 60\nts = np.linspace(0, 2 * np.pi, nf, endpoint=False)          # E1 = 1, E2 = 4, hbar = 1: w = 3, three sloshes\nxbar = lambda t: 0.5 - 16 / (9 * np.pi**2) * np.cos(3 * t)  # <x>(t) = L/2 + x12 cos(wt), x12 = -16L/9pi^2\nth = np.linspace(0, 2 * np.pi, 200)\nfig = plt.figure(figsize=(7.2, 3.4))\ngs = fig.add_gridspec(2, 2, width_ratios=[2.3, 1], height_ratios=[2, 1], hspace=0.42, wspace=0.08)\nax, axx = fig.add_subplot(gs[0, 0]), fig.add_subplot(gs[1, 0])\naxc, axl = fig.add_subplot(gs[0, 1]), fig.add_subplot(gs[1, 1])\nax.plot(x, fixed, color=GRAY, lw=1.8, ls=\"--\", label=r\"$\\frac{1}{2}(\\psi_1^2 + \\psi_2^2)$\")\n(dens,) = ax.plot([], [], color=CARDINAL, lw=2.8, label=r\"$|\\Psi|^2$\")\nband = [ax.fill_between(x, 0 * x, color=CARDINAL, alpha=0.18, lw=0)]\n(mark,) = ax.plot([], [], marker=\"^\", color=PURPLE, ms=14, zorder=6, ls=\"none\", label=r\"$\\langle x\\rangle$\")\nax.plot([0, 0, 1, 1], [3.35, 0, 0, 3.35], color=\"k\", lw=2.6)          # peak of |Psi|^2 is 3.10\nax.set_xlim(-0.02, 1.02); ax.set_ylim(0, 3.35); ax.set_xticks([]); ax.set_yticks([])\nax.spines[\"left\"].set_visible(False); ax.spines[\"bottom\"].set_visible(False)\nax.legend(loc=\"lower left\", bbox_to_anchor=(0, 0.97), ncol=3, frameon=False, fontsize=13,\n          handlelength=1.6, columnspacing=1.4)\naxx.axhline(0, color=GRAY, lw=0.8)\n(crs,) = axx.plot([], [], color=PURPLE, lw=2.6)\ncband = [axx.fill_between(x, 0 * x, color=PURPLE, alpha=0.18, lw=0)]\naxx.set_xlim(-0.02, 1.02); axx.set_ylim(-1.7, 1.7); axx.set_yticks([])\naxx.set_xticks([0, 0.5, 1]); axx.set_xticklabels([\"0\", \"L/2\", \"L\"], fontsize=13)\naxx.spines[\"left\"].set_visible(False)\naxx.set_title(r\"cross term $\\psi_1\\psi_2\\cos\\omega t$\", loc=\"left\", fontsize=13, color=PURPLE)\nfor a in (ax, axx):\n    a.axvline(0.5, color=GRAY, lw=0.8, ls=\":\")\naxc.plot(np.cos(th), np.sin(th), color=GRAY, lw=1, ls=\"--\")\n(arc,) = axc.plot([], [], color=PURPLE, lw=3.2, label=r\"$\\omega t$\")\n(h1,) = axc.plot([], [], color=TEAL, lw=3.2, label=r\"$E_1$\")\n(h2,) = axc.plot([], [], color=ORANGE, lw=3.2, label=r\"$E_2 = 4E_1$\")\naxc.set_aspect(\"equal\"); axc.set_xlim(-1.15, 1.15); axc.set_ylim(-1.15, 1.15); axc.set_axis_off()\naxc.set_title(\"phase clocks\", fontsize=13)\naxl.set_axis_off()\naxl.legend(handles=[h1, h2, arc], loc=\"center\", frameon=False, fontsize=13, handlelength=1.2)\nfig.subplots_adjust(left=0.02, right=0.99, top=0.87, bottom=0.1)\n\ndef update(i):\n    t = ts[i]\n    c = cross * np.cos(3 * t)\n    dens.set_data(x, fixed + c)\n    band[0].remove(); band[0] = ax.fill_between(x, fixed + c, color=CARDINAL, alpha=0.18, lw=0)\n    mark.set_data([xbar(t)], [0.14])\n    crs.set_data(x, c)\n    cband[0].remove(); cband[0] = axx.fill_between(x, c, color=PURPLE, alpha=0.18, lw=0)\n    a1, a2 = -t, -4 * t                                     # clock hands: e^{-iE1 t}, e^{-iE2 t}\n    d = (a1 - a2) % (2 * np.pi)                             # angle between the hands, w t\n    s = np.linspace(a2, a2 + d, 40) if d <= np.pi else np.linspace(a1, a1 + 2 * np.pi - d, 40)\n    arc.set_data(0.42 * np.cos(s), 0.42 * np.sin(s))\n    h1.set_data([0, np.cos(a1)], [0, np.sin(a1)]); h2.set_data([0, np.cos(a2)], [0, np.sin(a2)])\n\nani = FuncAnimation(fig, update, frames=nf, interval=90, blit=False)\nplt.close(fig)\nHTML(ani.to_jshtml())\n```\n",
+   "line": 440
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 507
+  },
+  {
+   "t": "tr",
+   "id": "S0078",
+   "kind": "para",
+   "s": "Fig. An equal superposition of $\\psi_1$ and $\\psi_2$. Top: the density $|\\Psi|^2$ is the fixed part $\\frac{1}{2}(\\psi_1^2 + \\psi_2^2)$ (dashed) plus the cross term; the triangle marks $\\langle x \\rangle$. Bottom: the cross term $\\psi_1\\psi_2\\cos\\omega t$. Right: the phase clocks of the two states; the angle between their hands is $\\omega t$.",
+   "line": 508,
+   "lines": [
+    508,
+    508
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 508
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 509
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 510
+  },
+  {
+   "t": "tr",
+   "id": "S0079",
+   "kind": "para",
+   "s": "The fixed part is symmetric about the center of the box, so on its own it balances at $L/2$. The cross term is odd about the center: it adds probability on one side, removes the same amount on the other, and flips sign every half period. The mean position swings with it:",
+   "line": 510,
+   "lines": [
+    510
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 510
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 511
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle x \\rangle(t) = \\frac{L}{2} + \\cos\\omega t \\int_0^L x\\,\\psi_1\\psi_2\\,dx = \\frac{L}{2} - \\frac{16L}{9\\pi^2}\\cos\\omega t\n$$\n",
+   "line": 512
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 515
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 516
+  },
+  {
+   "t": "tr",
+   "id": "S0080",
+   "kind": "para",
+   "s": "For an electron, an oscillating $\\langle x \\rangle$ is an oscillating electric dipole: a tiny antenna that emits or absorbs light of angular frequency $\\omega$, that is photons with $h\\nu = E_2 - E_1$. This is the link to the colors of conjugated molecules in the applications below. The general theory is in [Time Dependence](06-time-dependence.md).",
+   "line": 516,
+   "lines": [
+    516
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 516
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 517
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 518
+  },
+  {
+   "t": "tr",
+   "id": "S0081",
+   "kind": "heading",
+   "s": "Quantum PIB in 3D",
+   "line": 518,
+   "lines": [
+    518
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 518
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 519
+  },
+  {
+   "t": "lit",
+   "s": ":::{figure}",
+   "line": 520
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 520
+  },
+  {
+   "t": "tr",
+   "id": "S0082",
+   "kind": "directive_title",
+   "s": "./images/pib3d.png",
+   "line": 520,
+   "lines": [
+    520
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 520
+  },
+  {
+   "t": "lit",
+   "s": ":label: fig-particle-in-a-box-3\n",
+   "line": 521
+  },
+  {
+   "t": "lit",
+   "s": ":alt: pib1\n",
+   "line": 522
+  },
+  {
+   "t": "lit",
+   "s": ":width: 300px\n",
+   "line": 523
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 524
+  },
+  {
+   "t": "tr",
+   "id": "S0083",
+   "kind": "para",
+   "s": "Particle in a 3D box subject to infinitely high potential walls.",
+   "line": 525,
+   "lines": [
+    525,
+    525
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 525
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 526
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 527
+  },
+  {
+   "t": "lit",
+   "s": "$$\\hat{H}\\psi(x,y,z) = E\\psi(x,y,z)$$\n",
+   "line": 528
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 529
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 530
+  },
+  {
+   "t": "lit",
+   "s": "$${-\\frac{\\hbar^2}{2m}\\left(\\frac{\\partial^2\\psi}{\\partial x^2} + \\frac{\\partial^2\\psi}{\\partial y^2} + \\frac{\\partial^2\\psi}{\\partial z^2}\\right) = E\\psi}$$\n",
+   "line": 531
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 532
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 533
+  },
+  {
+   "t": "tr",
+   "id": "S0084",
+   "kind": "para",
+   "s": "Where we set $V=0$ for particle inside the box and enforce the solutions $\\psi$ to be normalized within the confines of the box (electron must be somewhere in the box!)",
+   "line": 533,
+   "lines": [
+    533
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 533
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 534
+  },
+  {
+   "t": "lit",
+   "s": "$${\\int\\limits_{-\\infty}^{\\infty}\\int\\limits_{-\\infty}^{\\infty}\\int\\limits_{-\\infty}^{\\infty}\\left|\\psi(x,y,z)\\right|^2dxdydz = 1}$$\n",
+   "line": 535
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 536
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 537
+  },
+  {
+   "t": "tr",
+   "id": "S0085",
+   "kind": "para",
+   "s": "Consider a particle in a box with side lengths $a$ in $x$, $b$ in $y$, and $c$ in $z$. The potential is zero inside the box and infinite outside it. Again, the potential term can be handled by boundary conditions (i.e., infinite potential implies that the wavefunction must be zero there). The above equation can now be written as:",
+   "line": 537,
+   "lines": [
+    537
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 537
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 538
+  },
+  {
+   "t": "lit",
+   "s": "$${-\\frac{\\hbar^2}{2m}\\Delta\\psi = E\\psi} \\\\\n{\\textnormal{with }\\psi(a,y,z) = \\psi(x,b,z) = \\psi(x,y,c) = 0} \\\\\n{\\textnormal{and }\\psi(0,y,z) = \\psi(x,0,z) = \\psi(x,y,0) = 0}$$\n",
+   "line": 539
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 542
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 543
+  },
+  {
+   "t": "tr",
+   "id": "S0086",
+   "kind": "para",
+   "s": "**Note the Laplacian symbol $\\Delta$**, which concisely denotes the sum of the three second-order derivatives with respect to the spatial variables. We will see this operator in all 3D problems.",
+   "line": 543,
+   "lines": [
+    543
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 543
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 544
+  },
+  {
+   "t": "tr",
+   "id": "S0087",
+   "kind": "para",
+   "s": "In general, when the potential term can be expressed as a sum of terms that depend separately on $x$, $y$, and $z$, the solutions can be written as a product:",
+   "line": 544,
+   "lines": [
+    544
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 544
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 545
+  },
+  {
+   "t": "lit",
+   "s": "$${\\psi(x,y,z) = X(x)Y(y)Z(z)}$$\n",
+   "line": 546
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 547
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 548
+  },
+  {
+   "t": "tr",
+   "id": "S0088",
+   "kind": "para",
+   "s": "By substituting and dividing by $X(x)Y(y)Z(z)$, we obtain:",
+   "line": 548,
+   "lines": [
+    548
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 548
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 549
+  },
+  {
+   "t": "lit",
+   "s": "$${-\\frac{\\hbar^2}{2m}\\left[\\frac{1}{X(x)}\\frac{d^2X(x)}{dx^2} + \\frac{1}{Y(y)}\\frac{d^2Y(y)}{dy^2} + \\frac{1}{Z(z)}\\frac{d^2Z(z)}{dz^2}\\right] = E}$$\n",
+   "line": 550
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 551
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 552
+  },
+  {
+   "t": "tr",
+   "id": "S0089",
+   "kind": "para",
+   "s": "The total energy $E$ consists of a sum of three terms, each depending separately on $x$, $y$, and $z$. Thus we can write $E = E_x + E_y + E_z$ and separate the equation into three one-dimensional problems:",
+   "line": 552,
+   "lines": [
+    552
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 552
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 553
+  },
+  {
+   "t": "lit",
+   "s": "$${-\\frac{\\hbar^2}{2m}\\left[\\frac{1}{X(x)}\\frac{d^2X(x)}{dx^2}\\right] = E_x\\textnormal{ with }X(0) = X(a) = 0}\\\\\n{-\\frac{\\hbar^2}{2m}\\left[\\frac{1}{Y(y)}\\frac{d^2Y(y)}{dy^2}\\right] = E_y\\textnormal{ with }Y(0) = Y(b) = 0}\\\\\n{-\\frac{\\hbar^2}{2m}\\left[\\frac{1}{Z(z)}\\frac{d^2Z(z)}{dz^2}\\right] = E_z\\textnormal{ with }Z(0) = Z(c) = 0}$$\n",
+   "line": 554
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 557
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 558
+  },
+  {
+   "t": "tr",
+   "id": "S0090",
+   "kind": "para",
+   "s": "Thus we find energy quantization due to spatial confinement of the quantum wave function in the $x$, $y$, and $z$ dimensions:",
+   "line": 558,
+   "lines": [
+    558
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 558
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 559
+  },
+  {
+   "t": "lit",
+   "s": "$${X(x) = \\sqrt{\\frac{2}{a}}\\sin\\left(\\frac{n_x\\pi x}{a}\\right)}\\\\\n{Y(y) = \\sqrt{\\frac{2}{b}}\\sin\\left(\\frac{n_y\\pi y}{b}\\right)}\\\\\n{Z(z) = \\sqrt{\\frac{2}{c}}\\sin\\left(\\frac{n_z\\pi z}{c}\\right)}$$\n",
+   "line": 560
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 563
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 564
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 564
+  },
+  {
+   "t": "tr",
+   "id": "S0091",
+   "kind": "directive_title",
+   "s": "**Eigenfunctions and eigenvalues of particle in 3D Box**",
+   "line": 564,
+   "lines": [
+    564
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 564
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 565
+  },
+  {
+   "t": "tr",
+   "id": "S0092",
+   "kind": "para",
+   "s": "**Rectangular Box**",
+   "line": 566,
+   "lines": [
+    566,
+    566
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 566
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 567
+  },
+  {
+   "t": "lit",
+   "s": "$${\\psi(x,y,z) = X(x)Y(y)Z(z) = \\sqrt{\\frac{8}{abc}}\\sin\\left(\\frac{n_x\\pi x}{a}\\right)\\sin\\left(\\frac{n_y\\pi y}{b}\\right)\\sin\\left(\\frac{n_z\\pi z}{c}\\right)}$$\n",
+   "line": 568
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 569
+  },
+  {
+   "t": "lit",
+   "s": "$${E_{n_x,n_y,n_z} = \\frac{h^2}{8m}\\left(\\frac{n_x^2}{a^2} + \\frac{n_y^2}{b^2} + \\frac{n_z^2}{c^2}\\right)}$$\n",
+   "line": 570
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 571
+  },
+  {
+   "t": "tr",
+   "id": "S0093",
+   "kind": "para",
+   "s": "**Cubic Box**",
+   "line": 572,
+   "lines": [
+    572,
+    572
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 572
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 573
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\psi_{n_x, n_y, n_z}(x, y, z) = \\frac{2}{L^{3/2}} \\sin\\left( \\frac{n_x \\pi x}{L} \\right) \\sin\\left( \\frac{n_y \\pi y}{L} \\right) \\sin\\left( \\frac{n_z \\pi z}{L} \\right)\n$$\n",
+   "line": 574
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 577
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 578
+  },
+  {
+   "t": "lit",
+   "s": "$$\nE_{n_x, n_y, n_z} = \\frac{\\hbar^2 \\pi^2}{2mL^2} \\left( n_x^2 + n_y^2 + n_z^2 \\right)\n$$\n",
+   "line": 579
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 582
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 583
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 584
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 585
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 586
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 587
+  },
+  {
+   "t": "tr",
+   "id": "S0094",
+   "kind": "para",
+   "s": "Energy is quantized and when $a = b = c$, we find that the energy levels can also be **degenerate** (i.e., the same energy with different values of $n_x, n_y$ and $n_z$).",
+   "line": 587,
+   "lines": [
+    587
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 587
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 588
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 589
+  },
+  {
+   "t": "tr",
+   "id": "S0095",
+   "kind": "para",
+   "s": "In most cases, **degeneracy in quantum mechanics arises from symmetry**. When $a = b = c$, the first excited level is triply degenerate: $(2,1,1)$, $(1,2,1)$ and $(1,1,2)$ are one shape turned to face different axes. When only $a = b \\neq c$, that level splits into a pair and a single state; the pair lies lower when $c$ is shorter than $a$.",
+   "line": 589,
+   "lines": [
+    589
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 589
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 590
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 591
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 592
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 592
+  },
+  {
+   "t": "tr",
+   "id": "S0096",
+   "kind": "directive_title",
+   "s": "**Table of energy levels for a cubic box**",
+   "line": 592,
+   "lines": [
+    592
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 592
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown\n",
+   "line": 593
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 594
+  },
+  {
+   "t": "tr",
+   "id": "S0097",
+   "kind": "para",
+   "s": "Energies in units of $E_0 = \\dfrac{h^2}{8mL^2}$, so $E = (n_x^2 + n_y^2 + n_z^2)\\,E_0$. The degeneracy $g$ counts the states on each level.",
+   "line": 595,
+   "lines": [
+    595,
+    595
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 595
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 596
+  },
+  {
+   "t": "tr",
+   "id": "S0098",
+   "kind": "para",
+   "s": "| $n_x^2 + n_y^2 + n_z^2$ | states $(n_x, n_y, n_z)$ | degeneracy $g$ |\n| :-- | :-- | :-- |\n| 3 | (1,1,1) | 1 |\n| 6 | (2,1,1), (1,2,1), (1,1,2) | 3 |\n| 9 | (2,2,1), (2,1,2), (1,2,2) | 3 |\n| 11 | (3,1,1), (1,3,1), (1,1,3) | 3 |\n| 12 | (2,2,2) | 1 |\n| 14 | all six orderings of (3,2,1) | 6 |\n| 17 | (3,2,2), (2,3,2), (2,2,3) | 3 |\n| 18 | (4,1,1), (1,4,1), (1,1,4) | 3 |\n| 19 | (3,3,1), (3,1,3), (1,3,3) | 3 |\n| 21 | all six orderings of (4,2,1) | 6 |\n| 22 | (3,3,2), (3,2,3), (2,3,3) | 3 |\n| 24 | (4,2,2), (2,4,2), (2,2,4) | 3 |\n| 26 | all six orderings of (4,3,1) | 6 |\n| 27 | (3,3,3) and the three orderings of (5,1,1) | 4 |",
+   "line": 597,
+   "lines": [
+    597,
+    597,
+    598,
+    599,
+    600,
+    601,
+    602,
+    603,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609,
+    610,
+    611,
+    612
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 612
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 613
+  },
+  {
+   "t": "tr",
+   "id": "S0099",
+   "kind": "para",
+   "s": "The last row is an **accidental** degeneracy: $3^2 + 3^2 + 3^2 = 5^2 + 1^2 + 1^2$, and no rotation of the cube turns $(3,3,3)$ into $(5,1,1)$.",
+   "line": 614,
+   "lines": [
+    614,
+    614
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 614
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 615
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 616
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 617
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nnx3 = mo.ui.slider(1, 4, step=1, value=2, show_value=True, label=\"nx\")\nny3 = mo.ui.slider(1, 4, step=1, value=1, show_value=True, label=\"ny\")\nnz3 = mo.ui.slider(1, 4, step=1, value=1, show_value=True, label=\"nz\")\nmo.hstack([nx3, ny3, nz3], justify=\"start\", gap=2)\n```\n",
+   "line": 618
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 626
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nside3 = 10.0\ng3 = np.linspace(0, side3, 48)\nX3, Y3, Z3 = np.meshgrid(g3, g3, g3, indexing=\"ij\")\n\ndef psi1d_m(q, n_q):\n    return np.sqrt(2 / side3) * np.sin(n_q * np.pi * q / side3)\n\npsi_3d = psi1d_m(X3, nx3.value) * psi1d_m(Y3, ny3.value) * psi1d_m(Z3, nz3.value)\namp3 = 0.5 * np.abs(psi_3d).max()\n\nfig3d = go.Figure(data=go.Isosurface(\n    x=X3.flatten(), y=Y3.flatten(), z=Z3.flatten(), value=psi_3d.flatten(),\n    colorscale=\"RdBu\", isomin=-amp3, isomax=amp3, surface_count=2,\n    showscale=False, caps=dict(x_show=False, y_show=False, z_show=False),\n))\nfig3d.update_layout(\n    scene=dict(xaxis_title=\"x\", yaxis_title=\"y\", zaxis_title=\"z\", aspectmode=\"data\"),\n    width=680, height=460,\n    title_text=f\"wavefunction isosurfaces, state ({nx3.value}, {ny3.value}, {nz3.value})\",\n)\nfig3d\n```\n",
+   "line": 627
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 652
+  },
+  {
+   "t": "tr",
+   "id": "S0100",
+   "kind": "para",
+   "s": "Fig. Surfaces of constant $\\psi_{n_x n_y n_z}$ in a cubic box, red and blue for the two signs. Set $(2,1,1)$ and then $(1,2,1)$: the same shape turned by $90°$, so the two states share an energy.",
+   "line": 653,
+   "lines": [
+    653,
+    653
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 653
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 654
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 655
+  },
+  {
+   "t": "tr",
+   "id": "S0101",
+   "kind": "para",
+   "s": "The level diagram below does the counting. Each short bar is one state. With all three sides equal, states related by a rotation of the box share a level; stretch or squeeze one side and those levels split.",
+   "line": 655,
+   "lines": [
+    655
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 655
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 656
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nside_a = mo.ui.slider(0.5, 2.0, step=0.05, value=1.0, show_value=True, label=\"side a (units of L)\")\nside_b = mo.ui.slider(0.5, 2.0, step=0.05, value=1.0, show_value=True, label=\"side b\")\nside_c = mo.ui.slider(0.5, 2.0, step=0.05, value=1.0, show_value=True, label=\"side c\")\nmo.hstack([side_a, side_b, side_c], justify=\"start\", gap=2)\n```\n",
+   "line": 657
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 665
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\n_s = (side_a.value, side_b.value, side_c.value)\n_E = {}\nfor _i in range(1, 9):\n    for _j in range(1, 9):\n        for _k in range(1, 9):\n            _E[(_i, _j, _k)] = _i**2 / _s[0]**2 + _j**2 / _s[1]**2 + _k**2 / _s[2]**2\n_levels = []\nfor _st in sorted(_E, key=_E.get):\n    if _levels and abs(_E[_st] - _levels[-1][0]) < 1e-6:\n        _levels[-1][1].append(_st)\n    else:\n        _levels.append([_E[_st], [_st]])\n_levels = _levels[:7]\n_top = _levels[-1][0] * 1.08\n_fig, _ax = plt.subplots(figsize=(7, 4.2))\n_ylab = -1.0\nfor _Eg, _ss in _levels:\n    _g = len(_ss)\n    _col = PURPLE if _g > 1 else TEAL\n    for _q in range(_g):\n        _ax.hlines(_Eg, 0.1 + 0.34 * _q, 0.38 + 0.34 * _q, color=_col, lw=3.2)\n    _ylab = max(_Eg, _ylab + 0.055 * _top)                  # keep labels of close levels apart\n    _lab = f\"g = {_g}:  \" + \", \".join(f\"({_a},{_b},{_c})\" for _a, _b, _c in _ss) if _g <= 3 else f\"g = {_g}\"\n    _ax.text(2.2, _ylab, _lab, va=\"center\", fontsize=10, color=_col)\n_ax.set_xlim(0, 5.4); _ax.set_ylim(0, _top)\n_ax.set_xticks([]); _ax.set_yticks([]); _ax.spines[\"bottom\"].set_visible(False)\n_ax.set_ylabel(r\"energy (units of $h^2/8mL^2$)\")\n_ax.set_title(f\"sides a, b, c = {_s[0]:.2f}, {_s[1]:.2f}, {_s[2]:.2f}: the seven lowest levels\", loc=\"left\", fontsize=11)\n_fig.tight_layout()\n_fig\n```\n",
+   "line": 666
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 700
+  },
+  {
+   "t": "tr",
+   "id": "S0102",
+   "kind": "para",
+   "s": "Fig. The seven lowest levels of a particle in a rectangular box. Each bar is one state and $g$ counts the states on a level. A cube has levels with $g = 1, 3, 3, 3, 1, 6, 3$; changing one side breaks the symmetry and splits them.",
+   "line": 701,
+   "lines": [
+    701,
+    701
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 701
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 702
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 703
+  },
+  {
+   "t": "tr",
+   "id": "S0103",
+   "kind": "heading",
+   "s": "Note on Computing Average Properties from a Wave Function",
+   "line": 703,
+   "lines": [
+    703
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 703
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 704
+  },
+  {
+   "t": "tr",
+   "id": "S0104",
+   "kind": "para",
+   "s": "Because of the probabilistic interpretation of the wave function, average properties can be computed from the wave function.  The general formula is",
+   "line": 705,
+   "lines": [
+    705,
+    705
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 705
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 706
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle A \\rangle = \\int \\psi^*(x)\\hat{A}\\psi(x)dx\n$$\n",
+   "line": 707
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 710
+  },
+  {
+   "t": "tr",
+   "id": "S0105",
+   "kind": "para",
+   "s": "where $\\hat{A}$ is any operator. This could be momentum, kinetic energy, and so on. Below are a few problems illustrating how to do such calculations.",
+   "line": 711,
+   "lines": [
+    711,
+    711
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 711
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 712
+  },
+  {
+   "t": "tr",
+   "id": "S0106",
+   "kind": "para",
+   "s": "To calculate the average position (or **expectation value** of position) for a particle in a 1D box, follow the steps shown in the example below.",
+   "line": 713,
+   "lines": [
+    713,
+    713
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 713
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 714
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 715
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 715
+  },
+  {
+   "t": "tr",
+   "id": "S0107",
+   "kind": "directive_title",
+   "s": "**Example: Calculate average (expectation) of position, $\\langle x\\rangle$**",
+   "line": 715,
+   "lines": [
+    715
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 715
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown\n",
+   "line": 716
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 717
+  },
+  {
+   "t": "tr",
+   "id": "S0108",
+   "kind": "para",
+   "s": "**1. Wavefunction of the Particle in a 1D Box**",
+   "line": 718,
+   "lines": [
+    718,
+    718
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 718
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 719
+  },
+  {
+   "t": "tr",
+   "id": "S0109",
+   "kind": "para",
+   "s": "The wavefunction for a particle in a 1D box of length $L$ with infinite potential walls at $x = 0$ and $x = L$ is given by:",
+   "line": 720,
+   "lines": [
+    720,
+    720
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 720
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 721
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\psi_n(x) = \\sqrt{\\frac{2}{L}} \\sin\\left(\\frac{n\\pi x}{L}\\right)\n$$\n",
+   "line": 722
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 725
+  },
+  {
+   "t": "tr",
+   "id": "S0110",
+   "kind": "para",
+   "s": "where:",
+   "line": 726,
+   "lines": [
+    726,
+    726
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 726
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 727
+  },
+  {
+   "t": "tr",
+   "id": "S0111",
+   "kind": "para",
+   "s": "$n$ is the quantum number (1, 2, 3, ...),",
+   "line": 727,
+   "lines": [
+    727
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 727
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 728
+  },
+  {
+   "t": "tr",
+   "id": "S0112",
+   "kind": "para",
+   "s": "$L$ is the length of the box,",
+   "line": 728,
+   "lines": [
+    728
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 728
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 729
+  },
+  {
+   "t": "tr",
+   "id": "S0113",
+   "kind": "para",
+   "s": "$\\psi_n(x)$ is the wavefunction.",
+   "line": 729,
+   "lines": [
+    729
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 729
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 730
+  },
+  {
+   "t": "tr",
+   "id": "S0114",
+   "kind": "para",
+   "s": "**2. Expectation Value of Position $\\langle x \\rangle$**",
+   "line": 731,
+   "lines": [
+    731,
+    731
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 731
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 732
+  },
+  {
+   "t": "tr",
+   "id": "S0115",
+   "kind": "para",
+   "s": "The expectation value of the position $x$ for a particle is given by:",
+   "line": 733,
+   "lines": [
+    733,
+    733
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 733
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 734
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle x \\rangle = \\int_0^L x |\\psi_n(x)|^2 \\, dx\n$$\n",
+   "line": 735
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 738
+  },
+  {
+   "t": "tr",
+   "id": "S0116",
+   "kind": "para",
+   "s": "This integral gives the average position of the particle based on the probability density $|\\psi_n(x)|^2$. For the wavefunction $\\psi_n(x)$, the probability density is:",
+   "line": 739,
+   "lines": [
+    739,
+    739
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 739
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 740
+  },
+  {
+   "t": "lit",
+   "s": "$$\n|\\psi_n(x)|^2 = \\left( \\sqrt{\\frac{2}{L}} \\sin\\left(\\frac{n\\pi x}{L}\\right) \\right)^2 = \\frac{2}{L} \\sin^2\\left(\\frac{n\\pi x}{L}\\right)\n$$\n",
+   "line": 741
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 744
+  },
+  {
+   "t": "tr",
+   "id": "S0117",
+   "kind": "para",
+   "s": "**3. Set Up the Integral**",
+   "line": 745,
+   "lines": [
+    745,
+    745
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 745
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 746
+  },
+  {
+   "t": "tr",
+   "id": "S0118",
+   "kind": "para",
+   "s": "Substitute $|\\psi_n(x)|^2$ into the expression for $\\langle x \\rangle$:",
+   "line": 747,
+   "lines": [
+    747,
+    747
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 747
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 748
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle x \\rangle = \\int_0^L x \\frac{2}{L} \\sin^2\\left(\\frac{n\\pi x}{L}\\right) \\, dx\n$$\n",
+   "line": 749
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 752
+  },
+  {
+   "t": "tr",
+   "id": "S0119",
+   "kind": "para",
+   "s": "This is the integral you need to solve to find the average position.",
+   "line": 753,
+   "lines": [
+    753,
+    753
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 753
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 754
+  },
+  {
+   "t": "tr",
+   "id": "S0120",
+   "kind": "para",
+   "s": "**4. Solve the Integral**",
+   "line": 755,
+   "lines": [
+    755,
+    755
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 755
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 756
+  },
+  {
+   "t": "tr",
+   "id": "S0121",
+   "kind": "para",
+   "s": "The integral can be simplified using known trigonometric identities. First, use the identity:",
+   "line": 757,
+   "lines": [
+    757,
+    757
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 757
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 758
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\sin^2 \\theta = \\frac{1}{2} \\left(1 - \\cos(2\\theta)\\right)\n$$\n",
+   "line": 759
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 762
+  },
+  {
+   "t": "tr",
+   "id": "S0122",
+   "kind": "para",
+   "s": "So, the integral becomes:",
+   "line": 763,
+   "lines": [
+    763,
+    763
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 763
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 764
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle x \\rangle = \\frac{2}{L} \\int_0^L x \\left( \\frac{1}{2} \\left( 1 - \\cos\\left( \\frac{2n\\pi x}{L} \\right) \\right) \\right) dx\n$$\n",
+   "line": 765
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 768
+  },
+  {
+   "t": "tr",
+   "id": "S0123",
+   "kind": "para",
+   "s": "Simplifying:",
+   "line": 769,
+   "lines": [
+    769,
+    769
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 769
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 770
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle x \\rangle = \\frac{1}{L} \\int_0^L x \\left( 1 - \\cos\\left( \\frac{2n\\pi x}{L} \\right) \\right) dx\n$$\n",
+   "line": 771
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 774
+  },
+  {
+   "t": "tr",
+   "id": "S0124",
+   "kind": "para",
+   "s": "Now split this into two integrals:",
+   "line": 775,
+   "lines": [
+    775,
+    775
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 775
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 776
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle x \\rangle = \\frac{1}{L} \\left( \\int_0^L x \\, dx - \\int_0^L x \\cos\\left( \\frac{2n\\pi x}{L} \\right) dx \\right)\n$$\n",
+   "line": 777
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 780
+  },
+  {
+   "t": "tr",
+   "id": "S0125",
+   "kind": "para",
+   "s": "**5. Evaluate the Integrals**",
+   "line": 781,
+   "lines": [
+    781,
+    781
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 781
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 782
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 783
+  },
+  {
+   "t": "tr",
+   "id": "S0126",
+   "kind": "para",
+   "s": "The first integral is straightforward:",
+   "line": 783,
+   "lines": [
+    783
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 783
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 784
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_0^L x \\, dx = \\frac{L^2}{2}\n$$\n",
+   "line": 785
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 788
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 789
+  },
+  {
+   "t": "tr",
+   "id": "S0127",
+   "kind": "para",
+   "s": "The second integral can be solved using integration by parts or by referring to standard integral tables. It turns out that this integral evaluates to 0 for any integer $n$. Thus:",
+   "line": 789,
+   "lines": [
+    789
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 789
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 790
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_0^L x \\cos\\left( \\frac{2n\\pi x}{L} \\right) dx = 0\n$$\n",
+   "line": 791
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 794
+  },
+  {
+   "t": "tr",
+   "id": "S0128",
+   "kind": "para",
+   "s": "**6. Final Result**",
+   "line": 795,
+   "lines": [
+    795,
+    795
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 795
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 796
+  },
+  {
+   "t": "tr",
+   "id": "S0129",
+   "kind": "para",
+   "s": "Thus, the expectation value of position simplifies to:",
+   "line": 797,
+   "lines": [
+    797,
+    797
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 797
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 798
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle x \\rangle = \\frac{1}{L} \\times \\frac{L^2}{2} = \\frac{L}{2}\n$$\n",
+   "line": 799
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 802
+  },
+  {
+   "t": "tr",
+   "id": "S0130",
+   "kind": "para",
+   "s": "**7. Interpretation**",
+   "line": 803,
+   "lines": [
+    803,
+    803
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 803
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 804
+  },
+  {
+   "t": "tr",
+   "id": "S0131",
+   "kind": "para",
+   "s": "For any quantum state $n$, the average position $\\langle x \\rangle$ of a particle in a 1D box is always:",
+   "line": 805,
+   "lines": [
+    805,
+    805
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 805
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 806
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle x \\rangle = \\frac{L}{2}\n$$\n",
+   "line": 807
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 810
+  },
+  {
+   "t": "tr",
+   "id": "S0132",
+   "kind": "para",
+   "s": "This result makes sense intuitively because, due to the symmetry of the problem, the particle is equally likely to be found on either side of the box, so its average position is right in the middle of the box at $x = \\frac{L}{2}$.",
+   "line": 811,
+   "lines": [
+    811,
+    811
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 811
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 812
+  },
+  {
+   "t": "tr",
+   "id": "S0133",
+   "kind": "para",
+   "s": "**Summary**",
+   "line": 813,
+   "lines": [
+    813,
+    813
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 813
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 814
+  },
+  {
+   "t": "tr",
+   "id": "S0134",
+   "kind": "para",
+   "s": "To find the average position of a particle in a 1D box for a general wavefunction:",
+   "line": 815,
+   "lines": [
+    815,
+    815
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 815
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 816
+  },
+  {
+   "t": "tr",
+   "id": "S0135",
+   "kind": "para",
+   "s": "Use the wavefunction $\\psi_n(x)$,",
+   "line": 816,
+   "lines": [
+    816
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 816
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 817
+  },
+  {
+   "t": "tr",
+   "id": "S0136",
+   "kind": "para",
+   "s": "Set up the expectation value integral $\\langle x \\rangle = \\int_0^L x\\,|\\psi_n(x)|^2 \\, dx$,",
+   "line": 817,
+   "lines": [
+    817
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 817
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 818
+  },
+  {
+   "t": "tr",
+   "id": "S0137",
+   "kind": "para",
+   "s": "Solve the integral, which results in $\\langle x \\rangle = \\frac{L}{2}$ for all $n$.",
+   "line": 818,
+   "lines": [
+    818
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 818
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 819
+  },
+  {
+   "t": "tr",
+   "id": "S0138",
+   "kind": "para",
+   "s": "Thus, the particle's average position is always at the midpoint of the box, independent of the quantum number $n$.",
+   "line": 820,
+   "lines": [
+    820,
+    820
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 820
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 821
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 822
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 823
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 824
+  },
+  {
+   "t": "tr",
+   "id": "S0139",
+   "kind": "heading",
+   "s": "Applications: electronic transitions in conjugated molecules",
+   "line": 824,
+   "lines": [
+    824
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 824
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 825
+  },
+  {
+   "t": "tr",
+   "id": "S0140",
+   "kind": "para",
+   "s": "One of the most useful applications of the particle in a box is estimating the color of light absorbed by **π-conjugated molecules**. In molecules with alternating single and double bonds, the π-electrons are **delocalized** over the conjugated region and behave, to a first approximation, like particles confined to a box whose length is the length of the conjugated chain.",
+   "line": 826,
+   "lines": [
+    826,
+    826
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 826
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 827
+  },
+  {
+   "t": "lit",
+   "s": ":::{figure}",
+   "line": 828
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 828
+  },
+  {
+   "t": "tr",
+   "id": "S0141",
+   "kind": "directive_title",
+   "s": "images/pib1d-1.jpeg",
+   "line": 828,
+   "lines": [
+    828
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 828
+  },
+  {
+   "t": "lit",
+   "s": ":width: 70%\n",
+   "line": 829
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 830
+  },
+  {
+   "t": "tr",
+   "id": "S0142",
+   "kind": "para",
+   "s": "A linear conjugated system (a polyene) modeled as a 1D particle in a box: the delocalized π-electrons are confined to the length of the conjugated chain.",
+   "line": 831,
+   "lines": [
+    831,
+    831
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 831
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 832
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 833
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 834
+  },
+  {
+   "t": "tr",
+   "id": "S0143",
+   "kind": "para",
+   "s": "**1D box** models linear conjugated systems such as butadiene and longer polyenes. The box length is the length of the conjugated chain, and the level spacing sets the wavelength of light absorbed.",
+   "line": 834,
+   "lines": [
+    834
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 834
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 835
+  },
+  {
+   "t": "tr",
+   "id": "S0144",
+   "kind": "para",
+   "s": "**2D box** models π-electrons delocalized over a two-dimensional region, such as aromatic rings or graphene fragments.",
+   "line": 835,
+   "lines": [
+    835
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 835
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 836
+  },
+  {
+   "t": "lit",
+   "s": ":::{figure}",
+   "line": 837
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 837
+  },
+  {
+   "t": "tr",
+   "id": "S0145",
+   "kind": "directive_title",
+   "s": "images/pib-applic2.jpeg",
+   "line": 837,
+   "lines": [
+    837
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 837
+  },
+  {
+   "t": "lit",
+   "s": ":width: 70%\n",
+   "line": 838
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 839
+  },
+  {
+   "t": "tr",
+   "id": "S0146",
+   "kind": "para",
+   "s": "Aromatic and extended π-systems modeled as a 2D particle in a box.",
+   "line": 840,
+   "lines": [
+    840,
+    840
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 840
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 841
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 842
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 843
+  },
+  {
+   "t": "tr",
+   "id": "S0147",
+   "kind": "heading",
+   "s": "Worked example: butadiene",
+   "line": 843,
+   "lines": [
+    843
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 843
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 844
+  },
+  {
+   "t": "tr",
+   "id": "S0148",
+   "kind": "para",
+   "s": "Consider butadiene (C₄H₆), whose four π-electrons are delocalized over the conjugated chain. We estimate the wavelength that excites one π-electron across the gap.",
+   "line": 845,
+   "lines": [
+    845,
+    845
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 845
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 846
+  },
+  {
+   "t": "tr",
+   "id": "S0149",
+   "kind": "para",
+   "s": "**Step 1: length of the box.** Butadiene, CH₂=CH-CH=CH₂, has two C=C bonds and one C-C bond between its end carbons (C=C ≈ 1.35 Å, C-C ≈ 1.54 Å):",
+   "line": 847,
+   "lines": [
+    847,
+    847
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 847
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 848
+  },
+  {
+   "t": "lit",
+   "s": "$$\nL = 1.35\\,\\text{Å} + 1.54\\,\\text{Å} + 1.35\\,\\text{Å} = 4.24\\,\\text{Å}.\n$$\n",
+   "line": 849
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 852
+  },
+  {
+   "t": "tr",
+   "id": "S0150",
+   "kind": "para",
+   "s": "**Step 2: fill the levels.** Each level holds two electrons (Pauli), so the four π-electrons fill $n=1$ and $n=2$. The highest occupied level is $n=2$ and the lowest empty one is $n=3$, so the absorption is the $n=2 \\to n=3$ transition.",
+   "line": 853,
+   "lines": [
+    853,
+    853
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 853
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 854
+  },
+  {
+   "t": "tr",
+   "id": "S0151",
+   "kind": "para",
+   "s": "**Step 3: transition energy and wavelength.** With $E_n = \\dfrac{n^2 h^2}{8mL^2}$, the absorbed photon satisfies",
+   "line": 855,
+   "lines": [
+    855,
+    855
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 855
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 856
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\Delta E = E_3 - E_2 = \\frac{(3^2 - 2^2)h^2}{8mL^2} = \\frac{hc}{\\lambda}.\n$$\n",
+   "line": 857
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 860
+  },
+  {
+   "t": "lit",
+   "s": "```{code-cell} python\n:tags: [hide-input]\nimport numpy as np\n\nh = 6.626e-34    # Planck constant (J s)\nm = 9.109e-31    # electron mass (kg)\nc = 3.0e8        # speed of light (m/s)\n# box ending at the end carbons, then one carbon radius (0.77 A) past each end\nfor label, L in [(\"L = 4.24 A\", 4.24e-10), (\"L = 5.78 A\", 5.78e-10)]:\n    E = lambda n: n**2 * h**2 / (8 * m * L**2)\n    dE = E(3) - E(2)             # HOMO (n=2) -> LUMO (n=3)\n    lam = h * c / dE\n    print(f\"{label}:  Delta E (2 -> 3) = {dE:.3e} J,  absorption wavelength = {lam * 1e9:.0f} nm\")\n```\n",
+   "line": 861
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 875
+  },
+  {
+   "t": "tr",
+   "id": "S0152",
+   "kind": "para",
+   "s": "With the box ending at the end carbons, the estimate (about 119 nm) lands deep in the ultraviolet, well short of the measured 217 nm. The π-electrons do not stop at the end carbons, though: extending the box by one carbon radius (0.77 Å) past each end gives $L = 5.78$ Å and about 220 nm, close to experiment. The simple model captures the key trend: **longer conjugation means a longer box, smaller level spacing, and absorption shifted toward the red**, which is why extended π-systems like carotenes are colored.",
+   "line": 876,
+   "lines": [
+    876,
+    876
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 876
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 877
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 878
+  },
+  {
+   "t": "tr",
+   "id": "S0153",
+   "kind": "heading",
+   "s": "Problems",
+   "line": 878,
+   "lines": [
+    878
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 878
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 879
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 880
+  },
+  {
+   "t": "tr",
+   "id": "S0154",
+   "kind": "heading",
+   "s": "Problem 1: Compute probability of finding particle somewhere",
+   "line": 880,
+   "lines": [
+    880
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 880
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 881
+  },
+  {
+   "t": "tr",
+   "id": "S0155",
+   "kind": "para",
+   "s": "Compute the probability of observing the particle in a box in the domain $\\frac{a}{3} \\leq x \\leq \\frac{2a}{3}$.",
+   "line": 882,
+   "lines": [
+    882,
+    882
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 882
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 883
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 884
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 884
+  },
+  {
+   "t": "tr",
+   "id": "S0156",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 884,
+   "lines": [
+    884
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 884
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 885
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 886
+  },
+  {
+   "t": "tr",
+   "id": "S0157",
+   "kind": "para",
+   "s": "Since the square of the wave function is a probability density, we can determine the probability of observing the particle in a particular domain using the relationship",
+   "line": 887,
+   "lines": [
+    887,
+    887
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 887
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 888
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{equation}\n\\text{Prob}(x_1 \\leq x \\leq x_2) = \\int_{x_1}^{x_2}P(x)dx = \\int_{x_1}^{x_2} \\psi^*(x)\\psi(x)dx\n\\end{equation}$$\n",
+   "line": 889
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 892
+  },
+  {
+   "t": "tr",
+   "id": "S0158",
+   "kind": "para",
+   "s": "We simply use the above equation together with the normalized particle-in-a-box wave function:",
+   "line": 893,
+   "lines": [
+    893,
+    893
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 893
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 894
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{align}\n\\text{Prob}(\\frac{a}{3} \\leq x \\leq \\frac{2a}{3}) = \\frac{2}{a}\\int_{\\frac{a}{3}}^{\\frac{2a}{3}} \\sin^2\\frac{n\\pi x}{a}dx\n\\end{align}$$\n",
+   "line": 895
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 898
+  },
+  {
+   "t": "tr",
+   "id": "S0159",
+   "kind": "para",
+   "s": "We will use the definite integral of $\\sin^2ax$ from a table:",
+   "line": 899,
+   "lines": [
+    899,
+    899
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 899
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 900
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{equation}\n\\int\\sin^2axdx = \\frac{x}{2} - \\frac{\\sin2ax}{4a}\n\\end{equation}$$\n",
+   "line": 901
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 904
+  },
+  {
+   "t": "tr",
+   "id": "S0160",
+   "kind": "para",
+   "s": "Perform a $u$-substitution on the integral above to put it into the table form:",
+   "line": 905,
+   "lines": [
+    905,
+    905
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 905
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 906
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{align}\n\\text{Prob}(\\frac{a}{3} \\leq x \\leq \\frac{2a}{3}) &= \\frac{2}{a}\\left[ \\frac{x}{2} - \\frac{\\sin\\frac{2n\\pi x}{a}}{\\frac{4n\\pi}{a}}\\right]_{\\frac{a}{3}}^{\\frac{2a}{3}} \\\\\n&= \\frac{2}{a}\\left[ \\frac{x}{2} - \\frac{a\\sin\\frac{2n\\pi x}{a}}{4n\\pi}\\right]_{\\frac{a}{3}}^{\\frac{2a}{3}} \\\\\n&= \\frac{2}{a}\\left[ \\frac{a}{3} - \\frac{a\\sin\\frac{4n\\pi}{3}}{4n\\pi} - \\frac{a}{6} + \\frac{a\\sin\\frac{2n\\pi }{3}}{4n\\pi}\\right] \\\\\n&= 2\\left[ \\frac{1}{6}  + \\frac{\\sin\\frac{2n\\pi }{3} - \\sin\\frac{4n\\pi}{3}}{4n\\pi}\\right]\n\\end{align}$$\n",
+   "line": 907
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 913
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 914
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 915
+  },
+  {
+   "t": "tr",
+   "id": "S0161",
+   "kind": "heading",
+   "s": "Problem 2: Compute an expectation of $x^2$",
+   "line": 915,
+   "lines": [
+    915
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 915
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 916
+  },
+  {
+   "t": "tr",
+   "id": "S0162",
+   "kind": "para",
+   "s": "Compute the average of $x^2$ for a particle in a box.",
+   "line": 917,
+   "lines": [
+    917,
+    917
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 917
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 918
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 919
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 919
+  },
+  {
+   "t": "tr",
+   "id": "S0163",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 919,
+   "lines": [
+    919
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 919
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 920
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 921
+  },
+  {
+   "t": "tr",
+   "id": "S0164",
+   "kind": "para",
+   "s": "To compute the average value of $x^2$, we start by writing the integral expression:",
+   "line": 922,
+   "lines": [
+    922,
+    922
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 922
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 923
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{equation}\n\\langle x^2 \\rangle = \\int \\psi^*(x) x^2 \\psi(x)dx\n\\end{equation}$$\n",
+   "line": 924
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 927
+  },
+  {
+   "t": "tr",
+   "id": "S0165",
+   "kind": "para",
+   "s": "For the particle in a box, we can limit the domain, and thus the bounds of integration, to $0\\leq x \\leq a$. We can also set $\\psi_n(x) = \\sqrt{\\frac{2}{a}}\\sin\\frac{n\\pi x}{a}$.",
+   "line": 928,
+   "lines": [
+    928,
+    928
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 928
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 929
+  },
+  {
+   "t": "tr",
+   "id": "S0166",
+   "kind": "para",
+   "s": "Thus, for a particle in a 1D box of size $a$, we get",
+   "line": 930,
+   "lines": [
+    930,
+    930
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 930
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 931
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{align}\n\\langle x^2 \\rangle &= \\int_0^a \\sqrt{\\frac{2}{a}}\\sin\\left(\\frac{n\\pi x}{a}\\right) x^2 \\sqrt{\\frac{2}{a}}\\sin\\left(\\frac{n\\pi x}{a}\\right)dx \\\\\n&= \\frac{2}{a} \\int_0^a x^2 \\sin^2\\frac{n\\pi x}{a}dx\n\\end{align}$$\n",
+   "line": 932
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 936
+  },
+  {
+   "t": "tr",
+   "id": "S0167",
+   "kind": "para",
+   "s": "From an integral table we find that",
+   "line": 937,
+   "lines": [
+    937,
+    937
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 937
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 938
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{equation}\n\\int x^2\\sin^2\\alpha xdx = \\frac{x^3}{6} - \\left(\\frac{x^2}{4\\alpha} - \\frac{1}{8\\alpha^3}\\right)\\sin2\\alpha x - \\frac{x\\cos 2\\alpha x}{4\\alpha^2} + C\n\\end{equation}$$\n",
+   "line": 939
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 942
+  },
+  {
+   "t": "tr",
+   "id": "S0168",
+   "kind": "para",
+   "s": "We use this equation with $\\alpha = \\frac{n\\pi}{a}$ and get:",
+   "line": 943,
+   "lines": [
+    943,
+    943
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 943
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 944
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{align}\n\\langle x^2 \\rangle &= \\int_0^a \\sqrt{\\frac{2}{a}}\\sin\\left(\\frac{n\\pi x}{a}\\right) x^2 \\sqrt{\\frac{2}{a}}\\sin\\left(\\frac{n\\pi x}{a}\\right)dx \\\\\n&= \\frac{2}{a} \\int_0^a x^2 \\sin^2\\frac{n\\pi x}{a}dx \\\\\n&= \\frac{2}{a}\\left[ \\frac{x^3}{6} - \\left(\\frac{x^2}{4\\alpha} - \\frac{1}{8\\alpha^3}\\right)\\sin2\\alpha x - \\frac{x\\cos 2\\alpha x}{4\\alpha^2}\\right]_0^a \\\\\n&= \\frac{2}{a}\\left[ \\frac{a^3}{6} - \\left(\\frac{a^2}{4\\alpha} - \\frac{1}{8\\alpha^3}\\right)\\sin2\\alpha a - \\frac{a\\cos 2\\alpha a}{4\\alpha^2} \\right] \\\\\n&= \\frac{2}{a}\\left[ \\frac{a^3}{6} - \\left(\\frac{a^2}{4\\frac{n\\pi}{a}} - \\frac{1}{8\\left(\\frac{n\\pi}{a}\\right)^3}\\right)\\sin2\\frac{n\\pi}{a} a - \\frac{a\\cos 2\\frac{n\\pi}{a} a}{4\\left(\\frac{n\\pi}{a}\\right)^2} \\right] \\\\\n&= \\frac{2}{a}\\left[ \\frac{a^3}{6} - \\frac{a^3}{\\left(2n\\pi\\right)^2} \\right] \\\\\n&=  \\frac{a^2}{3} - \\frac{a^2}{2\\left(n\\pi\\right)^2} \n\\end{align}$$\n",
+   "line": 945
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 954
+  },
+  {
+   "t": "tr",
+   "id": "S0169",
+   "kind": "para",
+   "s": "This result, combined with the result for $\\langle x \\rangle$, can be used to determine $\\sigma_x$, the standard deviation of the particle's position:",
+   "line": 955,
+   "lines": [
+    955,
+    955
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 955
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 956
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{equation}\n\\sigma_x = \\sqrt{\\langle x^2 \\rangle - \\langle x \\rangle^2} = \\frac{a}{2\\pi n}\\sqrt{\\frac{\\pi^2n^2}{3} -2}\n\\end{equation}$$\n",
+   "line": 957
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 960
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 961
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 962
+  },
+  {
+   "t": "tr",
+   "id": "S0170",
+   "kind": "heading",
+   "s": "Problem 3: Compute expectation of energy",
+   "line": 962,
+   "lines": [
+    962
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 962
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 963
+  },
+  {
+   "t": "tr",
+   "id": "S0171",
+   "kind": "para",
+   "s": "Compute the average energy of a particle in a box.",
+   "line": 964,
+   "lines": [
+    964,
+    964
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 964
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 965
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 966
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 966
+  },
+  {
+   "t": "tr",
+   "id": "S0172",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 966,
+   "lines": [
+    966
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 966
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 967
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 968
+  },
+  {
+   "t": "tr",
+   "id": "S0173",
+   "kind": "para",
+   "s": "The average energy of the particle in a box is a special case of computing an average quantity. We start by writing out the standard definition of an average computed from a wavefunction:",
+   "line": 969,
+   "lines": [
+    969,
+    969
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 969
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 970
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{equation}\n\\langle E \\rangle = \\int_0^a \\psi_n^*(x)\\hat{E}\\psi_n(x)dx\n\\end{equation}$$\n",
+   "line": 971
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 974
+  },
+  {
+   "t": "tr",
+   "id": "S0174",
+   "kind": "para",
+   "s": "where $\\hat{E}$ is the total energy operator. We know the total energy operator by another symbol, namely $\\hat{E} = \\hat{H}$. We plug this into the above equation to get:",
+   "line": 975,
+   "lines": [
+    975,
+    975
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 975
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 976
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{equation}\n\\langle E \\rangle = \\int_0^a \\psi_n^*(x)\\hat{H}\\psi_n(x)dx.\n\\end{equation}$$\n",
+   "line": 977
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 980
+  },
+  {
+   "t": "tr",
+   "id": "S0175",
+   "kind": "para",
+   "s": "We now recognize that the particle-in-a-box wavefunctions we are discussing were derived from the Schrödinger equation:",
+   "line": 981,
+   "lines": [
+    981,
+    981
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 981
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 982
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{equation}\n\\hat{H}\\psi_n(x)  = E_n\\psi_n(x)\n\\end{equation}$$\n",
+   "line": 983
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 986
+  },
+  {
+   "t": "tr",
+   "id": "S0176",
+   "kind": "para",
+   "s": "where $E_n$ is a scalar. Thus, for the average energy we get:",
+   "line": 987,
+   "lines": [
+    987,
+    987
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 987
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 988
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{align}\n\\langle E \\rangle &= \\int_0^a \\psi_n^*(x)\\hat{H}\\psi_n(x)dx \\\\\n&=\\int_0^a \\psi_n^*(x)E_n\\psi_n(x)dx \\\\\n&=E_n\\int_0^a \\psi_n^*(x)\\psi_n(x)dx \\\\\n&= E_n\n\\end{align}$$\n",
+   "line": 989
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 995
+  },
+  {
+   "t": "tr",
+   "id": "S0177",
+   "kind": "para",
+   "s": "The last equality holds because the wave functions are normalized.",
+   "line": 996,
+   "lines": [
+    996,
+    996
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 996
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 997
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 998
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 999
+  },
+  {
+   "t": "tr",
+   "id": "S0178",
+   "kind": "heading",
+   "s": "Problem 4: Compute expectation of momentum",
+   "line": 999,
+   "lines": [
+    999
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 999
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1000
+  },
+  {
+   "t": "tr",
+   "id": "S0179",
+   "kind": "para",
+   "s": "Compute the average momentum for a particle in a box.",
+   "line": 1001,
+   "lines": [
+    1001,
+    1001
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1001
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1002
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 1003
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 1003
+  },
+  {
+   "t": "tr",
+   "id": "S0180",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 1003,
+   "lines": [
+    1003
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1003
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 1004
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1005
+  },
+  {
+   "t": "tr",
+   "id": "S0181",
+   "kind": "para",
+   "s": "To compute the average momentum of a particle in a 1D box, we start in the usual way:",
+   "line": 1006,
+   "lines": [
+    1006,
+    1006
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1006
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1007
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{equation}\n\\langle p \\rangle = \\int_0^a \\psi_n^*(x)\\hat{p}\\psi_n(x)dx\n\\end{equation}$$\n",
+   "line": 1008
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1011
+  },
+  {
+   "t": "tr",
+   "id": "S0182",
+   "kind": "para",
+   "s": "Recall that the momentum operator in one dimension is given by",
+   "line": 1012,
+   "lines": [
+    1012,
+    1012
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1012
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1013
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{equation}\n\\hat{p}_x = -i\\hbar\\frac{d}{dx}\n\\end{equation}$$\n",
+   "line": 1014
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1017
+  },
+  {
+   "t": "tr",
+   "id": "S0183",
+   "kind": "para",
+   "s": "We now substitute this into the above equation and solve:",
+   "line": 1018,
+   "lines": [
+    1018,
+    1018
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1018
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1019
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{align}\n\\langle p \\rangle &= \\int_0^a \\psi_n^*(x)\\left(-i\\hbar\\frac{d}{dx}\\right)\\psi_n(x)dx \\\\\n&= -\\frac{2i\\hbar}{a}\\int_0^a \\sin\\left(\\frac{n\\pi x}{a}\\right)\\frac{d}{dx}\\left(\\sin\\left(\\frac{n\\pi x}{a}\\right)\\right)dx \\\\\n&= -\\frac{2i\\hbar}{a}\\int_0^a \\sin\\left(\\frac{n\\pi x}{a}\\right)\\frac{n\\pi}{a}\\cos\\left(\\frac{n\\pi x}{a}\\right)dx \\\\\n&= -\\frac{2in\\pi\\hbar}{a^2}\\int_0^a \\sin\\left(\\frac{n\\pi x}{a}\\right)\\cos\\left(\\frac{n\\pi x}{a}\\right)dx \\\\\n&= 0\n\\end{align}$$\n",
+   "line": 1020
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1027
+  },
+  {
+   "t": "tr",
+   "id": "S0184",
+   "kind": "para",
+   "s": "where the last equality can be found in an integral table.",
+   "line": 1028,
+   "lines": [
+    1028,
+    1028
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1028
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1029
+  },
+  {
+   "t": "tr",
+   "id": "S0185",
+   "kind": "para",
+   "s": "So the average momentum of a particle in a box is zero. This is because it is equally probable for the particle to be moving forward and backward.",
+   "line": 1030,
+   "lines": [
+    1030,
+    1030
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1030
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 1031
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1032
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 1033
+  },
+  {
+   "t": "tr",
+   "id": "S0186",
+   "kind": "heading",
+   "s": "Problem 5",
+   "line": 1033,
+   "lines": [
+    1033
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1033
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1034
+  },
+  {
+   "t": "tr",
+   "id": "S0187",
+   "kind": "para",
+   "s": " Consider an electron in superfluid helium ($^4$He) where it forms a solvation cavity with a radius of $18 \\text{Å}$. Calculate the zero-point energy and the energy difference between the ground and first excited states by approximating the electron by a particle in a 3-dimensional box.",
+   "line": 1035,
+   "lines": [
+    1035,
+    1035
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1035
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1036
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1037
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 1038
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 1038
+  },
+  {
+   "t": "tr",
+   "id": "S0188",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 1038,
+   "lines": [
+    1038
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1038
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 1039
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1040
+  },
+  {
+   "t": "tr",
+   "id": "S0189",
+   "kind": "para",
+   "s": "The zero-point energy can be obtained from the lowest-state energy ($n = 1$) with $a = b = c = 36 \\text{Å}$. The first excited state is triply degenerate ($E_{112}$, $E_{121}$, and $E_{211}$).",
+   "line": 1041,
+   "lines": [
+    1041,
+    1041
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1041
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1042
+  },
+  {
+   "t": "lit",
+   "s": "$$E_{111} = \\frac{h^2}{8m_e}\\left(\\frac{n_x^2}{a^2} + \\frac{n_y^2}{b^2} + \\frac{n_z^2}{c^2}\\right)$$\n",
+   "line": 1043
+  },
+  {
+   "t": "lit",
+   "s": "$$= \\frac{(6.626076\\times 10^{-34}\\textnormal{ Js})^2}{8(9.109390\\times 10^{-31}\\textnormal{ kg})}\\left(\\frac{1}{(36\\times 10^{-10}\\textnormal{ m})^2} + \\frac{1}{(36\\times 10^{-10}\\textnormal{ m})^2} + \\frac{1}{(36\\times 10^{-10}\\textnormal{ m})^2}\\right)$$\n",
+   "line": 1044
+  },
+  {
+   "t": "lit",
+   "s": "$$= 1.39\\times10^{-20}\\textnormal{ J} = 87.0\\textnormal{ meV}$$\n",
+   "line": 1045
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1046
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1047
+  },
+  {
+   "t": "lit",
+   "s": "$$E_{211} = E_{121} = E_{112} = \\frac{(6.626076\\times 10^{-34}\\textnormal{ Js})^2}{8(9.109390\\times 10^{-31}\\textnormal{ kg})}$$\n",
+   "line": 1048
+  },
+  {
+   "t": "lit",
+   "s": "$$\\times\\left(\\frac{2^2}{(36\\times 10^{-10}\\textnormal{ m})^2} + \\frac{1^2}{(36\\times 10^{-10}\\textnormal{ m})^2} + \\frac{1^2}{(36\\times 10^{-10}\\textnormal{ m})^2}\\right)$$\n",
+   "line": 1049
+  },
+  {
+   "t": "lit",
+   "s": "$$= 2.79\\times 10^{-20}\\textnormal{ J} = 174\\textnormal{ meV} \\Rightarrow \\Delta E = 87\\textnormal{ meV}$$\n",
+   "line": 1050
+  },
+  {
+   "t": "tr",
+   "id": "S0190",
+   "kind": "para",
+   "s": "(Experimental value: 105 meV; Phys. Rev. B 41, 6366 (1990))",
+   "line": 1051,
+   "lines": [
+    1051,
+    1051
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1051
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1052
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 1053
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1054
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 1055
+  },
+  {
+   "t": "tr",
+   "id": "S0191",
+   "kind": "heading",
+   "s": "Problem 6: Energy Levels in a 3D Box",
+   "line": 1055,
+   "lines": [
+    1055
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1055
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1056
+  },
+  {
+   "t": "tr",
+   "id": "S0192",
+   "kind": "para",
+   "s": "A particle is confined in a 3D box with side lengths $L_x = L_y = L_z = L$. The energy levels for a particle in this box are given by the formula:",
+   "line": 1057,
+   "lines": [
+    1057,
+    1057
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1057
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1058
+  },
+  {
+   "t": "lit",
+   "s": "$$E_{n_x, n_y, n_z} = \\frac{\\hbar^2 \\pi^2}{2mL^2} \\left( n_x^2 + n_y^2 + n_z^2 \\right)$$\n",
+   "line": 1059
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1060
+  },
+  {
+   "t": "tr",
+   "id": "S0193",
+   "kind": "para",
+   "s": "where $n_x$, $n_y$, $n_z$ are the quantum numbers associated with the particle's motion in the $x$-, $y$-, and $z$-directions.",
+   "line": 1061,
+   "lines": [
+    1061,
+    1061
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1061
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1062
+  },
+  {
+   "t": "tr",
+   "id": "S0194",
+   "kind": "para",
+   "s": "Calculate the energy levels for the quantum states with $n_x = 1$, $n_y = 1$, $n_z = 2$ and $n_x = 2$, $n_y = 2$, $n_z = 1$. Are these energy levels degenerate?",
+   "line": 1063,
+   "lines": [
+    1063,
+    1063
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1063
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1064
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 1065
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 1065
+  },
+  {
+   "t": "tr",
+   "id": "S0195",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 1065,
+   "lines": [
+    1065
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1065
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 1066
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1067
+  },
+  {
+   "t": "tr",
+   "id": "S0196",
+   "kind": "para",
+   "s": "The energy for the state $(n_x, n_y, n_z) = (1, 1, 2)$ is:",
+   "line": 1068,
+   "lines": [
+    1068,
+    1068
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1068
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1069
+  },
+  {
+   "t": "lit",
+   "s": "$$E_{1,1,2} = \\frac{\\hbar^2 \\pi^2}{2mL^2} \\left( 1^2 + 1^2 + 2^2 \\right) = \\frac{\\hbar^2 \\pi^2}{2mL^2} (1 + 1 + 4) = \\frac{\\hbar^2 \\pi^2}{2mL^2} \\times 6$$\n",
+   "line": 1070
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1071
+  },
+  {
+   "t": "tr",
+   "id": "S0197",
+   "kind": "para",
+   "s": "The energy for the state $(n_x, n_y, n_z) = (2, 2, 1)$ is:",
+   "line": 1072,
+   "lines": [
+    1072,
+    1072
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1072
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1073
+  },
+  {
+   "t": "lit",
+   "s": "$$E_{2,2,1} = \\frac{\\hbar^2 \\pi^2}{2mL^2} \\left( 2^2 + 2^2 + 1^2 \\right) = \\frac{\\hbar^2 \\pi^2}{2mL^2} (4 + 4 + 1) = \\frac{\\hbar^2 \\pi^2}{2mL^2} \\times 9$$\n",
+   "line": 1074
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1075
+  },
+  {
+   "t": "tr",
+   "id": "S0198",
+   "kind": "para",
+   "s": "Since $E_{1,1,2} \\neq E_{2,2,1}$, these energy levels are **not degenerate**.",
+   "line": 1076,
+   "lines": [
+    1076,
+    1076
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1076
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1077
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 1078
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1079
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 1080
+  },
+  {
+   "t": "tr",
+   "id": "S0199",
+   "kind": "heading",
+   "s": "Problem 7: Degeneracy of Energy Levels",
+   "line": 1080,
+   "lines": [
+    1080
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1080
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1081
+  },
+  {
+   "t": "tr",
+   "id": "S0200",
+   "kind": "para",
+   "s": "Consider a particle confined in a cubic box with side lengths $L_x = L_y = L_z = L$. The energy levels are given by the same formula as in Problem 6.",
+   "line": 1082,
+   "lines": [
+    1082,
+    1082
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1082
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1083
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 1084
+  },
+  {
+   "t": "tr",
+   "id": "S0201",
+   "kind": "para",
+   "s": "**Part 1:** Find the degeneracy of the energy level corresponding to the quantum number sum $n_x^2 + n_y^2 + n_z^2 = 14$.",
+   "line": 1084,
+   "lines": [
+    1084
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1084
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 1085
+  },
+  {
+   "t": "tr",
+   "id": "S0202",
+   "kind": "para",
+   "s": "**Part 2:** Write down all the quantum number triplets $(n_x, n_y, n_z)$ that correspond to this energy level.",
+   "line": 1085,
+   "lines": [
+    1085
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1085
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1086
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 1087
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 1087
+  },
+  {
+   "t": "tr",
+   "id": "S0203",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 1087,
+   "lines": [
+    1087
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1087
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 1088
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1089
+  },
+  {
+   "t": "tr",
+   "id": "S0204",
+   "kind": "para",
+   "s": "**Part 1:**\nWe want to find the quantum numbers that satisfy:",
+   "line": 1090,
+   "lines": [
+    1090,
+    1090,
+    1091
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1091
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1092
+  },
+  {
+   "t": "tr",
+   "id": "S0205",
+   "kind": "para",
+   "s": "$n_x^2 + n_y^2 + n_z^2 = 14$",
+   "line": 1093,
+   "lines": [
+    1093,
+    1093
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1093
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1094
+  },
+  {
+   "t": "tr",
+   "id": "S0206",
+   "kind": "para",
+   "s": "We can check different combinations of $n_x$, $n_y$, and $n_z$:",
+   "line": 1095,
+   "lines": [
+    1095,
+    1095
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1095
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1096
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 1097
+  },
+  {
+   "t": "tr",
+   "id": "S0207",
+   "kind": "para",
+   "s": "For $n_x = 3$, $n_y = 2$, and $n_z = 1$:",
+   "line": 1097,
+   "lines": [
+    1097
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1097
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1098
+  },
+  {
+   "t": "lit",
+   "s": "$$3^2 + 2^2 + 1^2 = 9 + 4 + 1 = 14$$\n",
+   "line": 1099
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1100
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 1101
+  },
+  {
+   "t": "tr",
+   "id": "S0208",
+   "kind": "para",
+   "s": "Other permutations of these quantum numbers will give the same energy:",
+   "line": 1101,
+   "lines": [
+    1101
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1101
+  },
+  {
+   "t": "lit",
+   "s": "  \n",
+   "line": 1102
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 1103
+  },
+  {
+   "t": "tr",
+   "id": "S0209",
+   "kind": "para",
+   "s": "$(3, 2, 1)$",
+   "line": 1103,
+   "lines": [
+    1103
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1103
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 1104
+  },
+  {
+   "t": "tr",
+   "id": "S0210",
+   "kind": "para",
+   "s": "$(3, 1, 2)$",
+   "line": 1104,
+   "lines": [
+    1104
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1104
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 1105
+  },
+  {
+   "t": "tr",
+   "id": "S0211",
+   "kind": "para",
+   "s": "$(2, 3, 1)$",
+   "line": 1105,
+   "lines": [
+    1105
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1105
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 1106
+  },
+  {
+   "t": "tr",
+   "id": "S0212",
+   "kind": "para",
+   "s": "$(2, 1, 3)$",
+   "line": 1106,
+   "lines": [
+    1106
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1106
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 1107
+  },
+  {
+   "t": "tr",
+   "id": "S0213",
+   "kind": "para",
+   "s": "$(1, 3, 2)$",
+   "line": 1107,
+   "lines": [
+    1107
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1107
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 1108
+  },
+  {
+   "t": "tr",
+   "id": "S0214",
+   "kind": "para",
+   "s": "$(1, 2, 3)$",
+   "line": 1108,
+   "lines": [
+    1108
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1108
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1109
+  },
+  {
+   "t": "tr",
+   "id": "S0215",
+   "kind": "para",
+   "s": "**Part 2:**\nThe energy level corresponding to $n_x^2 + n_y^2 + n_z^2 = 14$ has **6 degenerate states**, since the quantum number triplets are $(3, 2, 1)$, $(3, 1, 2)$, $(2, 3, 1)$, $(2, 1, 3)$, $(1, 3, 2)$, and $(1, 2, 3)$.",
+   "line": 1110,
+   "lines": [
+    1110,
+    1110,
+    1111
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1111
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1112
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 1113
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1114
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 1115
+  },
+  {
+   "t": "tr",
+   "id": "S0216",
+   "kind": "heading",
+   "s": "Problem 8: Degeneracy of the Ground State",
+   "line": 1115,
+   "lines": [
+    1115
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1115
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1116
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 1117
+  },
+  {
+   "t": "tr",
+   "id": "S0217",
+   "kind": "para",
+   "s": "**Part 1:** What is the degeneracy of the ground state (the lowest energy state) for a particle in a cubic box?",
+   "line": 1117,
+   "lines": [
+    1117
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1117
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 1118
+  },
+  {
+   "t": "tr",
+   "id": "S0218",
+   "kind": "para",
+   "s": "**Part 2:** Explain why the ground state does not have degeneracy.",
+   "line": 1118,
+   "lines": [
+    1118
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1118
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1119
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 1120
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 1120
+  },
+  {
+   "t": "tr",
+   "id": "S0219",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 1120,
+   "lines": [
+    1120
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1120
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 1121
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1122
+  },
+  {
+   "t": "tr",
+   "id": "S0220",
+   "kind": "para",
+   "s": "**Part 1:**\nThe ground state corresponds to the quantum numbers $n_x = n_y = n_z = 1$. The energy for this state is:",
+   "line": 1123,
+   "lines": [
+    1123,
+    1123,
+    1124
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1124
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1125
+  },
+  {
+   "t": "lit",
+   "s": "$$E_{1,1,1} = \\frac{\\hbar^2 \\pi^2}{2mL^2} \\left( 1^2 + 1^2 + 1^2 \\right) = \\frac{\\hbar^2 \\pi^2}{2mL^2} \\times 3$$\n",
+   "line": 1126
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1127
+  },
+  {
+   "t": "tr",
+   "id": "S0221",
+   "kind": "para",
+   "s": "There is only **one** combination of quantum numbers that gives this energy, so the degeneracy of the ground state is **1**.",
+   "line": 1128,
+   "lines": [
+    1128,
+    1128
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1128
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1129
+  },
+  {
+   "t": "tr",
+   "id": "S0222",
+   "kind": "para",
+   "s": "**Part 2:**\nThe ground state is non-degenerate because there is only one way to assign the quantum numbers $n_x = n_y = n_z = 1$. Degeneracy arises when multiple different sets of quantum numbers give the same energy, which is not the case for the ground state.",
+   "line": 1130,
+   "lines": [
+    1130,
+    1130,
+    1131
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1131
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1132
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 1133
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1134
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 1135
+  },
+  {
+   "t": "tr",
+   "id": "S0223",
+   "kind": "heading",
+   "s": "Problem 9: Higher Energy Degeneracy",
+   "line": 1135,
+   "lines": [
+    1135
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1135
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1136
+  },
+  {
+   "t": "tr",
+   "id": "S0224",
+   "kind": "para",
+   "s": "Consider a particle in a cubic box. The energy levels are quantized as:",
+   "line": 1137,
+   "lines": [
+    1137,
+    1137
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1137
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1138
+  },
+  {
+   "t": "lit",
+   "s": "$$E_{n_x, n_y, n_z} = \\frac{\\hbar^2 \\pi^2}{2mL^2} \\left( n_x^2 + n_y^2 + n_z^2 \\right)$$\n",
+   "line": 1139
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1140
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 1141
+  },
+  {
+   "t": "tr",
+   "id": "S0225",
+   "kind": "para",
+   "s": "**Part 1:** Find the quantum numbers that give the same energy for the quantum number sum $n_x^2 + n_y^2 + n_z^2 = 9$. How many degenerate states correspond to this energy?",
+   "line": 1141,
+   "lines": [
+    1141
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1141
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 1142
+  },
+  {
+   "t": "tr",
+   "id": "S0226",
+   "kind": "para",
+   "s": "**Part 2:** What is the degeneracy of this energy level?",
+   "line": 1142,
+   "lines": [
+    1142
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1142
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1143
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 1144
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 1144
+  },
+  {
+   "t": "tr",
+   "id": "S0227",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 1144,
+   "lines": [
+    1144
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1144
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 1145
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1146
+  },
+  {
+   "t": "tr",
+   "id": "S0228",
+   "kind": "para",
+   "s": "**Part 1:**\nWe want to solve:",
+   "line": 1147,
+   "lines": [
+    1147,
+    1147,
+    1148
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1148
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1149
+  },
+  {
+   "t": "tr",
+   "id": "S0229",
+   "kind": "para",
+   "s": "$n_x^2 + n_y^2 + n_z^2 = 9$",
+   "line": 1150,
+   "lines": [
+    1150,
+    1150
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1150
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1151
+  },
+  {
+   "t": "tr",
+   "id": "S0230",
+   "kind": "para",
+   "s": "Possible combinations of $n_x$, $n_y$, and $n_z$:",
+   "line": 1152,
+   "lines": [
+    1152,
+    1152
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1152
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1153
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 1154
+  },
+  {
+   "t": "tr",
+   "id": "S0231",
+   "kind": "para",
+   "s": "$n_x = 2$, $n_y = 2$, $n_z = 1$ gives $2^2 + 2^2 + 1^2 = 4 + 4 + 1 = 9$.",
+   "line": 1154,
+   "lines": [
+    1154
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1154
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 1155
+  },
+  {
+   "t": "tr",
+   "id": "S0232",
+   "kind": "para",
+   "s": "Permutations of $(2, 2, 1)$ are:",
+   "line": 1155,
+   "lines": [
+    1155
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1155
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 1156
+  },
+  {
+   "t": "tr",
+   "id": "S0233",
+   "kind": "para",
+   "s": "$(2, 2, 1)$",
+   "line": 1156,
+   "lines": [
+    1156
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1156
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 1157
+  },
+  {
+   "t": "tr",
+   "id": "S0234",
+   "kind": "para",
+   "s": "$(2, 1, 2)$",
+   "line": 1157,
+   "lines": [
+    1157
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1157
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 1158
+  },
+  {
+   "t": "tr",
+   "id": "S0235",
+   "kind": "para",
+   "s": "$(1, 2, 2)$",
+   "line": 1158,
+   "lines": [
+    1158
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1158
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 1159
+  },
+  {
+   "t": "tr",
+   "id": "S0236",
+   "kind": "para",
+   "s": "$(3, 0, 0)$ also gives 9, but it is not allowed: each quantum number is at least 1, since $n = 0$ makes $\\psi = 0$.",
+   "line": 1159,
+   "lines": [
+    1159
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1159
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1160
+  },
+  {
+   "t": "tr",
+   "id": "S0237",
+   "kind": "para",
+   "s": "**Part 2:**\nThe degeneracy for the energy level corresponding to $n_x^2 + n_y^2 + n_z^2 = 9$ is **3**: the three permutations of $(2,2,1)$.",
+   "line": 1161,
+   "lines": [
+    1161,
+    1161,
+    1162
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1162
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1163
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 1164
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1165
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 1166
+  },
+  {
+   "t": "tr",
+   "id": "S0238",
+   "kind": "heading",
+   "s": "Problem 10: Absorption of a conjugated diene",
+   "line": 1166,
+   "lines": [
+    1166
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1166
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1167
+  },
+  {
+   "t": "tr",
+   "id": "S0239",
+   "kind": "para",
+   "s": "A conjugated diene has a conjugation length of 5 Å. Using the 1D particle in a box, calculate the wavelength absorbed when a π-electron is excited from $n = 1$ to $n = 2$. Use $m = 9.109 \\times 10^{-31}\\,\\text{kg}$ and $h = 6.626 \\times 10^{-34}\\,\\text{J s}$.",
+   "line": 1168,
+   "lines": [
+    1168,
+    1168
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1168
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1169
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 1170
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 1170
+  },
+  {
+   "t": "tr",
+   "id": "S0240",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 1170,
+   "lines": [
+    1170
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1170
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 1171
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1172
+  },
+  {
+   "t": "tr",
+   "id": "S0241",
+   "kind": "para",
+   "s": "The gap between $n = 1$ and $n = 2$ is",
+   "line": 1173,
+   "lines": [
+    1173,
+    1173
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1173
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1174
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\Delta E = \\frac{(2^2 - 1^2)h^2}{8mL^2} = \\frac{3h^2}{8mL^2},\n$$\n",
+   "line": 1175
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1178
+  },
+  {
+   "t": "tr",
+   "id": "S0242",
+   "kind": "para",
+   "s": "with $L = 5 \\times 10^{-10}\\,\\text{m}$. Compute $\\Delta E$, then use $\\Delta E = \\dfrac{hc}{\\lambda}$ to find $\\lambda$.",
+   "line": 1179,
+   "lines": [
+    1179,
+    1179
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1179
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 1180
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1181
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 1182
+  },
+  {
+   "t": "tr",
+   "id": "S0243",
+   "kind": "heading",
+   "s": "Problem 11: Total conjugation length of a polyene",
+   "line": 1182,
+   "lines": [
+    1182
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1182
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1183
+  },
+  {
+   "t": "tr",
+   "id": "S0244",
+   "kind": "para",
+   "s": "A polyene has 6 alternating bonds with $C=C \\approx 1.35$ Å and $C\\text{-}C \\approx 1.45$ Å. Find the total conjugation length and the wavelength needed to excite a π-electron from $n = 1$ to $n = 2$.",
+   "line": 1184,
+   "lines": [
+    1184,
+    1184
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1184
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1185
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 1186
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 1186
+  },
+  {
+   "t": "tr",
+   "id": "S0245",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 1186,
+   "lines": [
+    1186
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1186
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 1187
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1188
+  },
+  {
+   "t": "lit",
+   "s": "$$\nL = 4 \\times 1.35\\,\\text{Å} + 3 \\times 1.45\\,\\text{Å} = 10.55\\,\\text{Å} = 10.55 \\times 10^{-10}\\,\\text{m}.\n$$\n",
+   "line": 1189
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1192
+  },
+  {
+   "t": "tr",
+   "id": "S0246",
+   "kind": "para",
+   "s": "Then $\\Delta E = \\dfrac{3h^2}{8mL^2}$ and $\\lambda = \\dfrac{hc}{\\Delta E}$.",
+   "line": 1193,
+   "lines": [
+    1193,
+    1193
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1193
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 1194
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1195
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 1196
+  },
+  {
+   "t": "tr",
+   "id": "S0247",
+   "kind": "heading",
+   "s": "Problem 12: A higher transition",
+   "line": 1196,
+   "lines": [
+    1196
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1196
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1197
+  },
+  {
+   "t": "tr",
+   "id": "S0248",
+   "kind": "para",
+   "s": "A linear conjugated molecule has 8 alternating C-C bonds (1.40 Å single, 1.35 Å double). Calculate the wavelength absorbed for the $n = 1 \\to n = 3$ transition.",
+   "line": 1198,
+   "lines": [
+    1198,
+    1198
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1198
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1199
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 1200
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 1200
+  },
+  {
+   "t": "tr",
+   "id": "S0249",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 1200,
+   "lines": [
+    1200
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1200
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 1201
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1202
+  },
+  {
+   "t": "tr",
+   "id": "S0250",
+   "kind": "para",
+   "s": "For 8 bonds, take 4 double and 4 single:",
+   "line": 1203,
+   "lines": [
+    1203,
+    1203
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1203
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1204
+  },
+  {
+   "t": "lit",
+   "s": "$$\nL = 4 \\times 1.35\\,\\text{Å} + 4 \\times 1.40\\,\\text{Å} = 11.0\\,\\text{Å}.\n$$\n",
+   "line": 1205
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1208
+  },
+  {
+   "t": "tr",
+   "id": "S0251",
+   "kind": "para",
+   "s": "The energy gap is",
+   "line": 1209,
+   "lines": [
+    1209,
+    1209
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1209
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1210
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\Delta E = E_3 - E_1 = \\frac{(3^2 - 1^2)h^2}{8mL^2} = \\frac{8h^2}{8mL^2} = \\frac{h^2}{mL^2},\n$$\n",
+   "line": 1211
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1214
+  },
+  {
+   "t": "tr",
+   "id": "S0252",
+   "kind": "para",
+   "s": "and $\\lambda = \\dfrac{hc}{\\Delta E}$.",
+   "line": 1215,
+   "lines": [
+    1215,
+    1215
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1215
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 1216
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1217
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 1218
+  },
+  {
+   "t": "tr",
+   "id": "S0253",
+   "kind": "heading",
+   "s": "Problem 13: Triene transition",
+   "line": 1218,
+   "lines": [
+    1218
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1218
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1219
+  },
+  {
+   "t": "tr",
+   "id": "S0254",
+   "kind": "para",
+   "s": "A conjugated triene has a conjugation length of 7.5 Å. Find the wavelength absorbed for the $n = 1 \\to n = 3$ transition.",
+   "line": 1220,
+   "lines": [
+    1220,
+    1220
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1220
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1221
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 1222
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 1222
+  },
+  {
+   "t": "tr",
+   "id": "S0255",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 1222,
+   "lines": [
+    1222
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1222
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 1223
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1224
+  },
+  {
+   "t": "tr",
+   "id": "S0256",
+   "kind": "para",
+   "s": "With $L = 7.5 \\times 10^{-10}\\,\\text{m}$,",
+   "line": 1225,
+   "lines": [
+    1225,
+    1225
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1225
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1226
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\Delta E = E_3 - E_1 = \\frac{8h^2}{8mL^2} = \\frac{h^2}{mL^2},\n$$\n",
+   "line": 1227
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1230
+  },
+  {
+   "t": "tr",
+   "id": "S0257",
+   "kind": "para",
+   "s": "then $\\lambda = \\dfrac{hc}{\\Delta E}$.",
+   "line": 1231,
+   "lines": [
+    1231,
+    1231
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1231
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 1232
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1233
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 1234
+  },
+  {
+   "t": "tr",
+   "id": "S0258",
+   "kind": "heading",
+   "s": "Problem 14: A transition between excited states",
+   "line": 1234,
+   "lines": [
+    1234
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1234
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1235
+  },
+  {
+   "t": "tr",
+   "id": "S0259",
+   "kind": "para",
+   "s": "A polyene of 10 carbons has $C=C \\approx 1.34$ Å and $C\\text{-}C \\approx 1.54$ Å. Find the total conjugation length and the wavelength for the $n = 2 \\to n = 3$ transition.",
+   "line": 1236,
+   "lines": [
+    1236,
+    1236
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1236
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1237
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 1238
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 1238
+  },
+  {
+   "t": "tr",
+   "id": "S0260",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 1238,
+   "lines": [
+    1238
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1238
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 1239
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1240
+  },
+  {
+   "t": "lit",
+   "s": "$$\nL = 5 \\times 1.34\\,\\text{Å} + 4 \\times 1.54\\,\\text{Å} = 12.86\\,\\text{Å}.\n$$\n",
+   "line": 1241
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1244
+  },
+  {
+   "t": "tr",
+   "id": "S0261",
+   "kind": "para",
+   "s": "The gap is",
+   "line": 1245,
+   "lines": [
+    1245,
+    1245
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1245
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1246
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\Delta E = E_3 - E_2 = \\frac{(3^2 - 2^2)h^2}{8mL^2} = \\frac{5h^2}{8mL^2},\n$$\n",
+   "line": 1247
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1250
+  },
+  {
+   "t": "tr",
+   "id": "S0262",
+   "kind": "para",
+   "s": "then $\\lambda = \\dfrac{hc}{\\Delta E}$.",
+   "line": 1251,
+   "lines": [
+    1251,
+    1251
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1251
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 1252
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1253
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 1254
+  },
+  {
+   "t": "tr",
+   "id": "S0263",
+   "kind": "heading",
+   "s": "Problem 15: A 2D box for a graphene fragment",
+   "line": 1254,
+   "lines": [
+    1254
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1254
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1255
+  },
+  {
+   "t": "tr",
+   "id": "S0264",
+   "kind": "para",
+   "s": "Model the π-electrons of a graphene-like fragment as a 2D particle in a box with $L_x = 2\\,\\text{nm}$ and $L_y = 1\\,\\text{nm}$. Calculate the energy of the state $n_x = 1$, $n_y = 2$.",
+   "line": 1256,
+   "lines": [
+    1256,
+    1256
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1256
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1257
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 1258
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 1258
+  },
+  {
+   "t": "tr",
+   "id": "S0265",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 1258,
+   "lines": [
+    1258
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1258
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 1259
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1260
+  },
+  {
+   "t": "tr",
+   "id": "S0266",
+   "kind": "para",
+   "s": "The 2D energy is",
+   "line": 1261,
+   "lines": [
+    1261,
+    1261
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1261
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1262
+  },
+  {
+   "t": "lit",
+   "s": "$$\nE_{n_x, n_y} = \\frac{h^2}{8m}\\left(\\frac{n_x^2}{L_x^2} + \\frac{n_y^2}{L_y^2}\\right).\n$$\n",
+   "line": 1263
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1266
+  },
+  {
+   "t": "tr",
+   "id": "S0267",
+   "kind": "para",
+   "s": "With $L_x = 2 \\times 10^{-9}\\,\\text{m}$ and $L_y = 1 \\times 10^{-9}\\,\\text{m}$,",
+   "line": 1267,
+   "lines": [
+    1267,
+    1267
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1267
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1268
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\frac{1^2}{L_x^2} + \\frac{2^2}{L_y^2} = 2.5 \\times 10^{17} + 4.0 \\times 10^{18} = 4.25 \\times 10^{18}\\,\\text{m}^{-2},\n$$\n",
+   "line": 1269
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1272
+  },
+  {
+   "t": "tr",
+   "id": "S0268",
+   "kind": "para",
+   "s": "and $\\dfrac{h^2}{8m} \\approx 6.02 \\times 10^{-38}\\,\\text{J m}^2$, giving",
+   "line": 1273,
+   "lines": [
+    1273,
+    1273
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1273
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1274
+  },
+  {
+   "t": "lit",
+   "s": "$$\nE_{1,2} \\approx 2.56 \\times 10^{-19}\\,\\text{J} \\approx 1.60\\,\\text{eV}.\n$$\n",
+   "line": 1275
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 1278
+  }
+ ]
+}

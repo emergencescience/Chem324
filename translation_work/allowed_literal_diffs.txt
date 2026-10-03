@@ -1,0 +1,16 @@
+# Declared literal deviations for ch03/05.
+#
+# One line is one regex (applied with re.sub over the whole literal stream, so do
+# NOT anchor with ^/$ — the stream is a single multi-line string). Each pattern
+# removes a span from BOTH the source literal stream and the translated one
+# before they are compared, so the gate stays byte-strict everywhere else
+# instead of being relaxed globally.
+#
+# Why this one exists: the page opens a MyST directive with a BACKTICK fence,
+#   ````{admonition} **Title**
+# whose closer is `::::` (colons, not backticks). The slicer's fence scanner
+# therefore cannot delimit it, so the title is frozen as a literal and is
+# translated by hand. It is the only construct in the whole book with this shape,
+# so it is declared here rather than adding fence/colon mixing logic for one line.
+# See PENDING.md.
+````\{admonition\} \*\*[^*]*\*\*

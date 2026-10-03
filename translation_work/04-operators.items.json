@@ -1,0 +1,6058 @@
+{
+ "trailing_newline": true,
+ "items": [
+  {
+   "t": "lit",
+   "s": "# ",
+   "line": 1
+  },
+  {
+   "t": "tr",
+   "id": "S0001",
+   "kind": "heading",
+   "s": "Operators",
+   "line": 1,
+   "lines": [
+    1
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 2
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 3
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 3
+  },
+  {
+   "t": "tr",
+   "id": "S0002",
+   "kind": "directive_title",
+   "s": "What you need to know",
+   "line": 3,
+   "lines": [
+    3
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 3
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 4
+  },
+  {
+   "t": "tr",
+   "id": "S0003",
+   "kind": "para",
+   "s": "For every experimental **observable** there is a **corresponding operator** in quantum mechanics.",
+   "line": 4,
+   "lines": [
+    4
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 4
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 5
+  },
+  {
+   "t": "tr",
+   "id": "S0004",
+   "kind": "para",
+   "s": "**Operators must be linear**, because they are derived from the Schrodinger equation, which itself is linear.",
+   "line": 5,
+   "lines": [
+    5
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 5
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 6
+  },
+  {
+   "t": "tr",
+   "id": "S0005",
+   "kind": "para",
+   "s": "**Operators must be Hermitian**, because only Hermitian operators produce real eigenvalues.",
+   "line": 6,
+   "lines": [
+    6
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 6
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 7
+  },
+  {
+   "t": "tr",
+   "id": "S0006",
+   "kind": "para",
+   "s": "**Operators must produce real eigenvalues**, because eigenvalues are the only possible values measured in experiments.",
+   "line": 7,
+   "lines": [
+    7
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 7
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 8
+  },
+  {
+   "t": "tr",
+   "id": "S0007",
+   "kind": "para",
+   "s": "Operator **commutators** show whether two experimental observables can be **measured simultaneously**. For example, can one simultaneously and precisely determine the position and momentum of an electron?",
+   "line": 8,
+   "lines": [
+    8
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 8
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 9
+  },
+  {
+   "t": "tr",
+   "id": "S0008",
+   "kind": "para",
+   "s": "Commuting operators share eigenfunctions; non-commuting operators have different eigenfunctions.",
+   "line": 9,
+   "lines": [
+    9
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 9
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 10
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 11
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 12
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 13
+  },
+  {
+   "t": "tr",
+   "id": "S0009",
+   "kind": "heading",
+   "s": "Operators",
+   "line": 13,
+   "lines": [
+    13
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 13
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 14
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 15
+  },
+  {
+   "t": "tr",
+   "id": "S0010",
+   "kind": "para",
+   "s": "In quantum mechanics, **operators** represent physical observables and are denoted by a hat symbol ($\\hat{}$), which indicates a mathematical operation on functions.",
+   "line": 15,
+   "lines": [
+    15
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 15
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 16
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 17
+  },
+  {
+   "t": "tr",
+   "id": "S0011",
+   "kind": "para",
+   "s": "For example, the momentum operator differentiates the function with respect to $x$, then multiplies the result by $-i\\hbar$.",
+   "line": 17,
+   "lines": [
+    17
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 17
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 18
+  },
+  {
+   "t": "lit",
+   "s": "  $$\n  \\hat{p}_x = -i\\hbar\\frac{d}{dx}\n  $$\n",
+   "line": 19
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 22
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 23
+  },
+  {
+   "t": "tr",
+   "id": "S0012",
+   "kind": "para",
+   "s": "The position operator simply multiplies the function by $x$.",
+   "line": 23,
+   "lines": [
+    23
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 23
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 24
+  },
+  {
+   "t": "lit",
+   "s": "  $$\n  \\hat{x} = x\n  $$\n",
+   "line": 25
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 28
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 29
+  },
+  {
+   "t": "tr",
+   "id": "S0013",
+   "kind": "para",
+   "s": "In quantum mechanics we use **a simple recipe to find operators**: take expressions from classical mechanics and replace position and momentum by their respective operator expressions.",
+   "line": 29,
+   "lines": [
+    29
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 29
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 30
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 31
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 32
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 32
+  },
+  {
+   "t": "tr",
+   "id": "S0014",
+   "kind": "directive_title",
+   "s": "**Example of operators**",
+   "line": 32,
+   "lines": [
+    32
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 32
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown\n",
+   "line": 33
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 34
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 35
+  },
+  {
+   "t": "tr",
+   "id": "S0015",
+   "kind": "para",
+   "s": "Let us take the function $e^{2x}$ as an example and see how operator notation works:",
+   "line": 35,
+   "lines": [
+    35
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 35
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 36
+  },
+  {
+   "t": "lit",
+   "s": "$$\\frac{d^2}{dx^2} e^{2x} = 4e^{2x}$$\n",
+   "line": 37
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 38
+  },
+  {
+   "t": "lit",
+   "s": "$$\\hat{A} f =4f$$\n",
+   "line": 39
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 40
+  },
+  {
+   "t": "lit",
+   "s": "-  ",
+   "line": 41
+  },
+  {
+   "t": "tr",
+   "id": "S0016",
+   "kind": "para",
+   "s": "Here we say that the operator $\\hat{A}$ acts on the function $e^{2x}$ to produce another function, which in this case is the same function multiplied by 4.",
+   "line": 41,
+   "lines": [
+    41
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 41
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 42
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 43
+  },
+  {
+   "t": "tr",
+   "id": "S0017",
+   "kind": "para",
+   "s": "In general, operators can be anything placed in front of a function $f(x)$. Here are a few more examples of operators:",
+   "line": 43,
+   "lines": [
+    43
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 43
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 44
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 45
+  },
+  {
+   "t": "tr",
+   "id": "S0018",
+   "kind": "para",
+   "s": "$\\hat{A} = x$ multiplies the function by $x$, e.g. $\\hat{A}e^{2x} = xe^{2x}$",
+   "line": 45,
+   "lines": [
+    45
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 45
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 46
+  },
+  {
+   "t": "tr",
+   "id": "S0019",
+   "kind": "para",
+   "s": "$\\hat{A} = -i$ multiplies the function by $-i$, e.g. $\\hat{A}e^{2x} = -ie^{2x}$",
+   "line": 46,
+   "lines": [
+    46
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 46
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 47
+  },
+  {
+   "t": "tr",
+   "id": "S0020",
+   "kind": "para",
+   "s": "$\\hat{A} = \\sqrt{\\phantom{x}}$ takes the square root, e.g. $\\hat{A}e^{2x} = e^{x}$",
+   "line": 47,
+   "lines": [
+    47
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 47
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 48
+  },
+  {
+   "t": "tr",
+   "id": "S0021",
+   "kind": "para",
+   "s": "$\\hat{A} = d/dx + x^2$ differentiates, then adds $x^2$ times the function: $\\hat{A}e^{2x} = 2e^{2x}+x^2e^{2x} = (2+x^2)e^{2x}$",
+   "line": 48,
+   "lines": [
+    48
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 48
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 49
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 50
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 51
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 52
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 53
+  },
+  {
+   "t": "tr",
+   "id": "S0022",
+   "kind": "heading",
+   "s": "Linearity of Operators",
+   "line": 53,
+   "lines": [
+    53
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 53
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 54
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 55
+  },
+  {
+   "t": "tr",
+   "id": "S0023",
+   "kind": "para",
+   "s": "Operators in quantum mechanics are **linear**, meaning they satisfy:",
+   "line": 55,
+   "lines": [
+    55
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 55
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 56
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{A}(\\psi_1 + \\psi_2) = \\hat{A}\\psi_1 + \\hat{A}\\psi_2\n$$\n",
+   "line": 57
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 60
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{A}(c\\psi) = c\\hat{A}\\psi\n$$\n",
+   "line": 61
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 64
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 65
+  },
+  {
+   "t": "tr",
+   "id": "S0024",
+   "kind": "para",
+   "s": "Here $c$ is a constant, and $\\psi_1$, $\\psi_2$, and $\\psi$ are wavefunctions.",
+   "line": 65,
+   "lines": [
+    65
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 65
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 66
+  },
+  {
+   "t": "tr",
+   "id": "S0025",
+   "kind": "para",
+   "s": "$\\hat{x}$, $\\hat{p_x}$, and $\\hat{H}$ all satisfy this property.",
+   "line": 66,
+   "lines": [
+    66
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 66
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 67
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 68
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 69
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 70
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 70
+  },
+  {
+   "t": "tr",
+   "id": "S0026",
+   "kind": "directive_title",
+   "s": "**Example of linear operators**",
+   "line": 70,
+   "lines": [
+    70
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 70
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown\n",
+   "line": 71
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 72
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 73
+  },
+  {
+   "t": "tr",
+   "id": "S0027",
+   "kind": "para",
+   "s": "Which of the following would be linear operator? $\\hat{A}=\\frac{d}{dx}$,      $\\hat{B}=\\int dx$       $\\hat{C}=\\sqrt{}$.",
+   "line": 73,
+   "lines": [
+    73
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 73
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 74
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 75
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 76
+  },
+  {
+   "t": "tr",
+   "id": "S0028",
+   "kind": "para",
+   "s": "Using the rules of calculus, we know that the derivative and integral act on each term in the sum:",
+   "line": 76,
+   "lines": [
+    76
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 76
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 77
+  },
+  {
+   "t": "lit",
+   "s": "$$\\frac{d}{dx}(c_1f_1+c_2f_2) = c_1\\frac{df_1}{dx}+c_2\\frac{df_2}{dx}$$\n",
+   "line": 78
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 79
+  },
+  {
+   "t": "lit",
+   "s": "$$\\int(c_1f_1+c_2f_2)dx = c_1\\int f_1dx+c_2\\int f_2dx$$\n",
+   "line": 80
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 81
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 82
+  },
+  {
+   "t": "tr",
+   "id": "S0029",
+   "kind": "para",
+   "s": "For the square root, the linearity property does not hold!",
+   "line": 82,
+   "lines": [
+    82
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 82
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 83
+  },
+  {
+   "t": "lit",
+   "s": "$$\\sqrt{(c_1f_1+c_2f_2)} \\neq c_1\\sqrt{f_1} +c_2\\sqrt{f_2}$$\n",
+   "line": 84
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 85
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 86
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 87
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 88
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 89
+  },
+  {
+   "t": "tr",
+   "id": "S0030",
+   "kind": "heading",
+   "s": "Commutations of operators",
+   "line": 89,
+   "lines": [
+    89
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 89
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 90
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 91
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 91
+  },
+  {
+   "t": "tr",
+   "id": "S0031",
+   "kind": "directive_title",
+   "s": "**Commutator $\\hat{A}$ and $\\hat{B}$**",
+   "line": 91,
+   "lines": [
+    91
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 91
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 92
+  },
+  {
+   "t": "lit",
+   "s": "$${\\left[\\hat{A},\\hat{B}\\right]f = \\left(\\hat{A}\\hat{B} - \\hat{B}\\hat{A}\\right)f}$$\n",
+   "line": 93
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 94
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 95
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 96
+  },
+  {
+   "t": "tr",
+   "id": "S0032",
+   "kind": "para",
+   "s": "From linear algebra we know that the order of matrix multiplication matters and that $AB\\neq BA$ for two matrices $A$ and $B$.",
+   "line": 96,
+   "lines": [
+    96
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 96
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 97
+  },
+  {
+   "t": "tr",
+   "id": "S0033",
+   "kind": "para",
+   "s": "Thus we also generally expect $\\hat{A}\\hat{B} \\neq \\hat{B}\\hat{A}$ for any two operators.",
+   "line": 97,
+   "lines": [
+    97
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 97
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 98
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 99
+  },
+  {
+   "t": "tr",
+   "id": "S0034",
+   "kind": "para",
+   "s": "We can quantify the relationship between two operators by computing the **commutator**.",
+   "line": 99,
+   "lines": [
+    99
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 99
+  },
+  {
+   "t": "lit",
+   "s": "    - ",
+   "line": 100
+  },
+  {
+   "t": "tr",
+   "id": "S0035",
+   "kind": "para",
+   "s": "If the commutator is zero, the order of multiplication of operators or matrices can be changed.",
+   "line": 100,
+   "lines": [
+    100
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 100
+  },
+  {
+   "t": "lit",
+   "s": "    - ",
+   "line": 101
+  },
+  {
+   "t": "tr",
+   "id": "S0036",
+   "kind": "para",
+   "s": "If the commutator is non-zero, the order matters and cannot be changed.",
+   "line": 101,
+   "lines": [
+    101
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 101
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 102
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 103
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 104
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 104
+  },
+  {
+   "t": "tr",
+   "id": "S0037",
+   "kind": "directive_title",
+   "s": "**Example**",
+   "line": 104,
+   "lines": [
+    104
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 104
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 105
+  },
+  {
+   "t": "tr",
+   "id": "S0038",
+   "kind": "para",
+   "s": "Prove that operators $\\hat{A} = x$ and $\\hat{B} = d/dx$ do not commute (i.e., $\\left[\\hat{A}, \\hat{B}\\right] \\ne 0$).",
+   "line": 106,
+   "lines": [
+    106,
+    106
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 106
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 107
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 108
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 109
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 109
+  },
+  {
+   "t": "tr",
+   "id": "S0039",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 109,
+   "lines": [
+    109
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 109
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 110
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 111
+  },
+  {
+   "t": "tr",
+   "id": "S0040",
+   "kind": "para",
+   "s": "Let $f$ be an arbitrary well-behaved function. We need to calculate both $\\hat{A}\\hat{B}f$ and $\\hat{B}\\hat{A}f$:",
+   "line": 112,
+   "lines": [
+    112,
+    112
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 112
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 113
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{A}\\hat{B}f = xf'(x)\\textnormal{ and } \\hat{B}\\hat{A}f = \\frac{d}{dx}\\left(xf(x)\\right) = f(x) + xf'(x)$$\n",
+   "line": 114
+  },
+  {
+   "t": "lit",
+   "s": "$$\\left[\\hat{A},\\hat{B}\\right]f = \\hat{A}\\hat{B}f - \\hat{B}\\hat{A}f = -f$$\n",
+   "line": 116
+  },
+  {
+   "t": "lit",
+   "s": "$$\\Rightarrow \\left[\\hat{A},\\hat{B}\\right] = -1\\textnormal{ (this is non-zero and the operators do not commute)}\n$$\n",
+   "line": 117
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 119
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 120
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 121
+  },
+  {
+   "t": "tr",
+   "id": "S0041",
+   "kind": "heading",
+   "s": "Simple rules for commutators",
+   "line": 121,
+   "lines": [
+    121
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 121
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 122
+  },
+  {
+   "t": "lit",
+   "s": "$${\\left[A,A\\right] = \\left[A,A^n\\right] = \\left[A^n,A\\right] = 0}$$\n",
+   "line": 123
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 124
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 125
+  },
+  {
+   "t": "tr",
+   "id": "S0042",
+   "kind": "para",
+   "s": "This shows that an operator always commutes with itself and its powers. Now let's apply this. Would the kinetic energy operator commute with the momentum operator?",
+   "line": 125,
+   "lines": [
+    125
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 125
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 126
+  },
+  {
+   "t": "lit",
+   "s": "$${\\left[A,B\\right] = -\\left[B,A\\right]}$$\n",
+   "line": 127
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 128
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 129
+  },
+  {
+   "t": "tr",
+   "id": "S0043",
+   "kind": "para",
+   "s": "This shows that order is important in a commutator. When you swap the operators, the sign changes.",
+   "line": 129,
+   "lines": [
+    129
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 129
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 130
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 131
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 132
+  },
+  {
+   "t": "tr",
+   "id": "S0044",
+   "kind": "heading",
+   "s": "Commutators and experimental measurements",
+   "line": 132,
+   "lines": [
+    132
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 132
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 133
+  },
+  {
+   "t": "tr",
+   "id": "S0045",
+   "kind": "para",
+   "s": "We have seen previously that operators may not always commute (i.e., $[A, B] \\ne 0$). An example of such an operator pair is position $\\hat{x}$ and momentum $\\hat{p}_x$:",
+   "line": 134,
+   "lines": [
+    134,
+    134
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 134
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 135
+  },
+  {
+   "t": "lit",
+   "s": "$${\\hat{p}_x\\hat{x}\\psi(x) = \\hat{p}_x\\left(x\\psi(x)\\right) = \\left(\\frac{\\hbar}{i}\\frac{d}{dx}\\right)\\left(x\\psi(x)\\right) = \\frac{\\hbar x}{i}\\frac{d\\psi(x)}{dx} + \\frac{\\hbar}{i}\\psi(x)}$$\n",
+   "line": 136
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 137
+  },
+  {
+   "t": "lit",
+   "s": "$${\\hat{x}\\hat{p}_x\\psi(x) = x\\left(\\frac{\\hbar}{i}\\frac{d\\psi(x)}{dx}\\right)}$$\n",
+   "line": 138
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 139
+  },
+  {
+   "t": "lit",
+   "s": "$${\\Rightarrow \\left[\\hat{p}_x,\\hat{x}\\right]\\psi(x) = \\left(\\hat{p}_x\\hat{x} - \\hat{x}\\hat{p}_x\\right)\\psi(x) = \\frac{\\hbar}{i}\\psi(x)}$$\n",
+   "line": 140
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 141
+  },
+  {
+   "t": "lit",
+   "s": "$${\\Rightarrow \\left[\\hat{p}_x,\\hat{x}\\right] = \\frac{\\hbar}{i}}$$\n",
+   "line": 142
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 143
+  },
+  {
+   "t": "tr",
+   "id": "S0046",
+   "kind": "para",
+   "s": "In contrast, the kinetic energy operator and the momentum operator commute:",
+   "line": 144,
+   "lines": [
+    144,
+    144
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 144
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 145
+  },
+  {
+   "t": "lit",
+   "s": "$$\n{\\left[\\hat{T},\\hat{p}_x\\right] = \\left[\\frac{\\hat{p}_x^2}{2m},\\hat{p}_x\\right] = \\frac{p_x^3}{2m} - \\frac{p_x^3}{2m} = 0}\n$$\n",
+   "line": 146
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 149
+  },
+  {
+   "t": "tr",
+   "id": "S0047",
+   "kind": "para",
+   "s": "We had the uncertainty principle for the position and momentum operators:",
+   "line": 150,
+   "lines": [
+    150,
+    150
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 150
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 151
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\Delta x\\Delta p_x \\ge \\frac{\\hbar}{2}\n$$\n",
+   "line": 152
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 155
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 156
+  },
+  {
+   "t": "tr",
+   "id": "S0048",
+   "kind": "para",
+   "s": "In general, it turns out that for operators $\\hat{A}$ and $\\hat{B}$ that do not commute, the [uncertainty principle](http://en.wikipedia.org/wiki/Uncertainty_principle) applies in the following form:",
+   "line": 157,
+   "lines": [
+    157,
+    157
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 157
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 158
+  },
+  {
+   "t": "lit",
+   "s": "$${\\Delta A\\Delta B \\ge \\frac{1}{2}\\left|\\left<\\left[\\hat{A},\\hat{B}\\right]\\right>\\right|}$$\n",
+   "line": 159
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 160
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 161
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 162
+  },
+  {
+   "t": "tr",
+   "id": "S0049",
+   "kind": "para",
+   "s": "Let's check this relation on the example of momentum and position operators",
+   "line": 162,
+   "lines": [
+    162
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 162
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 163
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 164
+  },
+  {
+   "t": "tr",
+   "id": "S0050",
+   "kind": "para",
+   "s": "Denote $\\hat{A} = \\hat{x}$ and $\\hat{B} = \\hat{p}_x$. ",
+   "line": 164,
+   "lines": [
+    164
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 164
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 165
+  },
+  {
+   "t": "lit",
+   "s": "$$\\frac{1}{2}\\left|\\left<\\left[\\hat{A},\\hat{B}\\right]\\right>\\right| = \\frac{1}{2}\\left|\\left<\\left[\\hat{x},\\hat{p}_x\\right]\\right>\\right| = \\frac{1}{2}\\left|\\left<\\frac{\\hbar}{i}\\right>\\right|\n= \\frac{1}{2}\\left|\\left<\\psi\\left|\\frac{\\hbar}{i}\\right|\\psi\\right>\\right| = \\frac{1}{2}\\left|\\frac{\\hbar}{i}\\underbrace{\\left<\\psi\\left|\\psi\\right.\\right>}_{=1}\\right| = \\frac{\\hbar}{2}$$\n",
+   "line": 166
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 168
+  },
+  {
+   "t": "lit",
+   "s": "$$\\Rightarrow \\Delta x\\Delta p_x \\ge \\frac{\\hbar}{2}$$\n",
+   "line": 169
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 170
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 171
+  },
+  {
+   "t": "tr",
+   "id": "S0051",
+   "kind": "para",
+   "s": "We find that we cannot measure precise values of position and momentum simultaneously.",
+   "line": 171,
+   "lines": [
+    171
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 171
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 172
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 173
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 174
+  },
+  {
+   "t": "tr",
+   "id": "S0052",
+   "kind": "heading",
+   "s": "Commuting operators and simultaneous measurements",
+   "line": 174,
+   "lines": [
+    174
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 174
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 175
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 176
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 176
+  },
+  {
+   "t": "tr",
+   "id": "S0053",
+   "kind": "directive_title",
+   "s": "**Commuting operators share eigenfunction**",
+   "line": 176,
+   "lines": [
+    176
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 176
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 177
+  },
+  {
+   "t": "lit",
+   "s": "$$[\\hat{A},\\hat{B}]=0$$\n",
+   "line": 178
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 179
+  },
+  {
+   "t": "lit",
+   "s": "$$\\hat{A}\\phi_k = a_k \\phi_k$$\n",
+   "line": 180
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 181
+  },
+  {
+   "t": "lit",
+   "s": "$$\\hat{B}\\phi_k = b_k \\phi_k$$\n",
+   "line": 182
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 183
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 184
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 185
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 186
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 186
+  },
+  {
+   "t": "tr",
+   "id": "S0054",
+   "kind": "directive_title",
+   "s": "**Proof that commutation implies shared eigenfunctions**",
+   "line": 186,
+   "lines": [
+    186
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 186
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown\n",
+   "line": 187
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 188
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 189
+  },
+  {
+   "t": "tr",
+   "id": "S0055",
+   "kind": "para",
+   "s": "We will show that if all eigenfunctions of operators $\\hat{A}$ and $\\hat{B}$ are identical, then $\\hat{A}$ and $\\hat{B}$ commute with each other.",
+   "line": 189,
+   "lines": [
+    189
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 189
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 190
+  },
+  {
+   "t": "tr",
+   "id": "S0056",
+   "kind": "para",
+   "s": "Denote the eigenvalues of $\\hat{A}$ and $\\hat{B}$ by $a_i$ and $b_i$ and the common eigenfunctions by $\\psi_i$. For both operators we have then:",
+   "line": 191,
+   "lines": [
+    191,
+    191
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 191
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 192
+  },
+  {
+   "t": "lit",
+   "s": "$$\\hat{A}\\psi_i = a_i\\psi_i\\textnormal{ and }\\hat{B}\\psi_i = b_i\\psi_i$$\n",
+   "line": 193
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 194
+  },
+  {
+   "t": "tr",
+   "id": "S0057",
+   "kind": "para",
+   "s": "By using these two equations and expressing the general wavefunction $\\psi$ as a linear combination of the eigenfunctions, the commutator can be evaluated as:",
+   "line": 195,
+   "lines": [
+    195,
+    195
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 195
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 196
+  },
+  {
+   "t": "lit",
+   "s": "$$\\hat{A}\\hat{B}\\psi = \\hat{A}\\left(\\hat{B}\\psi\\right) = \\hat{A}\\overbrace{\\left(\\hat{B}\\sum\\limits_{i=1}^{\\infty}c_i\\psi_i\\right)}^{\\textnormal{complete basis}}\n= \\hat{A}\\overbrace{\\left(\\sum\\limits_{i=1}^{\\infty}c_i\\hat{B}\\psi_i\\right)}^{\\hat{B}\\textnormal{ linear}} = \\hat{A}\\overbrace{\\left(\\sum\\limits_{i=1}^{\\infty}c_ib_i\\psi_i\\right)}^{\\textnormal{eigenfunction of }\\hat{B}}$$\n",
+   "line": 197
+  },
+  {
+   "t": "lit",
+   "s": "$$= \\overbrace{\\sum\\limits_{i=1}^{\\infty}c_ib_i\\hat{A}\\psi_i}^{\\hat{A}\\textnormal{ linear}} = \\overbrace{\\sum\\limits_{i=1}^{\\infty}c_ib_ia_i\\psi_i}^{\\textnormal{eigenfunction of }\\hat{A}} = \\overbrace{\\sum\\limits_{i=1}^{\\infty}c_ia_ib_i\\psi_i}^{a_i\\textnormal{ and }b_i\\textnormal{ are constants}} = \\sum\\limits_{i=1}^{\\infty}c_ia_i\\hat{B}\\psi_i$$\n",
+   "line": 199
+  },
+  {
+   "t": "lit",
+   "s": "$$= \\hat{B}\\sum\\limits_{i=1}^{\\infty}c_ia_i\\psi_i = \\hat{B}\\sum\\limits_{i=1}^{\\infty}c_i\\hat{A}\\psi_i = \\hat{B}\\hat{A}\\sum\\limits_{i=1}^{\\infty}c_i\\psi_i = \\hat{B}\\hat{A}\\psi$$\n",
+   "line": 200
+  },
+  {
+   "t": "lit",
+   "s": "$$\\Rightarrow \\left[\\hat{A},\\hat{B}\\right] = 0$$\n",
+   "line": 201
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 202
+  },
+  {
+   "t": "tr",
+   "id": "S0058",
+   "kind": "para",
+   "s": "Note that the commutation relation must apply to all well-behaved functions and not just for some given subset of functions!",
+   "line": 203,
+   "lines": [
+    203,
+    203
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 203
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 204
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 205
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 206
+  },
+  {
+   "t": "tr",
+   "id": "S0059",
+   "kind": "para",
+   "s": "If operators commute, that means we can **simultaneously measure the corresponding observables in a single experiment**.",
+   "line": 206,
+   "lines": [
+    206
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 206
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 207
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 208
+  },
+  {
+   "t": "tr",
+   "id": "S0060",
+   "kind": "para",
+   "s": "For instance, the kinetic energy and momentum operators commute, so we can measure momentum and kinetic energy together. But we cannot do the same for momentum and position.",
+   "line": 208,
+   "lines": [
+    208
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 208
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 209
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 210
+  },
+  {
+   "t": "tr",
+   "id": "S0061",
+   "kind": "para",
+   "s": "If we measure observables $A$ and $B$ described by a common eigenfunction $\\phi_k$, we find the observables to be the corresponding eigenvalues $a_k$ and $b_k$.",
+   "line": 210,
+   "lines": [
+    210
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 210
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 211
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 212
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 213
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 214
+  },
+  {
+   "t": "tr",
+   "id": "S0062",
+   "kind": "heading",
+   "s": "Expectation expression",
+   "line": 214,
+   "lines": [
+    214
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 214
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 215
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 216
+  },
+  {
+   "t": "tr",
+   "id": "S0063",
+   "kind": "para",
+   "s": "The **expectation value** of an observable $\\hat{A}$, which gives the average outcome of measurements, is computed as:",
+   "line": 216,
+   "lines": [
+    216
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 216
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 217
+  },
+  {
+   "t": "lit",
+   "s": "  $$\n  \\langle A \\rangle = \\int \\psi^* \\hat{A} \\psi \\, d\\tau\n  $$\n",
+   "line": 218
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 221
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 222
+  },
+  {
+   "t": "tr",
+   "id": "S0064",
+   "kind": "para",
+   "s": "**Special Case**: If the wavefunction $\\psi$ is an eigenfunction of the operator $\\hat{A}$, with eigenvalue $a$:",
+   "line": 222,
+   "lines": [
+    222
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 222
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 223
+  },
+  {
+   "t": "lit",
+   "s": "  $$\n  \\hat{A}\\psi = a\\psi\n  $$\n",
+   "line": 224
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 227
+  },
+  {
+   "t": "tr",
+   "id": "S0065",
+   "kind": "para",
+   "s": "  Then the expectation value simplifies to:",
+   "line": 228,
+   "lines": [
+    228,
+    228
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 228
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 229
+  },
+  {
+   "t": "lit",
+   "s": "  $$\n  \\langle A \\rangle = \\int \\psi^* a \\psi \\, d\\tau = a \\int \\psi^*\\psi \\, d\\tau = a\n  $$\n",
+   "line": 230
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 233
+  },
+  {
+   "t": "tr",
+   "id": "S0066",
+   "kind": "para",
+   "s": "  Since $\\int \\psi^*\\psi \\, d\\tau = 1$ (normalization), the expectation value is simply the eigenvalue $a$.",
+   "line": 234,
+   "lines": [
+    234,
+    234
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 234
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 235
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 236
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 237
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 238
+  },
+  {
+   "t": "tr",
+   "id": "S0067",
+   "kind": "heading",
+   "s": "Dirac Notation",
+   "line": 238,
+   "lines": [
+    238
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 238
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 239
+  },
+  {
+   "t": "tr",
+   "id": "S0068",
+   "kind": "para",
+   "s": "To express quantum states and operators more compactly, we use **Dirac (bra–ket) notation**.",
+   "line": 240,
+   "lines": [
+    240,
+    240
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 240
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 241
+  },
+  {
+   "t": "lit",
+   "s": "* ",
+   "line": 242
+  },
+  {
+   "t": "tr",
+   "id": "S0069",
+   "kind": "para",
+   "s": "A **state** is written as a *ket*, $|\\psi\\rangle$, and its complex conjugate (dual) is the *bra*, $\\langle\\psi|$.",
+   "line": 242,
+   "lines": [
+    242
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 242
+  },
+  {
+   "t": "lit",
+   "s": "* ",
+   "line": 243
+  },
+  {
+   "t": "tr",
+   "id": "S0070",
+   "kind": "para",
+   "s": "The **inner product** between two states corresponds to the integral over space:",
+   "line": 243,
+   "lines": [
+    243
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 243
+  },
+  {
+   "t": "lit",
+   "s": "  \n",
+   "line": 244
+  },
+  {
+   "t": "lit",
+   "s": "$$\n  \\langle \\phi | \\psi \\rangle = \\int \\phi^*(r), \\psi(r), d\\tau\n$$\n",
+   "line": 245
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 248
+  },
+  {
+   "t": "lit",
+   "s": "* ",
+   "line": 249
+  },
+  {
+   "t": "tr",
+   "id": "S0071",
+   "kind": "para",
+   "s": "In this notation, the **expectation value** of an operator $\\hat{A}$ becomes simply:",
+   "line": 249,
+   "lines": [
+    249
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 249
+  },
+  {
+   "t": "lit",
+   "s": "  \n",
+   "line": 250
+  },
+  {
+   "t": "lit",
+   "s": "$$\n  \\langle A \\rangle = \\langle \\psi | \\hat{A} | \\psi \\rangle\n$$\n",
+   "line": 251
+  },
+  {
+   "t": "lit",
+   "s": "  \n",
+   "line": 254
+  },
+  {
+   "t": "lit",
+   "s": "* ",
+   "line": 255
+  },
+  {
+   "t": "tr",
+   "id": "S0072",
+   "kind": "para",
+   "s": "This form is elegant and general: it applies to all quantum systems, independent of the particular representation (position, momentum, etc.).",
+   "line": 255,
+   "lines": [
+    255
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 255
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 256
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 257
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 258
+  },
+  {
+   "t": "tr",
+   "id": "S0073",
+   "kind": "heading",
+   "s": "Hermitian Property of Operators",
+   "line": 258,
+   "lines": [
+    258
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 258
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 259
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 260
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 261
+  },
+  {
+   "t": "tr",
+   "id": "S0074",
+   "kind": "para",
+   "s": "In quantum mechanics, operators often act on **complex-valued functions**, so we need a notion of “complex conjugate” that applies not just to numbers but to operators.\nThis leads to the concept of the **adjoint operator**.",
+   "line": 261,
+   "lines": [
+    261,
+    262
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 262
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 263
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 264
+  },
+  {
+   "t": "tr",
+   "id": "S0075",
+   "kind": "heading",
+   "s": "The Adjoint (Conjugate Transpose)",
+   "line": 264,
+   "lines": [
+    264
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 264
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 265
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 266
+  },
+  {
+   "t": "tr",
+   "id": "S0076",
+   "kind": "para",
+   "s": "For complex numbers we take the **complex conjugate**:\n$(3 + 2i)^* = 3 - 2i$.",
+   "line": 266,
+   "lines": [
+    266,
+    267
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 267
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 268
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 269
+  },
+  {
+   "t": "tr",
+   "id": "S0077",
+   "kind": "para",
+   "s": "For matrices or linear operators, the corresponding operation is the **adjoint**, denoted by the dagger symbol $(\\dagger)$.",
+   "line": 269,
+   "lines": [
+    269
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 269
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 270
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 271
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 271
+  },
+  {
+   "t": "tr",
+   "id": "S0078",
+   "kind": "directive_title",
+   "s": "**Definition of Adjoint**",
+   "line": 271,
+   "lines": [
+    271
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 271
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 272
+  },
+  {
+   "t": "lit",
+   "s": "* ",
+   "line": 273
+  },
+  {
+   "t": "tr",
+   "id": "S0079",
+   "kind": "para",
+   "s": "For an **operator**, the adjoint is defined through the **inner product**:",
+   "line": 273,
+   "lines": [
+    273
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 273
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 274
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle \\phi | \\hat{A}\\psi \\rangle = \\langle \\hat{A}^\\dagger \\phi | \\psi \\rangle.\n$$\n",
+   "line": 275
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 278
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 279
+  },
+  {
+   "t": "tr",
+   "id": "S0080",
+   "kind": "para",
+   "s": "This means that moving an operator from one side of an inner product to the other requires taking its adjoint (and thus a complex conjugate).",
+   "line": 279,
+   "lines": [
+    279
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 279
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 280
+  },
+  {
+   "t": "lit",
+   "s": "* ",
+   "line": 281
+  },
+  {
+   "t": "tr",
+   "id": "S0081",
+   "kind": "para",
+   "s": "For a **matrix**, the adjoint is its **conjugate transpose**:",
+   "line": 281,
+   "lines": [
+    281
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 281
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 282
+  },
+  {
+   "t": "lit",
+   "s": "$$\nA^\\dagger = (A^T)^*\n$$\n",
+   "line": 283
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 286
+  },
+  {
+   "t": "tr",
+   "id": "S0082",
+   "kind": "para",
+   "s": "That is, swap rows and columns, then take the complex conjugate of every entry:",
+   "line": 287,
+   "lines": [
+    287,
+    287
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 287
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 288
+  },
+  {
+   "t": "lit",
+   "s": "$$\n(A^\\dagger)_{jk} = A_{kj}^*.\n$$\n",
+   "line": 289
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 292
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 293
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 294
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 295
+  },
+  {
+   "t": "tr",
+   "id": "S0083",
+   "kind": "para",
+   "s": "In matrix element form, taking the adjoint generates different elements:",
+   "line": 296,
+   "lines": [
+    296,
+    296
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 296
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 297
+  },
+  {
+   "t": "lit",
+   "s": "$$\na_{jk} = \\langle \\psi_j | \\hat{A} | \\psi_k \\rangle\n\\quad \\Rightarrow \\quad\na^*_{kj} = \\langle \\psi_k | \\hat{A}^\\dagger | \\psi_j \\rangle.\n$$\n",
+   "line": 298
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 303
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 304
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 305
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 306
+  },
+  {
+   "t": "tr",
+   "id": "S0084",
+   "kind": "heading",
+   "s": "Hermitian (Self-Adjoint) Operators",
+   "line": 306,
+   "lines": [
+    306
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 306
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 307
+  },
+  {
+   "t": "tr",
+   "id": "S0085",
+   "kind": "para",
+   "s": "An operator is **Hermitian** if it equals its own adjoint:",
+   "line": 308,
+   "lines": [
+    308,
+    308
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 308
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 309
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{A} = \\hat{A}^\\dagger.\n$$\n",
+   "line": 310
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 313
+  },
+  {
+   "t": "tr",
+   "id": "S0086",
+   "kind": "para",
+   "s": "This means the operator behaves the same way when acting on either side of the inner product.",
+   "line": 314,
+   "lines": [
+    314,
+    314
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 314
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 315
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 316
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 316
+  },
+  {
+   "t": "tr",
+   "id": "S0087",
+   "kind": "directive_title",
+   "s": "**Hermitian Matrix**",
+   "line": 316,
+   "lines": [
+    316
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 316
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 317
+  },
+  {
+   "t": "lit",
+   "s": "$$\nA = A^\\dagger, \\quad a_{jk} = a_{kj}^*.\n$$\n",
+   "line": 318
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 321
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 322
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 323
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 323
+  },
+  {
+   "t": "tr",
+   "id": "S0088",
+   "kind": "directive_title",
+   "s": "**Hermitian Operator**",
+   "line": 323,
+   "lines": [
+    323
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 323
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 324
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle \\phi | \\hat{A}\\psi \\rangle = \\langle \\hat{A}\\phi | \\psi \\rangle,\n\\qquad \\text{or equivalently,} \\qquad\n\\langle j| \\hat{A}|k\\rangle = \\langle k| \\hat{A}|j\\rangle^*.\n$$\n",
+   "line": 325
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 330
+  },
+  {
+   "t": "tr",
+   "id": "S0089",
+   "kind": "para",
+   "s": "In integral form:",
+   "line": 331,
+   "lines": [
+    331,
+    331
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 331
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 332
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int \\psi_j^*(x), [\\hat{A}\\psi_k(x)],dx\n= \\int \\psi_k(x), [\\hat{A}\\psi_j(x)]^*,dx.\n$$\n",
+   "line": 333
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 337
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 338
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 339
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 340
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 341
+  },
+  {
+   "t": "tr",
+   "id": "S0090",
+   "kind": "heading",
+   "s": "Why Hermitian Operators Matter",
+   "line": 341,
+   "lines": [
+    341
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 341
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 342
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 343
+  },
+  {
+   "t": "lit",
+   "s": "1. ",
+   "line": 344
+  },
+  {
+   "t": "tr",
+   "id": "S0091",
+   "kind": "para",
+   "s": "**Eigenvalues are real**: Observables in quantum mechanics (energy, momentum, position, etc.) are represented by **Hermitian operators**, ensuring all measurement outcomes are real numbers.",
+   "line": 344,
+   "lines": [
+    344
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 344
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 345
+  },
+  {
+   "t": "lit",
+   "s": "  $$\n  \\hat{A}|\\psi\\rangle = a|\\psi\\rangle \\implies a \\in \\mathbb{R}.\n  $$\n",
+   "line": 346
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 349
+  },
+  {
+   "t": "lit",
+   "s": ":::{tip}",
+   "line": 350
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 350
+  },
+  {
+   "t": "tr",
+   "id": "S0092",
+   "kind": "directive_title",
+   "s": "**Proof of real eigenvalues**",
+   "line": 350,
+   "lines": [
+    350
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 350
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown\n",
+   "line": 351
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 352
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 353
+  },
+  {
+   "t": "tr",
+   "id": "S0093",
+   "kind": "para",
+   "s": "Let $\\psi$ be an eigenfunction of $\\hat{A}$ with eigenvalue $a$. Choose $\\psi_j = \\psi_k = \\psi$. Then we can write the left-hand and right-hand sides of the Hermitian condition:",
+   "line": 353,
+   "lines": [
+    353
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 353
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 354
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int \\psi^* \\hat{A} \\psi \\, d\\tau = a\n$$\n",
+   "line": 355
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 358
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int \\psi \\left(\\hat{A} \\psi\\right)^* \\, d\\tau = a^*\n$$\n",
+   "line": 359
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 362
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 363
+  },
+  {
+   "t": "tr",
+   "id": "S0094",
+   "kind": "para",
+   "s": "Since the operator is Hermitian, this leads to an equality ensuring the eigenvalues are real.",
+   "line": 363,
+   "lines": [
+    363
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 363
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 364
+  },
+  {
+   "t": "lit",
+   "s": "$$\na = a^*\n$$\n",
+   "line": 365
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 368
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 369
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 370
+  },
+  {
+   "t": "lit",
+   "s": "2. ",
+   "line": 371
+  },
+  {
+   "t": "tr",
+   "id": "S0095",
+   "kind": "para",
+   "s": "**Eigenfunctions are orthogonal**:",
+   "line": 371,
+   "lines": [
+    371
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 371
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 372
+  },
+  {
+   "t": "lit",
+   "s": "  $$\n  \\langle \\psi_m | \\psi_n \\rangle = 0 \\quad (m \\ne n).\n  $$\n",
+   "line": 373
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 376
+  },
+  {
+   "t": "lit",
+   "s": ":::{tip}",
+   "line": 377
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 377
+  },
+  {
+   "t": "tr",
+   "id": "S0096",
+   "kind": "directive_title",
+   "s": "**Proof of orthogonal eigenfunctions**",
+   "line": 377,
+   "lines": [
+    377
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 377
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown\n",
+   "line": 378
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 379
+  },
+  {
+   "t": "tr",
+   "id": "S0097",
+   "kind": "para",
+   "s": "The Hermitian property can also be used to show that eigenfunctions $\\psi_j$ and $\\psi_k$, corresponding to different eigenvalues $a_j$ and $a_k$ (with $a_j \\neq a_k$, i.e., \"non-degenerate\"), are orthogonal to each other:",
+   "line": 380,
+   "lines": [
+    380,
+    380
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 380
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 381
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\textnormal{LHS: } \\int \\psi_j^* \\hat{A} \\psi_k \\, d\\tau = \\int \\psi_j^* a_k \\psi_k \\, d\\tau = a_k \\int \\psi_j^* \\psi_k \\, d\\tau\n$$\n",
+   "line": 382
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 385
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\textnormal{RHS: } \\int \\psi_k \\left(\\hat{A} \\psi_j \\right)^* \\, d\\tau = \\int \\psi_k \\left(a_j \\psi_j \\right)^* \\, d\\tau = a_j \\int \\psi_j^* \\psi_k \\, d\\tau\n$$\n",
+   "line": 386
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 389
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 390
+  },
+  {
+   "t": "tr",
+   "id": "S0098",
+   "kind": "para",
+   "s": "Since the operator is Hermitian, we require that LHS = RHS. This results in:",
+   "line": 390,
+   "lines": [
+    390
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 390
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 391
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\left(a_k - a_j \\right) \\int \\psi_j^* \\psi_k \\, d\\tau = 0\n$$\n",
+   "line": 392
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 395
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 396
+  },
+  {
+   "t": "tr",
+   "id": "S0099",
+   "kind": "para",
+   "s": "If $a_j \\neq a_k$, then we have:",
+   "line": 396,
+   "lines": [
+    396
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 396
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 397
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int \\psi_j^* \\psi_k \\, d\\tau = 0\n$$\n",
+   "line": 398
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 401
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 402
+  },
+  {
+   "t": "tr",
+   "id": "S0100",
+   "kind": "para",
+   "s": "This shows that $\\psi_j$ and $\\psi_k$ are orthogonal.",
+   "line": 402,
+   "lines": [
+    402
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 402
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 403
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 404
+  },
+  {
+   "t": "tr",
+   "id": "S0101",
+   "kind": "para",
+   "s": "**Note**: If $a_j = a_k$, meaning the eigenvalues are degenerate, this result does not hold.",
+   "line": 404,
+   "lines": [
+    404
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 404
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 405
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 406
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 407
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 408
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 408
+  },
+  {
+   "t": "tr",
+   "id": "S0102",
+   "kind": "directive_title",
+   "s": "**Example of Hermitian Matrix**",
+   "line": 408,
+   "lines": [
+    408
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 408
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 409
+  },
+  {
+   "t": "tr",
+   "id": "S0103",
+   "kind": "para",
+   "s": "Which of these matrices is Hermitian?",
+   "line": 410,
+   "lines": [
+    410,
+    410
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 410
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 411
+  },
+  {
+   "t": "tr",
+   "id": "S0104",
+   "kind": "para",
+   "s": "$\\begin{pmatrix}\n1 & 2 \\\\\n3 & 4\n\\end{pmatrix}$, $\\begin{pmatrix}\ni & 0 \\\\\n0 & 1\n\\end{pmatrix}$, $\\begin{pmatrix}\n-1 & -3i \\\\\n3i & 8\n\\end{pmatrix}$, $\\begin{pmatrix}\n1 & 2i \\\\\n2i & 3\n\\end{pmatrix}$",
+   "line": 412,
+   "lines": [
+    412,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 424
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 425
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 426
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 427
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 427
+  },
+  {
+   "t": "tr",
+   "id": "S0105",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 427,
+   "lines": [
+    427
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 427
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 428
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 429
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 430
+  },
+  {
+   "t": "tr",
+   "id": "S0106",
+   "kind": "para",
+   "s": "For the first matrix we have $a_{12}=2\\neq a^{*}_{21}=3$, **non-Hermitian**",
+   "line": 430,
+   "lines": [
+    430
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 430
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 431
+  },
+  {
+   "t": "tr",
+   "id": "S0107",
+   "kind": "para",
+   "s": "For the second matrix $a_{11}\\neq a^{*}_{11}=0$, **non-Hermitian**",
+   "line": 431,
+   "lines": [
+    431
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 431
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 432
+  },
+  {
+   "t": "tr",
+   "id": "S0108",
+   "kind": "para",
+   "s": "For the third matrix  $a_{12}=-3i =a^{*}_{21} = (3i)^{*}=-3i$, **Hermitian**",
+   "line": 432,
+   "lines": [
+    432
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 432
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 433
+  },
+  {
+   "t": "tr",
+   "id": "S0109",
+   "kind": "para",
+   "s": "For the fourth matrix  $a_{12}=2i \\neq a^{*}_{21} = (2i)^{*} = -2i$, **non-Hermitian**",
+   "line": 433,
+   "lines": [
+    433
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 433
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 434
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 435
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 436
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 437
+  },
+  {
+   "t": "tr",
+   "id": "S0110",
+   "kind": "para",
+   "s": "Seeing that differentiation operators are Hermitian requires a little more work.",
+   "line": 437,
+   "lines": [
+    437
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 437
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 438
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 439
+  },
+  {
+   "t": "tr",
+   "id": "S0111",
+   "kind": "para",
+   "s": "A trick that helps is integration by parts, where the boundary term is zero because the wavefunction decays to zero at the boundaries (postulate 1, keeping probability finite).",
+   "line": 439,
+   "lines": [
+    439
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 439
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 440
+  },
+  {
+   "t": "lit",
+   "s": "$$\\int \\psi_1 d\\psi_2 =- \\int \\psi_2d\\psi_1 + \\psi_1\\psi_2\\Big|_{x_{min}}^{x_{max}} =- \\int \\psi_2d\\psi_1$$\n",
+   "line": 441
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 442
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 443
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 443
+  },
+  {
+   "t": "tr",
+   "id": "S0112",
+   "kind": "directive_title",
+   "s": "**Example of Hermitian Operator**",
+   "line": 443,
+   "lines": [
+    443
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 443
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 444
+  },
+  {
+   "t": "tr",
+   "id": "S0113",
+   "kind": "para",
+   "s": "Prove that the momentum operator (in one dimension) is Hermitian.",
+   "line": 445,
+   "lines": [
+    445,
+    445
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 445
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 446
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 447
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 448
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 448
+  },
+  {
+   "t": "tr",
+   "id": "S0114",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 448,
+   "lines": [
+    448
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 448
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 449
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 450
+  },
+  {
+   "t": "tr",
+   "id": "S0115",
+   "kind": "para",
+   "s": "${\\int\\limits_{-\\infty}^{\\infty}\\psi_j^*(x)\\left(-i\\hbar\\frac{d\\psi_k(x)}{dx}\\right)dx} = -i\\hbar\\int\\limits_{-\\infty}^{\\infty}\\psi_j^*(x)\\frac{d\\psi_k(x)}{dx}dx = \\\\ \\overbrace{\\int\\limits_{-\\infty}^{\\infty}\\psi_k(x)\\left(i\\hbar\\frac{d\\psi_j^*(x)}{dx}\\right)dx}^{{integration\\, by\\, parts}}$\n$ = {\\int\\limits_{-\\infty}^{\\infty}\\psi_k(x)\\left(-i\\hbar\\frac{d\\psi_j(x)}{dx}\\right)^*dx} \\Rightarrow \\hat{p}_x\\textnormal{ is Hermitian}$.",
+   "line": 451,
+   "lines": [
+    451,
+    451,
+    452
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 452
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 453
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 454
+  },
+  {
+   "t": "tr",
+   "id": "S0116",
+   "kind": "para",
+   "s": "**Geometric Intuition** Hermitian operators are the analog of **symmetric matrices** in real vector spaces. They represent linear transformations that **do not rotate vectors into complex directions**: they only stretch or compress them along real axes.",
+   "line": 455,
+   "lines": [
+    455,
+    455
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 455
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 456
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 457
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 458
+  },
+  {
+   "t": "tr",
+   "id": "S0117",
+   "kind": "heading",
+   "s": "Problems",
+   "line": 458,
+   "lines": [
+    458
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 458
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 459
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 460
+  },
+  {
+   "t": "tr",
+   "id": "S0118",
+   "kind": "heading",
+   "s": "Problem-1: Is the $xd/dx$ operator Hermitian?",
+   "line": 460,
+   "lines": [
+    460
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 460
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 461
+  },
+  {
+   "t": "tr",
+   "id": "S0119",
+   "kind": "para",
+   "s": "Check whether the operator $\\hat{A} = xd/dx$ is Hermitian.",
+   "line": 462,
+   "lines": [
+    462,
+    462
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 462
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 463
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 464
+  },
+  {
+   "t": "tr",
+   "id": "S0120",
+   "kind": "para",
+   "s": "You can test whether the following condition holds:",
+   "line": 464,
+   "lines": [
+    464
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 464
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 465
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\psi_1^*(x) \\left( x \\frac{d}{dx} \\psi_2(x) \\right) \\, dx = \\int_{a}^{b} \\left( x \\frac{d}{dx} \\psi_1(x) \\right)^* \\psi_2(x) \\, dx\n$$\n",
+   "line": 466
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 469
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 470
+  },
+  {
+   "t": "tr",
+   "id": "S0121",
+   "kind": "para",
+   "s": "Note how complex conjugation applies to an expression with an operator inside.",
+   "line": 470,
+   "lines": [
+    470
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 470
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 471
+  },
+  {
+   "t": "tr",
+   "id": "S0122",
+   "kind": "para",
+   "s": "But since our operator contains no imaginary numbers, complex conjugation only applies to the wavefunction.",
+   "line": 471,
+   "lines": [
+    471
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 471
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 472
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 473
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 474
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 474
+  },
+  {
+   "t": "tr",
+   "id": "S0123",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 474,
+   "lines": [
+    474
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 474
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown\n",
+   "line": 475
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 476
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 477
+  },
+  {
+   "t": "tr",
+   "id": "S0124",
+   "kind": "para",
+   "s": "**Step 1: Left-hand side**",
+   "line": 478,
+   "lines": [
+    478,
+    478
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 478
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 479
+  },
+  {
+   "t": "tr",
+   "id": "S0125",
+   "kind": "para",
+   "s": "The left-hand side is:",
+   "line": 480,
+   "lines": [
+    480,
+    480
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 480
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 481
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\psi_1^*(x) \\left( x \\frac{d}{dx} \\psi_2(x) \\right) \\, dx\n$$\n",
+   "line": 482
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 485
+  },
+  {
+   "t": "tr",
+   "id": "S0126",
+   "kind": "para",
+   "s": "**Step 2: Integration by parts**",
+   "line": 486,
+   "lines": [
+    486,
+    486
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 486
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 487
+  },
+  {
+   "t": "tr",
+   "id": "S0127",
+   "kind": "para",
+   "s": "We apply integration by parts to simplify this expression. Using the product rule for differentiation, we get:",
+   "line": 488,
+   "lines": [
+    488,
+    488
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 488
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 489
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\psi_1^*(x) \\left( x \\frac{d}{dx} \\psi_2(x) \\right) \\, dx = \\left[ x \\psi_1^*(x) \\psi_2(x) \\right]_{a}^{b} - \\int_{a}^{b} \\frac{d}{dx} \\left( x \\psi_1^*(x) \\right) \\psi_2(x) \\, dx\n$$\n",
+   "line": 490
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 493
+  },
+  {
+   "t": "tr",
+   "id": "S0128",
+   "kind": "para",
+   "s": "The boundary term $\\left[ x \\psi_1^*(x) \\psi_2(x) \\right]_{a}^{b}$ can be discarded if the wavefunctions vanish at the boundaries (such as in the case of bound states in a box).",
+   "line": 494,
+   "lines": [
+    494,
+    494
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 494
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 495
+  },
+  {
+   "t": "tr",
+   "id": "S0129",
+   "kind": "para",
+   "s": "Now, for the remaining integral, we apply the derivative to the product $x \\psi_1^*(x)$:",
+   "line": 496,
+   "lines": [
+    496,
+    496
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 496
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 497
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\frac{d}{dx} \\left( x \\psi_1^*(x) \\right) \\psi_2(x) \\, dx = \\int_{a}^{b} \\left( \\psi_1^*(x) + x \\frac{d}{dx} \\psi_1^*(x) \\right) \\psi_2(x) \\, dx\n$$\n",
+   "line": 498
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 501
+  },
+  {
+   "t": "tr",
+   "id": "S0130",
+   "kind": "para",
+   "s": "Thus, the left-hand side becomes:",
+   "line": 502,
+   "lines": [
+    502,
+    502
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 502
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 503
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\psi_1^*(x) \\psi_2(x) \\, dx + \\int_{a}^{b} x \\frac{d}{dx} \\psi_1^*(x) \\psi_2(x) \\, dx\n$$\n",
+   "line": 504
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 507
+  },
+  {
+   "t": "tr",
+   "id": "S0131",
+   "kind": "para",
+   "s": "**Step 3: Right-hand side**",
+   "line": 508,
+   "lines": [
+    508,
+    508
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 508
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 509
+  },
+  {
+   "t": "tr",
+   "id": "S0132",
+   "kind": "para",
+   "s": "The right-hand side is:",
+   "line": 510,
+   "lines": [
+    510,
+    510
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 510
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 511
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\left( x \\frac{d}{dx} \\psi_1^*(x) \\right) \\psi_2(x) \\, dx\n$$\n",
+   "line": 512
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 515
+  },
+  {
+   "t": "tr",
+   "id": "S0133",
+   "kind": "para",
+   "s": "**Step 4: Comparison**",
+   "line": 516,
+   "lines": [
+    516,
+    516
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 516
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 517
+  },
+  {
+   "t": "tr",
+   "id": "S0134",
+   "kind": "para",
+   "s": "Now, we compare the two expressions. The left-hand side contains the extra term:",
+   "line": 518,
+   "lines": [
+    518,
+    518
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 518
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 519
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\psi_1^*(x) \\psi_2(x) \\, dx\n$$\n",
+   "line": 520
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 523
+  },
+  {
+   "t": "tr",
+   "id": "S0135",
+   "kind": "para",
+   "s": "which is not present in the right-hand side. This means:",
+   "line": 524,
+   "lines": [
+    524,
+    524
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 524
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 525
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\psi_1^*(x) \\left( x \\frac{d}{dx} \\psi_2(x) \\right) \\, dx \\neq \\int_{a}^{b} \\left( x \\frac{d}{dx} \\psi_1^*(x) \\right) \\psi_2(x) \\, dx\n$$\n",
+   "line": 526
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 529
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 530
+  },
+  {
+   "t": "tr",
+   "id": "S0136",
+   "kind": "para",
+   "s": "Since the two sides are not equal, we conclude that the operator $x \\frac{d}{dx}$ **is non-Hermitian.**",
+   "line": 530,
+   "lines": [
+    530
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 530
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 531
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 532
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 533
+  },
+  {
+   "t": "tr",
+   "id": "S0137",
+   "kind": "heading",
+   "s": "Problem-2: Is the $d^2/dx^2$ operator Hermitian?",
+   "line": 533,
+   "lines": [
+    533
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 533
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 534
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 535
+  },
+  {
+   "t": "tr",
+   "id": "S0138",
+   "kind": "para",
+   "s": "You can test whether the following condition holds:",
+   "line": 535,
+   "lines": [
+    535
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 535
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 536
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\psi_1^*(x) \\left( \\frac{d^2}{dx^2} \\psi_2(x) \\right) \\, dx = \\int_{a}^{b} \\psi_2(x)\\left( \\frac{d^2}{dx^2} \\psi_1(x) \\right)^*  \\, dx\n$$\n",
+   "line": 537
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 540
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 541
+  },
+  {
+   "t": "tr",
+   "id": "S0139",
+   "kind": "para",
+   "s": "Note how complex conjugation applies to an expression with an operator inside. But since our operator contains no imaginary numbers, it will only apply to the wavefunction.",
+   "line": 541,
+   "lines": [
+    541
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 541
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 542
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 543
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 544
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 544
+  },
+  {
+   "t": "tr",
+   "id": "S0140",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 544,
+   "lines": [
+    544
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 544
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown\n",
+   "line": 545
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 546
+  },
+  {
+   "t": "tr",
+   "id": "S0141",
+   "kind": "para",
+   "s": "To show that the operator $\\hat{A} = \\frac{d^2}{dx^2}$ is Hermitian, we need to check whether the following condition holds:",
+   "line": 547,
+   "lines": [
+    547,
+    547
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 547
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 548
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\psi_1^*(x) \\left( \\frac{d^2}{dx^2} \\psi_2(x) \\right) \\, dx = \\int_{a}^{b} \\left( \\frac{d^2}{dx^2} \\psi_1(x) \\right)^* \\psi_2(x) \\, dx\n$$\n",
+   "line": 549
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 552
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 553
+  },
+  {
+   "t": "tr",
+   "id": "S0142",
+   "kind": "heading",
+   "s": "Step 1: Left-hand side",
+   "line": 553,
+   "lines": [
+    553
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 553
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 554
+  },
+  {
+   "t": "tr",
+   "id": "S0143",
+   "kind": "para",
+   "s": "The left-hand side is:",
+   "line": 555,
+   "lines": [
+    555,
+    555
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 555
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 556
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\psi_1^*(x) \\left( \\frac{d^2}{dx^2} \\psi_2(x) \\right) \\, dx\n$$\n",
+   "line": 557
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 560
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 561
+  },
+  {
+   "t": "tr",
+   "id": "S0144",
+   "kind": "heading",
+   "s": "Step 2: Integration by parts",
+   "line": 561,
+   "lines": [
+    561
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 561
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 562
+  },
+  {
+   "t": "tr",
+   "id": "S0145",
+   "kind": "para",
+   "s": "We apply integration by parts twice. First, applying integration by parts to the term $\\psi_1^*(x) \\frac{d^2}{dx^2} \\psi_2(x)$, we get:",
+   "line": 563,
+   "lines": [
+    563,
+    563
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 563
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 564
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\psi_1^*(x) \\left( \\frac{d^2}{dx^2} \\psi_2(x) \\right) \\, dx = \\left[ \\psi_1^*(x) \\frac{d}{dx} \\psi_2(x) \\right]_{a}^{b} - \\int_{a}^{b} \\frac{d}{dx} \\psi_1^*(x) \\frac{d}{dx} \\psi_2(x) \\, dx\n$$\n",
+   "line": 565
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 568
+  },
+  {
+   "t": "tr",
+   "id": "S0146",
+   "kind": "para",
+   "s": "The boundary term $\\left[ \\psi_1^*(x) \\frac{d}{dx} \\psi_2(x) \\right]_{a}^{b}$ can be discarded if the wavefunctions vanish at the boundaries (as for bound states in a box).",
+   "line": 569,
+   "lines": [
+    569,
+    569
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 569
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 570
+  },
+  {
+   "t": "tr",
+   "id": "S0147",
+   "kind": "para",
+   "s": "We now apply integration by parts again to the remaining term:",
+   "line": 571,
+   "lines": [
+    571,
+    571
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 571
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 572
+  },
+  {
+   "t": "lit",
+   "s": "$$\n-\\int_{a}^{b} \\frac{d}{dx} \\psi_1^*(x) \\frac{d}{dx} \\psi_2(x) \\, dx = \\left[ \\frac{d}{dx} \\psi_1^*(x) \\psi_2(x) \\right]_{a}^{b} - \\int_{a}^{b} \\frac{d^2}{dx^2} \\psi_1^*(x) \\psi_2(x) \\, dx\n$$\n",
+   "line": 573
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 576
+  },
+  {
+   "t": "tr",
+   "id": "S0148",
+   "kind": "para",
+   "s": "Again, the boundary term $\\left[ \\frac{d}{dx} \\psi_1^*(x) \\psi_2(x) \\right]_{a}^{b} $ vanishes if the wavefunctions vanish at the boundaries. This leaves us with:",
+   "line": 577,
+   "lines": [
+    577,
+    577
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 577
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 578
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\psi_1^*(x) \\left( \\frac{d^2}{dx^2} \\psi_2(x) \\right) \\, dx = \\int_{a}^{b} \\left( \\frac{d^2}{dx^2} \\psi_1^*(x) \\right) \\psi_2(x) \\, dx\n$$\n",
+   "line": 579
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 582
+  },
+  {
+   "t": "tr",
+   "id": "S0149",
+   "kind": "para",
+   "s": "**Step 3: Conclusion**",
+   "line": 583,
+   "lines": [
+    583,
+    583
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 583
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 584
+  },
+  {
+   "t": "tr",
+   "id": "S0150",
+   "kind": "para",
+   "s": "Since the two sides are equal, we conclude that the operator $\\frac{d^2}{dx^2}$ is Hermitian:",
+   "line": 585,
+   "lines": [
+    585,
+    585
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 585
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 586
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\psi_1^*(x) \\left( \\frac{d^2}{dx^2} \\psi_2(x) \\right) \\, dx = \\int_{a}^{b} \\left( \\frac{d^2}{dx^2} \\psi_1(x) \\right)^* \\psi_2(x) \\, dx\n$$\n",
+   "line": 587
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 590
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 591
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 592
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 593
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 594
+  },
+  {
+   "t": "tr",
+   "id": "S0151",
+   "kind": "heading",
+   "s": "Problem-3: Is the $id^2/dx^2$ operator Hermitian?",
+   "line": 594,
+   "lines": [
+    594
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 594
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 595
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 596
+  },
+  {
+   "t": "tr",
+   "id": "S0152",
+   "kind": "para",
+   "s": "You can test whether the following condition holds:",
+   "line": 596,
+   "lines": [
+    596
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 596
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 597
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\psi_1^*(x) \\left( \\frac{d^2}{dx^2} \\psi_2(x) \\right) \\, dx = \\int_{a}^{b} \\psi_2(x)\\left( \\frac{d^2}{dx^2} \\psi_1(x) \\right)^*  \\, dx\n$$\n",
+   "line": 598
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 601
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 602
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 602
+  },
+  {
+   "t": "tr",
+   "id": "S0153",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 602,
+   "lines": [
+    602
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 602
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown\n",
+   "line": 603
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 604
+  },
+  {
+   "t": "tr",
+   "id": "S0154",
+   "kind": "para",
+   "s": "From the last problem we learned that the following condition holds, which makes the second derivative operator $d^2/dx^2$ Hermitian:",
+   "line": 605,
+   "lines": [
+    605,
+    605
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 605
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 606
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\psi_1^*(x) \\left( \\frac{d^2}{dx^2} \\psi_2(x) \\right) \\, dx = \\int_{a}^{b} \\psi_2(x)\\left( \\frac{d^2}{dx^2} \\psi_1^*(x) \\right)  \\, dx\n$$\n",
+   "line": 607
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 610
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 611
+  },
+  {
+   "t": "tr",
+   "id": "S0155",
+   "kind": "para",
+   "s": "Now if we have $id^2/dx^2$, the complex conjugate part will produce a minus sign, which breaks the Hermitian equality:",
+   "line": 611,
+   "lines": [
+    611
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 611
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 612
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{a}^{b} \\psi_1^*(x) \\left( i\\frac{d^2}{dx^2} \\psi_2(x) \\right) \\, dx = \\int_{a}^{b} \\psi_2(x)\\left( i\\frac{d^2}{dx^2} \\psi_1(x) \\right)^*  \\, dx = -\\int_{a}^{b} \\psi_2(x)\\left( i\\frac{d^2}{dx^2} \\psi_1(x)^* \\right)\n$$\n",
+   "line": 613
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 616
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 617
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 618
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 619
+  },
+  {
+   "t": "tr",
+   "id": "S0156",
+   "kind": "heading",
+   "s": "Problem-4: Identify Hermitian Matrices",
+   "line": 619,
+   "lines": [
+    619
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 619
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 620
+  },
+  {
+   "t": "lit",
+   "s": "$$\nA = \\begin{pmatrix}\n1 & 2 \\\\\n2 & 3\n\\end{pmatrix}\n$$\n",
+   "line": 621
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 627
+  },
+  {
+   "t": "lit",
+   "s": "$$\nB = \\begin{pmatrix}\ni & 1 \\\\\n-1 & -i\n\\end{pmatrix}\n$$\n",
+   "line": 628
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 634
+  },
+  {
+   "t": "lit",
+   "s": "$$\nC = \\begin{pmatrix}\n2 & i \\\\\n-i & 2\n\\end{pmatrix}\n$$\n",
+   "line": 635
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 641
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 642
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 642
+  },
+  {
+   "t": "tr",
+   "id": "S0157",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 642,
+   "lines": [
+    642
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 642
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown\n",
+   "line": 643
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 644
+  },
+  {
+   "t": "tr",
+   "id": "S0158",
+   "kind": "para",
+   "s": "**A Matrix**",
+   "line": 645,
+   "lines": [
+    645,
+    645
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 645
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 646
+  },
+  {
+   "t": "tr",
+   "id": "S0159",
+   "kind": "para",
+   "s": "To check if a matrix is Hermitian, it must satisfy the condition $A = A^\\dagger$, where $A^\\dagger$ is the conjugate transpose of $A$. Since this matrix has real entries, the conjugate transpose is just the transpose.",
+   "line": 647,
+   "lines": [
+    647,
+    647
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 647
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 648
+  },
+  {
+   "t": "tr",
+   "id": "S0160",
+   "kind": "para",
+   "s": "The transpose of $A$ is:",
+   "line": 649,
+   "lines": [
+    649,
+    649
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 649
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 650
+  },
+  {
+   "t": "tr",
+   "id": "S0161",
+   "kind": "para",
+   "s": "$\nA^\\dagger = \\begin{pmatrix}\n1 & 2 \\\\\n2 & 3\n\\end{pmatrix}\n$",
+   "line": 651,
+   "lines": [
+    651,
+    651,
+    652,
+    653,
+    654,
+    655,
+    656
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 656
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 657
+  },
+  {
+   "t": "tr",
+   "id": "S0162",
+   "kind": "para",
+   "s": "Since $A = A^\\dagger$, matrix $A$ is **Hermitian**.",
+   "line": 658,
+   "lines": [
+    658,
+    658
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 658
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 659
+  },
+  {
+   "t": "tr",
+   "id": "S0163",
+   "kind": "para",
+   "s": "**B Matrix**\nNow, let's compute the conjugate transpose of $B$. We first take the transpose and then take the complex conjugate of each entry:",
+   "line": 660,
+   "lines": [
+    660,
+    660,
+    661
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 661
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 662
+  },
+  {
+   "t": "lit",
+   "s": "$$\nB^\\dagger = \\begin{pmatrix}\n-i & -1 \\\\\n1 & i\n\\end{pmatrix}\n$$\n",
+   "line": 663
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 669
+  },
+  {
+   "t": "tr",
+   "id": "S0164",
+   "kind": "para",
+   "s": "Clearly, $B \\neq B^\\dagger$, so matrix $B$ is **not Hermitian**.",
+   "line": 670,
+   "lines": [
+    670,
+    670
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 670
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 671
+  },
+  {
+   "t": "tr",
+   "id": "S0165",
+   "kind": "para",
+   "s": "**C Matrix**",
+   "line": 672,
+   "lines": [
+    672,
+    672
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 672
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 673
+  },
+  {
+   "t": "tr",
+   "id": "S0166",
+   "kind": "para",
+   "s": "The conjugate transpose of $C$ is:",
+   "line": 674,
+   "lines": [
+    674,
+    674
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 674
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 675
+  },
+  {
+   "t": "lit",
+   "s": "$$\nC^\\dagger = \\begin{pmatrix}\n2 & -i \\\\\ni & 2\n\\end{pmatrix}\n$$\n",
+   "line": 676
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 682
+  },
+  {
+   "t": "tr",
+   "id": "S0167",
+   "kind": "para",
+   "s": "Since $C = C^\\dagger$, matrix $C$ is **Hermitian**.",
+   "line": 683,
+   "lines": [
+    683,
+    683
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 683
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 684
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 685
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 686
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 687
+  },
+  {
+   "t": "tr",
+   "id": "S0168",
+   "kind": "heading",
+   "s": "Problem-5 Momentum Matrix",
+   "line": 687,
+   "lines": [
+    687
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 687
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 688
+  },
+  {
+   "t": "tr",
+   "id": "S0169",
+   "kind": "para",
+   "s": "Show how the momentum operator looks in matrix form using a finite-dimensional example where you evaluate the wavefunction on 4 points, which will correspond to a $4 \\times 4$ matrix.",
+   "line": 689,
+   "lines": [
+    689,
+    689
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 689
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 690
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 691
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 691
+  },
+  {
+   "t": "tr",
+   "id": "S0170",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 691,
+   "lines": [
+    691
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 691
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown\n",
+   "line": 692
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 693
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 694
+  },
+  {
+   "t": "tr",
+   "id": "S0171",
+   "kind": "para",
+   "s": "We can represent the momentum operator $\\hat{p} = -i \\hbar \\frac{d}{dx}$ in a discrete basis, such as using a position basis. In this case, the matrix elements of the momentum operator can be approximated using finite differences.",
+   "line": 694,
+   "lines": [
+    694
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 694
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 695
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 696
+  },
+  {
+   "t": "tr",
+   "id": "S0172",
+   "kind": "para",
+   "s": "For simplicity, let's assume we are working in a discrete system, where we approximate the derivative $\\frac{d}{dx}$ with finite differences. The finite difference approximation for the derivative at point $x_n$ is:",
+   "line": 696,
+   "lines": [
+    696
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 696
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 697
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\frac{d \\psi(x)}{dx} \\approx \\frac{\\psi(x_{n+1}) - \\psi(x_{n-1})}{2 \\Delta x}\n$$\n",
+   "line": 698
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 701
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 702
+  },
+  {
+   "t": "tr",
+   "id": "S0173",
+   "kind": "para",
+   "s": "where $\\Delta x$ is the spacing between the discrete points.",
+   "line": 702,
+   "lines": [
+    702
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 702
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 703
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 704
+  },
+  {
+   "t": "tr",
+   "id": "S0174",
+   "kind": "para",
+   "s": "The corresponding momentum operator matrix in this finite-dimensional space can be written as a skew-symmetric matrix that captures this finite difference behavior.",
+   "line": 704,
+   "lines": [
+    704
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 704
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 705
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 706
+  },
+  {
+   "t": "tr",
+   "id": "S0175",
+   "kind": "para",
+   "s": "Here is an example of a $4 \\times 4$ momentum operator matrix $P$, assuming $\\hbar = 1$ for simplicity:",
+   "line": 706,
+   "lines": [
+    706
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 706
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 707
+  },
+  {
+   "t": "lit",
+   "s": "$$\nP = \\frac{i}{2 \\Delta x} \\begin{pmatrix}\n0 & -1 & 0 & 1 \\\\\n1 & 0 & -1 & 0 \\\\\n0 & 1 & 0 & -1 \\\\\n-1 & 0 & 1 & 0\n\\end{pmatrix}\n$$\n",
+   "line": 708
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 716
+  },
+  {
+   "t": "tr",
+   "id": "S0176",
+   "kind": "para",
+   "s": "**Explanation:**",
+   "line": 717,
+   "lines": [
+    717,
+    717
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 717
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 718
+  },
+  {
+   "t": "tr",
+   "id": "S0177",
+   "kind": "para",
+   "s": "The non-diagonal entries correspond to the finite difference approximation of the derivative.",
+   "line": 718,
+   "lines": [
+    718
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 718
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 719
+  },
+  {
+   "t": "tr",
+   "id": "S0178",
+   "kind": "para",
+   "s": "The factor of $\\frac{i}{2 \\Delta x}$ ensures that the momentum operator reflects the correct dimensionality.",
+   "line": 719,
+   "lines": [
+    719
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 719
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 720
+  },
+  {
+   "t": "tr",
+   "id": "S0179",
+   "kind": "para",
+   "s": "The matrix is anti-Hermitian (i.e., $P^\\dagger = -P$), as expected for the momentum operator.",
+   "line": 720,
+   "lines": [
+    720
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 720
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 721
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 722
+  },
+  {
+   "t": "tr",
+   "id": "S0180",
+   "kind": "para",
+   "s": "This $4 \\times 4$ matrix represents the momentum operator in a discrete system with 4 grid points. The matrix elements link neighboring points, reflecting the nature of the derivative approximation.",
+   "line": 722,
+   "lines": [
+    722
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 722
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 723
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 724
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 725
+  },
+  {
+   "t": "tr",
+   "id": "S0181",
+   "kind": "heading",
+   "s": "Problem-6: Taking the square of an operator",
+   "line": 725,
+   "lines": [
+    725
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 725
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 726
+  },
+  {
+   "t": "tr",
+   "id": "S0182",
+   "kind": "para",
+   "s": "Consider the operator $ \\hat{A} = x \\frac{d}{dx} $. Find $ \\hat{A}^2 $, i.e., $ \\hat{A}(\\hat{A}f(x)) $, and apply it to an arbitrary function $ f(x) $.",
+   "line": 727,
+   "lines": [
+    727,
+    727
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 727
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 728
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 729
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 729
+  },
+  {
+   "t": "tr",
+   "id": "S0183",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 729,
+   "lines": [
+    729
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 729
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 730
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 731
+  },
+  {
+   "t": "tr",
+   "id": "S0184",
+   "kind": "para",
+   "s": "First, apply $ \\hat{A} f(x) = x \\frac{d}{dx} f(x) $:",
+   "line": 732,
+   "lines": [
+    732,
+    732
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 732
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 733
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{A} f(x) = x \\frac{df}{dx}\n$$\n",
+   "line": 734
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 737
+  },
+  {
+   "t": "tr",
+   "id": "S0185",
+   "kind": "para",
+   "s": "Now, apply $ \\hat{A} $ again to the result:",
+   "line": 738,
+   "lines": [
+    738,
+    738
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 738
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 739
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{A}(\\hat{A} f(x)) = \\hat{A} \\left( x \\frac{df}{dx} \\right) = x \\frac{d}{dx} \\left( x \\frac{df}{dx} \\right)\n$$\n",
+   "line": 740
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 743
+  },
+  {
+   "t": "tr",
+   "id": "S0186",
+   "kind": "para",
+   "s": "Using the product rule:",
+   "line": 744,
+   "lines": [
+    744,
+    744
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 744
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 745
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\frac{d}{dx} \\left( x \\frac{df}{dx} \\right) = \\frac{df}{dx} + x \\frac{d^2 f}{dx^2}\n$$\n",
+   "line": 746
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 749
+  },
+  {
+   "t": "tr",
+   "id": "S0187",
+   "kind": "para",
+   "s": "Thus:",
+   "line": 750,
+   "lines": [
+    750,
+    750
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 750
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 751
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{A}^2 f(x) = x \\left( \\frac{df}{dx} + x \\frac{d^2 f}{dx^2} \\right) = x \\frac{df}{dx} + x^2 \\frac{d^2 f}{dx^2}\n$$\n",
+   "line": 752
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 755
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 756
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 757
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 758
+  },
+  {
+   "t": "tr",
+   "id": "S0188",
+   "kind": "heading",
+   "s": "Problem-7: Verifying an eigenfunction and its eigenvalue",
+   "line": 758,
+   "lines": [
+    758
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 758
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 759
+  },
+  {
+   "t": "tr",
+   "id": "S0189",
+   "kind": "para",
+   "s": "Consider the operator $ \\hat{B} = -i\\hbar \\frac{d}{dx} $ (momentum operator). Verify that $ f(x) = e^{ikx} $ is an eigenfunction of $ \\hat{B} $, and find the corresponding eigenvalue.",
+   "line": 760,
+   "lines": [
+    760,
+    760
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 760
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 761
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 762
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 762
+  },
+  {
+   "t": "tr",
+   "id": "S0190",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 762,
+   "lines": [
+    762
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 762
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 763
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 764
+  },
+  {
+   "t": "tr",
+   "id": "S0191",
+   "kind": "para",
+   "s": "Apply $ \\hat{B} $ to $ f(x) = e^{ikx} $:",
+   "line": 765,
+   "lines": [
+    765,
+    765
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 765
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 766
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{B} f(x) = -i\\hbar \\frac{d}{dx} e^{ikx}\n$$\n",
+   "line": 767
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 770
+  },
+  {
+   "t": "tr",
+   "id": "S0192",
+   "kind": "para",
+   "s": "The derivative of $ e^{ikx} $ is:",
+   "line": 771,
+   "lines": [
+    771,
+    771
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 771
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 772
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\frac{d}{dx} e^{ikx} = ik e^{ikx}\n$$\n",
+   "line": 773
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 776
+  },
+  {
+   "t": "tr",
+   "id": "S0193",
+   "kind": "para",
+   "s": "Thus:",
+   "line": 777,
+   "lines": [
+    777,
+    777
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 777
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 778
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{B} f(x) = -i\\hbar \\cdot ik e^{ikx} = \\hbar k e^{ikx}\n$$\n",
+   "line": 779
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 782
+  },
+  {
+   "t": "tr",
+   "id": "S0194",
+   "kind": "para",
+   "s": "Since $ \\hat{B} f(x) = \\hbar k f(x) $, $ f(x) = e^{ikx} $ is an eigenfunction of $ \\hat{B} $ with eigenvalue $ \\hbar k $.",
+   "line": 783,
+   "lines": [
+    783,
+    783
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 783
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 784
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 785
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 786
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 787
+  },
+  {
+   "t": "tr",
+   "id": "S0195",
+   "kind": "heading",
+   "s": "Problem-8: Linearity and eigenfunction testing",
+   "line": 787,
+   "lines": [
+    787
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 787
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 788
+  },
+  {
+   "t": "tr",
+   "id": "S0196",
+   "kind": "para",
+   "s": "Consider the operator $ \\hat{D} = x \\frac{d}{dx} $. Show whether this operator is linear and check if $ f(x) = x^n $ is an eigenfunction of $ \\hat{D} $.",
+   "line": 789,
+   "lines": [
+    789,
+    789
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 789
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 790
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 791
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 791
+  },
+  {
+   "t": "tr",
+   "id": "S0197",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 791,
+   "lines": [
+    791
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 791
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 792
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 793
+  },
+  {
+   "t": "tr",
+   "id": "S0198",
+   "kind": "para",
+   "s": "First, test linearity by applying $ \\hat{D} $ to $ \\alpha f(x) + \\beta g(x) $:",
+   "line": 794,
+   "lines": [
+    794,
+    794
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 794
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 795
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{D}(\\alpha f(x) + \\beta g(x)) = x \\frac{d}{dx} (\\alpha f(x) + \\beta g(x)) = \\alpha x \\frac{df}{dx} + \\beta x \\frac{dg}{dx}\n$$\n",
+   "line": 796
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 799
+  },
+  {
+   "t": "tr",
+   "id": "S0199",
+   "kind": "para",
+   "s": "This is $ \\alpha \\hat{D} f(x) + \\beta \\hat{D} g(x) $, so $ \\hat{D} $ is linear.",
+   "line": 800,
+   "lines": [
+    800,
+    800
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 800
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 801
+  },
+  {
+   "t": "tr",
+   "id": "S0200",
+   "kind": "para",
+   "s": "Now, apply $ \\hat{D} $ to $ f(x) = x^n $:",
+   "line": 802,
+   "lines": [
+    802,
+    802
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 802
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 803
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{D} f(x) = x \\frac{d}{dx} x^n = x \\cdot n x^{n-1} = n x^n\n$$\n",
+   "line": 804
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 807
+  },
+  {
+   "t": "tr",
+   "id": "S0201",
+   "kind": "para",
+   "s": "Since the result is proportional to $ f(x) = x^n $, $ f(x) = x^n $ is an eigenfunction of $ \\hat{D} $ with eigenvalue $ n $.",
+   "line": 808,
+   "lines": [
+    808,
+    808
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 808
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 809
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 810
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+en	zh	bracket
+eigenvalue	特征值	yes
+eigenvector	特征向量	yes
+eigenfunction	本征函数	yes
+eigenstate	本征态	yes
+expectation value	期望值	yes
+wavefunction	波函数	yes
+wave function	波函数	yes
+Hamiltonian	哈密顿算符	yes
+Hermitian	厄米	yes
+Hermitian operator	厄米算符	yes
+superposition	叠加	yes
+normalization	归一化	yes
+normalized	归一化的	no
+orthogonal	正交	yes
+orthonormal	正交归一化	yes
+degenerate	简并	yes
+degeneracy	简并	yes
+basis set	基组	yes
+boundary condition	边界条件	yes
+variational method	变分法	yes
+perturbation theory	微扰理论	yes
+particle in a box	一维无限深势阱	yes
+harmonic oscillator	谐振子	yes
+rigid rotor	刚性转子	yes
+angular momentum	角动量	yes
+commutator	对易子	yes
+commute	对易	no
+observable	可观测量	yes
+operator	算符	yes
+momentum operator	动量算符	yes
+uncertainty principle	不确定性原理	yes
+tunneling	隧穿	yes
+potential well	势阱	yes
+potential barrier	势垒	yes
+wave equation	波动方程	yes
+Schrödinger equation	薛定谔方程	yes
+time-dependent	含时的	no
+stationary state	定态	yes
+quantum number	量子数	yes
+probability density	概率密度	yes
+excited state	激发态	yes
+ground state	基态	yes
+energy level	能级	yes
+node	节点	yes
+dipole	偶极	yes
+overlap integral	重叠积分	yes
+plane wave	平面波	yes
+phase	相位	yes
+interference	干涉	yes
+diffraction	衍射	yes

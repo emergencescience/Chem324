@@ -1,0 +1,5439 @@
+{
+ "trailing_newline": true,
+ "items": [
+  {
+   "t": "lit",
+   "s": "---\nkernelspec:\n  name: python3\n  display_name: Python 3\n---\n",
+   "line": 1
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 6
+  },
+  {
+   "t": "lit",
+   "s": "# ",
+   "line": 7
+  },
+  {
+   "t": "tr",
+   "id": "S0001",
+   "kind": "heading",
+   "s": "The Schrödinger Equation and the Wavefunction",
+   "line": 7,
+   "lines": [
+    7
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 7
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 8
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 9
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 9
+  },
+  {
+   "t": "tr",
+   "id": "S0002",
+   "kind": "directive_title",
+   "s": "**What you need to know**",
+   "line": 9,
+   "lines": [
+    9
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 9
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 10
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 11
+  },
+  {
+   "t": "tr",
+   "id": "S0003",
+   "kind": "para",
+   "s": "Feeding the **de Broglie** and **Planck** relations into a complex traveling wave, and demanding that energy is conserved, produces **Schrödinger's equation**, the equation of motion of the quantum world.",
+   "line": 11,
+   "lines": [
+    11
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 11
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 12
+  },
+  {
+   "t": "tr",
+   "id": "S0004",
+   "kind": "para",
+   "s": "**Separation of variables** splits it into a rotating phase $e^{-iEt/\\hbar}$ and the **time-independent Schrödinger equation** for the shape $\\psi(x)$. These product solutions are **stationary states**: the phase turns, the probability density does not move.",
+   "line": 12,
+   "lines": [
+    12
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 12
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 13
+  },
+  {
+   "t": "tr",
+   "id": "S0005",
+   "kind": "para",
+   "s": "The time-independent equation is a **curvature equation**. Where $E > V$ the wavefunction oscillates, where $E < V$ it decays or grows. Demanding that it stays finite allows only special energies: **quantization comes from boundary conditions**, as it did for the string.",
+   "line": 13,
+   "lines": [
+    13
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 13
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 14
+  },
+  {
+   "t": "tr",
+   "id": "S0006",
+   "kind": "para",
+   "s": "The wavefunction is complex and not directly measurable. Its absolute square $|\\psi(x)|^2$ is the **probability density** for finding the particle, so physical wavefunctions must be **normalized**.",
+   "line": 14,
+   "lines": [
+    14
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 14
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 15
+  },
+  {
+   "t": "tr",
+   "id": "S0007",
+   "kind": "para",
+   "s": "Every measurable quantity corresponds to an **operator**. Predictions are **expectation values** $\\langle A \\rangle = \\int \\psi^{*} \\hat{A}\\, \\psi\\, dx$, and solving the Schrödinger equation means finding the **eigenfunctions** $\\psi_n$ and **eigenvalues** $E_n$ of the Hamiltonian.",
+   "line": 15,
+   "lines": [
+    15
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 15
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 16
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 17
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 18
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 19
+  },
+  {
+   "t": "tr",
+   "id": "S0008",
+   "kind": "heading",
+   "s": "Why a new equation?",
+   "line": 19,
+   "lines": [
+    19
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 19
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 20
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 21
+  },
+  {
+   "t": "tr",
+   "id": "S0009",
+   "kind": "para",
+   "s": "Classical mechanics works at large scales and fails for atoms and molecules. Chapter 1 collected the evidence, and any new equation of motion has to build in two facts from it:",
+   "line": 21,
+   "lines": [
+    21
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 21
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 22
+  },
+  {
+   "t": "tr",
+   "id": "S0010",
+   "kind": "para",
+   "s": "**Energy comes in quanta.** Blackbody radiation, the photoelectric effect and atomic spectra all require $E = h\\nu$.",
+   "line": 22,
+   "lines": [
+    22
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 22
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 23
+  },
+  {
+   "t": "tr",
+   "id": "S0011",
+   "kind": "para",
+   "s": "**Matter is a wave.** Electron diffraction and the double slit show that a particle with momentum $p$ carries a wavelength $\\lambda = h/p$.",
+   "line": 23,
+   "lines": [
+    23
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 23
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 24
+  },
+  {
+   "t": "tr",
+   "id": "S0012",
+   "kind": "para",
+   "s": "Chapter 2 gave us the language of waves: complex exponentials, the wave equation, separation of variables, normal modes. In 1926 Erwin Schrödinger, an expert on the physics of waves, put the two quantum relations into that language and found the equation that the matter wave obeys.",
+   "line": 24,
+   "lines": [
+    24
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 24
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 25
+  },
+  {
+   "t": "tr",
+   "id": "S0013",
+   "kind": "para",
+   "s": "The Schrödinger equation is a **fundamental law**. It cannot be derived from anything more basic; it can only be motivated and then tested. In the century since, it has passed every test it was given, from the spectrum of hydrogen to the structure of molecules and solids.",
+   "line": 25,
+   "lines": [
+    25
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 25
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 26
+  },
+  {
+   "t": "lit",
+   "s": ":::{figure}",
+   "line": 27
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 27
+  },
+  {
+   "t": "tr",
+   "id": "S0014",
+   "kind": "directive_title",
+   "s": "images/SE_intro.jpeg",
+   "line": 27,
+   "lines": [
+    27
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 27
+  },
+  {
+   "t": "lit",
+   "s": ":label: fig-schrodinger-equation-1\n",
+   "line": 28
+  },
+  {
+   "t": "lit",
+   "s": ":alt: A person stepping through a door into a space filled with crossing lines\n",
+   "line": 29
+  },
+  {
+   "t": "lit",
+   "s": ":width: 300px\n",
+   "line": 30
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 31
+  },
+  {
+   "t": "tr",
+   "id": "S0015",
+   "kind": "para",
+   "s": "Fig. Entering the quantum world.",
+   "line": 32,
+   "lines": [
+    32,
+    32
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 32
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 33
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 34
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 35
+  },
+  {
+   "t": "tr",
+   "id": "S0016",
+   "kind": "heading",
+   "s": "Building the equation",
+   "line": 35,
+   "lines": [
+    35
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 35
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 36
+  },
+  {
+   "t": "tr",
+   "id": "S0017",
+   "kind": "para",
+   "s": "We follow Schrödinger's reasoning in three steps: write down the wave of a free particle, see what its derivatives give back, and then demand that energy is conserved.",
+   "line": 37,
+   "lines": [
+    37,
+    37
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 37
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 38
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 39
+  },
+  {
+   "t": "tr",
+   "id": "S0018",
+   "kind": "heading",
+   "s": "Step 1: the wave of a free particle",
+   "line": 39,
+   "lines": [
+    39
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 39
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 40
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 41
+  },
+  {
+   "t": "tr",
+   "id": "S0019",
+   "kind": "para",
+   "s": "The [complex traveling wave](../ch02/01-waves.md) of Chapter 2 moves to the right with wavenumber $k = 2\\pi/\\lambda$ and angular frequency $\\omega = 2\\pi\\nu$:",
+   "line": 41,
+   "lines": [
+    41
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 41
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 42
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\Psi(x,t) = A\\,e^{i(kx-\\omega t)}\n$$\n",
+   "line": 43
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 46
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 47
+  },
+  {
+   "t": "tr",
+   "id": "S0020",
+   "kind": "para",
+   "s": "Now insert the two quantum relations. De Broglie ties the wavenumber to the momentum, and Planck ties the frequency to the energy:",
+   "line": 47,
+   "lines": [
+    47
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 47
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 48
+  },
+  {
+   "t": "lit",
+   "s": "$$\np = \\frac{h}{\\lambda} = \\hbar k, \\qquad E = h\\nu = \\hbar\\omega\n$$\n",
+   "line": 49
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 52
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 53
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 53
+  },
+  {
+   "t": "tr",
+   "id": "S0021",
+   "kind": "directive_title",
+   "s": "**Wavefunction of a free particle with momentum $p$ and energy $E$**",
+   "line": 53,
+   "lines": [
+    53
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 53
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 54
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\Psi(x,t) = A\\,e^{\\frac{i}{\\hbar}(px - Et)}\n$$\n",
+   "line": 55
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 58
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 59
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 60
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 61
+  },
+  {
+   "t": "tr",
+   "id": "S0022",
+   "kind": "para",
+   "s": "The wave has to be complex, and the reason is physical. A free particle with a definite momentum has no preferred position, so the chance of finding it must be the same everywhere and at all times. A real wave $\\cos(kx-\\omega t)$ cannot do that: its square vanishes at nodes that sweep along with the wave. The complex wave can. Its real and imaginary parts run a quarter cycle apart, so when one is zero the other is at its maximum, and $|\\Psi|^2 = \\mathrm{Re}^2 + \\mathrm{Im}^2$ stays perfectly flat.",
+   "line": 61,
+   "lines": [
+    61
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 61
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 62
+  },
+  {
+   "t": "lit",
+   "s": "```{code-cell} python\n:tags: [hide-input]\n# synced: complex_plane_wave\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.animation import FuncAnimation\nfrom IPython.display import HTML\n\nTEAL, CARDINAL, GRAY, PURPLE, ORANGE = \"#107895\", \"#C8102E\", \"#6c757d\", \"#6a3d9a\", \"#e07b00\"\nplt.rcParams.update({\"axes.spines.top\": False, \"axes.spines.right\": False})\nk, w = 2 * np.pi / 4.0, 2 * np.pi            # lambda = 4, one period per loop\nx = np.linspace(0, 12, 600)\nts = np.linspace(0, 1, 36, endpoint=False)\n\nfig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 4.0), sharex=True,\n                               gridspec_kw={\"height_ratios\": [1.25, 1]})\n(re,) = ax1.plot([], [], color=TEAL, lw=2.4, label=r\"Re $\\Psi = \\cos(kx-\\omega t)$\")\n(im,) = ax1.plot([], [], color=ORANGE, lw=2.0, ls=\"--\", label=r\"Im $\\Psi = \\sin(kx-\\omega t)$\")\nax1.axhline(0, color=GRAY, lw=0.6)\nax1.set_ylim(-1.3, 1.95); ax1.set_yticks([-1, 0, 1]); ax1.set_ylabel(r\"$\\Psi$\")\nax1.legend(loc=\"upper right\", frameon=False, fontsize=9.5, ncol=2)\nax1.set_title(r\"free particle $\\Psi = e^{i(kx-\\omega t)}$: two real waves, a quarter cycle apart\",\n              loc=\"left\", fontsize=11)\n\nreal2 = ax2.fill_between(x, 0 * x, color=GRAY, alpha=0.25, lw=0)\n(real2_line,) = ax2.plot([], [], color=GRAY, lw=1.4, label=r\"a real wave, $\\cos^2(kx-\\omega t)$: moving dead spots\")\nax2.plot(x, np.ones_like(x), color=CARDINAL, lw=2.8, label=r\"$|\\Psi|^2 = \\mathrm{Re}^2 + \\mathrm{Im}^2 = 1$ everywhere\")\nax2.set_xlim(0, 12); ax2.set_ylim(0, 1.75); ax2.set_yticks([0, 1])\nax2.set_xlabel(\"x\"); ax2.set_ylabel(\"probability density\")\nax2.legend(loc=\"upper right\", frameon=False, fontsize=9.5, ncol=1)\nfig.tight_layout()\n\ndef update(i):\n    ph = k * x - w * ts[i]\n    re.set_data(x, np.cos(ph)); im.set_data(x, np.sin(ph))\n    real2_line.set_data(x, np.cos(ph) ** 2)\n    real2.set_data(x, 0 * x, np.cos(ph) ** 2)\n\nani = FuncAnimation(fig, update, frames=len(ts), interval=85, blit=False)\nplt.close(fig)\nHTML(ani.to_jshtml())\n```\n",
+   "line": 63
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 105
+  },
+  {
+   "t": "tr",
+   "id": "S0023",
+   "kind": "para",
+   "s": "Fig. A free particle moving to the right. Top: the real and imaginary parts of $\\Psi$ are two ordinary traveling waves a quarter cycle apart. Bottom: their squares add up to a constant, so the particle is equally likely to be found anywhere, while the square of a single real wave would have dead spots moving along $x$.",
+   "line": 106,
+   "lines": [
+    106,
+    106
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 106
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 107
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 108
+  },
+  {
+   "t": "tr",
+   "id": "S0024",
+   "kind": "heading",
+   "s": "Step 2: derivatives pull out the energy and the momentum",
+   "line": 108,
+   "lines": [
+    108
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 108
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 109
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 110
+  },
+  {
+   "t": "tr",
+   "id": "S0025",
+   "kind": "para",
+   "s": "Differentiate the free-particle wave with respect to time. The exponential comes back multiplied by $-iE/\\hbar$. Moving the constants to the left side:",
+   "line": 110,
+   "lines": [
+    110
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 110
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 111
+  },
+  {
+   "t": "lit",
+   "s": "$$\ni\\hbar\\,\\frac{\\partial \\Psi}{\\partial t} = E\\,\\Psi\n$$\n",
+   "line": 112
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 115
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 116
+  },
+  {
+   "t": "tr",
+   "id": "S0026",
+   "kind": "para",
+   "s": "Differentiate with respect to position. One derivative returns the momentum, two derivatives return the kinetic energy:",
+   "line": 116,
+   "lines": [
+    116
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 116
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 117
+  },
+  {
+   "t": "lit",
+   "s": "$$\n-i\\hbar\\,\\frac{\\partial \\Psi}{\\partial x} = p\\,\\Psi, \\qquad\\qquad -\\frac{\\hbar^2}{2m}\\frac{\\partial^2 \\Psi}{\\partial x^2} = \\frac{p^2}{2m}\\,\\Psi\n$$\n",
+   "line": 118
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 121
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 122
+  },
+  {
+   "t": "tr",
+   "id": "S0027",
+   "kind": "para",
+   "s": "Read these three lines as questions put to the wave. The operation $i\\hbar\\,\\partial/\\partial t$ asks \"what is your energy?\", $-i\\hbar\\,\\partial/\\partial x$ asks \"what is your momentum?\", and the wave answers by returning itself times the number. This is the first appearance of **operators**, to which we return at the end of the lecture.",
+   "line": 122,
+   "lines": [
+    122
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 122
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 123
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 124
+  },
+  {
+   "t": "tr",
+   "id": "S0028",
+   "kind": "heading",
+   "s": "Step 3: demand that energy is conserved",
+   "line": 124,
+   "lines": [
+    124
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 124
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 125
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 126
+  },
+  {
+   "t": "tr",
+   "id": "S0029",
+   "kind": "para",
+   "s": "A particle moving in a potential $V$ has total energy equal to kinetic plus potential energy:",
+   "line": 126,
+   "lines": [
+    126
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 126
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 127
+  },
+  {
+   "t": "lit",
+   "s": "$$\nE = \\frac{p^2}{2m} + V\n$$\n",
+   "line": 128
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 131
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 132
+  },
+  {
+   "t": "tr",
+   "id": "S0030",
+   "kind": "para",
+   "s": "Multiply both sides by $\\Psi$, then replace $E\\Psi$ and $\\frac{p^2}{2m}\\Psi$ with the derivatives from Step 2:",
+   "line": 132,
+   "lines": [
+    132
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 132
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 133
+  },
+  {
+   "t": "lit",
+   "s": "$$\nE\\,\\Psi = \\frac{p^2}{2m}\\,\\Psi + V\\,\\Psi\n\\qquad\\Longrightarrow\\qquad\ni\\hbar\\,\\frac{\\partial \\Psi}{\\partial t} = -\\frac{\\hbar^2}{2m}\\frac{\\partial^2 \\Psi}{\\partial x^2} + V\\,\\Psi\n$$\n",
+   "line": 134
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 139
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 140
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 140
+  },
+  {
+   "t": "tr",
+   "id": "S0031",
+   "kind": "directive_title",
+   "s": "**Time-dependent Schrödinger equation**",
+   "line": 140,
+   "lines": [
+    140
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 140
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 141
+  },
+  {
+   "t": "lit",
+   "s": "$$\n-\\frac{\\hbar^2}{2m} \\frac{\\partial^2 \\Psi}{\\partial x^2} + V(x)\\, \\Psi = i \\hbar \\frac{\\partial \\Psi}{\\partial t}\n$$\n",
+   "line": 142
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 145
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 146
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 147
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 148
+  },
+  {
+   "t": "tr",
+   "id": "S0032",
+   "kind": "para",
+   "s": "Every term of the equation is an energy acting on the wavefunction, so the equation is energy conservation written in the language of waves:",
+   "line": 148,
+   "lines": [
+    148
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 148
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 149
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\underbrace{-\\frac{\\hbar^2}{2m} \\frac{\\partial^2 \\Psi}{\\partial x^2}}_{\\substack{\\text{kinetic energy:} \\\\ \\text{curvature of } \\Psi \\text{ in space}}}\n\\;+\\;\n\\underbrace{V(x)\\,\\Psi\\vphantom{\\frac{\\partial^2}{\\partial x^2}}}_{\\substack{\\text{potential energy:} \\\\ \\text{defines the system}}}\n\\;=\\;\n\\underbrace{i \\hbar \\frac{\\partial \\Psi}{\\partial t}\\vphantom{\\frac{\\partial^2}{\\partial x^2}}}_{\\substack{\\text{total energy:} \\\\ \\text{rate of change of } \\Psi \\text{ in time}}}\n$$\n",
+   "line": 150
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 157
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 158
+  },
+  {
+   "t": "tr",
+   "id": "S0033",
+   "kind": "para",
+   "s": "What we did is a motivation and not a derivation. The steps hold for one plane wave and a constant $V$. Schrödinger's postulate is that the same equation governs **any** wavefunction in **any** potential $V(x)$. Only the agreement with experiment justifies that leap.",
+   "line": 158,
+   "lines": [
+    158
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 158
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 159
+  },
+  {
+   "t": "tr",
+   "id": "S0034",
+   "kind": "para",
+   "s": "We work in one dimension for simplicity. In three dimensions the second derivative becomes the Laplacian, $\\partial^2/\\partial x^2 \\to \\nabla^2$, and $V$ depends on $x, y, z$.",
+   "line": 159,
+   "lines": [
+    159
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 159
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 160
+  },
+  {
+   "t": "lit",
+   "s": ":::{tip}",
+   "line": 161
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 161
+  },
+  {
+   "t": "tr",
+   "id": "S0035",
+   "kind": "directive_title",
+   "s": "**Why not reuse the classical wave equation?**",
+   "line": 161,
+   "lines": [
+    161
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 161
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown\n",
+   "line": 162
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 163
+  },
+  {
+   "t": "tr",
+   "id": "S0036",
+   "kind": "para",
+   "s": "The classical wave equation has two derivatives in space and two in time. Acting on $e^{i(kx-\\omega t)}$ they bring down $k^2$ and $\\omega^2$, so the equation enforces $\\omega = vk$: frequency proportional to wavenumber.",
+   "line": 164,
+   "lines": [
+    164,
+    164
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 164
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 165
+  },
+  {
+   "t": "tr",
+   "id": "S0037",
+   "kind": "para",
+   "s": "A free quantum particle obeys a different rule. With $E = \\hbar\\omega$ and $p = \\hbar k$, the energy $E = p^2/2m$ reads",
+   "line": 166,
+   "lines": [
+    166,
+    166
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 166
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 167
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\omega = \\frac{\\hbar k^2}{2m}\n$$\n",
+   "line": 168
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 171
+  },
+  {
+   "t": "tr",
+   "id": "S0038",
+   "kind": "para",
+   "s": "so the frequency goes as the **square** of the wavenumber. An equation that produces one power of $\\omega$ and two powers of $k$ needs **one** time derivative and **two** space derivatives. The single time derivative returns $-i\\omega$, which is imaginary, while the two space derivatives return $-k^2$, which is real. The factor $i$ in the Schrödinger equation is there to balance the two sides.",
+   "line": 172,
+   "lines": [
+    172,
+    172
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 172
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 173
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 174
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 175
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 176
+  },
+  {
+   "t": "tr",
+   "id": "S0039",
+   "kind": "heading",
+   "s": "Quantum versus classical wave equation",
+   "line": 176,
+   "lines": [
+    176
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 176
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 177
+  },
+  {
+   "t": "tr",
+   "id": "S0040",
+   "kind": "para",
+   "s": "| | classical wave equation | Schrödinger equation |\n|---|---|---|\n| equation | $\\dfrac{\\partial^2 u}{\\partial x^2} = \\dfrac{1}{v^2}\\dfrac{\\partial^2 u}{\\partial t^2}$ | $-\\dfrac{\\hbar^2}{2m}\\dfrac{\\partial^2 \\Psi}{\\partial x^2} + V\\Psi = i\\hbar\\dfrac{\\partial \\Psi}{\\partial t}$ |\n| time derivative | second | first, with a factor $i$ |\n| the wave | real displacement $u$, directly measurable | complex $\\Psi$, only $\\lvert\\Psi\\rvert^2$ is measurable |\n| frequency and wavenumber | $\\omega = vk$ | $\\omega = \\hbar k^2/2m$ for a free particle |\n| what defines the system | wave speed $v$ and the boundaries | mass $m$, potential $V(x)$ and the boundaries |\n| time dependence of a mode | real oscillation $\\cos(\\omega_n t)$ | rotating phase $e^{-iE_n t/\\hbar}$ |\n| linear, so solutions add | yes | yes |",
+   "line": 178,
+   "lines": [
+    178,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 186
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 187
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 188
+  },
+  {
+   "t": "tr",
+   "id": "S0041",
+   "kind": "heading",
+   "s": "Solving the equation: separation of variables",
+   "line": 188,
+   "lines": [
+    188
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 188
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 189
+  },
+  {
+   "t": "tr",
+   "id": "S0042",
+   "kind": "para",
+   "s": "The equation is linear and, as long as $V$ does not depend on time, it separates. The recipe is the one we used for the [vibrating string](../ch02/02-the-wave-equation.md).",
+   "line": 190,
+   "lines": [
+    190,
+    190
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 190
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 191
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 192
+  },
+  {
+   "t": "tr",
+   "id": "S0043",
+   "kind": "heading",
+   "s": "Step 1: plug in a product",
+   "line": 192,
+   "lines": [
+    192
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 192
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 193
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 194
+  },
+  {
+   "t": "tr",
+   "id": "S0044",
+   "kind": "para",
+   "s": "Look for solutions in which the dependence on $x$ and on $t$ factorizes, $\\Psi(x,t) = \\psi(x)\\,T(t)$. Each derivative acts on one factor only:",
+   "line": 194,
+   "lines": [
+    194
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 194
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 195
+  },
+  {
+   "t": "lit",
+   "s": "$$\ni\\hbar\\,\\psi(x)\\,\\frac{dT}{dt} = T(t)\\left[-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi}{dx^2} + V(x)\\,\\psi\\right]\n$$\n",
+   "line": 196
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 199
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 200
+  },
+  {
+   "t": "tr",
+   "id": "S0045",
+   "kind": "para",
+   "s": "Divide both sides by $\\psi(x)T(t)$:",
+   "line": 200,
+   "lines": [
+    200
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 200
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 201
+  },
+  {
+   "t": "lit",
+   "s": "$$\ni\\hbar\\,\\frac{1}{T}\\frac{dT}{dt} = \\frac{1}{\\psi}\\left[-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi}{dx^2} + V(x)\\,\\psi\\right]\n$$\n",
+   "line": 202
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 205
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 206
+  },
+  {
+   "t": "tr",
+   "id": "S0046",
+   "kind": "para",
+   "s": "The left side depends only on $t$ and the right side only on $x$, so both must equal the same constant. It has units of energy, and we call it $E$. One PDE has become two ODEs.",
+   "line": 206,
+   "lines": [
+    206
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 206
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 207
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 208
+  },
+  {
+   "t": "tr",
+   "id": "S0047",
+   "kind": "heading",
+   "s": "Step 2: the time part is a rotating phase",
+   "line": 208,
+   "lines": [
+    208
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 208
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 209
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 210
+  },
+  {
+   "t": "tr",
+   "id": "S0048",
+   "kind": "para",
+   "s": "The time equation is first order, $dT/dt = -(iE/\\hbar)\\,T$. The trial function $e^{rt}$ gives a single root $r = -iE/\\hbar$, which is purely imaginary. In Chapter 2 imaginary roots meant oscillation, and the same holds here:",
+   "line": 210,
+   "lines": [
+    210
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 210
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 211
+  },
+  {
+   "t": "lit",
+   "s": "$$\nT(t) = e^{-iEt/\\hbar}\n$$\n",
+   "line": 212
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 215
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 216
+  },
+  {
+   "t": "tr",
+   "id": "S0049",
+   "kind": "para",
+   "s": "This is a point moving around the unit circle of the complex plane with angular frequency $\\omega = E/\\hbar$. The separation constant is the energy of Planck's relation $E = \\hbar\\omega$, which justifies its name.",
+   "line": 216,
+   "lines": [
+    216
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 216
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 217
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 218
+  },
+  {
+   "t": "tr",
+   "id": "S0050",
+   "kind": "heading",
+   "s": "Step 3: the spatial part is the time-independent Schrödinger equation",
+   "line": 218,
+   "lines": [
+    218
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 218
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 219
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 220
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 220
+  },
+  {
+   "t": "tr",
+   "id": "S0051",
+   "kind": "directive_title",
+   "s": "**Time-independent Schrödinger equation**",
+   "line": 220,
+   "lines": [
+    220
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 220
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 221
+  },
+  {
+   "t": "lit",
+   "s": "$$\n-\\frac{\\hbar^2}{2m} \\frac{d^2 \\psi}{d x^2} + V(x)\\, \\psi = E\\, \\psi\n$$\n",
+   "line": 222
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 225
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 226
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 227
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 228
+  },
+  {
+   "t": "tr",
+   "id": "S0052",
+   "kind": "para",
+   "s": "Almost all of the work in this course goes into this equation. The potential $V(x)$ defines the system, and solving the equation gives the shapes $\\psi(x)$ and the energies $E$ the system can have.",
+   "line": 228,
+   "lines": [
+    228
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 228
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 229
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 230
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 230
+  },
+  {
+   "t": "tr",
+   "id": "S0053",
+   "kind": "directive_title",
+   "s": "**Stationary state**",
+   "line": 230,
+   "lines": [
+    230
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 230
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 231
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\Psi(x,t) = \\psi(x)\\, e^{-iEt/\\hbar}\n$$\n",
+   "line": 232
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 235
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 236
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 237
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 238
+  },
+  {
+   "t": "tr",
+   "id": "S0054",
+   "kind": "heading",
+   "s": "Stationary states: the phase turns, the density stays",
+   "line": 238,
+   "lines": [
+    238
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 238
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 239
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 240
+  },
+  {
+   "t": "tr",
+   "id": "S0055",
+   "kind": "para",
+   "s": "The name comes from the probability density. The time factor has absolute value one, so it drops out:",
+   "line": 240,
+   "lines": [
+    240
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 240
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 241
+  },
+  {
+   "t": "lit",
+   "s": "$$\n|\\Psi(x,t)|^2 = |\\psi(x)|^2\\,\\left|e^{-iEt/\\hbar}\\right|^2 = |\\psi(x)|^2\n$$\n",
+   "line": 242
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 245
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 246
+  },
+  {
+   "t": "tr",
+   "id": "S0056",
+   "kind": "para",
+   "s": "The real and imaginary parts of $\\Psi$ slosh back and forth forever, yet nothing measurable moves. A string mode of Chapter 2 passes through the flat shape twice per period. A stationary state never goes flat, because its imaginary part is at its largest when its real part vanishes.",
+   "line": 246,
+   "lines": [
+    246
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 246
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 247
+  },
+  {
+   "t": "tr",
+   "id": "S0057",
+   "kind": "para",
+   "s": "The animation uses the two lowest states of a particle held between two walls. Their shapes are the sines of the string modes, as we will show in the [next lecture](02-particle-in-a-box.md). The second state has four times the energy, so its phase clock runs four times faster.",
+   "line": 247,
+   "lines": [
+    247
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 247
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 248
+  },
+  {
+   "t": "lit",
+   "s": "```{code-cell} python\n:tags: [hide-input]\n# synced: phase_clock\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.animation import FuncAnimation\nfrom IPython.display import HTML\n\nTEAL, CARDINAL, GRAY, PURPLE, ORANGE = \"#107895\", \"#C8102E\", \"#6c757d\", \"#6a3d9a\", \"#e07b00\"\nplt.rcParams.update({\"axes.spines.top\": False, \"axes.spines.right\": False})\nx = np.linspace(0, 1, 300)\nts = np.linspace(0, 1, 36, endpoint=False)    # one full turn of the n = 1 clock\nth = np.linspace(0, 2 * np.pi, 200)\nfig = plt.figure(figsize=(8, 4.3))\ngs = fig.add_gridspec(2, 2, width_ratios=[3.4, 1], hspace=0.5, wspace=0.08)\nrows = []\nfor r, n in enumerate((1, 2)):\n    ax, axc = fig.add_subplot(gs[r, 0]), fig.add_subplot(gs[r, 1])\n    psi = np.sqrt(2) * np.sin(n * np.pi * x)\n    ax.fill_between(x, psi**2, color=CARDINAL, alpha=0.12, lw=0)\n    ax.plot(x, psi**2, color=CARDINAL, lw=1.8, label=r\"$|\\Psi|^2$ (does not move)\")\n    (re,) = ax.plot([], [], color=TEAL, lw=2.4, label=r\"Re $\\Psi$\")\n    (im,) = ax.plot([], [], color=ORANGE, lw=2.0, ls=\"--\", label=r\"Im $\\Psi$\")\n    ax.axhline(0, color=GRAY, lw=0.6)\n    ax.set_xlim(0, 1); ax.set_ylim(-1.7, 2.3); ax.set_yticks([-1, 0, 1, 2])\n    ax.set_xticks([0, 0.5, 1]); ax.set_xticklabels([\"0\", \"L/2\", \"L\"])\n    ax.set_title(rf\"$\\Psi_{n}(x,t) = \\psi_{n}(x)\\,e^{{-iE_{n}t/\\hbar}}$\" + (\"\" if n == 1 else r\",  $E_2 = 4E_1$\"),\n                 loc=\"left\", fontsize=11)\n    if r == 0:\n        ax.legend(loc=\"upper right\", frameon=False, fontsize=9, ncol=3, bbox_to_anchor=(1.0, 1.32))\n    axc.plot(np.cos(th), np.sin(th), color=GRAY, lw=1, ls=\"--\")\n    axc.axhline(0, color=GRAY, lw=0.6); axc.axvline(0, color=GRAY, lw=0.6)\n    (hand,) = axc.plot([], [], color=PURPLE, lw=2.8)\n    (tip,) = axc.plot([], [], \"o\", color=PURPLE, ms=7)\n    axc.set_aspect(\"equal\"); axc.set_xlim(-1.25, 1.25); axc.set_ylim(-1.25, 1.25); axc.set_axis_off()\n    axc.set_title(\"phase clock\" if r == 0 else \"4 times faster\", fontsize=10, color=PURPLE)\n    rows.append((n, psi, re, im, hand, tip))\nfig.subplots_adjust(left=0.06, right=0.99, top=0.86, bottom=0.08)\n\ndef update(i):\n    for n, psi, re, im, hand, tip in rows:\n        z = np.exp(-2j * np.pi * n**2 * ts[i])\n        re.set_data(x, psi * z.real); im.set_data(x, psi * z.imag)\n        hand.set_data([0, z.real], [0, z.imag]); tip.set_data([z.real], [z.imag])\n\nani = FuncAnimation(fig, update, frames=len(ts), interval=110, blit=False)\nplt.close(fig)\nHTML(ani.to_jshtml())\n```\n",
+   "line": 249
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 298
+  },
+  {
+   "t": "tr",
+   "id": "S0058",
+   "kind": "para",
+   "s": "Fig. Two stationary states of a particle between walls at $0$ and $L$. The real and imaginary parts oscillate at the rate $E_n/\\hbar$ set by the phase clock on the right, while the probability density $|\\Psi|^2$ stays fixed.",
+   "line": 299,
+   "lines": [
+    299,
+    299
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 299
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 300
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 301
+  },
+  {
+   "t": "tr",
+   "id": "S0059",
+   "kind": "heading",
+   "s": "The time-independent equation is a curvature equation",
+   "line": 301,
+   "lines": [
+    301
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 301
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 302
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 303
+  },
+  {
+   "t": "tr",
+   "id": "S0060",
+   "kind": "para",
+   "s": "Solve the time-independent equation for the second derivative:",
+   "line": 303,
+   "lines": [
+    303
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 303
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 304
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\frac{d^2\\psi}{dx^2} = -\\frac{2m}{\\hbar^2}\\,\\big[E - V(x)\\big]\\,\\psi\n$$\n",
+   "line": 305
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 308
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 309
+  },
+  {
+   "t": "tr",
+   "id": "S0061",
+   "kind": "para",
+   "s": "This is the spatial equation of the string, $X'' = KX$, with $K = -\\frac{2m}{\\hbar^2}(E - V)$. There the sign of $K$ decided between sines and exponentials. Here the sign of $E - V(x)$ decides, and it can change from place to place:",
+   "line": 309,
+   "lines": [
+    309
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 309
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 310
+  },
+  {
+   "t": "tr",
+   "id": "S0062",
+   "kind": "para",
+   "s": "**Allowed region, $E > V$.** The kinetic energy $E - V$ is positive. The curvature has the opposite sign to $\\psi$, so the wavefunction always bends back toward the axis and **oscillates**. The larger $E - V$, the stronger the curvature and the shorter the wavelength, in line with de Broglie: $\\lambda = h/\\sqrt{2m(E-V)}$.",
+   "line": 310,
+   "lines": [
+    310
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 310
+  },
+  {
+   "t": "lit",
+   "s": "  - ",
+   "line": 311
+  },
+  {
+   "t": "tr",
+   "id": "S0063",
+   "kind": "para",
+   "s": "**Forbidden region, $E < V$.** A classical particle could never be here, since its kinetic energy would be negative. The curvature has the same sign as $\\psi$, so the wavefunction bends away from the axis: it **decays or grows exponentially**. It is not zero there, a fact that leads to [tunneling](03-tunneling-and-finite-square-well.md).",
+   "line": 311,
+   "lines": [
+    311
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 311
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 312
+  },
+  {
+   "t": "lit",
+   "s": "```{code-cell} python\n:tags: [hide-input]\n# synced: allowed_forbidden\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.animation import FuncAnimation\nfrom IPython.display import HTML\n\nTEAL, CARDINAL, GRAY, PURPLE, ORANGE = \"#107895\", \"#C8102E\", \"#6c757d\", \"#6a3d9a\", \"#e07b00\"\nplt.rcParams.update({\"axes.spines.top\": False, \"axes.spines.right\": False})\na, V0, N = 1.2, 30.0, 700                     # half width, depth (units hbar^2/2m = 1)\nx = np.linspace(-3.4, 3.4, N); h = x[1] - x[0]\nV = np.where(np.abs(x) < a, 0.0, V0)\nH = (np.diag(2.0 / h**2 + V) - np.diag(np.ones(N - 1) / h**2, 1)\n     - np.diag(np.ones(N - 1) / h**2, -1))\nEn, vec = np.linalg.eigh(H)\nn = 3                                         # fourth level: three nodes, long tails\nE, psi = En[n], vec[:, n] / np.abs(vec[:, n]).max()\npsi = psi * np.sign(psi[np.argmax(np.abs(psi))])\n\nfig, ax = plt.subplots(figsize=(8, 3.4))\nax.axvspan(-a, a, color=TEAL, alpha=0.08, lw=0)\nax.axvspan(-3.4, -a, color=CARDINAL, alpha=0.06, lw=0)\nax.axvspan(a, 3.4, color=CARDINAL, alpha=0.06, lw=0)\nax.plot(x, V, color=\"k\", lw=2.0)\nax.axhline(E, color=GRAY, lw=1.2, ls=\"--\")\nax.plot(x, E + 7.5 * psi, color=TEAL, lw=2.6)\nax.text(3.35, E + 0.9, \"E\", color=GRAY, fontsize=11, ha=\"right\")\nax.text(3.35, V0 + 0.9, \"V(x)\", color=\"k\", fontsize=11, ha=\"right\")\nax.text(0, 38.5, r\"allowed, $E > V$\" + \"\\n\" + r\"$\\psi$ curves toward the axis: oscillates\",\n        ha=\"center\", va=\"top\", fontsize=10, color=TEAL)\nfor xc in (-2.35, 2.35):\n    ax.text(xc, 38.5, r\"forbidden, $E < V$\" + \"\\n\" + \"curves away: decays\",\n            ha=\"center\", va=\"top\", fontsize=10, color=CARDINAL)\nax.set_xlim(-3.4, 3.4); ax.set_ylim(-2, 39.5)\nax.set_xlabel(\"x\"); ax.set_ylabel(\"energy\"); ax.set_yticks([])\nfig.tight_layout()\nplt.show()\n```\n",
+   "line": 313
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 352
+  },
+  {
+   "t": "tr",
+   "id": "S0064",
+   "kind": "para",
+   "s": "Fig. The fourth state of a particle in a well of finite depth, drawn on its energy level. Inside the well $E > V$ and $\\psi$ oscillates; in the walls $E < V$ and $\\psi$ decays.",
+   "line": 353,
+   "lines": [
+    353,
+    353
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 353
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 354
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 355
+  },
+  {
+   "t": "tr",
+   "id": "S0065",
+   "kind": "heading",
+   "s": "Why only some energies are allowed",
+   "line": 355,
+   "lines": [
+    355
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 355
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 356
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 357
+  },
+  {
+   "t": "tr",
+   "id": "S0066",
+   "kind": "para",
+   "s": "In a forbidden region the general solution is a mix of a decaying and a growing exponential. A wavefunction that grows without limit cannot describe a particle, so the growing part has to be absent on the left **and** on the right.",
+   "line": 357,
+   "lines": [
+    357
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 357
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 358
+  },
+  {
+   "t": "tr",
+   "id": "S0067",
+   "kind": "para",
+   "s": "For most energies this is impossible. Start the solution so that it decays properly on the left and follow the curvature equation across the well: it arrives on the right side with some of the growing exponential mixed in, and it blows up. Only at special energies does the solution arrive with the right slope to decay on both sides. These are the allowed energies.",
+   "line": 358,
+   "lines": [
+    358
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 358
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 359
+  },
+  {
+   "t": "tr",
+   "id": "S0068",
+   "kind": "para",
+   "s": "Try it for a particle on a spring, $V = \\frac{1}{2}kx^2$. The cell below starts from a tiny value on the far left and integrates the curvature equation to the right for the trial energy you choose. Find the energies between $0$ and $3\\,\\hbar\\omega$ for which the right tail comes down to the axis, and count the nodes of each solution.",
+   "line": 359,
+   "lines": [
+    359
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 359
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 360
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo-config}\n---\npyproject: |\n  requires-python = \">=3.10\"\n  dependencies = [\n      \"numpy\",\n      \"matplotlib\",\n  ]\n---\n```\n",
+   "line": 361
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 371
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nimport marimo as mo\nimport numpy as np\nimport matplotlib.pyplot as plt\nplt.rcParams[\"figure.dpi\"] = 150\nplt.rcParams.update({\"axes.spines.top\": False, \"axes.spines.right\": False})\n```\n",
+   "line": 372
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 381
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nE1 = mo.ui.slider(0.10, 3.00, step=0.01, value=0.80, show_value=True, label=\"trial energy E (units of ħω)\")\nE1\n```\n",
+   "line": 382
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 388
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nx1 = np.linspace(-4.6, 4.6, 1400)\nh1 = x1[1] - x1[0]\nV1 = 0.5 * x1**2\nf1 = (1.0 + h1 * h1 * 2.0 * (E1.value - V1) / 12.0).tolist()\npsi1 = [0.0, 1e-8]\nfor _j in range(1, len(f1) - 1):          # Numerov integration from left to right\n    psi1.append(((12.0 - 10.0 * f1[_j]) * psi1[_j] - f1[_j - 1] * psi1[_j - 1]) / f1[_j + 1])\npsi1 = np.array(psi1)\npsi1 = psi1 / np.abs(psi1[np.abs(x1) < 2.6]).max()\nok1 = abs(psi1[-1]) < 0.05\ncol1 = \"#107895\" if ok1 else \"#C8102E\"\n\nfig1, ax1 = plt.subplots(figsize=(7, 3.3))\nax1.plot(x1, V1, color=\"k\", lw=1.8)\nax1.axhline(E1.value, color=\"#6c757d\", lw=1.1, ls=\"--\")\nax1.plot(x1, E1.value + 0.85 * np.clip(psi1, -9, 9), color=col1, lw=2.6)\nax1.text(0, 4.55, r\"$V(x) = \\frac{1}{2}kx^2$\", fontsize=11, ha=\"center\")\nax1.set_xlim(-4.6, 4.6); ax1.set_ylim(-1.2, 5.2); ax1.set_yticks([])\nax1.set_xlabel(\"x\"); ax1.set_ylabel(\"energy\")\nax1.set_title(f\"E = {E1.value:.2f}: \" + (\"the tail returns to the axis\" if ok1 else \"the tail blows up\"),\n              loc=\"left\", fontsize=11, color=col1)\nfig1.tight_layout()\nfig1\n```\n",
+   "line": 389
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 416
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nnodes1 = int(np.sum(np.diff(np.sign(psi1[np.abs(x1) < 3.5])) != 0))\nmo.md(f\"Trial energy **{E1.value:.2f} ħω**: \" + (f\"**allowed**. The solution decays on both sides and has **{nodes1}** node(s).\" if ok1 else \"**not allowed**. The solution cannot decay on both sides, so no particle can have this energy.\"))\n```\n",
+   "line": 417
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 423
+  },
+  {
+   "t": "tr",
+   "id": "S0069",
+   "kind": "para",
+   "s": "Fig. A trial solution of the time-independent equation for a particle on a spring, drawn on its energy level. It is bounded only at $E = \\frac{1}{2}, \\frac{3}{2}, \\frac{5}{2}$ in units of $\\hbar\\omega$.",
+   "line": 424,
+   "lines": [
+    424,
+    424
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 424
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 425
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 426
+  },
+  {
+   "t": "tr",
+   "id": "S0070",
+   "kind": "para",
+   "s": "The pattern is the one we met on the string, where clamped ends allowed only the wavelengths that fit. Here the requirement that $\\psi$ stays finite allows only the energies that fit. **The Schrödinger equation does not contain quantization; the boundary conditions put it there.** Each new allowed state has one more node than the one below it.",
+   "line": 426,
+   "lines": [
+    426
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 426
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 427
+  },
+  {
+   "t": "tr",
+   "id": "S0071",
+   "kind": "para",
+   "s": "The allowed energies of the spring turn out to be evenly spaced, $E_n = (n + \\frac{1}{2})\\hbar\\omega$. We derive this in [Chapter 4](../ch04/02-quantum-harmonic-oscillator.md), where it explains molecular vibrations.",
+   "line": 427,
+   "lines": [
+    427
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 427
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 428
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 429
+  },
+  {
+   "t": "tr",
+   "id": "S0072",
+   "kind": "heading",
+   "s": "What does the wavefunction mean?",
+   "line": 429,
+   "lines": [
+    429
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 429
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 430
+  },
+  {
+   "t": "tr",
+   "id": "S0073",
+   "kind": "para",
+   "s": "We now have the equation and a strategy for solving it. What we do not have yet is the meaning of the object the equation keeps handing us.",
+   "line": 431,
+   "lines": [
+    431,
+    431
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 431
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 432
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 433
+  },
+  {
+   "t": "tr",
+   "id": "S0074",
+   "kind": "para",
+   "s": "In the classical wave equation, $u(x,t)$ is something you can see: the height of a guitar string above its resting position. The quantum wavefunction is complex, so it cannot stand for any measurable quantity by itself.",
+   "line": 433,
+   "lines": [
+    433
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 433
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 434
+  },
+  {
+   "t": "tr",
+   "id": "S0075",
+   "kind": "para",
+   "s": "The interpretation that survived every experimental test was proposed by Max Born in 1926. The wavefunction is a **probability amplitude**, and its absolute square is a probability density:",
+   "line": 434,
+   "lines": [
+    434
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 434
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 435
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 436
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 436
+  },
+  {
+   "t": "tr",
+   "id": "S0076",
+   "kind": "directive_title",
+   "s": "**Born rule**",
+   "line": 436,
+   "lines": [
+    436
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 436
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 437
+  },
+  {
+   "t": "lit",
+   "s": "$$\np(x) = \\psi^{*}(x)\\,\\psi(x) = |\\psi(x)|^2\n$$\n",
+   "line": 438
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 441
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 442
+  },
+  {
+   "t": "tr",
+   "id": "S0077",
+   "kind": "para",
+   "s": "$p(x)\\,dx$ is the probability of finding the particle between $x$ and $x + dx$.",
+   "line": 442,
+   "lines": [
+    442
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 442
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 443
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 444
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 445
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 446
+  },
+  {
+   "t": "tr",
+   "id": "S0078",
+   "kind": "para",
+   "s": "One measurement of position gives one dot at one place, and the wavefunction does not say where the next dot lands. Its content shows up only in the statistics: repeat the experiment on many identically prepared particles, and the dots pile up in proportion to $|\\psi(x)|^2$. Where $\\psi$ has a node, no particle is ever found.",
+   "line": 446,
+   "lines": [
+    446
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 446
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 447
+  },
+  {
+   "t": "lit",
+   "s": "```{code-cell} python\n:tags: [hide-input]\n# synced: born_buildup\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.animation import FuncAnimation\nfrom IPython.display import HTML\n\nTEAL, CARDINAL, GRAY, PURPLE, ORANGE = \"#107895\", \"#C8102E\", \"#6c757d\", \"#6a3d9a\", \"#e07b00\"\nplt.rcParams.update({\"axes.spines.top\": False, \"axes.spines.right\": False})\nrng = np.random.default_rng(7)\ncand = rng.random(14000)\nhits = cand[rng.random(14000) < np.sin(2 * np.pi * cand) ** 2][:3000]   # samples of 2 sin^2(2 pi x)\nyj = rng.random(3000)\ncounts = np.unique(np.round(np.geomspace(1, 3000, 40)).astype(int))\nedges = np.linspace(0, 1, 31); mid = 0.5 * (edges[1:] + edges[:-1]); dx = edges[1] - edges[0]\nxs = np.linspace(0, 1, 300)\n\nfig, (ax_s, ax_h) = plt.subplots(2, 1, figsize=(8, 4.0), sharex=True,\n                                 gridspec_kw={\"height_ratios\": [1, 2.3]})\nscat = ax_s.scatter([], [], s=5, color=TEAL, alpha=0.6, lw=0)\nax_s.set_ylim(0, 1); ax_s.set_yticks([])\nfor sp in (\"left\", \"bottom\"):\n    ax_s.spines[sp].set_visible(False)\nax_s.tick_params(bottom=False)\nbars = ax_h.bar(mid, np.zeros_like(mid), width=0.92 * dx, color=TEAL, alpha=0.5, label=\"detections per bin\")\n(curve,) = ax_h.plot([], [], color=CARDINAL, lw=2.6, label=r\"prediction $N\\,|\\psi(x)|^2\\,\\Delta x$\")\nax_h.set_xlim(0, 1); ax_h.set_yticks([])\nax_h.set_xticks([0, 0.5, 1]); ax_h.set_xticklabels([\"0\", \"L/2\", \"L\"])\nax_h.set_xlabel(\"position x\"); ax_h.set_ylabel(\"detections\")\nax_h.legend(loc=\"upper center\", frameon=False, fontsize=9.5, ncol=2, bbox_to_anchor=(0.5, 1.17))\nax_s.set_title(\"N = 1 detection, one dot each\", loc=\"left\", fontsize=11)\nfig.tight_layout()\n\ndef update(i):\n    N = counts[i]\n    scat.set_offsets(np.column_stack([hits[:N], yj[:N]]))\n    hist = np.histogram(hits[:N], bins=edges)[0]\n    for b, c in zip(bars, hist):\n        b.set_height(c)\n    curve.set_data(xs, N * dx * 2 * np.sin(2 * np.pi * xs) ** 2)\n    ax_h.set_ylim(0, 1.3 * max(1.0, hist.max(), 2 * N * dx))\n    ax_s.set_title(f\"N = {N} detection\" + (\"\" if N == 1 else \"s\") + \", one dot each\", loc=\"left\", fontsize=11)\n\nani = FuncAnimation(fig, update, frames=len(counts), interval=160, blit=False)\nplt.close(fig)\nHTML(ani.to_jshtml())\n```\n",
+   "line": 448
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 496
+  },
+  {
+   "t": "tr",
+   "id": "S0079",
+   "kind": "para",
+   "s": "Fig. Position measurements on particles that were all prepared in the same state $\\psi_2$. Single detections look random; the histogram of many detections converges to $|\\psi_2(x)|^2$, with a gap at the node.",
+   "line": 497,
+   "lines": [
+    497,
+    497
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 497
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 498
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 499
+  },
+  {
+   "t": "tr",
+   "id": "S0080",
+   "kind": "para",
+   "s": "The same holds in three dimensions, where $|\\psi(x,y,z)|^2\\,dx\\,dy\\,dz$ is the probability of finding the particle in a small volume. The \"electron cloud\" pictures of chemistry are this statement: each dot below is one position measurement on a hydrogen atom in its ground state, and the cloud of many dots traces out the 1s orbital.",
+   "line": 499,
+   "lines": [
+    499
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 499
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 500
+  },
+  {
+   "t": "lit",
+   "s": "```{code-cell} python\n:tags: [hide-input]\n# synced: h1s_cloud\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.animation import FuncAnimation\nfrom IPython.display import HTML\n\nTEAL, CARDINAL, GRAY, PURPLE, ORANGE = \"#107895\", \"#C8102E\", \"#6c757d\", \"#6a3d9a\", \"#e07b00\"\nplt.rcParams.update({\"axes.spines.top\": False, \"axes.spines.right\": False})\nrng = np.random.default_rng(11)\nN = 5000\nr = 0.5 * rng.gamma(shape=3.0, scale=1.0, size=N)       # P(r) = 4 r^2 exp(-2r), r in units of a0\ncos_t = 1 - 2 * rng.random(N); phi = 2 * np.pi * rng.random(N)\nxx, zz = r * np.sqrt(1 - cos_t**2) * np.cos(phi), r * cos_t\nrr = np.linspace(0, 6, 300)\n\nfig, (ax1, ax2) = plt.subplots(1, 2, figsize=(8, 3.5), gridspec_kw={\"width_ratios\": [1, 1.35]})\nax1.scatter(xx, zz, s=2, color=TEAL, alpha=0.45, lw=0)\nax1.plot([0], [0], \"+\", color=CARDINAL, ms=9, mew=1.8)\nax1.set_aspect(\"equal\"); ax1.set_xlim(-5, 5); ax1.set_ylim(-5, 5)\nax1.set_xlabel(r\"x / $a_0$\"); ax1.set_ylabel(r\"z / $a_0$\")\nax1.set_title(f\"{N} position measurements\", loc=\"left\", fontsize=11)\nax2.hist(r, bins=np.linspace(0, 6, 49), density=True, color=TEAL, alpha=0.45, label=\"measured distances\")\nax2.plot(rr, 4 * rr**2 * np.exp(-2 * rr), color=CARDINAL, lw=2.6, label=r\"$4\\pi r^2\\,|\\psi_{1s}|^2$\")\nax2.set_xlim(0, 6); ax2.set_xlabel(r\"distance from the nucleus r / $a_0$\"); ax2.set_ylabel(\"probability density\")\nax2.legend(frameon=False, fontsize=10)\nax2.set_title(\"the dots follow the wavefunction\", loc=\"left\", fontsize=11)\nfig.tight_layout()\nplt.show()\n```\n",
+   "line": 501
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 532
+  },
+  {
+   "t": "tr",
+   "id": "S0081",
+   "kind": "para",
+   "s": "Fig. Left: simulated position measurements of the electron in the hydrogen 1s state, projected on a plane. Right: the measured distances from the nucleus follow the radial distribution computed from the wavefunction ([Chapter 5](../ch05/02-atomic-orbitals.md)).",
+   "line": 533,
+   "lines": [
+    533,
+    533
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 533
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 534
+  },
+  {
+   "t": "lit",
+   "s": ":::{tip}",
+   "line": 535
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 535
+  },
+  {
+   "t": "tr",
+   "id": "S0082",
+   "kind": "directive_title",
+   "s": "**Probability refresher**",
+   "line": 535,
+   "lines": [
+    535
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 535
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown\n",
+   "line": 536
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 537
+  },
+  {
+   "t": "tr",
+   "id": "S0083",
+   "kind": "para",
+   "s": "A **random variable** assigns a number to the outcome of an experiment. It can be discrete (a die roll, a coin flip) or continuous (the position of a particle). A continuous random variable is described by a **probability density** $p(x)$ with these properties:",
+   "line": 538,
+   "lines": [
+    538,
+    538
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 538
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 539
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 540
+  },
+  {
+   "t": "tr",
+   "id": "S0084",
+   "kind": "para",
+   "s": "**Non-negative:** $p(x) \\geq 0$.",
+   "line": 540,
+   "lines": [
+    540
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 540
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 541
+  },
+  {
+   "t": "tr",
+   "id": "S0085",
+   "kind": "para",
+   "s": "**Normalized:** $\\int_{-\\infty}^{\\infty} p(x)\\,dx = 1$, because the outcome is certain to lie somewhere.",
+   "line": 541,
+   "lines": [
+    541
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 541
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 542
+  },
+  {
+   "t": "tr",
+   "id": "S0086",
+   "kind": "para",
+   "s": "**Mean:** $\\langle x \\rangle = \\int x\\,p(x)\\,dx$, and for any function $\\langle f \\rangle = \\int f(x)\\,p(x)\\,dx$.",
+   "line": 542,
+   "lines": [
+    542
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 542
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 543
+  },
+  {
+   "t": "tr",
+   "id": "S0087",
+   "kind": "para",
+   "s": "**Variance:** $\\sigma^2 = \\langle x^2 \\rangle - \\langle x \\rangle^2$, the squared width of the distribution.",
+   "line": 543,
+   "lines": [
+    543
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 543
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 544
+  },
+  {
+   "t": "tr",
+   "id": "S0088",
+   "kind": "para",
+   "s": "For a discrete variable the integrals become sums, $\\langle x \\rangle = \\sum_i x_i\\,p_i$.",
+   "line": 545,
+   "lines": [
+    545,
+    545
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 545
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 546
+  },
+  {
+   "t": "tr",
+   "id": "S0089",
+   "kind": "para",
+   "s": "**Fair coin**, $X \\in \\{0, 1\\}$ with $p_0 = p_1 = \\frac{1}{2}$: the mean is $\\langle X\\rangle = 0\\cdot\\frac{1}{2} + 1\\cdot\\frac{1}{2} = \\frac{1}{2}$, and since $\\langle X^2\\rangle = \\frac{1}{2}$ the variance is $\\sigma^2 = \\frac{1}{2} - \\frac{1}{4} = \\frac{1}{4}$.",
+   "line": 547,
+   "lines": [
+    547,
+    547
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 547
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 548
+  },
+  {
+   "t": "tr",
+   "id": "S0090",
+   "kind": "para",
+   "s": "**Uniform density on $[0,1]$**, $p(x) = 1$: the mean is $\\int_0^1 x\\,dx = \\frac{1}{2}$, the mean square is $\\int_0^1 x^2dx = \\frac{1}{3}$, and $\\sigma^2 = \\frac{1}{3} - \\frac{1}{4} = \\frac{1}{12}$.",
+   "line": 549,
+   "lines": [
+    549,
+    549
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 549
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 550
+  },
+  {
+   "t": "tr",
+   "id": "S0091",
+   "kind": "para",
+   "s": "**Gaussian**, $p(x) = \\frac{1}{\\sqrt{2\\pi}\\,\\sigma}e^{-(x-\\mu)^2/2\\sigma^2}$: normalized, with mean $\\mu$ and variance $\\sigma^2$.",
+   "line": 551,
+   "lines": [
+    551,
+    551
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 551
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 552
+  },
+  {
+   "t": "tr",
+   "id": "S0092",
+   "kind": "para",
+   "s": "More practice: a [video overview](https://www.youtube.com/watch?v=QxqxdQ_g2uw) and an [interactive probability explorer](https://idiot.computer/probs/).",
+   "line": 553,
+   "lines": [
+    553,
+    553
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 553
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 554
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 555
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 556
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 557
+  },
+  {
+   "t": "tr",
+   "id": "S0093",
+   "kind": "heading",
+   "s": "Normalization",
+   "line": 557,
+   "lines": [
+    557
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 557
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 558
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 559
+  },
+  {
+   "t": "tr",
+   "id": "S0094",
+   "kind": "para",
+   "s": "The particle is certain to be found somewhere, so the probabilities must add up to one:",
+   "line": 559,
+   "lines": [
+    559
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 559
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 560
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 561
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 561
+  },
+  {
+   "t": "tr",
+   "id": "S0095",
+   "kind": "directive_title",
+   "s": "**Normalization condition**",
+   "line": 561,
+   "lines": [
+    561
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 561
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 562
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{-\\infty}^{+\\infty} |\\psi(x)|^2\\, dx = 1\n$$\n",
+   "line": 563
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 566
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 567
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 568
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 569
+  },
+  {
+   "t": "tr",
+   "id": "S0096",
+   "kind": "para",
+   "s": "The Schrödinger equation is linear, so if $\\psi'$ solves it then $N\\psi'$ does too, for any constant $N$. The equation therefore never fixes the overall size of a wavefunction. Normalization does: substitute $\\psi = N\\psi'$ into the condition and solve for $N$.",
+   "line": 569,
+   "lines": [
+    569
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 569
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 570
+  },
+  {
+   "t": "tr",
+   "id": "S0097",
+   "kind": "para",
+   "s": "A wavefunction that cannot be normalized, because the integral of $|\\psi'|^2$ is infinite, does not describe a particle. This is the requirement that ruled out the diverging solutions in the slider above.",
+   "line": 570,
+   "lines": [
+    570
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 570
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 571
+  },
+  {
+   "t": "tr",
+   "id": "S0098",
+   "kind": "para",
+   "s": "In three dimensions the integral runs over all of space, $\\iiint |\\psi(x,y,z)|^2\\,dx\\,dy\\,dz = 1$.",
+   "line": 571,
+   "lines": [
+    571
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 571
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 572
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 573
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 573
+  },
+  {
+   "t": "tr",
+   "id": "S0099",
+   "kind": "directive_title",
+   "s": "**Example: normalize $\\psi' = x$ on $[0, 1]$**",
+   "line": 573,
+   "lines": [
+    573
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 573
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 574
+  },
+  {
+   "t": "tr",
+   "id": "S0100",
+   "kind": "para",
+   "s": "Write $\\psi = N x$ and require the total probability to be one:",
+   "line": 575,
+   "lines": [
+    575,
+    575
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 575
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 576
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_0^1 (N x)^2\\, dx = N^2 \\int_0^1 x^2\\,dx = \\frac{N^2}{3} = 1 \\quad\\Rightarrow\\quad N = \\sqrt{3}\n$$\n",
+   "line": 577
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 580
+  },
+  {
+   "t": "tr",
+   "id": "S0101",
+   "kind": "para",
+   "s": "The normalized wavefunction is $\\psi(x) = \\sqrt{3}\\,x$, and its probability density is $p(x) = 3x^2$.",
+   "line": 581,
+   "lines": [
+    581,
+    581
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 581
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 582
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 583
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 584
+  },
+  {
+   "t": "lit",
+   "s": "```{code-cell} python\n:tags: [hide-input]\n# synced: normalization_area\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.animation import FuncAnimation\nfrom IPython.display import HTML\n\nTEAL, CARDINAL, GRAY, PURPLE, ORANGE = \"#107895\", \"#C8102E\", \"#6c757d\", \"#6a3d9a\", \"#e07b00\"\nplt.rcParams.update({\"axes.spines.top\": False, \"axes.spines.right\": False})\nx = np.linspace(0, 1, 300)\nfig, (ax1, ax2) = plt.subplots(1, 2, figsize=(8, 2.9), sharey=True)\nfor ax, c, col, lab, area in ((ax1, 1.0, GRAY, r\"$\\psi' = x$\", \"area = 1/3\"),\n                              (ax2, 3.0, TEAL, r\"$\\psi = \\sqrt{3}\\,x$\", \"area = 1\")):\n    ax.fill_between(x, c * x**2, color=col, alpha=0.25, lw=0)\n    ax.plot(x, c * x**2, color=col, lw=2.6)\n    ax.text(0.06, 2.55, lab, fontsize=12, color=col)\n    ax.text(0.80, 0.18 * c + 0.05, area, fontsize=11, ha=\"center\", color=\"k\")\n    ax.set_xlim(0, 1); ax.set_ylim(0, 3.1); ax.set_xlabel(\"x\")\nax1.set_ylabel(r\"$|\\psi(x)|^2$\")\nax1.set_title(\"not normalized\", loc=\"left\", fontsize=11)\nax2.set_title(\"normalized: a probability density\", loc=\"left\", fontsize=11)\nfig.tight_layout()\nplt.show()\n```\n",
+   "line": 585
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 610
+  },
+  {
+   "t": "tr",
+   "id": "S0102",
+   "kind": "para",
+   "s": "Fig. Normalization rescales the wavefunction until the area under $|\\psi|^2$ equals one.",
+   "line": 611,
+   "lines": [
+    611,
+    611
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 611
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 612
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 613
+  },
+  {
+   "t": "tr",
+   "id": "S0103",
+   "kind": "heading",
+   "s": "Probability of finding the particle in a region",
+   "line": 613,
+   "lines": [
+    613
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 613
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 614
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 615
+  },
+  {
+   "t": "tr",
+   "id": "S0104",
+   "kind": "para",
+   "s": "Once $\\psi$ is normalized, the probability of finding the particle anywhere between $a$ and $b$ is the area under $|\\psi|^2$ over that interval:",
+   "line": 615,
+   "lines": [
+    615
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 615
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 616
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 617
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 617
+  },
+  {
+   "t": "tr",
+   "id": "S0105",
+   "kind": "directive_title",
+   "s": "**Probability in a region**",
+   "line": 617,
+   "lines": [
+    617
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 617
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 618
+  },
+  {
+   "t": "lit",
+   "s": "$$\nP(a < x < b) = \\int_a^b |\\psi(x)|^2\\,dx\n$$\n",
+   "line": 619
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 622
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 623
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 624
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 625
+  },
+  {
+   "t": "tr",
+   "id": "S0106",
+   "kind": "para",
+   "s": "In three dimensions the same integral runs over a volume.",
+   "line": 625,
+   "lines": [
+    625
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 625
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 626
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 627
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 627
+  },
+  {
+   "t": "tr",
+   "id": "S0107",
+   "kind": "directive_title",
+   "s": "**Example: where is the particle?**",
+   "line": 627,
+   "lines": [
+    627
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 627
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 628
+  },
+  {
+   "t": "tr",
+   "id": "S0108",
+   "kind": "para",
+   "s": "For $\\psi = \\sqrt{3}\\,x$ on $[0,1]$ the density is $3x^2$, so",
+   "line": 629,
+   "lines": [
+    629,
+    629
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 629
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 630
+  },
+  {
+   "t": "lit",
+   "s": "$$\nP(a<x<b) = \\int_a^b 3x^2\\,dx = b^3 - a^3\n$$\n",
+   "line": 631
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 634
+  },
+  {
+   "t": "tr",
+   "id": "S0109",
+   "kind": "para",
+   "s": "The particle is found between $0.3$ and $0.6$ with probability $0.6^3 - 0.3^3 = 0.216 - 0.027 = 0.189$. The left half of the interval, $[0, 0.5]$, holds only $0.125$ of the probability: the density is piled up near $x = 1$.",
+   "line": 635,
+   "lines": [
+    635,
+    635
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 635
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 636
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 637
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 638
+  },
+  {
+   "t": "tr",
+   "id": "S0110",
+   "kind": "para",
+   "s": "Move the edges of the region and check the example.",
+   "line": 639,
+   "lines": [
+    639,
+    639
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 639
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 640
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\na2 = mo.ui.slider(0.0, 1.0, step=0.05, value=0.30, show_value=True, label=\"left edge a\")\nb2 = mo.ui.slider(0.0, 1.0, step=0.05, value=0.60, show_value=True, label=\"right edge b\")\nmo.hstack([a2, b2], justify=\"start\", gap=2)\n```\n",
+   "line": 641
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 648
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nlo2, hi2 = min(a2.value, b2.value), max(a2.value, b2.value)\nP2 = hi2**3 - lo2**3\nx2 = np.linspace(0, 1, 400)\nm2 = (x2 >= lo2) & (x2 <= hi2)\nfig2, ax2 = plt.subplots(figsize=(7, 3.0))\nax2.plot(x2, 3 * x2**2, color=\"#107895\", lw=2.6)\nax2.fill_between(x2[m2], 3 * x2[m2] ** 2, color=\"#107895\", alpha=0.3, lw=0)\nax2.axvline(lo2, color=\"#6c757d\", lw=1, ls=\"--\"); ax2.axvline(hi2, color=\"#6c757d\", lw=1, ls=\"--\")\nax2.set_xlim(0, 1); ax2.set_ylim(0, 3.1)\nax2.set_xlabel(\"x\"); ax2.set_ylabel(r\"$|\\psi(x)|^2 = 3x^2$\")\nax2.set_title(f\"P({lo2:.2f} < x < {hi2:.2f}) = {P2:.3f}\", loc=\"left\", fontsize=11)\nfig2.tight_layout()\nfig2\n```\n",
+   "line": 649
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 666
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nmo.md(f\"Shaded area: $b^3 - a^3 = {hi2:.2f}^3 - {lo2:.2f}^3 =$ **{P2:.3f}**, so the particle is found in this region in about **{1000 * P2:.0f}** of every 1000 measurements.\")\n```\n",
+   "line": 667
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 672
+  },
+  {
+   "t": "tr",
+   "id": "S0111",
+   "kind": "para",
+   "s": "Fig. The probability of finding the particle in a region is the shaded area under $|\\psi|^2$.",
+   "line": 673,
+   "lines": [
+    673,
+    673
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 673
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 674
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 675
+  },
+  {
+   "t": "tr",
+   "id": "S0112",
+   "kind": "heading",
+   "s": "Mean and spread of position",
+   "line": 675,
+   "lines": [
+    675
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 675
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 676
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 677
+  },
+  {
+   "t": "tr",
+   "id": "S0113",
+   "kind": "para",
+   "s": "A probability density also predicts averages. The mean of many position measurements is the **expectation value** of $x$, and the spread of the results around it is the standard deviation $\\sigma_x$:",
+   "line": 677,
+   "lines": [
+    677
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 677
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 678
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 679
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 679
+  },
+  {
+   "t": "tr",
+   "id": "S0114",
+   "kind": "directive_title",
+   "s": "**Mean and spread of position**",
+   "line": 679,
+   "lines": [
+    679
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 679
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 680
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle x \\rangle = \\int x\\,|\\psi(x)|^2\\,dx, \\qquad \\langle x^2 \\rangle = \\int x^2\\,|\\psi(x)|^2\\,dx, \\qquad \\sigma_x = \\sqrt{\\langle x^2 \\rangle - \\langle x \\rangle^2}\n$$\n",
+   "line": 681
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 684
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 685
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 686
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 687
+  },
+  {
+   "t": "tr",
+   "id": "S0115",
+   "kind": "para",
+   "s": "$\\langle x \\rangle$ is the balance point of the density. It is not the most likely position, and it need not even be a position where the particle can be found: for $\\psi_2$ in the animation above, $\\langle x \\rangle = L/2$ sits exactly on the node.",
+   "line": 687,
+   "lines": [
+    687
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 687
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 688
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 689
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 689
+  },
+  {
+   "t": "tr",
+   "id": "S0116",
+   "kind": "directive_title",
+   "s": "**Example: mean and spread for $\\psi = \\sqrt{3}\\,x$**",
+   "line": 689,
+   "lines": [
+    689
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 689
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 690
+  },
+  {
+   "t": "tr",
+   "id": "S0117",
+   "kind": "para",
+   "s": "With $p(x) = 3x^2$ on $[0,1]$:",
+   "line": 691,
+   "lines": [
+    691,
+    691
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 691
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 692
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle x\\rangle = \\int_0^1 x \\cdot 3x^2\\,dx = \\frac{3}{4}, \\qquad\n\\langle x^2\\rangle = \\int_0^1 x^2 \\cdot 3x^2\\,dx = \\frac{3}{5}\n$$\n",
+   "line": 693
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 697
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\sigma_x = \\sqrt{\\frac{3}{5} - \\left(\\frac{3}{4}\\right)^2} = \\sqrt{\\frac{3}{80}} \\approx 0.19\n$$\n",
+   "line": 698
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 701
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 702
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 703
+  },
+  {
+   "t": "lit",
+   "s": "```{code-cell} python\n:tags: [hide-input]\n# synced: mean_and_spread\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.animation import FuncAnimation\nfrom IPython.display import HTML\n\nTEAL, CARDINAL, GRAY, PURPLE, ORANGE = \"#107895\", \"#C8102E\", \"#6c757d\", \"#6a3d9a\", \"#e07b00\"\nplt.rcParams.update({\"axes.spines.top\": False, \"axes.spines.right\": False})\nx = np.linspace(0, 1, 2001)\nfig, axes = plt.subplots(1, 2, figsize=(8, 3.0), sharey=True)\nfor ax, p, col, lab in ((axes[0], 3 * x**2, TEAL, r\"$|\\psi|^2 = 3x^2$\"),\n                        (axes[1], 2 * np.sin(np.pi * x) ** 2, ORANGE, r\"$|\\psi_1|^2 = 2\\sin^2(\\pi x)$\")):\n    mu = np.trapezoid(x * p, x)\n    sig = np.sqrt(np.trapezoid(x**2 * p, x) - mu**2)\n    ax.fill_between(x, p, color=col, alpha=0.2, lw=0); ax.plot(x, p, color=col, lw=2.6)\n    ax.axvspan(mu - sig, mu + sig, color=PURPLE, alpha=0.12, lw=0)\n    ax.axvline(mu, color=PURPLE, lw=1.6)\n    ax.plot([mu], [-0.16], marker=\"^\", color=PURPLE, ms=11, clip_on=False, zorder=6)\n    ax.set_title(lab + rf\":  $\\langle x\\rangle = {mu:.2f}$,  $\\sigma_x = {sig:.2f}$\", loc=\"left\", fontsize=10.5)\n    ax.set_xlim(0, 1); ax.set_ylim(0, 3.2); ax.set_xlabel(\"x\")\n    ax.set_xticks([0, 0.25, 0.5, 0.75, 1]); ax.tick_params(axis=\"x\", pad=9)\naxes[0].set_ylabel(\"probability density\")\naxes[0].text(0.75 - 0.21, 2.75, r\"$\\pm\\sigma_x$\", color=PURPLE, fontsize=11, ha=\"right\")\nfig.tight_layout()\nplt.show()\n```\n",
+   "line": 704
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 732
+  },
+  {
+   "t": "tr",
+   "id": "S0118",
+   "kind": "para",
+   "s": "Fig. The mean (line and triangle) is the balance point of the probability density, and the band marks one standard deviation on each side. Left: the density of the example. Right: the ground state of a particle between walls, whose mean sits at the center by symmetry.",
+   "line": 733,
+   "lines": [
+    733,
+    733
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 733
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 734
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 735
+  },
+  {
+   "t": "tr",
+   "id": "S0119",
+   "kind": "heading",
+   "s": "Operators: a first look",
+   "line": 735,
+   "lines": [
+    735
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 735
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 736
+  },
+  {
+   "t": "tr",
+   "id": "S0120",
+   "kind": "para",
+   "s": "Position was easy, because $x$ is just a number that multiplies $|\\psi|^2$. Momentum and energy are different. In Step 2 we extracted them from the wave by differentiating, and that idea organizes the rest of quantum mechanics. This section is a preview; [Operators](04-operators.md) and [Eigenvalues and Expectation Values](05-eigenvalues-and-expectation.md) develop it in full.",
+   "line": 737,
+   "lines": [
+    737,
+    737
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 737
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 738
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 739
+  },
+  {
+   "t": "tr",
+   "id": "S0121",
+   "kind": "para",
+   "s": "An **operator** is an instruction that turns one function into another, written with a hat. Every observable of classical mechanics has a quantum operator. The recipe: write the classical expression in terms of $x$ and $p$, then replace $p$ with $-i\\hbar\\,\\partial/\\partial x$.",
+   "line": 739,
+   "lines": [
+    739
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 739
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 740
+  },
+  {
+   "t": "tr",
+   "id": "S0122",
+   "kind": "para",
+   "s": "| observable | classical | quantum operator |\n| :-- | :-- | :-- |\n| position | $x$ | $\\hat{x} = x$ |\n| momentum | $p = mv$ | $\\hat{p} = -i\\hbar \\dfrac{\\partial}{\\partial x}$ |\n| potential energy | $V(x)$ | $\\hat{V} = V(x)$ |\n| kinetic energy | $K = \\dfrac{p^2}{2m}$ | $\\hat{K} = \\dfrac{\\hat{p}^2}{2m} = -\\dfrac{\\hbar^2}{2m}\\dfrac{\\partial^2}{\\partial x^2}$ |\n| total energy | $H = \\dfrac{p^2}{2m} + V(x)$ | $\\hat{H} = \\hat{K} + \\hat{V}$ |",
+   "line": 741,
+   "lines": [
+    741,
+    741,
+    742,
+    743,
+    744,
+    745,
+    746,
+    747
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 747
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 748
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 749
+  },
+  {
+   "t": "tr",
+   "id": "S0123",
+   "kind": "para",
+   "s": "The operator of the total energy is the **Hamiltonian**, named after the total energy function $H(x,p)$ of classical mechanics. With it both Schrödinger equations fit on one line.",
+   "line": 749,
+   "lines": [
+    749
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 749
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 750
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 751
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 751
+  },
+  {
+   "t": "tr",
+   "id": "S0124",
+   "kind": "directive_title",
+   "s": "**Hamiltonian and the Schrödinger equation in operator form**",
+   "line": 751,
+   "lines": [
+    751
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 751
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 752
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{H} = -\\frac{\\hbar^2}{2m} \\frac{\\partial^2}{\\partial x^2} + V(x)\n$$\n",
+   "line": 753
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 756
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{H}\\,\\Psi = i\\hbar \\frac{\\partial \\Psi}{\\partial t} \\qquad\\qquad \\hat{H}\\,\\psi = E\\,\\psi\n$$\n",
+   "line": 757
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 760
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 761
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 762
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 763
+  },
+  {
+   "t": "tr",
+   "id": "S0125",
+   "kind": "para",
+   "s": "Different systems differ only in $V(x)$: $V = 0$ is a free particle, $V = \\frac{1}{2}kx^2$ a particle on a spring (a vibrating bond), $V = -e^2/4\\pi\\epsilon_0 r$ the electron of a hydrogen atom.",
+   "line": 763,
+   "lines": [
+    763
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 763
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 764
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 765
+  },
+  {
+   "t": "tr",
+   "id": "S0126",
+   "kind": "heading",
+   "s": "Eigenfunctions and eigenvalues",
+   "line": 765,
+   "lines": [
+    765
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 765
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 766
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 767
+  },
+  {
+   "t": "tr",
+   "id": "S0127",
+   "kind": "para",
+   "s": "An operator usually changes the shape of the function it acts on. The special functions that come back unchanged, multiplied by a constant, are its **eigenfunctions**, and the constant is the **eigenvalue**:",
+   "line": 767,
+   "lines": [
+    767
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 767
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 768
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{A} f(x) = a\\, f(x)\n$$\n",
+   "line": 769
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 772
+  },
+  {
+   "t": "lit",
+   "s": "```{code-cell} python\n:tags: [hide-input]\n# synced: eigen_test\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.animation import FuncAnimation\nfrom IPython.display import HTML\n\nTEAL, CARDINAL, GRAY, PURPLE, ORANGE = \"#107895\", \"#C8102E\", \"#6c757d\", \"#6a3d9a\", \"#e07b00\"\nplt.rcParams.update({\"axes.spines.top\": False, \"axes.spines.right\": False})\nx = np.linspace(-3, 3, 500); a = 1.5\nfig, (ax1, ax2) = plt.subplots(1, 2, figsize=(8, 3.0))\nax1.plot(x, np.sin(a * x), color=TEAL, lw=2.6, label=r\"$f = \\sin(ax)$\")\nax1.plot(x, -a**2 * np.sin(a * x), color=CARDINAL, lw=2.2, ls=\"--\", label=r\"$f'' = -a^2 \\sin(ax)$\")\nax1.set_title(r\"same shape, rescaled: eigenfunction of $d^2/dx^2$\", loc=\"left\", fontsize=10.5)\nax2.plot(x, np.exp(-x**2), color=TEAL, lw=2.6, label=r\"$f = e^{-x^2}$\")\nax2.plot(x, (4 * x**2 - 2) * np.exp(-x**2), color=CARDINAL, lw=2.2, ls=\"--\", label=r\"$f'' = (4x^2-2)\\,e^{-x^2}$\")\nax2.set_title(\"new shape: not an eigenfunction\", loc=\"left\", fontsize=10.5)\nfor ax in (ax1, ax2):\n    ax.axhline(0, color=GRAY, lw=0.6); ax.set_xlim(-3, 3); ax.set_ylim(-2.6, 3.6); ax.set_xlabel(\"x\")\n    ax.legend(loc=\"upper right\", frameon=False, fontsize=9.5)\nfig.tight_layout()\nplt.show()\n```\n",
+   "line": 773
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 797
+  },
+  {
+   "t": "tr",
+   "id": "S0128",
+   "kind": "para",
+   "s": "Fig. Testing two functions against the operator $d^2/dx^2$. Left: $\\sin(ax)$ comes back with the same shape, multiplied by $-a^2$, so it is an eigenfunction. Right: the Gaussian comes back with a different shape, so it is not.",
+   "line": 798,
+   "lines": [
+    798,
+    798
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 798
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 799
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 800
+  },
+  {
+   "t": "tr",
+   "id": "S0129",
+   "kind": "para",
+   "s": "The time-independent Schrödinger equation is exactly such a problem. The slider above was a search for its eigenvalues by hand.",
+   "line": 800,
+   "lines": [
+    800
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 800
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 801
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 802
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 802
+  },
+  {
+   "t": "tr",
+   "id": "S0130",
+   "kind": "directive_title",
+   "s": "**Schrödinger equation as an eigenvalue problem**",
+   "line": 802,
+   "lines": [
+    802
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 802
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 803
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\hat{H}\\, \\psi_n = E_n\\, \\psi_n\n$$\n",
+   "line": 804
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 807
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 808
+  },
+  {
+   "t": "tr",
+   "id": "S0131",
+   "kind": "para",
+   "s": "The stationary states $\\psi_n$ are the eigenfunctions of the Hamiltonian.",
+   "line": 808,
+   "lines": [
+    808
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 808
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 809
+  },
+  {
+   "t": "tr",
+   "id": "S0132",
+   "kind": "para",
+   "s": "The allowed energies $E_n$ are its eigenvalues.",
+   "line": 809,
+   "lines": [
+    809
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 809
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 810
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 811
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 812
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 813
+  },
+  {
+   "t": "tr",
+   "id": "S0133",
+   "kind": "heading",
+   "s": "Expectation values",
+   "line": 813,
+   "lines": [
+    813
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 813
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 814
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 815
+  },
+  {
+   "t": "tr",
+   "id": "S0134",
+   "kind": "para",
+   "s": "For position we averaged $x$ over the density $\\psi^*\\psi$. An operator such as $\\hat{p}$ has to act on $\\psi$ before we multiply by $\\psi^*$, so it sits between the two:",
+   "line": 815,
+   "lines": [
+    815
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 815
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 816
+  },
+  {
+   "t": "lit",
+   "s": ":::{important}",
+   "line": 817
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 817
+  },
+  {
+   "t": "tr",
+   "id": "S0135",
+   "kind": "directive_title",
+   "s": "**Expectation value of an observable**",
+   "line": 817,
+   "lines": [
+    817
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 817
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 818
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle A \\rangle = \\int \\psi^{*}(x)\\, \\hat{A}\\, \\psi(x)\\, dx\n$$\n",
+   "line": 819
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 822
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 823
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 824
+  },
+  {
+   "t": "tr",
+   "id": "S0136",
+   "kind": "para",
+   "s": "| average | operator inside the integral |\n| :-- | :-- |\n| $\\langle x \\rangle=\\int \\psi^{*}\\, x\\, \\psi\\, dx$ | $\\hat{x} = x$ |\n| $\\langle p \\rangle=\\int \\psi^{*}\\, \\hat{p}\\, \\psi\\, dx$ | $\\hat{p}=-i\\hbar\\dfrac{d}{dx}$ |\n| $\\langle K \\rangle=\\int \\psi^{*}\\, \\hat{K}\\, \\psi\\, dx$ | $\\hat{K}=-\\dfrac{\\hbar^2}{2m}\\dfrac{d^2}{dx^2}$ |\n| $\\langle E \\rangle=\\int \\psi^{*}\\, \\hat{H}\\, \\psi\\, dx$ | $\\hat{H}=-\\dfrac{\\hbar^2}{2m}\\dfrac{d^2}{dx^2}+V(x)$ |",
+   "line": 825,
+   "lines": [
+    825,
+    825,
+    826,
+    827,
+    828,
+    829,
+    830
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 830
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 831
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 832
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 832
+  },
+  {
+   "t": "tr",
+   "id": "S0137",
+   "kind": "directive_title",
+   "s": "**Example: momentum and energy of a particle between walls**",
+   "line": 832,
+   "lines": [
+    832
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 832
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 833
+  },
+  {
+   "t": "tr",
+   "id": "S0138",
+   "kind": "para",
+   "s": "Take $\\psi_n(x)=\\sqrt{2}\\sin(n\\pi x)$ on $[0,1]$ with $V = 0$ inside.",
+   "line": 834,
+   "lines": [
+    834,
+    834
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 834
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 835
+  },
+  {
+   "t": "tr",
+   "id": "S0139",
+   "kind": "para",
+   "s": "**Momentum.** The derivative turns the sine into a cosine, and $\\sin\\cos = \\frac{1}{2}\\sin(2n\\pi x)$ integrates to zero over the box:",
+   "line": 836,
+   "lines": [
+    836,
+    836
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 836
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 837
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle p\\rangle = \\int_0^1 \\psi_n\\,(-i\\hbar)\\,\\frac{d\\psi_n}{dx}\\,dx = -2i\\hbar\\, n\\pi \\int_0^1 \\sin(n\\pi x)\\cos(n\\pi x)\\,dx = 0\n$$\n",
+   "line": 838
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 841
+  },
+  {
+   "t": "tr",
+   "id": "S0140",
+   "kind": "para",
+   "s": "The particle is as likely to move left as right.",
+   "line": 842,
+   "lines": [
+    842,
+    842
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 842
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 843
+  },
+  {
+   "t": "tr",
+   "id": "S0141",
+   "kind": "para",
+   "s": "**Momentum squared and energy.** Two derivatives return the sine, $\\psi_n'' = -(n\\pi)^2\\psi_n$, so",
+   "line": 844,
+   "lines": [
+    844,
+    844
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 844
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 845
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\langle p^2\\rangle = -\\hbar^2\\int_0^1 \\psi_n\\,\\psi_n''\\,dx = (n\\pi\\hbar)^2, \\qquad\n\\langle E\\rangle = \\frac{\\langle p^2\\rangle}{2m} = \\frac{(n\\pi\\hbar)^2}{2m}\n$$\n",
+   "line": 846
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 850
+  },
+  {
+   "t": "tr",
+   "id": "S0142",
+   "kind": "para",
+   "s": "The average momentum vanishes but the average of its square does not: the particle is moving, with no preferred direction.",
+   "line": 851,
+   "lines": [
+    851,
+    851
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 851
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 852
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 853
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 854
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 855
+  },
+  {
+   "t": "tr",
+   "id": "S0143",
+   "kind": "heading",
+   "s": "Linearity and superposition",
+   "line": 855,
+   "lines": [
+    855
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 855
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 856
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 857
+  },
+  {
+   "t": "tr",
+   "id": "S0144",
+   "kind": "para",
+   "s": "$\\hat{H}$ is a linear operator, so any sum of solutions is again a solution. As for the string, the general solution is a sum over the stationary states, each turning at its own rate:",
+   "line": 857,
+   "lines": [
+    857
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 857
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 858
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\Psi(x,t) = \\sum_n c_n\\, \\psi_n(x)\\, e^{-iE_n t/\\hbar}\n$$\n",
+   "line": 859
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 862
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 863
+  },
+  {
+   "t": "tr",
+   "id": "S0145",
+   "kind": "para",
+   "s": "A single stationary state has a frozen probability density. A sum of two does not, because their phase clocks run at different rates and the relative phase changes in time (Problem 2). All motion in quantum mechanics comes from superposition, the subject of [Time Dependence](06-time-dependence.md).",
+   "line": 863,
+   "lines": [
+    863
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 863
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 864
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 865
+  },
+  {
+   "t": "tr",
+   "id": "S0146",
+   "kind": "heading",
+   "s": "Looking ahead",
+   "line": 865,
+   "lines": [
+    865
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 865
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 866
+  },
+  {
+   "t": "tr",
+   "id": "S0147",
+   "kind": "para",
+   "s": "The next lecture carries out this program for the simplest potential there is: a [particle in a box](02-particle-in-a-box.md), $V = 0$ between two impenetrable walls. The curvature equation gives sines, the walls pick out the allowed ones, normalization fixes their height, and the expectation values of this lecture turn them into predictions.",
+   "line": 867,
+   "lines": [
+    867,
+    867
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 867
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 868
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 869
+  },
+  {
+   "t": "tr",
+   "id": "S0148",
+   "kind": "heading",
+   "s": "Problems",
+   "line": 869,
+   "lines": [
+    869
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 869
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 870
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 871
+  },
+  {
+   "t": "tr",
+   "id": "S0149",
+   "kind": "heading",
+   "s": "Problem 1: The plane wave solves the free equation",
+   "line": 871,
+   "lines": [
+    871
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 871
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 872
+  },
+  {
+   "t": "tr",
+   "id": "S0150",
+   "kind": "para",
+   "s": "Show that $\\Psi(x,t) = A\\,e^{\\frac{i}{\\hbar}(px - Et)}$ solves the time-dependent Schrödinger equation with $V = 0$ only if $E = p^2/2m$.",
+   "line": 873,
+   "lines": [
+    873,
+    873
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 873
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 874
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 875
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 875
+  },
+  {
+   "t": "tr",
+   "id": "S0151",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 875,
+   "lines": [
+    875
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 875
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 876
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 877
+  },
+  {
+   "t": "tr",
+   "id": "S0152",
+   "kind": "para",
+   "s": "Two derivatives in $x$ bring down $(ip/\\hbar)^2 = -p^2/\\hbar^2$, so the left side is",
+   "line": 878,
+   "lines": [
+    878,
+    878
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 878
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 879
+  },
+  {
+   "t": "lit",
+   "s": "$$\n-\\frac{\\hbar^2}{2m}\\frac{\\partial^2\\Psi}{\\partial x^2} = \\frac{p^2}{2m}\\,\\Psi\n$$\n",
+   "line": 880
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 883
+  },
+  {
+   "t": "tr",
+   "id": "S0153",
+   "kind": "para",
+   "s": "One derivative in $t$ brings down $-iE/\\hbar$, so the right side is",
+   "line": 884,
+   "lines": [
+    884,
+    884
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 884
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 885
+  },
+  {
+   "t": "lit",
+   "s": "$$\ni\\hbar\\frac{\\partial \\Psi}{\\partial t} = i\\hbar\\left(-\\frac{iE}{\\hbar}\\right)\\Psi = E\\,\\Psi\n$$\n",
+   "line": 886
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 889
+  },
+  {
+   "t": "tr",
+   "id": "S0154",
+   "kind": "para",
+   "s": "The two sides agree for all $x$ and $t$ only if $E = p^2/2m$. The equation accepts a plane wave of any momentum, but it ties the frequency to the wavenumber: $\\omega = \\hbar k^2/2m$.",
+   "line": 890,
+   "lines": [
+    890,
+    890
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 890
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 891
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 892
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 893
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 894
+  },
+  {
+   "t": "tr",
+   "id": "S0155",
+   "kind": "heading",
+   "s": "Problem 2: One stationary state stands still, two do not",
+   "line": 894,
+   "lines": [
+    894
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 894
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 895
+  },
+  {
+   "t": "tr",
+   "id": "S0156",
+   "kind": "para",
+   "s": "Let $\\psi_1$ and $\\psi_2$ be real, normalized stationary states with energies $E_1$ and $E_2$. Compute the probability density $|\\Psi|^2$ of the superposition",
+   "line": 896,
+   "lines": [
+    896,
+    896
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 896
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 897
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\Psi(x,t) = \\frac{1}{\\sqrt{2}}\\left[\\psi_1(x)\\,e^{-iE_1t/\\hbar} + \\psi_2(x)\\,e^{-iE_2t/\\hbar}\\right]\n$$\n",
+   "line": 898
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 901
+  },
+  {
+   "t": "tr",
+   "id": "S0157",
+   "kind": "para",
+   "s": "and find the frequency at which it oscillates.",
+   "line": 902,
+   "lines": [
+    902,
+    902
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 902
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 903
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 904
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 904
+  },
+  {
+   "t": "tr",
+   "id": "S0158",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 904,
+   "lines": [
+    904
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 904
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 905
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 906
+  },
+  {
+   "t": "tr",
+   "id": "S0159",
+   "kind": "para",
+   "s": "Multiply $\\Psi$ by its complex conjugate. The two squared terms lose their phases; the two cross terms keep the difference of the phases:",
+   "line": 907,
+   "lines": [
+    907,
+    907
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 907
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 908
+  },
+  {
+   "t": "lit",
+   "s": "$$\n|\\Psi|^2 = \\frac{1}{2}\\left[\\psi_1^2 + \\psi_2^2 + \\psi_1\\psi_2\\left(e^{i(E_2-E_1)t/\\hbar} + e^{-i(E_2-E_1)t/\\hbar}\\right)\\right]\n$$\n",
+   "line": 909
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 912
+  },
+  {
+   "t": "lit",
+   "s": "$$\n|\\Psi|^2 = \\frac{1}{2}\\left[\\psi_1^2 + \\psi_2^2\\right] + \\psi_1\\psi_2\\cos\\left(\\frac{(E_2-E_1)\\,t}{\\hbar}\\right)\n$$\n",
+   "line": 913
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 916
+  },
+  {
+   "t": "tr",
+   "id": "S0160",
+   "kind": "para",
+   "s": "The density sloshes at the angular frequency $\\omega_{21} = (E_2 - E_1)/\\hbar$. Only energy **differences** appear, which is the Bohr frequency condition $h\\nu = E_2 - E_1$ of atomic spectra.",
+   "line": 917,
+   "lines": [
+    917,
+    917
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 917
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 918
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 919
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 920
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 921
+  },
+  {
+   "t": "tr",
+   "id": "S0161",
+   "kind": "heading",
+   "s": "Problem 3: Normalize and locate",
+   "line": 921,
+   "lines": [
+    921
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 921
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 922
+  },
+  {
+   "t": "tr",
+   "id": "S0162",
+   "kind": "para",
+   "s": "Normalize $\\psi(x) = N\\cos(\\pi x / 2)$ on the interval $[-1, 1]$, then compute the probability of finding the particle in $[0, \\tfrac{1}{2}]$.",
+   "line": 923,
+   "lines": [
+    923,
+    923
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 923
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 924
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 925
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 925
+  },
+  {
+   "t": "tr",
+   "id": "S0163",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 925,
+   "lines": [
+    925
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 925
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 926
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 927
+  },
+  {
+   "t": "tr",
+   "id": "S0164",
+   "kind": "para",
+   "s": "Use $\\cos^2\\theta = \\frac{1}{2}(1 + \\cos 2\\theta)$:",
+   "line": 928,
+   "lines": [
+    928,
+    928
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 928
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 929
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\int_{-1}^{1} N^2\\cos^2\\left(\\frac{\\pi x}{2}\\right)dx = \\frac{N^2}{2}\\int_{-1}^{1}\\left[1 + \\cos(\\pi x)\\right]dx = \\frac{N^2}{2}\\left[2 + 0\\right] = N^2\n$$\n",
+   "line": 930
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 933
+  },
+  {
+   "t": "tr",
+   "id": "S0165",
+   "kind": "para",
+   "s": "so $N = 1$: the function was already normalized. The probability is",
+   "line": 934,
+   "lines": [
+    934,
+    934
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 934
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 935
+  },
+  {
+   "t": "lit",
+   "s": "$$\nP\\left(0 < x < \\tfrac{1}{2}\\right) = \\frac{1}{2}\\int_0^{1/2}\\left[1 + \\cos(\\pi x)\\right]dx = \\frac{1}{2}\\left[\\frac{1}{2} + \\frac{1}{\\pi}\\right] \\approx 0.41\n$$\n",
+   "line": 936
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 939
+  },
+  {
+   "t": "tr",
+   "id": "S0166",
+   "kind": "para",
+   "s": "A quarter of the interval holds 41 percent of the probability, because the density peaks at the center.",
+   "line": 940,
+   "lines": [
+    940,
+    940
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 940
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 941
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 942
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 943
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 944
+  },
+  {
+   "t": "tr",
+   "id": "S0167",
+   "kind": "heading",
+   "s": "Problem 4: Eigenfunctions of momentum and kinetic energy",
+   "line": 944,
+   "lines": [
+    944
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 944
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 945
+  },
+  {
+   "t": "tr",
+   "id": "S0168",
+   "kind": "para",
+   "s": "Decide whether each function is an eigenfunction of the momentum operator, of the kinetic energy operator, of both, or of neither:",
+   "line": 946,
+   "lines": [
+    946,
+    946
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 946
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 947
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 948
+  },
+  {
+   "t": "tr",
+   "id": "S0169",
+   "kind": "para",
+   "s": "$A \\sin(ax)$",
+   "line": 948,
+   "lines": [
+    948
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 948
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 949
+  },
+  {
+   "t": "tr",
+   "id": "S0170",
+   "kind": "para",
+   "s": "$N e^{-ikx}$",
+   "line": 949,
+   "lines": [
+    949
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 949
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 950
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 951
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 951
+  },
+  {
+   "t": "tr",
+   "id": "S0171",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 951,
+   "lines": [
+    951
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 951
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 952
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 953
+  },
+  {
+   "t": "tr",
+   "id": "S0172",
+   "kind": "para",
+   "s": "Apply the momentum operator to the first function:",
+   "line": 954,
+   "lines": [
+    954,
+    954
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 954
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 955
+  },
+  {
+   "t": "lit",
+   "s": "$$\n-i \\hbar \\dfrac{\\partial}{\\partial x} A \\sin(ax) = -i \\hbar A a \\cos(ax)\n$$\n",
+   "line": 956
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 959
+  },
+  {
+   "t": "tr",
+   "id": "S0173",
+   "kind": "para",
+   "s": "The sine turned into a cosine, so $\\sin(ax)$ is not an eigenfunction of momentum. The kinetic energy operator gives",
+   "line": 960,
+   "lines": [
+    960,
+    960
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 960
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 961
+  },
+  {
+   "t": "lit",
+   "s": "$$\n-\\dfrac{\\hbar^2}{2m} \\dfrac{\\partial^2}{\\partial x^2} A \\sin(ax) = \\dfrac{\\hbar^2 a^2}{2m}\\, A \\sin(ax)\n$$\n",
+   "line": 962
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 965
+  },
+  {
+   "t": "tr",
+   "id": "S0174",
+   "kind": "para",
+   "s": "The same function came back, so $\\sin(ax)$ is an eigenfunction of kinetic energy with eigenvalue $\\hbar^2a^2/2m$.",
+   "line": 966,
+   "lines": [
+    966,
+    966
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 966
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 967
+  },
+  {
+   "t": "tr",
+   "id": "S0175",
+   "kind": "para",
+   "s": "For the second function:",
+   "line": 968,
+   "lines": [
+    968,
+    968
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 968
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 969
+  },
+  {
+   "t": "lit",
+   "s": "$$\n-i\\hbar \\dfrac{\\partial}{\\partial x} N e^{-ikx} = -i\\hbar(-ik)\\,N e^{-ikx} = -\\hbar k\\, N e^{-ikx}\n$$\n",
+   "line": 970
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 973
+  },
+  {
+   "t": "tr",
+   "id": "S0176",
+   "kind": "para",
+   "s": "It is an eigenfunction of momentum with eigenvalue $-\\hbar k$: a wave moving to the left. Applying the momentum operator twice gives $\\hat{K} N e^{-ikx} = \\frac{\\hbar^2k^2}{2m} N e^{-ikx}$, so it is an eigenfunction of kinetic energy too.",
+   "line": 974,
+   "lines": [
+    974,
+    974
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 974
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 975
+  },
+  {
+   "t": "tr",
+   "id": "S0177",
+   "kind": "para",
+   "s": "A state of definite momentum always has a definite kinetic energy. The reverse is not true: $\\sin(ax)$ is an equal mix of $e^{iax}$ and $e^{-iax}$, waves moving right and left with the same kinetic energy.",
+   "line": 976,
+   "lines": [
+    976,
+    976
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 976
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 977
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 978
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 979
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 980
+  },
+  {
+   "t": "tr",
+   "id": "S0178",
+   "kind": "heading",
+   "s": "Problem 5: Testing a Gaussian",
+   "line": 980,
+   "lines": [
+    980
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 980
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 981
+  },
+  {
+   "t": "tr",
+   "id": "S0179",
+   "kind": "para",
+   "s": "Check whether $f(x) = e^{-\\alpha x^2}$ is an eigenfunction of $\\hat{C} = \\dfrac{d^2}{dx^2}$.",
+   "line": 982,
+   "lines": [
+    982,
+    982
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 982
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 983
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 984
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 984
+  },
+  {
+   "t": "tr",
+   "id": "S0180",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 984,
+   "lines": [
+    984
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 984
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 985
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 986
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\frac{d}{dx} e^{-\\alpha x^2} = -2\\alpha x\\, e^{-\\alpha x^2}\n$$\n",
+   "line": 987
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 990
+  },
+  {
+   "t": "lit",
+   "s": "$$\n\\frac{d^2}{dx^2} e^{-\\alpha x^2} = \\left( 4\\alpha^2 x^2 - 2\\alpha \\right) e^{-\\alpha x^2}\n$$\n",
+   "line": 991
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 994
+  },
+  {
+   "t": "tr",
+   "id": "S0181",
+   "kind": "para",
+   "s": "The factor in front depends on $x$, so the result is not a constant times $f$: the Gaussian is **not** an eigenfunction of $d^2/dx^2$. This is the right panel of the eigenfunction figure, with $\\alpha = 1$. Notice, though, that $\\left(-\\frac{d^2}{dx^2} + 4\\alpha^2x^2\\right)f = 2\\alpha f$: the Gaussian **is** an eigenfunction once a potential proportional to $x^2$ is added. It is the ground state of the particle on a spring that you found with the slider.",
+   "line": 995,
+   "lines": [
+    995,
+    995
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 995
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 996
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 997
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 998
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 999
+  },
+  {
+   "t": "tr",
+   "id": "S0182",
+   "kind": "heading",
+   "s": "Problem 6: Find the levels by hand",
+   "line": 999,
+   "lines": [
+    999
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 999
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1000
+  },
+  {
+   "t": "tr",
+   "id": "S0183",
+   "kind": "para",
+   "s": "Use the trial-energy slider to find every allowed energy of the particle on a spring below $3\\,\\hbar\\omega$. For each one record the number of nodes. How is the number of nodes related to the order of the levels? Compare with the modes of a string.",
+   "line": 1001,
+   "lines": [
+    1001,
+    1001
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1001
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1002
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 1003
+  },
+  {
+   "t": "tr",
+   "id": "S0184",
+   "kind": "heading",
+   "s": "Problem 7: Allowed and forbidden regions",
+   "line": 1003,
+   "lines": [
+    1003
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1003
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1004
+  },
+  {
+   "t": "tr",
+   "id": "S0185",
+   "kind": "para",
+   "s": "A particle with energy $E$ moves in $V(x) = \\frac{1}{2}kx^2$. Find the two turning points where $E = V$. Sketch the state with two nodes and mark where $\\psi$ oscillates and where it decays. Where is the local wavelength shortest, and why?",
+   "line": 1005,
+   "lines": [
+    1005,
+    1005
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1005
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1006
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 1007
+  },
+  {
+   "t": "tr",
+   "id": "S0186",
+   "kind": "heading",
+   "s": "Problem 8: A particle in a cube",
+   "line": 1007,
+   "lines": [
+    1007
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1007
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1008
+  },
+  {
+   "t": "tr",
+   "id": "S0187",
+   "kind": "para",
+   "s": "Let $\\psi(x,y,z)=\\sqrt{27}\\,xyz$ inside the unit cube $[0,1]^3$ and zero outside. Verify that $\\psi$ is normalized, then find the probability that the particle is in the corner box $[0,\\frac{1}{2}]^3$. Compare with the fraction of the volume that the box takes up.",
+   "line": 1009,
+   "lines": [
+    1009,
+    1009
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1009
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1010
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 1011
+  },
+  {
+   "t": "tr",
+   "id": "S0188",
+   "kind": "heading",
+   "s": "Problem 9: Symmetry does the integrals",
+   "line": 1011,
+   "lines": [
+    1011
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1011
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1012
+  },
+  {
+   "t": "tr",
+   "id": "S0189",
+   "kind": "para",
+   "s": "For the state $\\psi_2(x) = \\sqrt{2}\\sin(2\\pi x)$ on $[0, 1]$, evaluate $\\langle x \\rangle$ and $\\langle p \\rangle$, and explain both results using symmetry alone.",
+   "line": 1013,
+   "lines": [
+    1013,
+    1013
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1013
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1014
+  },
+  {
+   "t": "lit",
+   "s": "#### ",
+   "line": 1015
+  },
+  {
+   "t": "tr",
+   "id": "S0190",
+   "kind": "heading",
+   "s": "Problem 10: Spread of the ground state",
+   "line": 1015,
+   "lines": [
+    1015
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1015
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1016
+  },
+  {
+   "t": "tr",
+   "id": "S0191",
+   "kind": "para",
+   "s": "For $\\psi_1(x) = \\sqrt{2}\\sin(\\pi x)$ on $[0,1]$ compute $\\langle x^2 \\rangle$ and $\\sigma_x$, and compare with the value quoted in the figure on mean and spread. (Integrate by parts, or use $\\sin^2\\theta = \\frac{1}{2}(1-\\cos 2\\theta)$.)",
+   "line": 1017,
+   "lines": [
+    1017,
+    1017
+   ]
+  }
+ ]
+}

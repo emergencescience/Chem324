@@ -1,0 +1,338 @@
+[
+ {
+  "id": "S0001",
+  "src": "ch03/06-time-dependence.md",
+  "line": 1,
+  "kind": "heading",
+  "en": "Time Dependence",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0002",
+  "src": "ch03/06-time-dependence.md",
+  "line": 3,
+  "kind": "directive_title",
+  "en": "**What you need to know**",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0003",
+  "src": "ch03/06-time-dependence.md",
+  "line": 5,
+  "kind": "para",
+  "en": "The **time-dependent Schrödinger equation** governs the evolution of the quantum wavefunction over time, $\\psi(x,t)$. ",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0004",
+  "src": "ch03/06-time-dependence.md",
+  "line": 6,
+  "kind": "para",
+  "en": "**Stationary states** are eigenfunctions of the Hamiltonian $\\hat{H}$ containing a spatial part and a time-dependent phase factor:  $\\psi(x,t) = \\psi(x) e^{-i E t / \\hbar}$  ",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0005",
+  "src": "ch03/06-time-dependence.md",
+  "line": 7,
+  "kind": "para",
+  "en": "The stationary states have definite energy and their probability distributions are **time-independent**.",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0006",
+  "src": "ch03/06-time-dependence.md",
+  "line": 8,
+  "kind": "para",
+  "en": "In more general situations, the wavefunction can be expressed as a **linear superposition of energy eigenstates**, with time evolution given by the phase factors of the eigenstates:  $\\psi(x,t) = \\sum_n c_n \\psi_n(x) e^{-i E_n t / \\hbar}$ ",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0007",
+  "src": "ch03/06-time-dependence.md",
+  "line": 10,
+  "kind": "para",
+  "en": "This superposition leads to **time-dependent probabilities** as different eigenstates interfere.",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0008",
+  "src": "ch03/06-time-dependence.md",
+  "line": 11,
+  "kind": "para",
+  "en": "The time-dependence of quantum states is key to understanding **quantum dynamics**, such as oscillations between states in **two-level systems** or time evolution of **quantum superpositions**.",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0009",
+  "src": "ch03/06-time-dependence.md",
+  "line": 17,
+  "kind": "heading",
+  "en": "Time Dependence of a Pure Eigenfunction",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0010",
+  "src": "ch03/06-time-dependence.md",
+  "line": 19,
+  "kind": "para",
+  "en": "Until now, we have largely ignored the time dependence of quantum systems. This is because we have primarily focused on pure eigenfunction states, $\\psi_n(x,t)$, which exhibit no time-dependent behavior for observable quantities. The reason for this is straightforward.",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0011",
+  "src": "ch03/06-time-dependence.md",
+  "line": 23,
+  "kind": "para",
+  "en": "In any probabilistic calculation, the time dependence vanishes because the expressions involve the square of the wavefunction. The absolute value of the complex time-dependent phase factor equals unity:",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0012",
+  "src": "ch03/06-time-dependence.md",
+  "line": 27,
+  "kind": "para",
+  "en": "Similarly, for the expectation value of an operator $\\hat{A}$, the time-dependent phases cancel out, leaving only the spatial part:",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0013",
+  "src": "ch03/06-time-dependence.md",
+  "line": 31,
+  "kind": "para",
+  "en": "Will we always have this fortunate cancellation of time dependence? The answer is no. When the system is described as a **linear superposition** of eigenstates, time dependence reappears in a significant way.",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0014",
+  "src": "ch03/06-time-dependence.md",
+  "line": 34,
+  "kind": "heading",
+  "en": "Time Dependence of a Superposition of Eigenfunctions",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0015",
+  "src": "ch03/06-time-dependence.md",
+  "line": 36,
+  "kind": "para",
+  "en": "Let us start with a superposition state of two energy eigenfunctions at time $t=0$:",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0016",
+  "src": "ch03/06-time-dependence.md",
+  "line": 40,
+  "kind": "para",
+  "en": "What would the state be after some time $t$? By virtue of separation of variables, we add the time dependence as a multiplicative factor for each eigenfunction:",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0017",
+  "src": "ch03/06-time-dependence.md",
+  "line": 44,
+  "kind": "para",
+  "en": "Thus we see that the coefficients change over time. This means our state vector moves in the functional space spanned by the fixed orthogonal eigenfunctions! We can verify that this expression satisfies the time-dependent Schrödinger equation by plugging it in.",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0018",
+  "src": "ch03/06-time-dependence.md",
+  "line": 46,
+  "kind": "directive_title",
+  "en": "**Proof that the superposition obeys the time-dependent Schrödinger equation**",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0019",
+  "src": "ch03/06-time-dependence.md",
+  "line": 51,
+  "kind": "para",
+  "en": "*Left hand side :*",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0020",
+  "src": "ch03/06-time-dependence.md",
+  "line": 55,
+  "kind": "para",
+  "en": "*Right hand side:*",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0021",
+  "src": "ch03/06-time-dependence.md",
+  "line": 140,
+  "kind": "para",
+  "en": "Drag the **time slider** and watch the probability sloshing between the two walls: the interference term beats at the frequency $(E_{n_2} - E_1)/\\hbar$. Raising $n_2$ makes the pattern richer and the beat faster. A single eigenstate would sit perfectly still; motion in quantum mechanics lives in superpositions.",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0022",
+  "src": "ch03/06-time-dependence.md",
+  "line": 141,
+  "kind": "heading",
+  "en": "Normalization is time independent!",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0023",
+  "src": "ch03/06-time-dependence.md",
+  "line": 143,
+  "kind": "para",
+  "en": "Certain quantities remain invariant under time evolution. For instance, it is natural to expect that normalization does not change over time: the particle must always be located somewhere within the box at any given moment.",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0024",
+  "src": "ch03/06-time-dependence.md",
+  "line": 147,
+  "kind": "para",
+  "en": "The normalization condition is expressed as:",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0025",
+  "src": "ch03/06-time-dependence.md",
+  "line": 151,
+  "kind": "para",
+  "en": "In the final step, we use the fact that the eigenfunctions are orthogonal, meaning $\\langle n \\mid k \\rangle = 0$ for $n \\neq k$, so the cross terms vanish and only the diagonal terms, where $n = k$, survive.",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0026",
+  "src": "ch03/06-time-dependence.md",
+  "line": 154,
+  "kind": "heading",
+  "en": "Constants of Motion",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0027",
+  "src": "ch03/06-time-dependence.md",
+  "line": 156,
+  "kind": "para",
+  "en": "Quantities that remain conserved over time are called **constants of motion**. In quantum mechanics, we typically deal with expectations or averages rather than sharply defined values.",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0028",
+  "src": "ch03/06-time-dependence.md",
+  "line": 158,
+  "kind": "para",
+  "en": "However, the principle of energy conservation dictates that the **average total energy** must be a conserved quantity. To determine whether a particular quantity depends on time, we take the time derivative of the expectation value:",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0029",
+  "src": "ch03/06-time-dependence.md",
+  "line": 162,
+  "kind": "para",
+  "en": "  The time derivative of this expectation value is:",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0030",
+  "src": "ch03/06-time-dependence.md",
+  "line": 168,
+  "kind": "para",
+  "en": "Now, using the time-dependent Schrödinger equation,  ",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0031",
+  "src": "ch03/06-time-dependence.md",
+  "line": 174,
+  "kind": "para",
+  "en": "  we can express the time derivatives of the bras and kets as:",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0032",
+  "src": "ch03/06-time-dependence.md",
+  "line": 179,
+  "kind": "para",
+  "en": "Substituting these into the time derivative of the expectation value, we obtain:",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0033",
+  "src": "ch03/06-time-dependence.md",
+  "line": 183,
+  "kind": "directive_title",
+  "en": "**Time dependence of expectation**",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0034",
+  "src": "ch03/06-time-dependence.md",
+  "line": 191,
+  "kind": "para",
+  "en": "This important relationship shows that if the operator $\\hat{A}$ does not explicitly depend on time, i.e., $\\frac{\\partial \\hat{A}}{\\partial t} = 0$, then quantities that **commute with the Hamiltonian** $[\\hat{A}, \\hat{H}] = 0$ will be constants of motion. Those that do not commute, $[\\hat{A}, \\hat{H}] \\neq 0$, will evolve over time.",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0035",
+  "src": "ch03/06-time-dependence.md",
+  "line": 193,
+  "kind": "para",
+  "en": "Since the Hamiltonian commutes with itself and does not depend on time, the **energy** is conserved.",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0036",
+  "src": "ch03/06-time-dependence.md",
+  "line": 200,
+  "kind": "heading",
+  "en": "Quantum Dynamics",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0037",
+  "src": "ch03/06-time-dependence.md",
+  "line": 202,
+  "kind": "directive_title",
+  "en": "./images/gaussian_potential.gif",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0038",
+  "src": "ch03/06-time-dependence.md",
+  "line": 207,
+  "kind": "para",
+  "en": "Wavefunction dynamics in a Gaussian potential, showing the probability density along with the real and imaginary parts.",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0039",
+  "src": "ch03/06-time-dependence.md",
+  "line": 210,
+  "kind": "directive_title",
+  "en": "./images/barrier_potential.gif",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0040",
+  "src": "ch03/06-time-dependence.md",
+  "line": 215,
+  "kind": "para",
+  "en": "Wavefunction dynamics in a barrier potential, showing the probability density along with the real and imaginary parts.",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0041",
+  "src": "ch03/06-time-dependence.md",
+  "line": 218,
+  "kind": "directive_title",
+  "en": "Chapter demos",
+  "context_after_literal": ":::"
+ },
+ {
+  "id": "S0042",
+  "src": "ch03/06-time-dependence.md",
+  "line": 219,
+  "kind": "para",
+  "en": "Computational lab for this chapter: [Numerical Schrödinger solver](../demos/07-demo-numerical-schrodinger.md)",
+  "context_after_literal": ":::"
+ }
+]

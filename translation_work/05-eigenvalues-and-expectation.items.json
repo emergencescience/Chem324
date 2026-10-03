@@ -1,0 +1,2452 @@
+{
+ "trailing_newline": true,
+ "items": [
+  {
+   "t": "lit",
+   "s": "# ",
+   "line": 1
+  },
+  {
+   "t": "tr",
+   "id": "S0001",
+   "kind": "heading",
+   "s": "Eigenvalues and Expectation Values",
+   "line": 1,
+   "lines": [
+    1
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 1
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 2
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 3
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 3
+  },
+  {
+   "t": "tr",
+   "id": "S0002",
+   "kind": "directive_title",
+   "s": "**What you need to know**",
+   "line": 3,
+   "lines": [
+    3
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 3
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 4
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 5
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 6
+  },
+  {
+   "t": "tr",
+   "id": "S0003",
+   "kind": "para",
+   "s": "Mastering the abstract mathematical formalism brings **simplicity, unity, and clarity** to the relationships in quantum mechanics.",
+   "line": 6,
+   "lines": [
+    6
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 6
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 7
+  },
+  {
+   "t": "tr",
+   "id": "S0004",
+   "kind": "para",
+   "s": "Key concepts like **basis sets, orthogonality, and linear superpositions** form the logical foundation of quantum mechanics.",
+   "line": 7,
+   "lines": [
+    7
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 7
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 8
+  },
+  {
+   "t": "tr",
+   "id": "S0005",
+   "kind": "para",
+   "s": "**Dirac notation** frees you from the limitations of explicit coordinate representations, which can obscure the underlying physics.",
+   "line": 8,
+   "lines": [
+    8
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 8
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 9
+  },
+  {
+   "t": "tr",
+   "id": "S0006",
+   "kind": "para",
+   "s": "**Eigenvalues** correspond to the only observable quantities measured in experiments.",
+   "line": 9,
+   "lines": [
+    9
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 9
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 10
+  },
+  {
+   "t": "tr",
+   "id": "S0007",
+   "kind": "para",
+   "s": "Quantum states, represented as linear superpositions of the eigenfunctions of an operator $\\hat{A}$, yield different eigenvalues of $\\hat{A}$, with probabilities given by the **square of the coefficients** in the superposition.",
+   "line": 10,
+   "lines": [
+    10
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 10
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 11
+  },
+  {
+   "t": "tr",
+   "id": "S0008",
+   "kind": "para",
+   "s": "The expectation value $\\langle \\psi |\\hat{A}|\\psi \\rangle$, when expressed in terms of a linear superposition of eigenfunctions, simplifies to a **probability-weighted sum of eigenvalues**.",
+   "line": 11,
+   "lines": [
+    11
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 11
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 12
+  },
+  {
+   "t": "tr",
+   "id": "S0009",
+   "kind": "para",
+   "s": "Phenomena like **Schrödinger's cat** and the **double slit experiment** are explained through the concept of quantum superposition involving orthogonal states.",
+   "line": 12,
+   "lines": [
+    12
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 12
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 13
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 14
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 15
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 16
+  },
+  {
+   "t": "tr",
+   "id": "S0010",
+   "kind": "heading",
+   "s": "Reminder: Eigenfunction-eigenvalue problem",
+   "line": 16,
+   "lines": [
+    16
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 16
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 17
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 18
+  },
+  {
+   "t": "lit",
+   "s": "$${\\hat{A}\\psi_n = A_n\\psi_n}$$\n",
+   "line": 19
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 20
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 21
+  },
+  {
+   "t": "tr",
+   "id": "S0011",
+   "kind": "para",
+   "s": "This is an eigenvalue problem whose solution yields $n = 1,2,3,...$ eigenfunctions $\\psi_n$ and the eigenvalues $E_i$. Depending on the boundary conditions there can be a finite or infinite number of solutions. ",
+   "line": 21,
+   "lines": [
+    21
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 21
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 22
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 23
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 23
+  },
+  {
+   "t": "tr",
+   "id": "S0012",
+   "kind": "directive_title",
+   "s": "**Example: find eigenvalues and eigenfunctions of momentum operator**",
+   "line": 23,
+   "lines": [
+    23
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 23
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 24
+  },
+  {
+   "t": "tr",
+   "id": "S0013",
+   "kind": "para",
+   "s": "What are the eigenfunctions and eigenvalues of the operator $\\hat{p_x} = -i\\hbar d/dx$?",
+   "line": 25,
+   "lines": [
+    25,
+    25
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 25
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 26
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 27
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 28
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 28
+  },
+  {
+   "t": "tr",
+   "id": "S0014",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 28,
+   "lines": [
+    28
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 28
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 29
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 30
+  },
+  {
+   "t": "lit",
+   "s": "$$\\hat{p} f = p f $$\n",
+   "line": 31
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 32
+  },
+  {
+   "t": "lit",
+   "s": "$$-i\\hbar \\frac{df}{dx} = p$$\n",
+   "line": 33
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 34
+  },
+  {
+   "t": "tr",
+   "id": "S0015",
+   "kind": "para",
+   "s": "Let us use the only trick we know when solving ODEs, $f=e^{kx}$",
+   "line": 35,
+   "lines": [
+    35,
+    35
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 35
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 36
+  },
+  {
+   "t": "lit",
+   "s": "$$-i\\hbar k = p\\rightarrow k=\\frac{ip}{\\hbar}$$\n",
+   "line": 37
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 38
+  },
+  {
+   "t": "lit",
+   "s": "$$f = e^{ipx/\\hbar}$$\n",
+   "line": 39
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 40
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 41
+  },
+  {
+   "t": "tr",
+   "id": "S0016",
+   "kind": "para",
+   "s": "Periodic plane waves are the eigenfunctions of momentum!",
+   "line": 41,
+   "lines": [
+    41
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 41
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 42
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 43
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 44
+  },
+  {
+   "t": "tr",
+   "id": "S0017",
+   "kind": "para",
+   "s": "**For operators written in matrix form**",
+   "line": 45,
+   "lines": [
+    45,
+    45
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 45
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 46
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 47
+  },
+  {
+   "t": "tr",
+   "id": "S0018",
+   "kind": "para",
+   "s": "In applied numerical work, operators are converted into matrices and one solves the eigenvalue-eigenvector problem of finding eigenvectors $v$ and eigenvalues $\\lambda$. ",
+   "line": 47,
+   "lines": [
+    47
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 47
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 48
+  },
+  {
+   "t": "tr",
+   "id": "S0019",
+   "kind": "para",
+   "s": "For a matrix with $N$ dimensions there can be at most $N$ eigenvalues!",
+   "line": 48,
+   "lines": [
+    48
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 48
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 49
+  },
+  {
+   "t": "lit",
+   "s": "$$Av = \\lambda v$$\n",
+   "line": 50
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 51
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 52
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 52
+  },
+  {
+   "t": "tr",
+   "id": "S0020",
+   "kind": "directive_title",
+   "s": "**Example: finding eigenvalues of a matrix**",
+   "line": 52,
+   "lines": [
+    52
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 52
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 53
+  },
+  {
+   "t": "lit",
+   "s": "$$\\begin{pmatrix}\n1 & 2 \\\\\n2 & 4\n\\end{pmatrix}\\begin{pmatrix}\nv_1 \\\\\nv_2\n\\end{pmatrix} = \\lambda \\begin{pmatrix}\nv_1 \\\\\nv_2\n\\end{pmatrix}$$\n",
+   "line": 54
+  },
+  {
+   "t": "lit",
+   "s": "::: \n",
+   "line": 64
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 65
+  },
+  {
+   "t": "lit",
+   "s": "````{admonition} **Solving eigenfunction-eigenvalue problems numerically**\n:class: note, dropdown\n\n```python\nimport numpy as np\n\n# Define the matrix\nmatrix = np.array([ [1, 2], \n                    [2, 4]   ] )\n\n# Compute the eigenvalues and eigenvectors\neigenvalues, eigenvectors = np.linalg.eig(matrix)\n\n# Display the eigenvalues and eigenvectors\neigenvalues, eigenvectors\n```\n\n````\n",
+   "line": 66
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 84
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 85
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 86
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 87
+  },
+  {
+   "t": "tr",
+   "id": "S0021",
+   "kind": "heading",
+   "s": "Eigenfunctions of Hermitian operators form complete basis set",
+   "line": 87,
+   "lines": [
+    87
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 87
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 88
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 89
+  },
+  {
+   "t": "lit",
+   "s": "::::{grid}",
+   "line": 90
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 90
+  },
+  {
+   "t": "lit",
+   "s": ":gutter: 2\n",
+   "line": 91
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 92
+  },
+  {
+   "t": "lit",
+   "s": ":::{grid-item-card}",
+   "line": 93
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 93
+  },
+  {
+   "t": "tr",
+   "id": "S0022",
+   "kind": "directive_title",
+   "s": "Integral Notation",
+   "line": 93,
+   "lines": [
+    93
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 93
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 94
+  },
+  {
+   "t": "tr",
+   "id": "S0023",
+   "kind": "para",
+   "s": "$\\int \\phi^* \\hat{H}\\psi dx = \\int \\psi (\\hat{H}\\phi)^*dx$",
+   "line": 95,
+   "lines": [
+    95,
+    95
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 95
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 96
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 97
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 98
+  },
+  {
+   "t": "lit",
+   "s": ":::{grid-item-card}",
+   "line": 99
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 99
+  },
+  {
+   "t": "tr",
+   "id": "S0024",
+   "kind": "directive_title",
+   "s": "Dirac Notation",
+   "line": 99,
+   "lines": [
+    99
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 99
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 100
+  },
+  {
+   "t": "tr",
+   "id": "S0025",
+   "kind": "para",
+   "s": "$\\langle \\phi \\mid \\hat{H} \\mid \\psi \\rangle = \\langle \\psi \\mid \\hat{H}\\mid \\phi \\rangle^*$",
+   "line": 101,
+   "lines": [
+    101,
+    101
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 101
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 102
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 103
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 104
+  },
+  {
+   "t": "lit",
+   "s": "::::\n",
+   "line": 105
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 106
+  },
+  {
+   "t": "tr",
+   "id": "S0026",
+   "kind": "para",
+   "s": "The three crucial consequences of the Hermitian property of operators:",
+   "line": 107,
+   "lines": [
+    107,
+    107
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 107
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 108
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 109
+  },
+  {
+   "t": "tr",
+   "id": "S0027",
+   "kind": "para",
+   "s": "**Eigenvalues are real**: ",
+   "line": 109,
+   "lines": [
+    109
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 109
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 110
+  },
+  {
+   "t": "lit",
+   "s": "$$\\hat{H} \\mid \\psi_n \\rangle=E_n \\mid \\psi_n \\rangle$$\n",
+   "line": 111
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 112
+  },
+  {
+   "t": "lit",
+   "s": "$$E_n=E^*_n$$\n",
+   "line": 113
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 114
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 115
+  },
+  {
+   "t": "tr",
+   "id": "S0028",
+   "kind": "para",
+   "s": "**Eigenfunctions are orthogonal** ",
+   "line": 115,
+   "lines": [
+    115
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 115
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 116
+  },
+  {
+   "t": "lit",
+   "s": "$$\\langle \\psi_n \\mid  \\psi_m\\rangle=\\delta_{nm}$$\n",
+   "line": 117
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 118
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 119
+  },
+  {
+   "t": "tr",
+   "id": "S0029",
+   "kind": "para",
+   "s": "**Eigenfunctions form a complete basis set!**",
+   "line": 119,
+   "lines": [
+    119
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 119
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 120
+  },
+  {
+   "t": "lit",
+   "s": "$$\\mid f\\rangle = \\sum_i c_i \\mid \\psi_i \\rangle$$\n",
+   "line": 121
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 122
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 123
+  },
+  {
+   "t": "tr",
+   "id": "S0030",
+   "kind": "para",
+   "s": "The last two properties imply that eigenfunctions of Hermitian operators play the same role for functions as unit vectors do for vectors.  ",
+   "line": 123,
+   "lines": [
+    123
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 123
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 124
+  },
+  {
+   "t": "tr",
+   "id": "S0031",
+   "kind": "para",
+   "s": "Thus a wavefunction can be expressed in terms of the eigenfunctions of an operator that can act on the function.",
+   "line": 124,
+   "lines": [
+    124
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 124
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 125
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 126
+  },
+  {
+   "t": "tr",
+   "id": "S0032",
+   "kind": "heading",
+   "s": "Wave function as a linear superposition of eigenfunctions",
+   "line": 126,
+   "lines": [
+    126
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 126
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 127
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 128
+  },
+  {
+   "t": "tr",
+   "id": "S0033",
+   "kind": "para",
+   "s": "We can express a wavefunction $\\mid \\psi \\rangle$ describing the state of a quantum object as a superposition of **the eigenfunctions of any Hermitian operator**, be it energy, momentum, position, or another operator. ",
+   "line": 128,
+   "lines": [
+    128
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 128
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 129
+  },
+  {
+   "t": "lit",
+   "s": "$$\\hat{A}\\mid \\phi_n \\rangle = A_n \\mid \\phi_n \\rangle$$\n",
+   "line": 130
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 131
+  },
+  {
+   "t": "lit",
+   "s": "$$\\mid \\psi \\rangle = \\sum_n c_n \\mid \\phi_n \\rangle $$\n",
+   "line": 132
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 133
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 134
+  },
+  {
+   "t": "tr",
+   "id": "S0034",
+   "kind": "para",
+   "s": "Here is an example of expressing the wavefunction for a particle in a box in terms of energy eigenfunctions. ",
+   "line": 134,
+   "lines": [
+    134
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 134
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 135
+  },
+  {
+   "t": "lit",
+   "s": "::::{grid}",
+   "line": 136
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 136
+  },
+  {
+   "t": "lit",
+   "s": ":gutter: 2\n",
+   "line": 137
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 138
+  },
+  {
+   "t": "lit",
+   "s": ":::{grid-item-card}",
+   "line": 139
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 139
+  },
+  {
+   "t": "tr",
+   "id": "S0035",
+   "kind": "directive_title",
+   "s": "Integral Notation",
+   "line": 139,
+   "lines": [
+    139
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 139
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 140
+  },
+  {
+   "t": "lit",
+   "s": "$$\\psi=\\sum_n c_n \\mid n\\rangle$$\n",
+   "line": 141
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 142
+  },
+  {
+   "t": "lit",
+   "s": "$$c_n = \\braket{n \\mid \\psi}$$\n",
+   "line": 143
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 144
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 145
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 146
+  },
+  {
+   "t": "lit",
+   "s": ":::{grid-item-card}",
+   "line": 147
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 147
+  },
+  {
+   "t": "tr",
+   "id": "S0036",
+   "kind": "directive_title",
+   "s": "Dirac Notation",
+   "line": 147,
+   "lines": [
+    147
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 147
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 148
+  },
+  {
+   "t": "lit",
+   "s": "$$\\psi(x) = \\sum_n c_n \\Big(\\frac{2}{L}\\Big )^{1/2} sin \\Big (\\frac{n\\pi x}{L} \\Big )$$\n",
+   "line": 149
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 150
+  },
+  {
+   "t": "lit",
+   "s": "$$c_k = \\Big(\\frac{2}{L}\\Big )^{1/2} \\int sin \\Big (\\frac{k\\pi x}{L} \\Big )\\psi(x) dx$$\n",
+   "line": 151
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 152
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 153
+  },
+  {
+   "t": "lit",
+   "s": "::::\n",
+   "line": 154
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 155
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 156
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 157
+  },
+  {
+   "t": "tr",
+   "id": "S0037",
+   "kind": "heading",
+   "s": "Probabilistic meaning of linear superposition",
+   "line": 157,
+   "lines": [
+    157
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 157
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 158
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 159
+  },
+  {
+   "t": "tr",
+   "id": "S0038",
+   "kind": "para",
+   "s": "A wavefunction can be written as a linear superposition of the eigenfunctions of any QM operator $\\hat{A}$.",
+   "line": 159,
+   "lines": [
+    159
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 159
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 160
+  },
+  {
+   "t": "lit",
+   "s": "$$|\\psi\\rangle  = \\sum_n c_n |\\phi_n\\rangle $$\n",
+   "line": 161
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 162
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 163
+  },
+  {
+   "t": "tr",
+   "id": "S0039",
+   "kind": "para",
+   "s": "The squared absolute values of the coefficients $\\mid c_n \\mid^2$ are equal to the probabilities $p_n$ of finding the system in a state $n$ described by eigenvalue $A_n$ and eigenfunction $\\mid \\phi_n \\rangle$ of the operator $\\hat{A}$.",
+   "line": 163,
+   "lines": [
+    163
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 163
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 164
+  },
+  {
+   "t": "lit",
+   "s": "$$p_n=\\mid c_n \\mid^2$$\n",
+   "line": 165
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 166
+  },
+  {
+   "t": "lit",
+   "s": "$$\\sum_n \\mid c_n \\mid^2 =\\sum_n p_n=1$$\n",
+   "line": 167
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 168
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 169
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 170
+  },
+  {
+   "t": "tr",
+   "id": "S0040",
+   "kind": "heading",
+   "s": "Averages are probability weighted sums of eigenvalues.",
+   "line": 170,
+   "lines": [
+    170
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 170
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 171
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 172
+  },
+  {
+   "t": "tr",
+   "id": "S0041",
+   "kind": "para",
+   "s": "Quantum objects can exist in any superposition of states. For instance, an atom can be in a superposition of its ground and first excited states with 50% probabilities each. ",
+   "line": 172,
+   "lines": [
+    172
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 172
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 173
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 174
+  },
+  {
+   "t": "tr",
+   "id": "S0042",
+   "kind": "para",
+   "s": "From the normalization condition imposed on the wavefunction we see the true meaning of the coefficients in a linear superposition.",
+   "line": 174,
+   "lines": [
+    174
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 174
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 175
+  },
+  {
+   "t": "lit",
+   "s": "$$\\mid \\psi \\rangle=c_1 \\mid 1 \\rangle+c_2 \\mid 2\\rangle$$ \n",
+   "line": 176
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 177
+  },
+  {
+   "t": "lit",
+   "s": "$$\\langle \\psi \\mid \\psi \\rangle = \\Big[c^*_1\\langle 1\\mid +c^*_2 \\langle 2\\mid \\Big]\\Big[c_1\\mid 1\\rangle + c_2 \\mid 2\\rangle\\Big] =\\\\ = \\mid c_1 \\mid^2 \\langle 1 \\mid 1 \\rangle+(c^*_1 c_2\\langle 1 \\mid 2 \\rangle+c_1 c^*_2\\langle 2 \\mid 1 \\rangle)+\\mid c_2\\mid^2   = c_1^2+c^2_2=p_1+p_2=1$$\n",
+   "line": 178
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 179
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 180
+  },
+  {
+   "t": "tr",
+   "id": "S0043",
+   "kind": "para",
+   "s": "The meaning of the expectation value becomes more transparent as an average over all eigenvalues obtained in the experiment. ",
+   "line": 180,
+   "lines": [
+    180
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 180
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 181
+  },
+  {
+   "t": "lit",
+   "s": " $$\\langle E\\rangle= \\langle \\psi \\mid \\hat{H}\\mid \\psi \\rangle = \\Big[c^*_1\\langle 1\\mid +c^*_2 \\langle 2\\mid \\Big]\\Big[c_1\\hat{H}\\mid 1\\rangle + c_2 \\hat{H}\\mid 2\\rangle\\Big] =\\Big[c^*_1\\langle 1\\mid +c^*_2 \\langle 2\\mid \\Big]\\Big[c_1E_1\\mid 1\\rangle + c_2 E_2\\mid 2\\rangle\\Big] = \\\\ = c_1^2E_1+c^2_2 E_2=p_1E_1+p_2 E_2$$\n",
+   "line": 182
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 183
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 184
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 185
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 185
+  },
+  {
+   "t": "tr",
+   "id": "S0044",
+   "kind": "directive_title",
+   "s": "**Example**",
+   "line": 185,
+   "lines": [
+    185
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 185
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 186
+  },
+  {
+   "t": "tr",
+   "id": "S0045",
+   "kind": "para",
+   "s": "A particle in a box is described as a superposition of the 1st and 5th states. ",
+   "line": 187,
+   "lines": [
+    187,
+    187
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 187
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 188
+  },
+  {
+   "t": "tr",
+   "id": "S0046",
+   "kind": "para",
+   "s": "Write down the wavefunction in terms of the eigenfunctions of the Hamiltonian operator.",
+   "line": 188,
+   "lines": [
+    188
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 188
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 189
+  },
+  {
+   "t": "tr",
+   "id": "S0047",
+   "kind": "para",
+   "s": "Compute the average energy",
+   "line": 189,
+   "lines": [
+    189
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 189
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 190
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 191
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 192
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 192
+  },
+  {
+   "t": "tr",
+   "id": "S0048",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 192,
+   "lines": [
+    192
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 192
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 193
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 194
+  },
+  {
+   "t": "lit",
+   "s": "$$\\psi(x)=\\frac{1}{\\sqrt{2}}\\cdot \\Big(\\frac{2}{L} \\Big )^{1/2}sin\\frac{\\pi x}{L}+\\frac{1}{\\sqrt{2}}\\cdot \\Big(\\frac{2}{L} \\Big )^{1/2}sin\\frac{5\\pi x}{L}$$ \n",
+   "line": 195
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 196
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 197
+  },
+  {
+   "t": "tr",
+   "id": "S0049",
+   "kind": "para",
+   "s": "This means that when we measure the energy we will obtain only two values, $E_1$ and $E_5$, with equal probabilities $p_1=p_2=(1/\\sqrt{2})^2$. The average energy is given by",
+   "line": 197,
+   "lines": [
+    197
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 197
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 198
+  },
+  {
+   "t": "lit",
+   "s": "$$\\langle E \\rangle =p_1 E_1+p_2 E_2 = \\frac{1}{2}\\frac{1^2 h^2}{8mL^2}+\\frac{1}{2}\\frac{5^2 h^2}{8mL^2}$$\n",
+   "line": 199
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 200
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 201
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 202
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 203
+  },
+  {
+   "t": "lit",
+   "s": ":::{note}",
+   "line": 204
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 204
+  },
+  {
+   "t": "tr",
+   "id": "S0050",
+   "kind": "directive_title",
+   "s": "**Example**",
+   "line": 204,
+   "lines": [
+    204
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 204
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 205
+  },
+  {
+   "t": "tr",
+   "id": "S0051",
+   "kind": "para",
+   "s": "Consider a particle in a quantum state $\\psi$ that is a superposition of two eigenfunctions $\\phi_1$ and $\\phi_2$, with energy eigenvalues $E_1$ and $E_2$ of operator $\\hat{H}$  ($E_1 \\ne E_2$):",
+   "line": 206,
+   "lines": [
+    206,
+    206
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 206
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 207
+  },
+  {
+   "t": "lit",
+   "s": "$$\\psi = c_1\\phi_1 + c_2\\phi_2$$\n",
+   "line": 208
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 209
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 210
+  },
+  {
+   "t": "tr",
+   "id": "S0052",
+   "kind": "para",
+   "s": "If one attempts to measure the energy of such a state, what will be the outcome? ",
+   "line": 210,
+   "lines": [
+    210
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 210
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 211
+  },
+  {
+   "t": "tr",
+   "id": "S0053",
+   "kind": "para",
+   "s": "What will be the average energy and the standard deviation in energy?",
+   "line": 211,
+   "lines": [
+    211
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 211
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 212
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 213
+  },
+  {
+   "t": "lit",
+   "s": ":::{admonition}",
+   "line": 214
+  },
+  {
+   "t": "lit",
+   "s": " ",
+   "line": 214
+  },
+  {
+   "t": "tr",
+   "id": "S0054",
+   "kind": "directive_title",
+   "s": "**Solution**",
+   "line": 214,
+   "lines": [
+    214
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 214
+  },
+  {
+   "t": "lit",
+   "s": ":class: dropdown solution\n",
+   "line": 215
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 216
+  },
+  {
+   "t": "tr",
+   "id": "S0055",
+   "kind": "para",
+   "s": "Since $\\psi$ is normalized and $\\phi_1$ and $\\phi_2$ are orthogonal, we have $\\left|c_1\\right|^2 + \\left|c_2\\right|^2 = 1$. The probability of measuring $E_1$ is $\\left|c_1\\right|^2$ and $E_2$ is $\\left|c_2\\right|^2$. The average energy is given by:",
+   "line": 217,
+   "lines": [
+    217,
+    217
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 217
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 218
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 219
+  },
+  {
+   "t": "lit",
+   "s": "$$\\left<\\hat{H}\\right> = \\left<\\psi\\left|\\hat{H}\\right|\\psi\\right> = \\left|c_1\\right|^2\\left<\\phi_1\\left|\\hat{H}\\right|\\phi_1\\right> + c_1^*c_2\\left<\\phi_1\\left|\\hat{H}\\right|\\phi_2\\right> + c_2^*c_1\\left<\\phi_2\\left|\\hat{H}\\right|\\phi_1\\right>$$\n",
+   "line": 220
+  },
+  {
+   "t": "lit",
+   "s": "$$ + \\left|c_2\\right|^2\\left<\\phi_2\\left|\\hat{H}\\right|\\phi_2\\right> = \\left|c_1\\right|^2E_1 + c_1^*c_2E_2\\underbrace{\\left<\\phi_1\\left|\\phi_2\\right.\\right>}_{= 0} + c_2^*c_1E_1\\underbrace{\\left<\\phi_2\\left|\\phi_1\\right.\\right>}_{= 0} + \\left|c_2\\right|^2E_2$$\n",
+   "line": 221
+  },
+  {
+   "t": "lit",
+   "s": "$$= \\left|c_1\\right|^2E_1 + \\left|c_2\\right|^2E_2$$\n",
+   "line": 222
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 223
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 224
+  },
+  {
+   "t": "tr",
+   "id": "S0056",
+   "kind": "para",
+   "s": " The standard deviation is given by : $\\sigma_{\\hat{H}} = \\sqrt{\\left<\\hat{H}^2\\right> - \\left<\\hat{H}\\right>^2}$. We have already calculated $\\left<\\hat{H}\\right>$ above and need to calculate $\\left<\\hat{H}^2\\right>$ (use the eigenvalue equation and orthogonality):",
+   "line": 225,
+   "lines": [
+    225,
+    225
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 225
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 226
+  },
+  {
+   "t": "lit",
+   "s": "$$\\left<\\hat{H}^2\\right> = \\left<\\psi\\left|\\hat{H}^2\\right|\\psi\\right> = \\left<\\psi\\left|\\hat{H}\\right|E_1c_1\\phi_1 + E_2c_2\\phi_2\\right> = \\left<c_1\\phi_1 + c_2\\phi_2\\left|E_1^2c_1\\phi_1 + E_2^2c_2\\phi_2\\right.\\right>$$\n",
+   "line": 227
+  },
+  {
+   "t": "lit",
+   "s": "$$ = \\left|c_1\\right|^2E_1^2 + \\left|c_2\\right|^2E_2^2 \\Rightarrow \\sigma_{\\hat{H}} = \\sqrt{\\left|c_1\\right|^2E_1^2 + \\left|c_2\\right|^2E_2^2 - \\left(\\left|c_1\\right|^2E_1 + \\left|c_2\\right|^2E_2\\right)^2}$$\n",
+   "line": 228
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 229
+  },
+  {
+   "t": "lit",
+   "s": ":::\n",
+   "line": 230
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 231
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 232
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 233
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo-config}\n---\npyproject: |\n  requires-python = \">=3.10\"\n  dependencies = [\n      \"sympy\",\n  ]\n---\n```\n",
+   "line": 234
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 243
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\n:hide-code: true\n\nimport marimo as mo\nimport sympy as sp\n```\n",
+   "line": 244
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 250
+  },
+  {
+   "t": "tr",
+   "id": "S0057",
+   "kind": "para",
+   "s": "The computer can carry the whole calculation symbolically. Watch $\\langle \\hat{p}^2 \\rangle$ come out of three live cells (each is editable):",
+   "line": 251,
+   "lines": [
+    251,
+    251
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 251
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 252
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\nx, L, n, hbar = sp.symbols(\"x L n hbar\", positive=True)\npsi_n = sp.sqrt(2 / L) * sp.sin(n * sp.pi * x / L)\npsi_n\n```\n",
+   "line": 253
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 258
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\np2_psi = -hbar**2 * sp.diff(psi_n, x, 2)\np2_psi\n```\n",
+   "line": 259
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 263
+  },
+  {
+   "t": "lit",
+   "s": "```{marimo} python\np2_avg = sp.simplify(sp.integrate(psi_n * p2_psi, (x, 0, L)))\np2_avg\n```\n",
+   "line": 264
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 268
+  },
+  {
+   "t": "tr",
+   "id": "S0058",
+   "kind": "para",
+   "s": "The result $\\langle p^2 \\rangle = n^2 \\pi^2 \\hbar^2 / L^2$ is exactly $2m E_n$: all of the particle in a box energy is kinetic.",
+   "line": 269,
+   "lines": [
+    269,
+    269
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 269
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 270
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 271
+  },
+  {
+   "t": "tr",
+   "id": "S0059",
+   "kind": "heading",
+   "s": "Quantum states as linear superpositions of mutually exclusive states",
+   "line": 271,
+   "lines": [
+    271
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 271
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 272
+  },
+  {
+   "t": "lit",
+   "s": "$$\\mid \\psi \\rangle = \\sum_n c_n \\mid \\phi_n \\rangle $$\n",
+   "line": 273
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 274
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 275
+  },
+  {
+   "t": "tr",
+   "id": "S0060",
+   "kind": "para",
+   "s": "In an experiment one always obtains one of the eigenvalues (see Postulates), corresponding to $\\phi_n$.",
+   "line": 275,
+   "lines": [
+    275
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 275
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 276
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 277
+  },
+  {
+   "t": "tr",
+   "id": "S0061",
+   "kind": "para",
+   "s": "In other words, the system described by a **superposition wavefunction \"collapses\" to one of the eigenfunctions** when the experiment is carried out. ",
+   "line": 277,
+   "lines": [
+    277
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 277
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 278
+  },
+  {
+   "t": "lit",
+   "s": "  $$\\mid \\psi \\rangle \\rightarrow \\mid \\phi_n \\rangle$$\n",
+   "line": 279
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 280
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 281
+  },
+  {
+   "t": "tr",
+   "id": "S0062",
+   "kind": "para",
+   "s": "In experiments one only observes different eigenvalues, with probability given by the squared coefficients $\\mid c_n \\mid^2$.",
+   "line": 281,
+   "lines": [
+    281
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 281
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 282
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 283
+  },
+  {
+   "t": "tr",
+   "id": "S0063",
+   "kind": "para",
+   "s": "The idea of a quantum system randomly collapsing into distinct and mutually exclusive states troubled many of the physicists who were at the frontiers of the development of quantum mechanics. ",
+   "line": 283,
+   "lines": [
+    283
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 283
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 284
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 285
+  },
+  {
+   "t": "tr",
+   "id": "S0064",
+   "kind": "para",
+   "s": "**Orthogonality of eigenfunctions** means **mutually exclusive** states. For example, the system can only be in either state 1 or state 2, but not both.",
+   "line": 285,
+   "lines": [
+    285
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 285
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 286
+  },
+  {
+   "t": "lit",
+   "s": "  $$\\langle \\phi_1 \\mid \\phi_2 \\rangle=0$$\n",
+   "line": 287
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 288
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 289
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 290
+  },
+  {
+   "t": "tr",
+   "id": "S0065",
+   "kind": "heading",
+   "s": "Copenhagen Interpretation",
+   "line": 290,
+   "lines": [
+    290
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 290
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 291
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 292
+  },
+  {
+   "t": "tr",
+   "id": "S0066",
+   "kind": "para",
+   "s": "The [Copenhagen interpretation](https://en.wikipedia.org/wiki/Copenhagen_interpretation#cite_note-Siddiqui2017-1) is an expression of the meaning of [quantum mechanics](https://en.wikipedia.org/wiki/Quantum_mechanics) that was largely devised from 1925 to 1927 by [Niels Bohr](https://en.wikipedia.org/wiki/Niels_Bohr) and [Werner Heisenberg](https://en.wikipedia.org/wiki/Werner_Heisenberg). It is one of the oldest of numerous proposed [interpretations of quantum mechanics](https://en.wikipedia.org/wiki/Interpretations_of_quantum_mechanics), and remains one of the most commonly taught.",
+   "line": 292,
+   "lines": [
+    292
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 292
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 293
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 294
+  },
+  {
+   "t": "tr",
+   "id": "S0067",
+   "kind": "para",
+   "s": "According to the Copenhagen interpretation, physical systems generally do not have definite properties prior to being measured, and quantum mechanics can only predict the probability distribution of a given measurement's possible results. ",
+   "line": 294,
+   "lines": [
+    294
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 294
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 295
+  },
+  {
+   "t": "tr",
+   "id": "S0068",
+   "kind": "para",
+   "s": "The act of measurement affects the system, causing the set of probabilities to reduce to only one of the possible values immediately after the measurement. This feature is known as [wave function collapse](https://en.wikipedia.org/wiki/Wave_function_collapse).",
+   "line": 295,
+   "lines": [
+    295
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 295
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 296
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 297
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 298
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 299
+  },
+  {
+   "t": "tr",
+   "id": "S0069",
+   "kind": "heading",
+   "s": "Quantum superposition of an atom",
+   "line": 299,
+   "lines": [
+    299
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 299
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 300
+  },
+  {
+   "t": "lit",
+   "s": "<html>\n",
+   "line": 301
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 302
+  },
+  {
+   "t": "lit",
+   "s": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/7B1llCxVdkE\" frameborder=\"0\" allowfullscreen>\n</iframe>\n</html>\n",
+   "line": 303
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 306
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 307
+  },
+  {
+   "t": "lit",
+   "s": "### ",
+   "line": 308
+  },
+  {
+   "t": "tr",
+   "id": "S0070",
+   "kind": "heading",
+   "s": "Schrödinger's cat",
+   "line": 308,
+   "lines": [
+    308
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 308
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 309
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 310
+  },
+  {
+   "t": "tr",
+   "id": "S0071",
+   "kind": "para",
+   "s": "Schrödinger created a thought experiment to illustrate the bizarre nature of quantum superpositions, in which a quantum system such as an atom or photon can exist as a combination of multiple states corresponding to different possible outcomes. ",
+   "line": 310,
+   "lines": [
+    310
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 310
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 311
+  },
+  {
+   "t": "lit",
+   "s": "- ",
+   "line": 312
+  },
+  {
+   "t": "tr",
+   "id": "S0072",
+   "kind": "para",
+   "s": "The thought experiment puts a cat in a box with a single radioactive atom whose state dictates whether it decays, breaking a poison chamber in the box that kills the cat, or does not decay, leaving the cat alive. Schrödinger argued that the cat must then be thought of as simultaneously dead and alive until the experiment is done and the cat is found in one of the two states. ",
+   "line": 312,
+   "lines": [
+    312
+   ]
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 312
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 313
+  },
+  {
+   "t": "lit",
+   "s": "<html>\n",
+   "line": 314
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 315
+  },
+  {
+   "t": "lit",
+   "s": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/UjaAxUO6-Uw\" frameborder=\"0\" allowfullscreen>\n</iframe>\n</html>\n",
+   "line": 316
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 319
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 320
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 321
+  },
+  {
+   "t": "lit",
+   "s": "\n",
+   "line": 322
+  }
+ ]
+}
