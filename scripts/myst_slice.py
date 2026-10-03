@@ -784,7 +784,10 @@ def cmd_apply(a) -> int:
         # `:::{note}` would close that note early and corrupt the page.
         # `dropdown` gives collapsibility with no custom JS.
         return (
-            "\n" + "::::::" + "{admonition} " + label + "\n"
+            # Two newlines: at EOF a paragraph has no trailing-newline literal
+            # after it, so a single "\n" would leave the directive glued to the
+            # text line (a blank line also costs nothing where one already exists).
+            "\n\n" + "::::::" + "{admonition} " + label + "\n"
             ":class: dropdown\n\n"
             + text + "\n"
             "::::::\n"

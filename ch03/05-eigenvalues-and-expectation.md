@@ -11,6 +11,7 @@
 - The expectation value $\langle \psi |\hat{A}|\psi \rangle$, when expressed in terms of a linear superposition of eigenfunctions, simplifies to a **probability-weighted sum of eigenvalues**.
 - Phenomena like **Schrödinger's cat** and the **double slit experiment** are explained through the concept of quantum superposition involving orthogonal states.
 
+
 ::::::{admonition} 中文翻译
 :class: dropdown
 
@@ -35,6 +36,7 @@ $${\hat{A}\psi_n = A_n\psi_n}$$
 :::{note}
 **原文勘误 EN-01** ｜ 本行把算符 $\hat{A}$ 的本征值问题与 $E_i$ 混用。$\hat{A}$ 的特征值应记作 $A_n$；$E_n$ 是哈密顿算符 $\hat{H}$ 的特征值，此处应为 $A_i$。
 :::
+
 
 
 
@@ -64,6 +66,7 @@ $$f = e^{ipx/\hbar}$$
 
 - Periodic plane waves are the eigenfunctions of momentum!
 
+
 ::::::{admonition} 中文翻译
 :class: dropdown
 
@@ -76,6 +79,7 @@ $$f = e^{ipx/\hbar}$$
 
 - In applied numerical work, operators are converted into matrices and one solves the eigenvalue-eigenvector problem of finding eigenvectors $v$ and eigenvalues $\lambda$. 
 - For a matrix with $N$ dimensions there can be at most $N$ eigenvalues!
+
 
 ::::::{admonition} 中文翻译
 :class: dropdown
@@ -145,6 +149,7 @@ The three crucial consequences of the Hermitian property of operators:
 
 - **Eigenvalues are real**: 
 
+
 ::::::{admonition} 中文翻译
 :class: dropdown
 
@@ -157,6 +162,7 @@ $$E_n=E^*_n$$
 
 - **Eigenfunctions are orthogonal** 
 
+
 ::::::{admonition} 中文翻译
 :class: dropdown
 
@@ -166,6 +172,7 @@ $$E_n=E^*_n$$
 $$\langle \psi_n \mid  \psi_m\rangle=\delta_{nm}$$
 
 - **Eigenfunctions form a complete basis set!**
+
 
 ::::::{admonition} 中文翻译
 :class: dropdown
@@ -178,6 +185,7 @@ $$\mid f\rangle = \sum_i c_i \mid \psi_i \rangle$$
 - The last two properties imply that eigenfunctions of Hermitian operators play the same role for functions as unit vectors do for vectors.  
 - Thus a wavefunction can be expressed in terms of the eigenfunctions of an operator that can act on the function.
 
+
 ::::::{admonition} 中文翻译
 :class: dropdown
 
@@ -188,6 +196,7 @@ $$\mid f\rangle = \sum_i c_i \mid \psi_i \rangle$$
 ### Wave function as a linear superposition of eigenfunctions
 
 - We can express a wavefunction $\mid \psi \rangle$ describing the state of a quantum object as a superposition of **the eigenfunctions of any Hermitian operator**, be it energy, momentum, position, or another operator. 
+
 
 ::::::{admonition} 中文翻译
 :class: dropdown
@@ -200,6 +209,7 @@ $$\hat{A}\mid \phi_n \rangle = A_n \mid \phi_n \rangle$$
 $$\mid \psi \rangle = \sum_n c_n \mid \phi_n \rangle $$
 
 - Here is an example of expressing the wavefunction for a particle in a box in terms of energy eigenfunctions. 
+
 
 ::::::{admonition} 中文翻译
 :class: dropdown
@@ -250,6 +260,7 @@ $$c_k = \Big(\frac{2}{L}\Big )^{1/2} \int sin \Big (\frac{k\pi x}{L} \Big )\psi(
 
 - A wavefunction can be written as a linear superposition of the eigenfunctions of any QM operator $\hat{A}$.
 
+
 ::::::{admonition} 中文翻译
 :class: dropdown
 
@@ -259,6 +270,7 @@ $$c_k = \Big(\frac{2}{L}\Big )^{1/2} \int sin \Big (\frac{k\pi x}{L} \Big )\psi(
 $$|\psi\rangle  = \sum_n c_n |\phi_n\rangle $$
 
 - The squared absolute values of the coefficients $\mid c_n \mid^2$ are equal to the probabilities $p_n$ of finding the system in a state $n$ described by eigenvalue $A_n$ and eigenfunction $\mid \phi_n \rangle$ of the operator $\hat{A}$.
+
 
 ::::::{admonition} 中文翻译
 :class: dropdown
@@ -276,6 +288,7 @@ $$\sum_n \mid c_n \mid^2 =\sum_n p_n=1$$
 - Quantum objects can exist in any superposition of states. For instance, an atom can be in a superposition of its ground and first excited states with 50% probabilities each. 
 
 - From the normalization condition imposed on the wavefunction we see the true meaning of the coefficients in a linear superposition.
+
 
 ::::::{admonition} 中文翻译
 :class: dropdown
@@ -295,6 +308,7 @@ $$\mid \psi \rangle=c_1 \mid 1 \rangle+c_2 \mid 2\rangle$$
 $$\langle \psi \mid \psi \rangle = \Big[c^*_1\langle 1\mid +c^*_2 \langle 2\mid \Big]\Big[c_1\mid 1\rangle + c_2 \mid 2\rangle\Big] =\\ = \mid c_1 \mid^2 \langle 1 \mid 1 \rangle+(c^*_1 c_2\langle 1 \mid 2 \rangle+c_1 c^*_2\langle 2 \mid 1 \rangle)+\mid c_2\mid^2   = c_1^2+c^2_2=p_1+p_2=1$$
 
 - The meaning of the expectation value becomes more transparent as an average over all eigenvalues obtained in the experiment. 
+
 
 ::::::{admonition} 中文翻译
 :class: dropdown
@@ -317,6 +331,7 @@ A particle in a box is described as a superposition of the 1st and 5th states.
 - Write down the wavefunction in terms of the eigenfunctions of the Hamiltonian operator.
 - Compute the average energy
 
+
 ::::::{admonition} 中文翻译
 :class: dropdown
 
@@ -338,6 +353,7 @@ $$\psi(x)=\frac{1}{\sqrt{2}}\cdot \Big(\frac{2}{L} \Big )^{1/2}sin\frac{\pi x}{L
 
 
 
+
 ::::::{admonition} 中文翻译
 :class: dropdown
 
@@ -353,6 +369,7 @@ $$\langle E \rangle =p_1 E_1+p_2 E_2 = \frac{1}{2}\frac{1^2 h^2}{8mL^2}+\frac{1}
 
 Consider a particle in a quantum state $\psi$ that is a superposition of two eigenfunctions $\phi_1$ and $\phi_2$, with energy eigenvalues $E_1$ and $E_2$ of operator $\hat{H}$  ($E_1 \ne E_2$):
 
+
 ::::::{admonition} 中文翻译
 :class: dropdown
 
@@ -363,6 +380,7 @@ $$\psi = c_1\phi_1 + c_2\phi_2$$
 
 - If one attempts to measure the energy of such a state, what will be the outcome? 
 - What will be the average energy and the standard deviation in energy?
+
 
 ::::::{admonition} 中文翻译
 :class: dropdown
@@ -377,6 +395,7 @@ $$\psi = c_1\phi_1 + c_2\phi_2$$
 
 Since $\psi$ is normalized and $\phi_1$ and $\phi_2$ are orthogonal, we have $\left|c_1\right|^2 + \left|c_2\right|^2 = 1$. The probability of measuring $E_1$ is $\left|c_1\right|^2$ and $E_2$ is $\left|c_2\right|^2$. The average energy is given by:
 
+
 ::::::{admonition} 中文翻译
 :class: dropdown
 
@@ -390,6 +409,7 @@ $$= \left|c_1\right|^2E_1 + \left|c_2\right|^2E_2$$
 
 
  The standard deviation is given by : $\sigma_{\hat{H}} = \sqrt{\left<\hat{H}^2\right> - \left<\hat{H}\right>^2}$. We have already calculated $\left<\hat{H}\right>$ above and need to calculate $\left<\hat{H}^2\right>$ (use the eigenvalue equation and orthogonality):
+
 
 ::::::{admonition} 中文翻译
 :class: dropdown
@@ -423,6 +443,7 @@ import sympy as sp
 
 The computer can carry the whole calculation symbolically. Watch $\langle \hat{p}^2 \rangle$ come out of three live cells (each is editable):
 
+
 ::::::{admonition} 中文翻译
 :class: dropdown
 
@@ -447,6 +468,7 @@ p2_avg
 
 The result $\langle p^2 \rangle = n^2 \pi^2 \hbar^2 / L^2$ is exactly $2m E_n$: all of the particle in a box energy is kinetic.
 
+
 ::::::{admonition} 中文翻译
 :class: dropdown
 
@@ -460,6 +482,7 @@ $$\mid \psi \rangle = \sum_n c_n \mid \phi_n \rangle $$
 - In an experiment one always obtains one of the eigenvalues (see Postulates), corresponding to $\phi_n$.
 
 - In other words, the system described by a **superposition wavefunction "collapses" to one of the eigenfunctions** when the experiment is carried out. 
+
 
 ::::::{admonition} 中文翻译
 :class: dropdown
@@ -475,6 +498,7 @@ $$\mid \psi \rangle = \sum_n c_n \mid \phi_n \rangle $$
 - The idea of a quantum system randomly collapsing into distinct and mutually exclusive states troubled many of the physicists who were at the frontiers of the development of quantum mechanics. 
 
 - **Orthogonality of eigenfunctions** means **mutually exclusive** states. For example, the system can only be in either state 1 or state 2, but not both.
+
 
 ::::::{admonition} 中文翻译
 :class: dropdown
@@ -500,6 +524,7 @@ $$\mid \psi \rangle = \sum_n c_n \mid \phi_n \rangle $$
 - According to the Copenhagen interpretation, physical systems generally do not have definite properties prior to being measured, and quantum mechanics can only predict the probability distribution of a given measurement's possible results. 
 - The act of measurement affects the system, causing the set of probabilities to reduce to only one of the possible values immediately after the measurement. This feature is known as [wave function collapse](https://en.wikipedia.org/wiki/Wave_function_collapse).
 
+
 ::::::{admonition} 中文翻译
 :class: dropdown
 
@@ -524,6 +549,7 @@ $$\mid \psi \rangle = \sum_n c_n \mid \phi_n \rangle $$
 - Schrödinger created a thought experiment to illustrate the bizarre nature of quantum superpositions, in which a quantum system such as an atom or photon can exist as a combination of multiple states corresponding to different possible outcomes. 
 
 - The thought experiment puts a cat in a box with a single radioactive atom whose state dictates whether it decays, breaking a poison chamber in the box that kills the cat, or does not decay, leaving the cat alive. Schrödinger argued that the cat must then be thought of as simultaneously dead and alive until the experiment is done and the cat is found in one of the two states. 
+
 
 ::::::{admonition} 中文翻译
 :class: dropdown
