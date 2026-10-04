@@ -181,13 +181,6 @@ The Schrödinger equation for a particle in a box (PIB) is defined by a Hamilton
 
 - **The potential energy for PIB is defined:**
 
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- **一维无限深势阱的势能定义为：**
-``````
-
 $$
 V(x) =
 \begin{cases} 
@@ -197,13 +190,6 @@ V(x) =
 $$
 
 - **The boundary conditions are:**
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- **边界条件为：**
-``````
 
 $$
 \psi(0) = \psi(L) = 0
@@ -236,13 +222,6 @@ $$
 $$
 
 - Substituting the Hamiltonian, we get:
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 代入哈密顿算符，我们得到：
-``````
 
 $$
 -\frac{\hbar^2}{2m} \frac{d^2}{dx^2} \psi(x) = E \psi(x)
@@ -282,13 +261,6 @@ $$
 
 - The general solution to this differential equation is:
 
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 这个微分方程的通解为：
-``````
-
 $$
 \psi(x) = c_1 e^{ikx} + c_2 e^{-ikx} = A \cos(kx) + B \sin(kx)
 $$
@@ -308,38 +280,17 @@ $$
 
 - Applying the boundary condition $\psi(L) = 0$, we get:
 
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 应用边界条件 $\psi(L) = 0$，我们得到：
-``````
-
 $$
 B \sin(kL) = 0
 $$
 
 - This condition is satisfied when:
 
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 该条件在以下情况下满足：
-``````
-
 $$
 kL = n\pi \quad \text{or} \quad k = \frac{n\pi}{L}
 $$
 
 - Thus, the wavefunction becomes:
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 因此，波函数变为：
-``````
 
 $$
 \psi(x) = B \sin\left(\frac{n\pi}{L}x\right)
@@ -839,6 +790,13 @@ $$
 :width: 300px
 
 Particle in a 3D box subject to infinitely high potential walls.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+受到无限高势壁束缚的三维势阱中的粒子。
+``````
 :::
 
 $$\hat{H}\psi(x,y,z) = E\psi(x,y,z)$$
@@ -884,13 +842,6 @@ $${-\frac{\hbar^2}{2m}\Delta\psi = E\psi} \\
 $${\psi(x,y,z) = X(x)Y(y)Z(z)}$$
 
 - By substituting and dividing by $X(x)Y(y)Z(z)$, we obtain:
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 通过代入并除以 $X(x)Y(y)Z(z)$，我们得到：
-``````
 
 $${-\frac{\hbar^2}{2m}\left[\frac{1}{X(x)}\frac{d^2X(x)}{dx^2} + \frac{1}{Y(y)}\frac{d^2Y(y)}{dy^2} + \frac{1}{Z(z)}\frac{d^2Z(z)}{dz^2}\right] = E}$$
 
@@ -984,28 +935,6 @@ Energies in units of $E_0 = \dfrac{h^2}{8mL^2}$, so $E = (n_x^2 + n_y^2 + n_z^2)
 | 24 | (4,2,2), (2,4,2), (2,2,4) | 3 |
 | 26 | all six orderings of (4,3,1) | 6 |
 | 27 | (3,3,3) and the three orderings of (5,1,1) | 4 |
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-| $n_x^2 + n_y^2 + n_z^2$ | 态 $(n_x, n_y, n_z)$ | 简并度 $g$ |
-| :-- | :-- | :-- |
-| 3 | (1,1,1) | 1 |
-| 6 | (2,1,1), (1,2,1), (1,1,2) | 3 |
-| 9 | (2,2,1), (2,1,2), (1,2,2) | 3 |
-| 11 | (3,1,1), (1,3,1), (1,1,3) | 3 |
-| 12 | (2,2,2) | 1 |
-| 14 | (3,2,1) 的全部六种排列 | 6 |
-| 17 | (3,2,2), (2,3,2), (2,2,3) | 3 |
-| 18 | (4,1,1), (1,4,1), (1,1,4) | 3 |
-| 19 | (3,3,1), (3,1,3), (1,3,3) | 3 |
-| 21 | (4,2,1) 的全部六种排列 | 6 |
-| 22 | (3,3,2), (3,2,3), (2,3,3) | 3 |
-| 24 | (4,2,2), (2,4,2), (2,2,4) | 3 |
-| 26 | (4,3,1) 的全部六种排列 | 6 |
-| 27 | (3,3,3) 以及 (5,1,1) 的三种排列 | 4 |
-``````
 
 The last row is an **accidental** degeneracy: $3^2 + 3^2 + 3^2 = 5^2 + 1^2 + 1^2$, and no rotation of the cube turns $(3,3,3)$ into $(5,1,1)$.
 
@@ -1193,6 +1122,13 @@ where:
 
 The expectation value of the position $x$ for a particle is given by:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+粒子位置 $x$ 的期望值为：
+``````
+
 $$
 \langle x \rangle = \int_0^L x |\psi_n(x)|^2 \, dx
 $$
@@ -1214,15 +1150,36 @@ $$
 
 Substitute $|\psi_n(x)|^2$ into the expression for $\langle x \rangle$:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+将 $|\psi_n(x)|^2$ 代入 $\langle x \rangle$ 的表达式：
+``````
+
 $$
 \langle x \rangle = \int_0^L x \frac{2}{L} \sin^2\left(\frac{n\pi x}{L}\right) \, dx
 $$
 
 This is the integral you need to solve to find the average position.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+这就是你需要求解以得到平均位置的积分。
+``````
+
 **4. Solve the Integral**
 
 The integral can be simplified using known trigonometric identities. First, use the identity:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+该积分可以利用已知的三角恒等式化简。首先使用恒等式：
+``````
 
 $$
 \sin^2 \theta = \frac{1}{2} \left(1 - \cos(2\theta)\right)
@@ -1249,13 +1206,6 @@ $$
 **5. Evaluate the Integrals**
 
 - The first integral is straightforward:
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 第一个积分很直接：
-``````
 
 $$
 \int_0^L x \, dx = \frac{L^2}{2}
@@ -1286,6 +1236,13 @@ $$
 
 For any quantum state $n$, the average position $\langle x \rangle$ of a particle in a 1D box is always:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+对于任意量子态 $n$，一维势阱中粒子的平均位置 $\langle x \rangle$ 总是：
+``````
+
 $$
 \langle x \rangle = \frac{L}{2}
 $$
@@ -1302,6 +1259,13 @@ This result makes sense intuitively because, due to the symmetry of the problem,
 **Summary**
 
 To find the average position of a particle in a 1D box for a general wavefunction:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+对于一般波函数，求一维势阱中粒子的平均位置：
+``````
 - Use the wavefunction $\psi_n(x)$,
 - Set up the expectation value integral $\langle x \rangle = \int_0^L x\,|\psi_n(x)|^2 \, dx$,
 - Solve the integral, which results in $\langle x \rangle = \frac{L}{2}$ for all $n$.
@@ -1316,6 +1280,13 @@ To find the average position of a particle in a 1D box for a general wavefunctio
 ``````
 
 Thus, the particle's average position is always at the midpoint of the box, independent of the quantum number $n$.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+因此，粒子的平均位置总是在势阱的中点，与量子数 $n$ 无关。
+``````
 :::
 
 
@@ -1358,6 +1329,13 @@ A linear conjugated system (a polyene) modeled as a 1D particle in a box: the de
 :width: 70%
 
 Aromatic and extended π-systems modeled as a 2D particle in a box.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+芳香族和扩展的 π 体系被建模为二维势阱中的粒子。
+``````
 :::
 
 #### Worked example: butadiene
@@ -1395,6 +1373,13 @@ $$
 
 **Step 3: transition energy and wavelength.** With $E_n = \dfrac{n^2 h^2}{8mL^2}$, the absorbed photon satisfies
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+**第 3 步：跃迁能量和波长。** 由 $E_n = \dfrac{n^2 h^2}{8mL^2}$，被吸收的光子满足
+``````
+
 $$
 \Delta E = E_3 - E_2 = \frac{(3^2 - 2^2)h^2}{8mL^2} = \frac{hc}{\lambda}.
 $$
@@ -1429,6 +1414,13 @@ With the box ending at the end carbons, the estimate (about 119 nm) lands deep i
 
 Compute the probability of observing the particle in a box in the domain $\frac{a}{3} \leq x \leq \frac{2a}{3}$.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+计算在区域 $\frac{a}{3} \leq x \leq \frac{2a}{3}$ 内观测到势阱中粒子的概率。
+``````
+
 :::{admonition} **Solution**
 :class: dropdown solution
 
@@ -1447,6 +1439,13 @@ $$\begin{equation}
 
 We simply use the above equation together with the normalized particle-in-a-box wave function:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+我们只需把上面的方程与归一化的一维无限深势阱波函数一起使用：
+``````
+
 $$\begin{align}
 \text{Prob}(\frac{a}{3} \leq x \leq \frac{2a}{3}) = \frac{2}{a}\int_{\frac{a}{3}}^{\frac{2a}{3}} \sin^2\frac{n\pi x}{a}dx
 \end{align}$$
@@ -1458,6 +1457,13 @@ $$\begin{equation}
 \end{equation}$$
 
 Perform a $u$-substitution on the integral above to put it into the table form:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+对上面的积分进行 $u$ 代换，使其化为积分表中的形式：
+``````
 
 $$\begin{align}
 \text{Prob}(\frac{a}{3} \leq x \leq \frac{2a}{3}) &= \frac{2}{a}\left[ \frac{x}{2} - \frac{\sin\frac{2n\pi x}{a}}{\frac{4n\pi}{a}}\right]_{\frac{a}{3}}^{\frac{2a}{3}} \\
@@ -1475,6 +1481,13 @@ Compute the average of $x^2$ for a particle in a box.
 :class: dropdown solution
 
 To compute the average value of $x^2$, we start by writing the integral expression:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+为了计算 $x^2$ 的平均值，我们先写出积分表达式：
+``````
 
 $$\begin{equation}
 \langle x^2 \rangle = \int \psi^*(x) x^2 \psi(x)dx
@@ -1563,6 +1576,13 @@ $$\begin{equation}
 
 We now recognize that the particle-in-a-box wavefunctions we are discussing were derived from the Schrödinger equation:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+现在我们认识到，我们讨论的一维无限深势阱波函数是从薛定谔方程导出的：
+``````
+
 $$\begin{equation}
 \hat{H}\psi_n(x)  = E_n\psi_n(x)
 \end{equation}$$
@@ -1577,6 +1597,13 @@ $$\begin{align}
 \end{align}$$
 
 The last equality holds because the wave functions are normalized.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+最后一个等号成立是因为波函数是归一化的。
+``````
 :::
 
 #### Problem 4: Compute expectation of momentum
@@ -1587,6 +1614,13 @@ Compute the average momentum for a particle in a box.
 :class: dropdown solution
 
 To compute the average momentum of a particle in a 1D box, we start in the usual way:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+为了计算一维势阱中粒子的平均动量，我们照常开始：
+``````
 
 $$\begin{equation}
 \langle p \rangle = \int_0^a \psi_n^*(x)\hat{p}\psi_n(x)dx
@@ -1700,6 +1734,13 @@ $$E_{2,2,1} = \frac{\hbar^2 \pi^2}{2mL^2} \left( 2^2 + 2^2 + 1^2 \right) = \frac
 
 Since $E_{1,1,2} \neq E_{2,2,1}$, these energy levels are **not degenerate**.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+由于 $E_{1,1,2} \neq E_{2,2,1}$，这些能级**不简并**。
+``````
+
 :::
 
 #### Problem 7: Degeneracy of Energy Levels
@@ -1735,13 +1776,6 @@ $n_x^2 + n_y^2 + n_z^2 = 14$
 We can check different combinations of $n_x$, $n_y$, and $n_z$:
 
 - For $n_x = 3$, $n_y = 2$, and $n_z = 1$:
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 对于 $n_x = 3$、$n_y = 2$ 和 $n_z = 1$：
-``````
 
 $$3^2 + 2^2 + 1^2 = 9 + 4 + 1 = 14$$
 
@@ -1805,6 +1839,14 @@ The energy level corresponding to $n_x^2 + n_y^2 + n_z^2 = 14$ has **6 degenerat
 **Part 1:**
 The ground state corresponds to the quantum numbers $n_x = n_y = n_z = 1$. The energy for this state is:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+**第 1 部分：**
+基态对应量子数 $n_x = n_y = n_z = 1$。这个态的能量为：
+``````
+
 $$E_{1,1,1} = \frac{\hbar^2 \pi^2}{2mL^2} \left( 1^2 + 1^2 + 1^2 \right) = \frac{\hbar^2 \pi^2}{2mL^2} \times 3$$
 
 There is only **one** combination of quantum numbers that gives this energy, so the degeneracy of the ground state is **1**.
@@ -1832,6 +1874,13 @@ The ground state is non-degenerate because there is only one way to assign the q
 #### Problem 9: Higher Energy Degeneracy
 
 Consider a particle in a cubic box. The energy levels are quantized as:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+考虑立方体势阱中的一个粒子。能级量子化为：
+``````
 
 $$E_{n_x, n_y, n_z} = \frac{\hbar^2 \pi^2}{2mL^2} \left( n_x^2 + n_y^2 + n_z^2 \right)$$
 
@@ -1937,6 +1986,13 @@ L = 4 \times 1.35\,\text{Å} + 3 \times 1.45\,\text{Å} = 10.55\,\text{Å} = 10.
 $$
 
 Then $\Delta E = \dfrac{3h^2}{8mL^2}$ and $\lambda = \dfrac{hc}{\Delta E}$.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+于是 $\Delta E = \dfrac{3h^2}{8mL^2}$ 且 $\lambda = \dfrac{hc}{\Delta E}$。
+``````
 :::
 
 #### Problem 12: A higher transition
@@ -2040,11 +2096,25 @@ $$
 
 With $L_x = 2 \times 10^{-9}\,\text{m}$ and $L_y = 1 \times 10^{-9}\,\text{m}$,
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+由 $L_x = 2 \times 10^{-9}\,\text{m}$ 和 $L_y = 1 \times 10^{-9}\,\text{m}$，
+``````
+
 $$
 \frac{1^2}{L_x^2} + \frac{2^2}{L_y^2} = 2.5 \times 10^{17} + 4.0 \times 10^{18} = 4.25 \times 10^{18}\,\text{m}^{-2},
 $$
 
 and $\dfrac{h^2}{8m} \approx 6.02 \times 10^{-38}\,\text{J m}^2$, giving
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+且 $\dfrac{h^2}{8m} \approx 6.02 \times 10^{-38}\,\text{J m}^2$，给出
+``````
 
 $$
 E_{1,2} \approx 2.56 \times 10^{-19}\,\text{J} \approx 1.60\,\text{eV}.

@@ -49,6 +49,13 @@ $${\hat{A}\psi_n = A_n\psi_n}$$
 :::{note} **Example: find eigenvalues and eigenfunctions of momentum operator**
 
 What are the eigenfunctions and eigenvalues of the operator $\hat{p_x} = -i\hbar d/dx$?
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+算符 $\hat{p_x} = -i\hbar d/dx$ 的本征函数和特征值分别是什么？
+``````
 :::
 
 :::{admonition} **Solution**
@@ -65,13 +72,6 @@ $$-i\hbar k = p\rightarrow k=\frac{ip}{\hbar}$$
 $$f = e^{ipx/\hbar}$$
 
 - Periodic plane waves are the eigenfunctions of momentum!
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 周期平面波正是动量的本征函数！
-``````
 
 :::
 
@@ -141,20 +141,27 @@ $\int \phi^* \hat{H}\psi dx = \int \psi (\hat{H}\phi)^*dx$
 
 $\langle \phi \mid \hat{H} \mid \psi \rangle = \langle \psi \mid \hat{H}\mid \phi \rangle^*$
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+$\langle \phi \mid \hat{H} \mid \psi \rangle = \langle \psi \mid \hat{H}\mid \phi \rangle^*$
+``````
+
 :::
 
 ::::
 
 The three crucial consequences of the Hermitian property of operators:
 
-- **Eigenvalues are real**: 
-
 
 ``````{admonition} 中文翻译
 :class: dropdown
 
-- **特征值是实的**：
+厄米性带来的三个关键推论：
 ``````
+
+- **Eigenvalues are real**: 
 
 $$\hat{H} \mid \psi_n \rangle=E_n \mid \psi_n \rangle$$
 
@@ -162,23 +169,9 @@ $$E_n=E^*_n$$
 
 - **Eigenfunctions are orthogonal** 
 
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- **本征函数彼此正交**
-``````
-
 $$\langle \psi_n \mid  \psi_m\rangle=\delta_{nm}$$
 
 - **Eigenfunctions form a complete basis set!**
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- **本征函数构成完备基组！**
-``````
 
 $$\mid f\rangle = \sum_i c_i \mid \psi_i \rangle$$
 
@@ -328,6 +321,13 @@ $$\langle \psi \mid \psi \rangle = \Big[c^*_1\langle 1\mid +c^*_2 \langle 2\mid 
 :::{note} **Example**
 
 A particle in a box is described as a superposition of the 1st and 5th states. 
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+一个盒中粒子被描述为第 1 态与第 5 态的叠加。
+``````
 - Write down the wavefunction in terms of the eigenfunctions of the Hamiltonian operator.
 - Compute the average energy
 

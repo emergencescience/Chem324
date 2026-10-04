@@ -1156,29 +1156,8 @@
   },
   {
    "t": "lit",
-   "s": "$$\n",
+   "s": "$$\n\\beta = k\\tan\\left(k\\frac{L}{2}\\right)\\Rightarrow \\sqrt{V_o-E} = \\sqrt{E}\\tan\\left(\\frac{L\\sqrt{2mE}}{2\\hbar}\\right)\n$$(fsw_even_states_equ)\n",
    "line": 216
-  },
-  {
-   "t": "tr",
-   "id": "S0040",
-   "kind": "para",
-   "s": "\\beta = k\\tan\\left(k\\frac{L}{2}\\right)\\Rightarrow \\sqrt{V_o-E} = \\sqrt{E}\\tan\\left(\\frac{L\\sqrt{2mE}}{2\\hbar}\\right)",
-   "line": 217,
-   "lines": [
-    217,
-    217
-   ]
-  },
-  {
-   "t": "lit",
-   "s": "\n",
-   "line": 217
-  },
-  {
-   "t": "lit",
-   "s": "$$(fsw_even_states_equ)\n",
-   "line": 218
   },
   {
    "t": "lit",
@@ -1187,7 +1166,7 @@
   },
   {
    "t": "tr",
-   "id": "S0041",
+   "id": "S0040",
    "kind": "para",
    "s": "**Odd solutions:**",
    "line": 220,
@@ -1223,7 +1202,7 @@
   },
   {
    "t": "tr",
-   "id": "S0042",
+   "id": "S0041",
    "kind": "para",
    "s": "These are called **odd solutions** because the function $\\sin(kx)$ is odd, i.e. it is anti-symmetric about $x=0$. However, they correspond to the even values of $n$. This is a bit confusing, I know, but the labeling of $n$ is arbitrary; the sine and cosine solutions themselves are determined by the physics.",
    "line": 228,
@@ -1248,7 +1227,7 @@
   },
   {
    "t": "tr",
-   "id": "S0043",
+   "id": "S0042",
    "kind": "para",
    "s": "After imposing the boundary conditions we reach the following relation:",
    "line": 230,
@@ -1268,29 +1247,8 @@
   },
   {
    "t": "lit",
-   "s": "$$\n",
+   "s": "$$\n\\beta = -\\frac{k}{\\tan\\left(k\\frac{L}{2}\\right)} \\Rightarrow  \\sqrt{V_o-E} = -\\frac{\\sqrt{E}}{\\tan\\left(\\frac{L\\sqrt{2mE}}{2\\hbar}\\right)}\n$$(fsw_odd_states_equ)\n",
    "line": 232
-  },
-  {
-   "t": "tr",
-   "id": "S0044",
-   "kind": "para",
-   "s": "\\beta = -\\frac{k}{\\tan\\left(k\\frac{L}{2}\\right)} \\Rightarrow  \\sqrt{V_o-E} = -\\frac{\\sqrt{E}}{\\tan\\left(\\frac{L\\sqrt{2mE}}{2\\hbar}\\right)}",
-   "line": 233,
-   "lines": [
-    233,
-    233
-   ]
-  },
-  {
-   "t": "lit",
-   "s": "\n",
-   "line": 233
-  },
-  {
-   "t": "lit",
-   "s": "$$(fsw_odd_states_equ)\n",
-   "line": 234
   },
   {
    "t": "lit",
@@ -1304,7 +1262,7 @@
   },
   {
    "t": "tr",
-   "id": "S0045",
+   "id": "S0043",
    "kind": "para",
    "s": "Unfortunately, we cannot find the allowed energies analytically. Instead, we have to choose either a graphical or a numerical method.",
    "line": 236,
@@ -1324,7 +1282,7 @@
   },
   {
    "t": "tr",
-   "id": "S0046",
+   "id": "S0044",
    "kind": "para",
    "s": "What does that mean? We can graph the left- and right-hand sides of each equation separately as a function of energy $E$ and look for the intersection points, which correspond to the allowed energy values (the energy eigenvalues).",
    "line": 237,
@@ -1344,7 +1302,7 @@
   },
   {
    "t": "tr",
-   "id": "S0047",
+   "id": "S0045",
    "kind": "para",
    "s": "Below you can adjust the well depth $V_0$ and the width $L$ and watch both the graphical solution and the resulting energy levels respond live.",
    "line": 238,
@@ -1369,7 +1327,7 @@
   },
   {
    "t": "tr",
-   "id": "S0048",
+   "id": "S0046",
    "kind": "heading",
    "s": "Finding the energy eigenvalues graphically ",
    "line": 240,
@@ -1449,7 +1407,7 @@
   },
   {
    "t": "tr",
-   "id": "S0049",
+   "id": "S0047",
    "kind": "para",
    "s": "Here are some questions to think about:",
    "line": 381,
@@ -1475,7 +1433,7 @@
   },
   {
    "t": "tr",
-   "id": "S0050",
+   "id": "S0048",
    "kind": "para",
    "s": "**Q1:** How does changing the width affect the number and energy of the states?",
    "line": 383,
@@ -1495,7 +1453,7 @@
   },
   {
    "t": "tr",
-   "id": "S0051",
+   "id": "S0049",
    "kind": "para",
    "s": "**Q2:** How does changing the potential affect the number and energy of the states?",
    "line": 384,
@@ -1515,7 +1473,7 @@
   },
   {
    "t": "tr",
-   "id": "S0052",
+   "id": "S0050",
    "kind": "para",
    "s": "**Q3:** Is the ground state described by an even or an odd wavefunction?",
    "line": 385,
@@ -1535,7 +1493,7 @@
   },
   {
    "t": "tr",
-   "id": "S0053",
+   "id": "S0051",
    "kind": "para",
    "s": "**Q4:** What is the minimum number of states?",
    "line": 386,
@@ -1555,7 +1513,7 @@
   },
   {
    "t": "tr",
-   "id": "S0054",
+   "id": "S0052",
    "kind": "para",
    "s": "**Q5:** Do the energy levels follow the same pattern as the infinite square well, i.e. $E_n=E_1n^2$?",
    "line": 387,
@@ -1580,7 +1538,7 @@
   },
   {
    "t": "tr",
-   "id": "S0055",
+   "id": "S0053",
    "kind": "heading",
    "s": "Plots of the wavefunctions and probability densities",
    "line": 389,
@@ -1605,7 +1563,7 @@
   },
   {
    "t": "tr",
-   "id": "S0056",
+   "id": "S0054",
    "kind": "para",
    "s": "Now that we know the energy eigenvalues, we can use them to find expressions for the wavefunctions and probability densities. This may help you understand some of the choices we made up to this point. Take a look at the figure and consider again the choice of wavefunction in regions I and III, and why we split the wavefunction into odd and even functions inside the well.",
    "line": 391,
@@ -1640,7 +1598,7 @@
   },
   {
    "t": "tr",
-   "id": "S0057",
+   "id": "S0055",
    "kind": "para",
    "s": "From these plots we can explain some of the behaviour of the energy levels as $L$ and $V_0$ are changed.",
    "line": 518,
@@ -1665,7 +1623,7 @@
   },
   {
    "t": "tr",
-   "id": "S0058",
+   "id": "S0056",
    "kind": "para",
    "s": "The first thing to note from the diagram above is that the wavefunctions extend outside the potential; they enter what is sometimes called the classically forbidden region.",
    "line": 520,
@@ -1685,7 +1643,7 @@
   },
   {
    "t": "tr",
-   "id": "S0059",
+   "id": "S0057",
    "kind": "para",
    "s": "As with the potential step, the quantum description of the particle allows it to tunnel into a region where the potential is larger than the energy of the particle. This is indicated by the shaded green area in the probability density plot. Note that this area gets larger as $V_0-E$ approaches zero.",
    "line": 521,
@@ -1710,7 +1668,7 @@
   },
   {
    "t": "tr",
-   "id": "S0060",
+   "id": "S0058",
    "kind": "heading",
    "s": "Tunneling of particle in the box",
    "line": 523,
@@ -1735,7 +1693,7 @@
   },
   {
    "t": "tr",
-   "id": "S0061",
+   "id": "S0059",
    "kind": "para",
    "s": "**The tunneling probability** corresponds to the area outside the box that has non-zero probability density. In the graphical representation, those areas are shaded green. Integrating over those areas gives the probability that the particle tunnels outside the classically allowed region.",
    "line": 525,
@@ -1770,7 +1728,7 @@
   },
   {
    "t": "tr",
-   "id": "S0062",
+   "id": "S0060",
    "kind": "para",
    "s": "We can calculate $P(-L/2>x>L/2)$, i.e. the size of the shaded green area as a percentage of the total area:",
    "line": 532,
@@ -1815,7 +1773,7 @@
   },
   {
    "t": "tr",
-   "id": "S0063",
+   "id": "S0061",
    "kind": "heading",
    "s": "A comparison between the energies of an infinite and a finite square well",
    "line": 555,
@@ -1835,7 +1793,7 @@
   },
   {
    "t": "tr",
-   "id": "S0064",
+   "id": "S0062",
    "kind": "para",
    "s": "These values confirm what we have already deduced: the closer the state is to the top of the potential, the more easily it spreads outside the well. How does this affect the energy levels? Lower in the potential, the wavelength of the wavefunction is more closely tied to the width of the well than it is higher up. Compare the infinite and finite square wells of the same width below.",
    "line": 557,
@@ -1881,7 +1839,7 @@
   },
   {
    "t": "tr",
-   "id": "S0065",
+   "id": "S0063",
    "kind": "para",
    "s": "Notice that at energies closer to zero, the infinite and finite energies are closer together. As the energy of the state approaches the top of the finite potential, it is smaller in the finite well than in the infinite well. Why? The higher-energy states allow the wavefunction in the finite square well to spread out, so the wavelength is longer in the finite well than in the infinite well. A longer wavelength corresponds to a smaller wavenumber $k$, and hence a lower energy.",
    "line": 599,

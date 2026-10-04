@@ -72,6 +72,13 @@ kernelspec:
 :width: 400px
 
 A stepped potential and the expected behavior of the wavefunction.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+阶梯势以及波函数的预期行为。
+``````
 :::
 
 
@@ -82,6 +89,13 @@ A stepped potential and the expected behavior of the wavefunction.
 :width: 400px
 
 From the signs of the terms in the Schrödinger equation, we can predict qualitatively how the wavefunction will behave.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+根据薛定谔方程中各项的符号，我们可以定性地预测波函数将如何变化。
+``````
 :::
 
 ```{code-cell} python
@@ -151,6 +165,13 @@ plt.show()
 
 Inside the finite square well, the region $-L/2 \le x \le L/2$, the potential $V(x)=0$ so the Schrödinger equation,
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+在有限深方势阱内部，即 $-L/2 \le x \le L/2$ 的区域，势能 $V(x)=0$，因此薛定谔方程
+``````
+
 $$
 \frac{-\hbar^2}{2m}\frac{d^2\psi(x)}{d{x}^2}+V(x)\psi(x) =E\psi(x)
 $$ 
@@ -165,13 +186,6 @@ $$
 
 
 - Solutions to this equation have an oscillatory form:
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 该方程的解具有振荡形式：
-``````
 
 $$
 \psi(x)=A_1e^{ikx}+B_1e^{-ikx}\\
@@ -266,6 +280,13 @@ $$
 
 Note that there are two conditions at each boundary, so we end up with two sets of two simultaneous equations.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+注意，每个边界处有两个条件，因此我们最终得到两组各含两个方程的联立方程组。
+``````
+
 ### Even and odd solutions
 
 Finally, our potential is symmetric about $x=0$, so the wavefunction is either a maximum or zero at $x=0$ so that the probability distribution is symmetric about $x=0$. We call these even when $\psi(x)=\psi(-x)$ and odd when $\psi(x)=-\psi(-x)$.
@@ -326,13 +347,6 @@ $$
 
 $$
 \beta = -\frac{k}{\tan\left(k\frac{L}{2}\right)} \Rightarrow  \sqrt{V_o-E} = -\frac{\sqrt{E}}{\tan\left(\frac{L\sqrt{2mE}}{2\hbar}\right)}
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-\beta = -\frac{k}{\tan\left(k\frac{L}{2}\right)} \Rightarrow  \sqrt{V_o-E} = -\frac{\sqrt{E}}{\tan\left(\frac{L\sqrt{2mE}}{2\hbar}\right)}
-``````
 $$(fsw_odd_states_equ)
 
 - Unfortunately, we cannot find the allowed energies analytically. Instead, we have to choose either a graphical or a numerical method.
@@ -760,6 +774,6 @@ plt.gcf()
 ``````{admonition} 中文翻译
 :class: dropdown
 
-注意，在能量更接近零的地方，无限深势阱和有限深势阱的能量更接近。当态的能量接近有限势阱顶部时，它在有限深势阱中的能量小于在无限深势阱中的能量。为什么？较高能量的态使有限深方势阱中的波函数得以扩散开来，因此有限深势阱中的波长比无限深势阱中的更长。较长的波长对应较小的波数 $k$，从而对应较低的能量。
+- 注意，在能量更接近零的地方，无限深势阱和有限深势阱的能量更接近。当态的能量接近有限势阱顶部时，它在有限深势阱中的能量小于在无限深势阱中的能量。为什么？较高能量的态使有限深方势阱中的波函数得以扩散开来，因此有限深势阱中的波长比无限深势阱中的更长。较长的波长对应较小的波数 $k$，从而对应较低的能量。
 ``````
 

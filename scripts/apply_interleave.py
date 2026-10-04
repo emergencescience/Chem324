@@ -23,6 +23,12 @@ ROOT = Path("/root/repos/Chem324")
 TW = ROOT / "translation_work"
 SEL = sys.executable + " " + str(ROOT / "scripts" / "myst_slice.py")
 
+# Short fragments are not worth translating. Measured on this book, an 8-word /
+# 64-char floor keeps 74% of paragraphs and drops only true fragments; 12/128
+# keeps 42% and starts cutting derivation steps.
+MIN_CHARS = 64
+MIN_WORDS = 8
+
 MATH = re.compile(r"\$[^$\n]+\$")
 CMD = re.compile(r"\\[a-zA-Z]+")
 LINK = re.compile(r"\]\(([^)]+)\)")
@@ -107,7 +113,9 @@ for items_path in files:
         print(f"  backed up English -> {backup}")
 
     rc, out = run(SEL.split() + ["apply", str(items_path), "-t", str(zh_path),
-                                 "--mode", "interleave", "--min-chars", "120",
+                                 "--mode", "interleave",
+                                 "--min-chars", str(MIN_CHARS),
+                                 "--min-words", str(MIN_WORDS),
                                  "-o", page])
     print("  apply:", out.replace("\n", " "))
     if rc != 0:

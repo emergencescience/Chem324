@@ -213,10 +213,10 @@ $$
 - {{S0039}}
 
 $$
-{{S0040}}
+\beta = k\tan\left(k\frac{L}{2}\right)\Rightarrow \sqrt{V_o-E} = \sqrt{E}\tan\left(\frac{L\sqrt{2mE}}{2\hbar}\right)
 $$(fsw_even_states_equ)
 
-{{S0041}}
+{{S0040}}
 
 $$
 x \leq-\frac{L}{2}:  ~~~ \psi_{I}(x) = -A e^{\beta  x} \\
@@ -224,19 +224,19 @@ x \leq-\frac{L}{2}:  ~~~ \psi_{I}(x) = -A e^{\beta  x} \\
 x \geq \frac{L}{2}:  ~~~ \psi_{III}(x) = D e^{-\beta x}
 $$
 
+- {{S0041}}
+
 - {{S0042}}
 
-- {{S0043}}
-
 $$
-{{S0044}}
+\beta = -\frac{k}{\tan\left(k\frac{L}{2}\right)} \Rightarrow  \sqrt{V_o-E} = -\frac{\sqrt{E}}{\tan\left(\frac{L\sqrt{2mE}}{2\hbar}\right)}
 $$(fsw_odd_states_equ)
 
+- {{S0043}}
+- {{S0044}}
 - {{S0045}}
-- {{S0046}}
-- {{S0047}}
 
-## {{S0048}}
+## {{S0046}}
 
 ```{code-cell} python
 :tags: [hide-input]
@@ -377,17 +377,17 @@ plt.tight_layout()
 plt.gcf()
 ```
 
-{{S0049}}
+{{S0047}}
 
+* {{S0048}}
+* {{S0049}}
 * {{S0050}}
 * {{S0051}}
 * {{S0052}}
-* {{S0053}}
-* {{S0054}}
 
-### {{S0055}}
+### {{S0053}}
 
-- {{S0056}}
+- {{S0054}}
 
 ```{code-cell} python
 :tags: [hide-input]
@@ -514,21 +514,21 @@ plt.show()
 #display(Markdown(figstring))
 ```
 
+- {{S0055}}
+
+- {{S0056}}
 - {{S0057}}
 
-- {{S0058}}
+### {{S0058}}
+
 - {{S0059}}
-
-### {{S0060}}
-
-- {{S0061}}
 
 $$ 
 P\left(-\frac{L}{2}>x>\frac{L}{2}\right)= \frac{\text{The area of the probability density that is shaded green}}{\text{The total area of the probability density}}\\
 =\large{\frac{\int^{\frac{-L}{2}}_{-\infty} |\psi(x)|^2\ dx +\int^{+\infty}_{\frac{L}{2}} |\psi(x)|^2\ dx }{\int_{-\infty}^{+\infty} |\psi(x)|^2\ dx }}
 $$
 
-- {{S0062}}
+- {{S0060}}
 
 ```{code-cell} python
 :tags: [hide-input]
@@ -551,9 +551,9 @@ for n in range(1,nstates+1):
 
 
 
-### {{S0063}}
+### {{S0061}}
 
-{{S0064}}
+{{S0062}}
 
 ```{marimo} python
 :hide-code: true
@@ -595,4 +595,4 @@ plt.tight_layout()
 plt.gcf()
 ```
 
-- {{S0065}}
+- {{S0063}}

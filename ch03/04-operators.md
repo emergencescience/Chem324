@@ -42,13 +42,6 @@
 
 - The position operator simply multiplies the function by $x$.
 
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 位置算符则只是把函数乘以 $x$。
-``````
-
   $$
   \hat{x} = x
   $$
@@ -157,13 +150,6 @@ $$\int(c_1f_1+c_2f_2)dx = c_1\int f_1dx+c_2\int f_2dx$$
 
 - For the square root, the linearity property does not hold!
 
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 对于平方根，线性性质不成立！
-``````
-
 $$\sqrt{(c_1f_1+c_2f_2)} \neq c_1\sqrt{f_1} +c_2\sqrt{f_2}$$
 
 :::
@@ -198,12 +184,26 @@ $${\left[\hat{A},\hat{B}\right]f = \left(\hat{A}\hat{B} - \hat{B}\hat{A}\right)f
 :::{note} **Example**
 
 Prove that operators $\hat{A} = x$ and $\hat{B} = d/dx$ do not commute (i.e., $\left[\hat{A}, \hat{B}\right] \ne 0$).
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+证明算符 $\hat{A} = x$ 和 $\hat{B} = d/dx$ 不对易（即 $\left[\hat{A}, \hat{B}\right] \ne 0$）。
+``````
 :::
 
 :::{admonition} **Solution**
 :class: dropdown solution
 
 Let $f$ be an arbitrary well-behaved function. We need to calculate both $\hat{A}\hat{B}f$ and $\hat{B}\hat{A}f$:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+设 $f$ 为任意良态函数。我们需要分别计算 $\hat{A}\hat{B}f$ 和 $\hat{B}\hat{A}f$：
+``````
 
 $$
 \hat{A}\hat{B}f = xf'(x)\textnormal{ and } \hat{B}\hat{A}f = \frac{d}{dx}\left(xf(x)\right) = f(x) + xf'(x)$$
@@ -258,11 +258,25 @@ $${\Rightarrow \left[\hat{p}_x,\hat{x}\right] = \frac{\hbar}{i}}$$
 
 In contrast, the kinetic energy operator and the momentum operator commute:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+相比之下，动能算符与动量算符对易：
+``````
+
 $$
 {\left[\hat{T},\hat{p}_x\right] = \left[\frac{\hat{p}_x^2}{2m},\hat{p}_x\right] = \frac{p_x^3}{2m} - \frac{p_x^3}{2m} = 0}
 $$
 
 We had the uncertainty principle for the position and momentum operators:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+我们曾有位置和动量算符的不确定性原理：
+``````
 
 $$
 \Delta x\Delta p_x \ge \frac{\hbar}{2}
@@ -422,10 +436,24 @@ Note that the commutation relation must apply to all well-behaved functions and 
   Since $\int \psi^*\psi \, d\tau = 1$ (normalization), the expectation value is simply the eigenvalue $a$.
 
 
+``````{admonition} 中文翻译
+:class: dropdown
+
+由于 $\int \psi^*\psi \, d\tau = 1$（归一化），期望值就是特征值 $a$。
+``````
+
+
 
 ### Dirac Notation
 
 To express quantum states and operators more compactly, we use **Dirac (bra–ket) notation**.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+为了更简洁地表达量子态和算符，我们使用**狄拉克（左矢–右矢）记号**。
+``````
 
 * A **state** is written as a *ket*, $|\psi\rangle$, and its complex conjugate (dual) is the *bra*, $\langle\psi|$.
 * The **inner product** between two states corresponds to the integral over space:
@@ -528,6 +556,13 @@ $$
 
 That is, swap rows and columns, then take the complex conjugate of every entry:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+也就是说，先交换行与列，再对每一个元素取复共轭：
+``````
+
 $$
 (A^\dagger)_{jk} = A_{kj}^*.
 $$
@@ -536,6 +571,13 @@ $$
 :::
 
 In matrix element form, taking the adjoint generates different elements:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+用矩阵元的形式表示，取伴随会产生不同的元素：
+``````
 
 $$
 a_{jk} = \langle \psi_j | \hat{A} | \psi_k \rangle
@@ -554,6 +596,13 @@ $$
 $$
 
 This means the operator behaves the same way when acting on either side of the inner product.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+这意味着该算符作用于内积的任何一边时，其行为是相同的。
+``````
 
 :::{important} **Hermitian Matrix**
 
@@ -633,13 +682,6 @@ $$
 
 2. **Eigenfunctions are orthogonal**:
 
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- **本征函数是正交的**：
-``````
-
   $$
   \langle \psi_m | \psi_n \rangle = 0 \quad (m \ne n).
   $$
@@ -678,13 +720,6 @@ $$
 $$
 
 - If $a_j \neq a_k$, then we have:
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 如果 $a_j \neq a_k$，那么我们有：
-``````
 
 $$
 \int \psi_j^* \psi_k \, d\tau = 0
@@ -779,6 +814,13 @@ $$\int \psi_1 d\psi_2 =- \int \psi_2d\psi_1 + \psi_1\psi_2\Big|_{x_{min}}^{x_{ma
 :::{note} **Example of Hermitian Operator**
 
 Prove that the momentum operator (in one dimension) is Hermitian.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+证明（一维）动量算符是厄米的。
+``````
 :::
 
 :::{admonition} **Solution**
@@ -814,13 +856,6 @@ Check whether the operator $\hat{A} = xd/dx$ is Hermitian.
 
 - You can test whether the following condition holds:
 
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 你可以检验以下条件是否成立：
-``````
-
 $$
 \int_{a}^{b} \psi_1^*(x) \left( x \frac{d}{dx} \psi_2(x) \right) \, dx = \int_{a}^{b} \left( x \frac{d}{dx} \psi_1(x) \right)^* \psi_2(x) \, dx
 $$
@@ -853,6 +888,13 @@ $$
 
 We apply integration by parts to simplify this expression. Using the product rule for differentiation, we get:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+我们应用分部积分来简化这个表达式。利用微分的乘积法则，我们得到：
+``````
+
 $$
 \int_{a}^{b} \psi_1^*(x) \left( x \frac{d}{dx} \psi_2(x) \right) \, dx = \left[ x \psi_1^*(x) \psi_2(x) \right]_{a}^{b} - \int_{a}^{b} \frac{d}{dx} \left( x \psi_1^*(x) \right) \psi_2(x) \, dx
 $$
@@ -867,6 +909,13 @@ The boundary term $\left[ x \psi_1^*(x) \psi_2(x) \right]_{a}^{b}$ can be discar
 ``````
 
 Now, for the remaining integral, we apply the derivative to the product $x \psi_1^*(x)$:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+现在，对于剩下的积分，我们把导数作用到乘积 $x \psi_1^*(x)$ 上：
+``````
 
 $$
 \int_{a}^{b} \frac{d}{dx} \left( x \psi_1^*(x) \right) \psi_2(x) \, dx = \int_{a}^{b} \left( \psi_1^*(x) + x \frac{d}{dx} \psi_1^*(x) \right) \psi_2(x) \, dx
@@ -889,6 +938,13 @@ $$
 **Step 4: Comparison**
 
 Now, we compare the two expressions. The left-hand side contains the extra term:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+现在，我们比较这两个表达式。左端含有一个额外的项：
+``````
 
 $$
 \int_{a}^{b} \psi_1^*(x) \psi_2(x) \, dx
@@ -913,13 +969,6 @@ $$
 #### Problem-2: Is the $d^2/dx^2$ operator Hermitian?
 
 - You can test whether the following condition holds:
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 你可以检验以下条件是否成立：
-``````
 
 $$
 \int_{a}^{b} \psi_1^*(x) \left( \frac{d^2}{dx^2} \psi_2(x) \right) \, dx = \int_{a}^{b} \psi_2(x)\left( \frac{d^2}{dx^2} \psi_1(x) \right)^*  \, dx
@@ -1006,6 +1055,13 @@ $$
 
 Since the two sides are equal, we conclude that the operator $\frac{d^2}{dx^2}$ is Hermitian:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+由于两端相等，我们得出结论：算符 $\frac{d^2}{dx^2}$ 是厄米的：
+``````
+
 $$
 \int_{a}^{b} \psi_1^*(x) \left( \frac{d^2}{dx^2} \psi_2(x) \right) \, dx = \int_{a}^{b} \left( \frac{d^2}{dx^2} \psi_1(x) \right)^* \psi_2(x) \, dx
 $$
@@ -1016,13 +1072,6 @@ $$
 #### Problem-3: Is the $id^2/dx^2$ operator Hermitian?
 
 - You can test whether the following condition holds:
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 你可以检验以下条件是否成立：
-``````
 
 $$
 \int_{a}^{b} \psi_1^*(x) \left( \frac{d^2}{dx^2} \psi_2(x) \right) \, dx = \int_{a}^{b} \psi_2(x)\left( \frac{d^2}{dx^2} \psi_1(x) \right)^*  \, dx
@@ -1126,6 +1175,13 @@ B^\dagger = \begin{pmatrix}
 $$
 
 Clearly, $B \neq B^\dagger$, so matrix $B$ is **not Hermitian**.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+显然，$B \neq B^\dagger$，所以矩阵 $B$ **不是厄米矩阵**。
+``````
 
 **C Matrix**
 
@@ -1313,11 +1369,25 @@ Consider the operator $ \hat{D} = x \frac{d}{dx} $. Show whether this operator i
 
 First, test linearity by applying $ \hat{D} $ to $ \alpha f(x) + \beta g(x) $:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+首先，通过把 $ \hat{D} $ 作用于 $ \alpha f(x) + \beta g(x) $ 来检验线性：
+``````
+
 $$
 \hat{D}(\alpha f(x) + \beta g(x)) = x \frac{d}{dx} (\alpha f(x) + \beta g(x)) = \alpha x \frac{df}{dx} + \beta x \frac{dg}{dx}
 $$
 
 This is $ \alpha \hat{D} f(x) + \beta \hat{D} g(x) $, so $ \hat{D} $ is linear.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+这正是 $ \alpha \hat{D} f(x) + \beta \hat{D} g(x) $，所以 $ \hat{D} $ 是线性的。
+``````
 
 Now, apply $ \hat{D} $ to $ f(x) = x^n $:
 

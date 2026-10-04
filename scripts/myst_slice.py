@@ -73,13 +73,21 @@ def _frontmatter_span(lines: list[str]) -> int:
 
 
 def _math_block_end(lines: list[str], i: int) -> int:
-    """Return the index after the end of the $$ math block starting at line i."""
+    """Return the index after the end of the $$ math block starting at line i.
+
+    A display closes with `$$`, with `...$$` (text before the marker), or with a
+    LABEL: `$$(fsw_odd_states_equ)`. Only testing `endswith("$$")` misses the
+    labelled form, so the block is then read as a single line and the formula
+    becomes a translatable "paragraph" -- which inserts a block inside the
+    equation and breaks it. Testing startswith covers `$$`, `$$(label)` and
+    `$$\psi$$`.
+    """
     head = lines[i].strip()
     if "$$" in head[2:]:
         return i + 1
     for j in range(i + 1, len(lines)):
         s = lines[j].strip()
-        if s.endswith("$$") or s == "$$":
+        if s.startswith("$$") or s.endswith("$$"):
             return j + 1
         if s == "" or (FENCE_RE.match(lines[j]) or DIRECTIVE_OPEN_RE.match(lines[j])):
             return i + 1  # unterminated: treat as one line rather than eating the file
@@ -732,7 +740,24 @@ def cmd_apply(a) -> int:
         return 2
 
     mode = getattr(a, "mode", "replace")
-    min_chars = getattr(a, "min_chars", 120)
+    min_chars = getattr(a, "min_chars", 64)
+    min_words = getattr(a, "min_words", 8)
+    translate_tables = getattr(a, "translate_tables", False)
+
+    text_of = {it["id"]: it["s"] for it in items if it["t"] == "tr"}
+
+    def worth_translating(text: str) -> bool:
+        # Skip table rows: cells are short phrases, and a mostly-English table
+        # with three Chinese words in it reads worse than one left alone.
+        if not translate_tables and text.lstrip().startswith("|"):
+            return False
+        # Skip short fragments. Measured on this book: an 8-word / 64-char floor
+        # keeps 74% of paragraphs and drops true fragments ("Fig. Entering the
+        # quantum world."). Raising it to 12/128 keeps only 42% and starts
+        # dropping real content -- derivation steps like "Divide both sides by
+        # $\psi(x)T(t)$:" and "A particle moving in a potential $V$ has total
+        # energy..." -- so the lower floor is the safer default.
+        return len(text.split()) >= min_words and len(text) >= min_chars
 
     def is_list_item(idx: int) -> bool:
         """True when item idx is the text of a bullet/numbered list entry: its
@@ -818,13 +843,15 @@ def cmd_apply(a) -> int:
                 # Re-emit the list markers: without them the joined translations
                 # form a single run-on paragraph, because consecutive Markdown
                 # lines with no blank line between them are one paragraph.
-                inserts.append((run_end, block("\n".join("- " + zh[i] for i in run))))
+                if worth_translating("\n".join(text_of[i] for i in run)):
+                    inserts.append((run_end, block("\n".join("- " + zh[i] for i in run))))
                 run = []
             if (it["t"] == "tr" and it.get("kind") == "para"
-                    and len(it["s"]) >= min_chars):
+                    and worth_translating(it["s"])):
                 inserts.append((after_item(idx), block(zh[it["id"]])))
         if run:
-            inserts.append((run_end, block("\n".join(zh[i] for i in run))))
+            if worth_translating("\n".join(text_of[i] for i in run)):
+                inserts.append((run_end, block("\n".join("- " + zh[i] for i in run))))
 
     def to_backtick(note: str) -> str:
         # Errata notes are authored with `:::{note}` fences, but a 3-colon fence
@@ -1002,9 +1029,16 @@ def main() -> int:
                    help="replace: substitute translations (monolingual output). "
                         "interleave: keep the English verbatim and insert a collapsible "
                         "Chinese block after each paragraph or list (bilingual output).")
-    s.add_argument("--min-chars", type=int, default=120,
-                   help="interleave: only add a block for a standalone paragraph at least "
-                        "this long, so short fragments are left in English")
+    s.add_argument("--min-chars", type=int, default=64,
+                   help="interleave: skip any paragraph/list run shorter than this many "
+                        "characters, so short fragments stay in English (default 64)")
+    s.add_argument("--min-words", type=int, default=8,
+                   help="interleave: skip any paragraph/list run with fewer words than "
+                        "this (default 8)")
+    s.add_argument("--translate-tables", action="store_true",
+                   help="interleave: also translate Markdown table cells. Off by default: "
+                        "cells are short phrases, and a half-translated table reads worse "
+                        "than one left in English")
     s.set_defaults(func=cmd_apply)
 
     s = sub.add_parser("verify")
