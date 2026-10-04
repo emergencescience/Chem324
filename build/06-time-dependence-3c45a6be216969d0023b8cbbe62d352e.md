@@ -251,6 +251,13 @@ $$\langle \psi(t) \mid \psi(t)\rangle = \sum_n \sum_k \langle n \mid c^*_n e^{\f
 
   The time derivative of this expectation value is:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+该期望值的时间导数为：
+``````
+
   $$
   \frac{\partial}{\partial t}\langle A \rangle = \langle \frac{\partial \psi}{\partial t} \mid \hat{A} \mid \psi \rangle + \langle \psi \mid \hat{A} \mid \frac{\partial \psi}{\partial t} \rangle + \langle \psi \mid \frac{\partial \hat{A}}{\partial t} \mid \psi \rangle
   $$
@@ -262,6 +269,13 @@ $$\langle \psi(t) \mid \psi(t)\rangle = \sum_n \sum_k \langle n \mid c^*_n e^{\f
   $$  
 
   we can express the time derivatives of the bras and kets as:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+我们可以把左矢和右矢的时间导数表示为：
+``````
 
   $$\langle \frac{\partial \psi}{\partial t} \mid = -\frac{1}{i\hbar} \langle \psi \mid \hat{H},$$
   $$\mid \frac{\partial \psi}{\partial t} \rangle = \frac{1}{i\hbar} \hat{H} \mid \psi \rangle.$$

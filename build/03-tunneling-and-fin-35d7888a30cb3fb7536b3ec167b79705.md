@@ -187,6 +187,13 @@ $$
 
 - Solutions to this equation have an oscillatory form:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 该方程的解具有振荡形式：
+``````
+
 $$
 \psi(x)=A_1e^{ikx}+B_1e^{-ikx}\\
        =A\sin(kx)+B\cos(kx)
