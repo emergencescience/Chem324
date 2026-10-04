@@ -221,13 +221,6 @@ $$\mid \psi(t)\rangle = \sum_n c_n e^{-\frac{i}{\hbar}E_n t} \mid n\rangle$$
 
 - The normalization condition is expressed as:
 
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 归一化条件表示为：
-``````
-
 $$\langle \psi(t) \mid \psi(t)\rangle = \sum_n \sum_k \langle n \mid c^*_n e^{\frac{i}{\hbar}E_n t} \cdot c_k e^{-\frac{i}{\hbar}E_k t} \mid k\rangle = \sum_n \sum_k c^*_n c_k e^{-\frac{i}{\hbar}(E_k - E_n)t} \delta_{kn} = \sum_n \mid c_n \mid^2 = 1$$
 
 - In the final step, we use the fact that the eigenfunctions are orthogonal, meaning $\langle n \mid k \rangle = 0$ for $n \neq k$, so the cross terms vanish and only the diagonal terms, where $n = k$, survive.
@@ -263,13 +256,6 @@ $$\langle \psi(t) \mid \psi(t)\rangle = \sum_n \sum_k \langle n \mid c^*_n e^{\f
   $$
 
 - Now, using the time-dependent Schrödinger equation,  
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 现在，利用含时薛定谔方程，
-``````
 
   $$
   i\hbar \frac{\partial}{\partial t} \mid \psi \rangle = \hat{H} \mid \psi \rangle
@@ -324,6 +310,13 @@ $$\langle \psi(t) \mid \psi(t)\rangle = \sum_n \sum_k \langle n \mid c^*_n e^{\f
 :width: 300px
 
 Wavefunction dynamics in a Gaussian potential, showing the probability density along with the real and imaginary parts.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+高斯势中的波函数动力学，展示了概率密度以及实部和虚部。
+``````
 :::
 
 :::{figure} ./images/barrier_potential.gif
@@ -332,8 +325,22 @@ Wavefunction dynamics in a Gaussian potential, showing the probability density a
 :width: 300px
 
 Wavefunction dynamics in a barrier potential, showing the probability density along with the real and imaginary parts.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+势垒中的波函数动力学，展示了概率密度以及实部和虚部。
+``````
 :::
 
 :::{seealso} Chapter demos
 Computational lab for this chapter: [Numerical Schrödinger solver](../demos/07-demo-numerical-schrodinger.md)
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+本章计算实验：[数值薛定谔求解器](../demos/07-demo-numerical-schrodinger.md)
+``````
 :::

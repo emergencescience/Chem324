@@ -279,6 +279,13 @@ The classical wave equation has two derivatives in space and two in time. Acting
 
 A free quantum particle obeys a different rule. With $E = \hbar\omega$ and $p = \hbar k$, the energy $E = p^2/2m$ reads
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+自由量子粒子遵循不同的规则。有了 $E = \hbar\omega$ 和 $p = \hbar k$，能量 $E = p^2/2m$ 就写成
+``````
+
 $$
 \omega = \frac{\hbar k^2}{2m}
 $$
@@ -305,21 +312,6 @@ so the frequency goes as the **square** of the wavenumber. An equation that prod
 | what defines the system | wave speed $v$ and the boundaries | mass $m$, potential $V(x)$ and the boundaries |
 | time dependence of a mode | real oscillation $\cos(\omega_n t)$ | rotating phase $e^{-iE_n t/\hbar}$ |
 | linear, so solutions add | yes | yes |
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-| | 经典波动方程 | 薛定谔方程 |
-|---|---|---|
-| 方程 | $\dfrac{\partial^2 u}{\partial x^2} = \dfrac{1}{v^2}\dfrac{\partial^2 u}{\partial t^2}$ | $-\dfrac{\hbar^2}{2m}\dfrac{\partial^2 \Psi}{\partial x^2} + V\Psi = i\hbar\dfrac{\partial \Psi}{\partial t}$ |
-| 时间导数 | 二阶 | 一阶，带一个因子 $i$ |
-| 波 | 实位移 $u$，可直接测量 | 复的 $\Psi$，只有 $\lvert\Psi\rvert^2$ 可测量 |
-| 频率与波数 | $\omega = vk$ | $\omega = \hbar k^2/2m$（自由粒子） |
-| 定义系统的是什么 | 波速 $v$ 和边界 | 质量 $m$、势 $V(x)$ 和边界 |
-| 一个模式的时间依赖性 | 实振荡 $\cos(\omega_n t)$ | 旋转相位 $e^{-iE_n t/\hbar}$ |
-| 线性，所以解可以相加 | 是 | 是 |
-``````
 
 ### Solving the equation: separation of variables
 
@@ -348,13 +340,6 @@ i\hbar\,\psi(x)\,\frac{dT}{dt} = T(t)\left[-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^
 $$
 
 - Divide both sides by $\psi(x)T(t)$:
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 两边同除以 $\psi(x)T(t)$：
-``````
 
 $$
 i\hbar\,\frac{1}{T}\frac{dT}{dt} = \frac{1}{\psi}\left[-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2} + V(x)\,\psi\right]
@@ -508,13 +493,6 @@ Fig. Two stationary states of a particle between walls at $0$ and $L$. The real 
 ### The time-independent equation is a curvature equation
 
 - Solve the time-independent equation for the second derivative:
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 解出不含时方程中的二阶导数：
-``````
 
 $$
 \frac{d^2\psi}{dx^2} = -\frac{2m}{\hbar^2}\,\big[E - V(x)\big]\,\psi
@@ -865,6 +843,13 @@ A **random variable** assigns a number to the outcome of an experiment. It can b
 
 For a discrete variable the integrals become sums, $\langle x \rangle = \sum_i x_i\,p_i$.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+对于离散变量，积分变成求和，$\langle x \rangle = \sum_i x_i\,p_i$。
+``````
+
 **Fair coin**, $X \in \{0, 1\}$ with $p_0 = p_1 = \frac{1}{2}$: the mean is $\langle X\rangle = 0\cdot\frac{1}{2} + 1\cdot\frac{1}{2} = \frac{1}{2}$, and since $\langle X^2\rangle = \frac{1}{2}$ the variance is $\sigma^2 = \frac{1}{2} - \frac{1}{4} = \frac{1}{4}$.
 
 
@@ -945,6 +930,13 @@ $$
 
 The normalized wavefunction is $\psi(x) = \sqrt{3}\,x$, and its probability density is $p(x) = 3x^2$.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+归一化后的波函数是 $\psi(x) = \sqrt{3}\,x$，其概率密度是 $p(x) = 3x^2$。
+``````
+
 :::
 
 ```{code-cell} python
@@ -975,6 +967,13 @@ plt.show()
 
 Fig. Normalization rescales the wavefunction until the area under $|\psi|^2$ equals one.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+图：归一化重新缩放波函数，直到 $|\psi|^2$ 下方的面积等于 1。
+``````
+
 ### Probability of finding the particle in a region
 
 - Once $\psi$ is normalized, the probability of finding the particle anywhere between $a$ and $b$ is the area under $|\psi|^2$ over that interval:
@@ -995,13 +994,6 @@ $$
 :::
 
 - In three dimensions the same integral runs over a volume.
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- 在三维中，同样的积分遍及一个体积。
-``````
 
 :::{note} **Example: where is the particle?**
 
@@ -1057,6 +1049,13 @@ mo.md(f"Shaded area: $b^3 - a^3 = {hi2:.2f}^3 - {lo2:.2f}^3 =$ **{P2:.3f}**, so 
 ```
 
 Fig. The probability of finding the particle in a region is the shaded area under $|\psi|^2$.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+图：在一个区域内找到粒子的概率是 $|\psi|^2$ 下方的阴影面积。
+``````
 
 ### Mean and spread of position
 
@@ -1166,19 +1165,6 @@ Position was easy, because $x$ is just a number that multiplies $|\psi|^2$. Mome
 | potential energy | $V(x)$ | $\hat{V} = V(x)$ |
 | kinetic energy | $K = \dfrac{p^2}{2m}$ | $\hat{K} = \dfrac{\hat{p}^2}{2m} = -\dfrac{\hbar^2}{2m}\dfrac{\partial^2}{\partial x^2}$ |
 | total energy | $H = \dfrac{p^2}{2m} + V(x)$ | $\hat{H} = \hat{K} + \hat{V}$ |
-
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-| 可观测量 | 经典 | 量子算符 |
-| :-- | :-- | :-- |
-| 位置 | $x$ | $\hat{x} = x$ |
-| 动量 | $p = mv$ | $\hat{p} = -i\hbar \dfrac{\partial}{\partial x}$ |
-| 势能 | $V(x)$ | $\hat{V} = V(x)$ |
-| 动能 | $K = \dfrac{p^2}{2m}$ | $\hat{K} = \dfrac{\hat{p}^2}{2m} = -\dfrac{\hbar^2}{2m}\dfrac{\partial^2}{\partial x^2}$ |
-| 总能量 | $H = \dfrac{p^2}{2m} + V(x)$ | $\hat{H} = \hat{K} + \hat{V}$ |
-``````
 
 - The operator of the total energy is the **Hamiltonian**, named after the total energy function $H(x,p)$ of classical mechanics. With it both Schrödinger equations fit on one line.
 
@@ -1313,21 +1299,16 @@ $$
 | $\langle K \rangle=\int \psi^{*}\, \hat{K}\, \psi\, dx$ | $\hat{K}=-\dfrac{\hbar^2}{2m}\dfrac{d^2}{dx^2}$ |
 | $\langle E \rangle=\int \psi^{*}\, \hat{H}\, \psi\, dx$ | $\hat{H}=-\dfrac{\hbar^2}{2m}\dfrac{d^2}{dx^2}+V(x)$ |
 
+:::{note} **Example: momentum and energy of a particle between walls**
+
+Take $\psi_n(x)=\sqrt{2}\sin(n\pi x)$ on $[0,1]$ with $V = 0$ inside.
+
 
 ``````{admonition} 中文翻译
 :class: dropdown
 
-| 平均值 | 积分内的算符 |
-| :-- | :-- |
-| $\langle x \rangle=\int \psi^{*}\, x\, \psi\, dx$ | $\hat{x} = x$ |
-| $\langle p \rangle=\int \psi^{*}\, \hat{p}\, \psi\, dx$ | $\hat{p}=-i\hbar\dfrac{d}{dx}$ |
-| $\langle K \rangle=\int \psi^{*}\, \hat{K}\, \psi\, dx$ | $\hat{K}=-\dfrac{\hbar^2}{2m}\dfrac{d^2}{dx^2}$ |
-| $\langle E \rangle=\int \psi^{*}\, \hat{H}\, \psi\, dx$ | $\hat{H}=-\dfrac{\hbar^2}{2m}\dfrac{d^2}{dx^2}+V(x)$ |
+取 $[0,1]$ 上的 $\psi_n(x)=\sqrt{2}\sin(n\pi x)$，阱内 $V = 0$。
 ``````
-
-:::{note} **Example: momentum and energy of a particle between walls**
-
-Take $\psi_n(x)=\sqrt{2}\sin(n\pi x)$ on $[0,1]$ with $V = 0$ inside.
 
 **Momentum.** The derivative turns the sine into a cosine, and $\sin\cos = \frac{1}{2}\sin(2n\pi x)$ integrates to zero over the box:
 
@@ -1345,6 +1326,13 @@ $$
 The particle is as likely to move left as right.
 
 **Momentum squared and energy.** Two derivatives return the sine, $\psi_n'' = -(n\pi)^2\psi_n$, so
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+**动量平方与能量。** 两次求导又返回正弦，$\psi_n'' = -(n\pi)^2\psi_n$，所以
+``````
 
 $$
 \langle p^2\rangle = -\hbar^2\int_0^1 \psi_n\,\psi_n''\,dx = (n\pi\hbar)^2, \qquad
@@ -1415,11 +1403,25 @@ Show that $\Psi(x,t) = A\,e^{\frac{i}{\hbar}(px - Et)}$ solves the time-dependen
 
 Two derivatives in $x$ bring down $(ip/\hbar)^2 = -p^2/\hbar^2$, so the left side is
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+对 $x$ 的两次求导会拉下 $(ip/\hbar)^2 = -p^2/\hbar^2$，所以左边是
+``````
+
 $$
 -\frac{\hbar^2}{2m}\frac{\partial^2\Psi}{\partial x^2} = \frac{p^2}{2m}\,\Psi
 $$
 
 One derivative in $t$ brings down $-iE/\hbar$, so the right side is
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+对 $t$ 的一次求导会拉下 $-iE/\hbar$，所以右边是
+``````
 
 $$
 i\hbar\frac{\partial \Psi}{\partial t} = i\hbar\left(-\frac{iE}{\hbar}\right)\Psi = E\,\Psi
@@ -1506,11 +1508,25 @@ $$
 
 so $N = 1$: the function was already normalized. The probability is
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+所以 $N = 1$：这个函数本来就已归一化。概率为
+``````
+
 $$
 P\left(0 < x < \tfrac{1}{2}\right) = \frac{1}{2}\int_0^{1/2}\left[1 + \cos(\pi x)\right]dx = \frac{1}{2}\left[\frac{1}{2} + \frac{1}{\pi}\right] \approx 0.41
 $$
 
 A quarter of the interval holds 41 percent of the probability, because the density peaks at the center.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+区间的四分之一却占有 41% 的概率，因为密度在中心达到峰值。
+``````
 
 :::
 
@@ -1528,14 +1544,6 @@ Decide whether each function is an eigenfunction of the momentum operator, of th
 - $A \sin(ax)$
 - $N e^{-ikx}$
 
-
-``````{admonition} 中文翻译
-:class: dropdown
-
-- $A \sin(ax)$
-- $N e^{-ikx}$
-``````
-
 :::{admonition} **Solution**
 :class: dropdown solution
 
@@ -1547,11 +1555,25 @@ $$
 
 The sine turned into a cosine, so $\sin(ax)$ is not an eigenfunction of momentum. The kinetic energy operator gives
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+正弦变成了余弦，所以 $\sin(ax)$ 不是动量的本征函数。动能算符给出
+``````
+
 $$
 -\dfrac{\hbar^2}{2m} \dfrac{\partial^2}{\partial x^2} A \sin(ax) = \dfrac{\hbar^2 a^2}{2m}\, A \sin(ax)
 $$
 
 The same function came back, so $\sin(ax)$ is an eigenfunction of kinetic energy with eigenvalue $\hbar^2a^2/2m$.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+返回的是同一个函数，所以 $\sin(ax)$ 是动能的、特征值为 $\hbar^2a^2/2m$ 的本征函数。
+``````
 
 For the second function:
 
@@ -1582,6 +1604,13 @@ A state of definite momentum always has a definite kinetic energy. The reverse i
 #### Problem 5: Testing a Gaussian
 
 Check whether $f(x) = e^{-\alpha x^2}$ is an eigenfunction of $\hat{C} = \dfrac{d^2}{dx^2}$.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+检验 $f(x) = e^{-\alpha x^2}$ 是否是 $\hat{C} = \dfrac{d^2}{dx^2}$ 的本征函数。
+``````
 
 :::{admonition} **Solution**
 :class: dropdown solution
