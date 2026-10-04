@@ -73,7 +73,7 @@ def _frontmatter_span(lines: list[str]) -> int:
 
 
 def _math_block_end(lines: list[str], i: int) -> int:
-    """Return the index after the end of the $$ math block starting at line i.
+    r"""Return the index after the end of the $$ math block starting at line i.
 
     A display closes with `$$`, with `...$$` (text before the marker), or with a
     LABEL: `$$(fsw_odd_states_equ)`. Only testing `endswith("$$")` misses the
