@@ -168,6 +168,13 @@ Fig. Catching the particle many times. Left: a classical ball bounces between th
 :width: 300px
 
 Particle in a box subject to infinitely high potential walls.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+受到无限高势壁束缚的势阱中的粒子。
+``````
 :::
 
 The Schrödinger equation for a particle in a box (PIB) is defined by a Hamiltonian operator that incorporates a potential energy which is infinitely large at the boundaries of the box and zero inside. This potential confines the particle within the box, where it can only possess kinetic energy.
@@ -261,6 +268,13 @@ $$
 
 - The general solution to this differential equation is:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 这个微分方程的通解为：
+``````
+
 $$
 \psi(x) = c_1 e^{ikx} + c_2 e^{-ikx} = A \cos(kx) + B \sin(kx)
 $$
@@ -279,6 +293,13 @@ $$
 $$
 
 - Applying the boundary condition $\psi(L) = 0$, we get:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 应用边界条件 $\psi(L) = 0$，我们得到：
+``````
 
 $$
 B \sin(kL) = 0
@@ -476,6 +497,13 @@ $$E_1 = h^2/8mL^2$$
 $$E_{n+1} - E_n = (2n+1)\frac{h^2}{8mL^2}$$
 
 **Increasing Box size leads to more classical behavior**
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+**增大势阱尺寸会导致更经典的行为**
+``````
 
 - As the box size is increased, the energy spacing gets smaller.
 - Thus quantum effects are more pronounced when an electron is bound in smaller regions of space.
@@ -843,6 +871,13 @@ $${\psi(x,y,z) = X(x)Y(y)Z(z)}$$
 
 - By substituting and dividing by $X(x)Y(y)Z(z)$, we obtain:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 通过代入并除以 $X(x)Y(y)Z(z)$，我们得到：
+``````
+
 $${-\frac{\hbar^2}{2m}\left[\frac{1}{X(x)}\frac{d^2X(x)}{dx^2} + \frac{1}{Y(y)}\frac{d^2Y(y)}{dy^2} + \frac{1}{Z(z)}\frac{d^2Z(z)}{dz^2}\right] = E}$$
 
 - The total energy $E$ consists of a sum of three terms, each depending separately on $x$, $y$, and $z$. Thus we can write $E = E_x + E_y + E_z$ and separate the equation into three one-dimensional problems:
@@ -1091,6 +1126,13 @@ To calculate the average position (or **expectation value** of position) for a p
 
 **1. Wavefunction of the Particle in a 1D Box**
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+**1. 一维势阱中粒子的波函数**
+``````
+
 The wavefunction for a particle in a 1D box of length $L$ with infinite potential walls at $x = 0$ and $x = L$ is given by:
 
 
@@ -1119,6 +1161,13 @@ where:
 ``````
 
 **2. Expectation Value of Position $\langle x \rangle$**
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+**2. 位置的期望值 $\langle x \rangle$**
+``````
 
 The expectation value of the position $x$ for a particle is given by:
 
@@ -1227,6 +1276,13 @@ $$
 **6. Final Result**
 
 Thus, the expectation value of position simplifies to:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+于是，位置的期望值化简为：
+``````
 
 $$
 \langle x \rangle = \frac{1}{L} \times \frac{L^2}{2} = \frac{L}{2}
@@ -1452,6 +1508,13 @@ $$\begin{align}
 
 We will use the definite integral of $\sin^2ax$ from a table:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+我们将使用积分表中 $\sin^2ax$ 的定积分：
+``````
+
 $$\begin{equation}
 \int\sin^2axdx = \frac{x}{2} - \frac{\sin2ax}{4a}
 \end{equation}$$
@@ -1476,6 +1539,13 @@ $$\begin{align}
 #### Problem 2: Compute an expectation of $x^2$
 
 Compute the average of $x^2$ for a particle in a box.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+计算一维无限深势阱中粒子的 $x^2$ 的平均值。
+``````
 
 :::{admonition} **Solution**
 :class: dropdown solution
@@ -1504,6 +1574,13 @@ For the particle in a box, we can limit the domain, and thus the bounds of integ
 
 Thus, for a particle in a 1D box of size $a$, we get
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+因此，对于尺寸为 $a$ 的一维势阱中的粒子，我们得到
+``````
+
 $$\begin{align}
 \langle x^2 \rangle &= \int_0^a \sqrt{\frac{2}{a}}\sin\left(\frac{n\pi x}{a}\right) x^2 \sqrt{\frac{2}{a}}\sin\left(\frac{n\pi x}{a}\right)dx \\
 &= \frac{2}{a} \int_0^a x^2 \sin^2\frac{n\pi x}{a}dx
@@ -1516,6 +1593,13 @@ $$\begin{equation}
 \end{equation}$$
 
 We use this equation with $\alpha = \frac{n\pi}{a}$ and get:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+我们把此方程与 $\alpha = \frac{n\pi}{a}$ 一起使用，得到：
+``````
 
 $$\begin{align}
 \langle x^2 \rangle &= \int_0^a \sqrt{\frac{2}{a}}\sin\left(\frac{n\pi x}{a}\right) x^2 \sqrt{\frac{2}{a}}\sin\left(\frac{n\pi x}{a}\right)dx \\
@@ -1544,6 +1628,13 @@ $$\begin{equation}
 #### Problem 3: Compute expectation of energy
 
 Compute the average energy of a particle in a box.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+计算一维无限深势阱中粒子的平均能量。
+``````
 
 :::{admonition} **Solution**
 :class: dropdown solution
@@ -1589,6 +1680,13 @@ $$\begin{equation}
 
 where $E_n$ is a scalar. Thus, for the average energy we get:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+其中 $E_n$ 是标量。因此，对于平均能量我们得到：
+``````
+
 $$\begin{align}
 \langle E \rangle &= \int_0^a \psi_n^*(x)\hat{H}\psi_n(x)dx \\
 &=\int_0^a \psi_n^*(x)E_n\psi_n(x)dx \\
@@ -1610,6 +1708,13 @@ The last equality holds because the wave functions are normalized.
 
 Compute the average momentum for a particle in a box.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+计算一维无限深势阱中粒子的平均动量。
+``````
+
 :::{admonition} **Solution**
 :class: dropdown solution
 
@@ -1628,11 +1733,25 @@ $$\begin{equation}
 
 Recall that the momentum operator in one dimension is given by
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+回想一维中的动量算符为
+``````
+
 $$\begin{equation}
 \hat{p}_x = -i\hbar\frac{d}{dx}
 \end{equation}$$
 
 We now substitute this into the above equation and solve:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+现在把它代入上面的方程并求解：
+``````
 
 $$\begin{align}
 \langle p \rangle &= \int_0^a \psi_n^*(x)\left(-i\hbar\frac{d}{dx}\right)\psi_n(x)dx \\
@@ -1643,6 +1762,13 @@ $$\begin{align}
 \end{align}$$
 
 where the last equality can be found in an integral table.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+其中最后一个等号可以在积分表中找到。
+``````
 
 So the average momentum of a particle in a box is zero. This is because it is equally probable for the particle to be moving forward and backward.
 
@@ -1688,6 +1814,13 @@ $$\times\left(\frac{2^2}{(36\times 10^{-10}\textnormal{ m})^2} + \frac{1^2}{(36\
 $$= 2.79\times 10^{-20}\textnormal{ J} = 174\textnormal{ meV} \Rightarrow \Delta E = 87\textnormal{ meV}$$
 (Experimental value: 105 meV; Phys. Rev. B 41, 6366 (1990))
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+（实验值：105 meV；Phys. Rev. B 41, 6366 (1990)）
+``````
+
 :::
 
 #### Problem 6: Energy Levels in a 3D Box
@@ -1726,9 +1859,23 @@ Calculate the energy levels for the quantum states with $n_x = 1$, $n_y = 1$, $n
 
 The energy for the state $(n_x, n_y, n_z) = (1, 1, 2)$ is:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+态 $(n_x, n_y, n_z) = (1, 1, 2)$ 的能量为：
+``````
+
 $$E_{1,1,2} = \frac{\hbar^2 \pi^2}{2mL^2} \left( 1^2 + 1^2 + 2^2 \right) = \frac{\hbar^2 \pi^2}{2mL^2} (1 + 1 + 4) = \frac{\hbar^2 \pi^2}{2mL^2} \times 6$$
 
 The energy for the state $(n_x, n_y, n_z) = (2, 2, 1)$ is:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+态 $(n_x, n_y, n_z) = (2, 2, 1)$ 的能量为：
+``````
 
 $$E_{2,2,1} = \frac{\hbar^2 \pi^2}{2mL^2} \left( 2^2 + 2^2 + 1^2 \right) = \frac{\hbar^2 \pi^2}{2mL^2} (4 + 4 + 1) = \frac{\hbar^2 \pi^2}{2mL^2} \times 9$$
 
@@ -1771,11 +1918,33 @@ Consider a particle confined in a cubic box with side lengths $L_x = L_y = L_z =
 **Part 1:**
 We want to find the quantum numbers that satisfy:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+**第 1 部分：**
+我们希望找到满足以下条件的量子数：
+``````
+
 $n_x^2 + n_y^2 + n_z^2 = 14$
 
 We can check different combinations of $n_x$, $n_y$, and $n_z$:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+我们可以检查 $n_x$、$n_y$ 和 $n_z$ 的不同组合：
+``````
+
 - For $n_x = 3$, $n_y = 2$, and $n_z = 1$:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 对于 $n_x = 3$、$n_y = 2$ 和 $n_z = 1$：
+``````
 
 $$3^2 + 2^2 + 1^2 = 9 + 4 + 1 = 14$$
 
@@ -1953,6 +2122,13 @@ A conjugated diene has a conjugation length of 5 Å. Using the 1D particle in a 
 
 The gap between $n = 1$ and $n = 2$ is
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+$n = 1$ 与 $n = 2$ 之间的能隙为
+``````
+
 $$
 \Delta E = \frac{(2^2 - 1^2)h^2}{8mL^2} = \frac{3h^2}{8mL^2},
 $$
@@ -2010,6 +2186,13 @@ A linear conjugated molecule has 8 alternating C-C bonds (1.40 Å single, 1.35 �
 :class: dropdown solution
 
 For 8 bonds, take 4 double and 4 single:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+对于 8 个键，取 4 个双键和 4 个单键：
+``````
 
 $$
 L = 4 \times 1.35\,\text{Å} + 4 \times 1.40\,\text{Å} = 11.0\,\text{Å}.

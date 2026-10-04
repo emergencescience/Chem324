@@ -740,24 +740,23 @@ def cmd_apply(a) -> int:
         return 2
 
     mode = getattr(a, "mode", "replace")
-    min_chars = getattr(a, "min_chars", 64)
     min_words = getattr(a, "min_words", 8)
     translate_tables = getattr(a, "translate_tables", False)
 
     text_of = {it["id"]: it["s"] for it in items if it["t"] == "tr"}
 
     def worth_translating(text: str) -> bool:
-        # Skip table rows: cells are short phrases, and a mostly-English table
-        # with three Chinese words in it reads worse than one left alone.
+        # Two rules only, deliberately: simple rules survive maintenance.
+        #  1. leave tables alone -- cells are short phrases, and a table with a
+        #     few Chinese words among English ones reads worse than an untouched
+        #     table (opt back in with --translate-tables).
+        #  2. skip fragments under --min-words. Everything else is already
+        #     excluded structurally (headings, code, maths, directive options
+        #     are literals the applier never sees), so no threshold list is
+        #     needed. 8 words keeps 74% of this book's paragraphs.
         if not translate_tables and text.lstrip().startswith("|"):
             return False
-        # Skip short fragments. Measured on this book: an 8-word / 64-char floor
-        # keeps 74% of paragraphs and drops true fragments ("Fig. Entering the
-        # quantum world."). Raising it to 12/128 keeps only 42% and starts
-        # dropping real content -- derivation steps like "Divide both sides by
-        # $\psi(x)T(t)$:" and "A particle moving in a potential $V$ has total
-        # energy..." -- so the lower floor is the safer default.
-        return len(text.split()) >= min_words and len(text) >= min_chars
+        return len(text.split()) >= min_words
 
     def is_list_item(idx: int) -> bool:
         """True when item idx is the text of a bullet/numbered list entry: its
@@ -1029,12 +1028,10 @@ def main() -> int:
                    help="replace: substitute translations (monolingual output). "
                         "interleave: keep the English verbatim and insert a collapsible "
                         "Chinese block after each paragraph or list (bilingual output).")
-    s.add_argument("--min-chars", type=int, default=64,
-                   help="interleave: skip any paragraph/list run shorter than this many "
-                        "characters, so short fragments stay in English (default 64)")
     s.add_argument("--min-words", type=int, default=8,
                    help="interleave: skip any paragraph/list run with fewer words than "
-                        "this (default 8)")
+                        "this (default 8). This is the only length rule; everything "
+                        "else is excluded structurally.")
     s.add_argument("--translate-tables", action="store_true",
                    help="interleave: also translate Markdown table cells. Off by default: "
                         "cells are short phrases, and a half-translated table reads worse "

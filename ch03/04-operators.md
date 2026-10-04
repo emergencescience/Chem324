@@ -42,6 +42,13 @@
 
 - The position operator simply multiplies the function by $x$.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 位置算符则只是把函数乘以 $x$。
+``````
+
   $$
   \hat{x} = x
   $$
@@ -149,6 +156,13 @@ $$\frac{d}{dx}(c_1f_1+c_2f_2) = c_1\frac{df_1}{dx}+c_2\frac{df_2}{dx}$$
 $$\int(c_1f_1+c_2f_2)dx = c_1\int f_1dx+c_2\int f_2dx$$
 
 - For the square root, the linearity property does not hold!
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 对于平方根，线性性质不成立！
+``````
 
 $$\sqrt{(c_1f_1+c_2f_2)} \neq c_1\sqrt{f_1} +c_2\sqrt{f_2}$$
 
@@ -591,6 +605,13 @@ $$
 
 An operator is **Hermitian** if it equals its own adjoint:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+如果一个算符等于它自身的伴随，则称其为**厄米**算符：
+``````
+
 $$
 \hat{A} = \hat{A}^\dagger.
 $$
@@ -854,7 +875,21 @@ $ = {\int\limits_{-\infty}^{\infty}\psi_k(x)\left(-i\hbar\frac{d\psi_j(x)}{dx}\r
 
 Check whether the operator $\hat{A} = xd/dx$ is Hermitian.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+检验算符 $\hat{A} = xd/dx$ 是否为厄米算符。
+``````
+
 - You can test whether the following condition holds:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 你可以检验以下条件是否成立：
+``````
 
 $$
 \int_{a}^{b} \psi_1^*(x) \left( x \frac{d}{dx} \psi_2(x) \right) \, dx = \int_{a}^{b} \left( x \frac{d}{dx} \psi_1(x) \right)^* \psi_2(x) \, dx
@@ -952,6 +987,13 @@ $$
 
 which is not present in the right-hand side. This means:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+这一项在右端中并不存在。这意味着：
+``````
+
 $$
 \int_{a}^{b} \psi_1^*(x) \left( x \frac{d}{dx} \psi_2(x) \right) \, dx \neq \int_{a}^{b} \left( x \frac{d}{dx} \psi_1^*(x) \right) \psi_2(x) \, dx
 $$
@@ -969,6 +1011,13 @@ $$
 #### Problem-2: Is the $d^2/dx^2$ operator Hermitian?
 
 - You can test whether the following condition holds:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 你可以检验以下条件是否成立：
+``````
 
 $$
 \int_{a}^{b} \psi_1^*(x) \left( \frac{d^2}{dx^2} \psi_2(x) \right) \, dx = \int_{a}^{b} \psi_2(x)\left( \frac{d^2}{dx^2} \psi_1(x) \right)^*  \, dx
@@ -1034,6 +1083,13 @@ The boundary term $\left[ \psi_1^*(x) \frac{d}{dx} \psi_2(x) \right]_{a}^{b}$ ca
 
 We now apply integration by parts again to the remaining term:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+我们现在对剩余的项再次应用分部积分：
+``````
+
 $$
 -\int_{a}^{b} \frac{d}{dx} \psi_1^*(x) \frac{d}{dx} \psi_2(x) \, dx = \left[ \frac{d}{dx} \psi_1^*(x) \psi_2(x) \right]_{a}^{b} - \int_{a}^{b} \frac{d^2}{dx^2} \psi_1^*(x) \psi_2(x) \, dx
 $$
@@ -1072,6 +1128,13 @@ $$
 #### Problem-3: Is the $id^2/dx^2$ operator Hermitian?
 
 - You can test whether the following condition holds:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 你可以检验以下条件是否成立：
+``````
 
 $$
 \int_{a}^{b} \psi_1^*(x) \left( \frac{d^2}{dx^2} \psi_2(x) \right) \, dx = \int_{a}^{b} \psi_2(x)\left( \frac{d^2}{dx^2} \psi_1(x) \right)^*  \, dx
@@ -1154,7 +1217,26 @@ A^\dagger = \begin{pmatrix}
 \end{pmatrix}
 $
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+$
+A^\dagger = \begin{pmatrix}
+1 & 2 \\
+2 & 3
+\end{pmatrix}
+$
+``````
+
 Since $A = A^\dagger$, matrix $A$ is **Hermitian**.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+由于 $A = A^\dagger$，矩阵 $A$ 是**厄米矩阵**。
+``````
 
 **B Matrix**
 Now, let's compute the conjugate transpose of $B$. We first take the transpose and then take the complex conjugate of each entry:
@@ -1195,6 +1277,13 @@ i & 2
 $$
 
 Since $C = C^\dagger$, matrix $C$ is **Hermitian**.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+由于 $C = C^\dagger$，矩阵 $C$ 是**厄米矩阵**。
+``````
 
 :::
 
@@ -1286,11 +1375,25 @@ Consider the operator $ \hat{A} = x \frac{d}{dx} $. Find $ \hat{A}^2 $, i.e., $ 
 
 First, apply $ \hat{A} f(x) = x \frac{d}{dx} f(x) $:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+首先，应用 $ \hat{A} f(x) = x \frac{d}{dx} f(x) $：
+``````
+
 $$
 \hat{A} f(x) = x \frac{df}{dx}
 $$
 
 Now, apply $ \hat{A} $ again to the result:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+现在，把 $ \hat{A} $ 再次作用于这个结果：
+``````
 
 $$
 \hat{A}(\hat{A} f(x)) = \hat{A} \left( x \frac{df}{dx} \right) = x \frac{d}{dx} \left( x \frac{df}{dx} \right)
@@ -1325,6 +1428,13 @@ Consider the operator $ \hat{B} = -i\hbar \frac{d}{dx} $ (momentum operator). Ve
 :class: dropdown solution
 
 Apply $ \hat{B} $ to $ f(x) = e^{ikx} $:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+把 $ \hat{B} $ 作用于 $ f(x) = e^{ikx} $：
+``````
 
 $$
 \hat{B} f(x) = -i\hbar \frac{d}{dx} e^{ikx}
@@ -1390,6 +1500,13 @@ This is $ \alpha \hat{D} f(x) + \beta \hat{D} g(x) $, so $ \hat{D} $ is linear.
 ``````
 
 Now, apply $ \hat{D} $ to $ f(x) = x^n $:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+现在，把 $ \hat{D} $ 作用于 $ f(x) = x^n $：
+``````
 
 $$
 \hat{D} f(x) = x \frac{d}{dx} x^n = x \cdot n x^{n-1} = n x^n

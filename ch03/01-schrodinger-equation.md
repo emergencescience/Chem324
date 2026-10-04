@@ -494,6 +494,13 @@ Fig. Two stationary states of a particle between walls at $0$ and $L$. The real 
 
 - Solve the time-independent equation for the second derivative:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 解出不含时方程中的二阶导数：
+``````
+
 $$
 \frac{d^2\psi}{dx^2} = -\frac{2m}{\hbar^2}\,\big[E - V(x)\big]\,\psi
 $$
@@ -924,6 +931,13 @@ $$
 
 Write $\psi = N x$ and require the total probability to be one:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+令 $\psi = N x$，并要求总概率为 1：
+``````
+
 $$
 \int_0^1 (N x)^2\, dx = N^2 \int_0^1 x^2\,dx = \frac{N^2}{3} = 1 \quad\Rightarrow\quad N = \sqrt{3}
 $$
@@ -995,9 +1009,23 @@ $$
 
 - In three dimensions the same integral runs over a volume.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 在三维中，同样的积分遍及一个体积。
+``````
+
 :::{note} **Example: where is the particle?**
 
 For $\psi = \sqrt{3}\,x$ on $[0,1]$ the density is $3x^2$, so
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+对 $[0,1]$ 上的 $\psi = \sqrt{3}\,x$，密度为 $3x^2$，所以
+``````
 
 $$
 P(a<x<b) = \int_a^b 3x^2\,dx = b^3 - a^3
@@ -1015,6 +1043,13 @@ The particle is found between $0.3$ and $0.6$ with probability $0.6^3 - 0.3^3 = 
 :::
 
 Move the edges of the region and check the example.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+移动区域的边界并检查这个例子。
+``````
 
 ```{marimo} python
 :hide-code: true
@@ -1325,6 +1360,13 @@ $$
 
 The particle is as likely to move left as right.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+粒子向左和向右运动的可能性一样大。
+``````
+
 **Momentum squared and energy.** Two derivatives return the sine, $\psi_n'' = -(n\pi)^2\psi_n$, so
 
 
@@ -1455,6 +1497,13 @@ $$
 
 and find the frequency at which it oscillates.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+并求出它振荡的频率。
+``````
+
 :::{admonition} **Solution**
 :class: dropdown solution
 
@@ -1548,6 +1597,13 @@ Decide whether each function is an eigenfunction of the momentum operator, of th
 :class: dropdown solution
 
 Apply the momentum operator to the first function:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+把动量算符作用在第一个函数上：
+``````
 
 $$
 -i \hbar \dfrac{\partial}{\partial x} A \sin(ax) = -i \hbar A a \cos(ax)

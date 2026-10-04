@@ -67,11 +67,25 @@ $$-i\hbar \frac{df}{dx} = p$$
 
 Let us use the only trick we know when solving ODEs, $f=e^{kx}$
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+让我们用解常微分方程时唯一会的那一招，$f=e^{kx}$
+``````
+
 $$-i\hbar k = p\rightarrow k=\frac{ip}{\hbar}$$
 
 $$f = e^{ipx/\hbar}$$
 
 - Periodic plane waves are the eigenfunctions of momentum!
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 周期平面波正是动量的本征函数！
+``````
 
 :::
 
@@ -134,6 +148,13 @@ eigenvalues, eigenvectors
 :::{grid-item-card} Integral Notation
 
 $\int \phi^* \hat{H}\psi dx = \int \psi (\hat{H}\phi)^*dx$
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+$\int \phi^* \hat{H}\psi dx = \int \psi (\hat{H}\phi)^*dx$
+``````
 
 :::
 
